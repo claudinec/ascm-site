@@ -1,0 +1,15 @@
+name = ASCM Core
+description = ASCM Core Feature
+core = 7.x
+package = ASCM
+version = 7.x-1.0
+project = ascm_core
+dependencies[] = admin_menu
+dependencies[] = backup_migrate
+dependencies[] = block
+dependencies[] = dashboard
+dependencies[] = mandrill
+dependencies[] = module_filter
+dependencies[] = token
+features[features_api][] = api:1
+
