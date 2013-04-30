@@ -1,9 +1,9 @@
 <?php
 /*
  +--------------------------------------------------------------------+
- | CiviCRM version 4.2                                                |
+ | CiviCRM version 4.3                                                |
  +--------------------------------------------------------------------+
- | Copyright CiviCRM LLC (c) 2004-2012                                |
+ | Copyright CiviCRM LLC (c) 2004-2013                                |
  +--------------------------------------------------------------------+
  | This file is a part of CiviCRM.                                    |
  |                                                                    |
@@ -28,7 +28,7 @@
 /**
  *
  * @package CRM
- * @copyright CiviCRM LLC (c) 2004-2012
+ * @copyright CiviCRM LLC (c) 2004-2013
  * $Id$
  *
  */
@@ -52,16 +52,18 @@ class CRM_Core_Payment_PayPalImpl extends CRM_Core_Payment {
    * @param string $mode the mode of operation: live or test
    *
    * @return void
-   */ function __construct($mode, &$paymentProcessor) {
+   */
+  function __construct($mode, &$paymentProcessor) {
     $this->_mode = $mode;
     $this->_paymentProcessor = $paymentProcessor;
     $this->_processorName = ts('PayPal Pro');
+    $paymentProcessorType = CRM_Core_PseudoConstant::paymentProcessorType(false, null, 'name');
 
-    if ($this->_paymentProcessor['payment_processor_type'] == 'PayPal_Standard') {
+    if ($this->_paymentProcessor['payment_processor_type_id'] == CRM_Utils_Array::key('PayPal_Standard', $paymentProcessorType)) {
       $this->_processorName = ts('PayPal Standard');
       return;
     }
-    elseif ($this->_paymentProcessor['payment_processor_type'] == 'PayPal_Express') {
+    elseif ($this->_paymentProcessor['payment_processor_type_id'] == CRM_Utils_Array::key('PayPal_Express', $paymentProcessorType)) {
       $this->_processorName = ts('PayPal Express');
     }
 
@@ -79,10 +81,9 @@ class CRM_Core_Payment_PayPalImpl extends CRM_Core_Payment {
    * @static
    *
    */
-  static
-  function &singleton($mode, &$paymentProcessor) {
+  static function &singleton($mode, &$paymentProcessor, &$paymentForm = NULL, $force = FALSE) {
     $processorName = $paymentProcessor['name'];
-    if (!empty($processorName) || self::$_singleton[$processorName] === NULL) {
+    if (!isset(self::$_singleton[$processorName]) || self::$_singleton[$processorName] === NULL) {
       self::$_singleton[$processorName] = new CRM_Core_Payment_PaypalImpl($mode, $paymentProcessor);
     }
     return self::$_singleton[$processorName];
@@ -353,15 +354,16 @@ class CRM_Core_Payment_PayPalImpl extends CRM_Core_Payment {
    */
   function checkConfig() {
     $error = array();
-    if ($this->_paymentProcessor['payment_processor_type'] == 'PayPal_Standard' ||
-      $this->_paymentProcessor['payment_processor_type'] == 'PayPal'
+    $paymentProcessorType = CRM_Core_PseudoConstant::paymentProcessorType(false, null, 'name');
+    if ($this->_paymentProcessor['payment_processor_type_id'] == CRM_Utils_Array::key('PayPal_Standard', $paymentProcessorType) ||
+      $this->_paymentProcessor['payment_processor_type_id'] == CRM_Utils_Array::key('PayPal', $paymentProcessorType)
     ) {
       if (empty($this->_paymentProcessor['user_name'])) {
         $error[] = ts('User Name is not set in the Administer CiviCRM &raquo; System Settings &raquo; Payment Processors.');
       }
     }
 
-    if ($this->_paymentProcessor['payment_processor_type'] != 'PayPal_Standard') {
+    if ($this->_paymentProcessor['payment_processor_type_id'] != CRM_Utils_Array::key('PayPal_Standard', $paymentProcessorType)) {
       if (empty($this->_paymentProcessor['signature'])) {
         $error[] = ts('Signature is not set in the Administer CiviCRM &raquo; System Settings &raquo; Payment Processors.');
       }
@@ -717,9 +719,7 @@ class CRM_Core_Payment_PayPalImpl extends CRM_Core_Payment {
    * @nvpstr is NVPString.
    * @nvpArray is Associative Array.
    */
-
-  static
-  function deformat($str) {
+  static function deformat($str) {
     $result = array();
 
     while (strlen($str)) {

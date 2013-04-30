@@ -3,9 +3,9 @@
 
 /*
  +--------------------------------------------------------------------+
- | CiviCRM version 4.2                                                |
+ | CiviCRM version 4.3                                                |
  +--------------------------------------------------------------------+
- | Copyright CiviCRM LLC (c) 2004-2012                                |
+ | Copyright CiviCRM LLC (c) 2004-2013                                |
  +--------------------------------------------------------------------+
  | This file is a part of CiviCRM.                                    |
  |                                                                    |
@@ -30,7 +30,7 @@
 /**
  *
  * @package CRM
- * @copyright CiviCRM LLC (c) 2004-2012
+ * @copyright CiviCRM LLC (c) 2004-2013
  * $Id$
  *
  */
@@ -47,7 +47,9 @@ class CRM_Report_Form_Member_Detail extends CRM_Report_Form {
   protected $_summary = NULL;
 
   protected $_customGroupExtends = array('Membership', 'Contribution');
-  protected $_customGroupGroupBy = FALSE; function __construct() {
+  protected $_customGroupGroupBy = FALSE; 
+  
+  function __construct() {
     $this->_columns = array(
       'civicrm_contact' =>
       array(
@@ -200,9 +202,13 @@ class CRM_Report_Form_Member_Detail extends CRM_Report_Form {
             'no_display' => TRUE,
             'required' => TRUE,
           ),
-          'contribution_type_id' => array('title' => ts('Contribution Type')),
+          'financial_type_id' => array('title' => ts('Financial Type')),
           'contribution_status_id' => array('title' => ts('Contribution Status')),
           'payment_instrument_id' => array('title' => ts('Payment Type')),
+          'currency' => array(
+            'required' => TRUE,
+            'no_display' => TRUE,
+          ),
           'trxn_id' => NULL,
           'receive_date' => NULL,
           'receipt_date' => NULL,
@@ -217,10 +223,10 @@ class CRM_Report_Form_Member_Detail extends CRM_Report_Form {
         array(
           'receive_date' =>
           array('operatorType' => CRM_Report_Form::OP_DATE),
-          'contribution_type_id' =>
-          array('title' => ts('Contribution Type'),
+          'financial_type_id' =>
+          array('title' => ts('Financial Type'),
             'operatorType' => CRM_Report_Form::OP_MULTISELECT,
-            'options' => CRM_Contribute_PseudoConstant::contributionType(),
+            'options' => CRM_Contribute_PseudoConstant::financialType(),
             'type' => CRM_Utils_Type::T_INT,
           ),
           'payment_instrument_id' =>
@@ -228,6 +234,13 @@ class CRM_Report_Form_Member_Detail extends CRM_Report_Form {
             'operatorType' => CRM_Report_Form::OP_MULTISELECT,
             'options' => CRM_Contribute_PseudoConstant::paymentInstrument(),
             'type' => CRM_Utils_Type::T_INT,
+          ),
+          'currency' =>
+          array('title' => 'Currency',
+            'operatorType' => CRM_Report_Form::OP_MULTISELECT,
+            'options' => CRM_Core_OptionGroup::values('currencies_enabled'),
+            'default' => NULL,
+            'type' => CRM_Utils_Type::T_STRING,
           ),
           'contribution_status_id' =>
           array('title' => ts('Contribution Status'),
@@ -243,6 +256,8 @@ class CRM_Report_Form_Member_Detail extends CRM_Report_Form {
     );
     $this->_groupFilter = TRUE;
     $this->_tagFilter = TRUE;
+
+    $this->_currencyColumn = 'civicrm_contribution_currency';
     parent::__construct();
   }
 
@@ -410,7 +425,7 @@ class CRM_Report_Form_Member_Detail extends CRM_Report_Form {
     $entryFound = FALSE;
     $checkList = array();
     
-    $contributionTypes  = CRM_Contribute_PseudoConstant::contributionType();
+    $contributionTypes  = CRM_Contribute_PseudoConstant::financialType();
     $contributionStatus = CRM_Contribute_PseudoConstant::contributionStatus();
     $paymentInstruments = CRM_Contribute_PseudoConstant::paymentInstrument();
     
@@ -468,8 +483,8 @@ class CRM_Report_Form_Member_Detail extends CRM_Report_Form {
         $entryFound = TRUE;
       }
       
-      if ($value = CRM_Utils_Array::value('civicrm_contribution_contribution_type_id', $row)) {
-        $rows[$rowNum]['civicrm_contribution_contribution_type_id'] = $contributionTypes[$value];
+      if ($value = CRM_Utils_Array::value('civicrm_contribution_financial_type_id', $row)) {
+        $rows[$rowNum]['civicrm_contribution_financial_type_id'] = $contributionTypes[$value];
         $entryFound = TRUE;
       }
       if ($value = CRM_Utils_Array::value('civicrm_contribution_contribution_status_id', $row)) {

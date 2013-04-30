@@ -113,7 +113,7 @@
      <title>Edit Related Contact</title>
      <page_callback>CRM_Contact_Form_RelatedContact</page_callback>
      <access_arguments>access Contact Dashboard</access_arguments>
-	 <is_public>true</is_public>
+   <is_public>true</is_public>
   </item>
   <item>
      <path>civicrm/contact/merge</path>
@@ -234,6 +234,11 @@
      <path>civicrm/dashlet/activity</path>
      <title>Activity Dashlet</title>
      <page_callback>CRM_Dashlet_Page_Activity</page_callback>
+  </item>
+  <item>
+     <path>civicrm/dashlet/blog</path>
+     <title>CiviCRM Blog</title>
+     <page_callback>CRM_Dashlet_Page_Blog</page_callback>
   </item>
   <item>
     <path>civicrm/ajax/state</path>

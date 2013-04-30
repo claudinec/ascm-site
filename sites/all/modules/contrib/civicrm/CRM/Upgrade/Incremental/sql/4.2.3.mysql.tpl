@@ -13,10 +13,10 @@ VALUES
 -- CRM-10980 and CRM-11014
 SELECT @optionID := max(id) FROM civicrm_option_value WHERE name = 'BULK SMS';
 {if $multilingual}
-	{foreach from=$locales item=locale}
+    {foreach from=$locales item=locale}
   	UPDATE `civicrm_option_value` SET label_{$locale} = '{ts escape="sql"}Mass SMS{/ts}',name = 'Mass SMS',description_{$locale} = '{ts escape="sql"}Mass SMS{/ts}' WHERE id = @optionID; 
     	ALTER TABLE `civicrm_price_field_value` CHANGE name name VARCHAR(255) NULL DEFAULT NULL, CHANGE label_{$locale} label_{$locale} VARCHAR(255)  NULL DEFAULT NULL;
-	{/foreach}
+    {/foreach}
 {else}
 	UPDATE `civicrm_option_value` SET label = '{ts escape="sql"}Mass SMS{/ts}',name = 'Mass SMS',description = '{ts escape="sql"}Mass SMS{/ts}' WHERE name = 'BULK SMS'; 
 	ALTER TABLE `civicrm_price_field_value` CHANGE `name` `name` VARCHAR(255) NULL DEFAULT NULL, CHANGE `label` `label` VARCHAR(255)  NULL DEFAULT NULL;

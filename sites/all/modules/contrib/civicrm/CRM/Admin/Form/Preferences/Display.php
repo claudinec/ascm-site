@@ -1,9 +1,9 @@
 <?php
 /*
  +--------------------------------------------------------------------+
- | CiviCRM version 4.2                                                |
+ | CiviCRM version 4.3                                                |
  +--------------------------------------------------------------------+
- | Copyright CiviCRM LLC (c) 2004-2012                                |
+ | Copyright CiviCRM LLC (c) 2004-2013                                |
  +--------------------------------------------------------------------+
  | This file is a part of CiviCRM.                                    |
  |                                                                    |
@@ -28,8 +28,8 @@
 /**
  *
  * @package CRM
- * @copyright CiviCRM LLC (c) 2004-2012
- * $Id: Display.php 41013 2012-06-13 21:15:02Z kurund $
+ * @copyright CiviCRM LLC (c) 2004-2013
+ * $Id: Display.php 45499 2013-02-08 12:31:05Z kurund $
  *
  */
 
@@ -42,7 +42,7 @@ class CRM_Admin_Form_Preferences_Display extends CRM_Admin_Form_Preferences {
     CRM_Utils_System::setTitle(ts('Settings - Display Preferences'));
 
     if (defined('CIVICRM_ACTIVITY_ASSIGNEE_MAIL') && CIVICRM_ACTIVITY_ASSIGNEE_MAIL) {
-      CRM_Core_Session::setStatus(ts('Your civicrm.settings.php file contains CIVICRM_ACTIVITY_ASSIGNEE_MAIL but this constant is no longer used. Please remove this from your config file and set your "Notify Activity Assignees" preference below.'));
+      CRM_Core_Session::setStatus(ts('Your civicrm.settings.php file contains CIVICRM_ACTIVITY_ASSIGNEE_MAIL but this constant is no longer used. Please remove this from your config file and set your "Notify Activity Assignees" preference below.'), ts("Deprecated Constant"), "alert");
     }
 
     $this->_varNames = array(
@@ -66,6 +66,11 @@ class CRM_Admin_Form_Preferences_Display extends CRM_Admin_Form_Preferences {
         'activity_assignee_notification' => array(
           'html_type' => 'checkbox',
           'title' => ts('Notify Activity Assignees'),
+          'weight' => 5,
+        ),
+        'activity_assignee_notification_ics' => array(
+          'html_type' => 'checkbox',
+          'title' => ts('Include ICal Invite to Activity Assignees'),
           'weight' => 5,
         ),
         'contact_ajax_check_similar' => array(

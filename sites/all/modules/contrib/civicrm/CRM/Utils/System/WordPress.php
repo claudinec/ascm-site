@@ -1,9 +1,9 @@
 <?php
 /*
  +--------------------------------------------------------------------+
- | CiviCRM version 4.2                                                |
+ | CiviCRM version 4.3                                                |
  +--------------------------------------------------------------------+
- | Copyright CiviCRM LLC (c) 2004-2012                                |
+ | Copyright CiviCRM LLC (c) 2004-2013                                |
  +--------------------------------------------------------------------+
  | This file is a part of CiviCRM.                                    |
  |                                                                    |
@@ -28,7 +28,7 @@
 /**
  *
  * @package CRM
- * @copyright CiviCRM LLC (c) 2004-2012
+ * @copyright CiviCRM LLC (c) 2004-2013
  * $Id$
  *
  */
@@ -139,6 +139,70 @@ class CRM_Utils_System_WordPress extends CRM_Utils_System_Base {
   }
 
   /**
+   * Add a script file
+   *
+   * @param $url: string, absolute path to file
+   * @param $region string, location within the document: 'html-header', 'page-header', 'page-footer'
+   *
+   * Note: This function is not to be called directly
+   * @see CRM_Core_Region::render()
+   *
+   * @return bool TRUE if we support this operation in this CMS, FALSE otherwise
+   * @access public
+   */
+  public function addScriptUrl($url, $region) {
+    return FALSE;
+  }
+
+  /**
+   * Add an inline script
+   *
+   * @param $code: string, javascript code
+   * @param $region string, location within the document: 'html-header', 'page-header', 'page-footer'
+   *
+   * Note: This function is not to be called directly
+   * @see CRM_Core_Region::render()
+   *
+   * @return bool TRUE if we support this operation in this CMS, FALSE otherwise
+   * @access public
+   */
+  public function addScript($code, $region) {
+    return FALSE;
+  }
+
+  /**
+   * Add a css file
+   *
+   * @param $url: string, absolute path to file
+   * @param $region string, location within the document: 'html-header', 'page-header', 'page-footer'
+   *
+   * Note: This function is not to be called directly
+   * @see CRM_Core_Region::render()
+   *
+   * @return bool TRUE if we support this operation in this CMS, FALSE otherwise
+   * @access public
+   */
+  public function addStyleUrl($url, $region) {
+    return FALSE;
+  }
+
+  /**
+   * Add an inline style
+   *
+   * @param $code: string, css code
+   * @param $region string, location within the document: 'html-header', 'page-header', 'page-footer'
+   *
+   * Note: This function is not to be called directly
+   * @see CRM_Core_Region::render()
+   *
+   * @return bool TRUE if we support this operation in this CMS, FALSE otherwise
+   * @access public
+   */
+  public function addStyle($code, $region) {
+    return FALSE;
+  }
+
+  /**
    * rewrite various system urls to https
    *
    * @param null
@@ -191,7 +255,8 @@ class CRM_Utils_System_WordPress extends CRM_Utils_System_Base {
     $absolute = FALSE,
     $fragment = NULL,
     $htmlize = TRUE,
-    $frontend = FALSE
+    $frontend = FALSE,
+    $forceBackend = FALSE
   ) {
     $config    = CRM_Core_Config::singleton();
     $script    = '';
@@ -212,7 +277,7 @@ class CRM_Utils_System_WordPress extends CRM_Utils_System_Base {
         $script = get_permalink($post->ID);
       }
 
-      // when shortcode is inlcuded in page
+      // when shortcode is included in page
       // also make sure we have valid query object
       global $wp_query;
       if ( method_exists( $wp_query, 'get' ) ) {
@@ -237,7 +302,7 @@ class CRM_Utils_System_WordPress extends CRM_Utils_System_Base {
 
     $base = $absolute ? $config->userFrameworkBaseURL : $config->useFrameworkRelativeBase;
 
-    if (is_admin() && !$frontend) {
+    if ((is_admin() && !$frontend) || $forceBackend) {
       $base .= 'wp-admin/admin.php';
     }
     elseif (defined('CIVICRM_UF_WP_BASEPAGE')) {
@@ -258,7 +323,7 @@ class CRM_Utils_System_WordPress extends CRM_Utils_System_Base {
           return $script . '?page=CiviCRM&q=' . $path . $pageID . $fragment;
         }
         else {
-          return $base . '?page=CiviCRM&q=' . $path . $pageID . $fragment;
+          return $base .'?page=CiviCRM&q=' . $path . $pageID . $fragment;
         }
       }
     }
@@ -467,8 +532,9 @@ class CRM_Utils_System_WordPress extends CRM_Utils_System_Base {
         $errors[$emailName] = "Your email is invaid";
       }
       elseif (email_exists($params['mail'])) {
-        $errors[$emailName] = ts('This email %1 is already registered. Please select another email.',
-          array(1 => $params['mail'])
+        $resetUrl = $config->userFrameworkBaseURL . 'wp-login.php?action=lostpassword';
+        $errors[$emailName] = ts('The email address %1 is already registered. <a href="%2">Have you forgotten your password?</a>',
+          array(1 => $params['mail'], 2 => $resetUrl)
         );
       }
     }
@@ -502,6 +568,40 @@ class CRM_Utils_System_WordPress extends CRM_Utils_System_Base {
       $ufID = $current_user->ID;
     }
     return $ufID;
+  }
+
+  /**
+   * Get user login URL for hosting CMS (method declared in each CMS system class)
+   *
+   * @param string $destination - if present, add destination to querystring (works for Drupal only)
+   *
+   * @return string - loginURL for the current CMS
+   *
+   */
+  public function getLoginURL($destination = '') {
+    $config = CRM_Core_Config::singleton();
+    $loginURL = $config->userFrameworkBaseURL;
+    $loginURL .= 'wp-login.php';
+    return $loginURL;
+  }
+
+  public function getLoginDestination(&$form) {
+    return;
+  }
+
+  /**
+   * Return the current WordPress version if relevant function exists
+   *
+   * @return string - version number
+   *
+   */
+  function getVersion() {
+    if (function_exists('get_bloginfo')) {
+      return get_bloginfo('version', 'display');
+    }
+    else {
+      return 'Unknown';
+    }
   }
 }
 

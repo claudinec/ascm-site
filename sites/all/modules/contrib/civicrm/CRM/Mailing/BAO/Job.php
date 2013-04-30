@@ -1,9 +1,9 @@
 <?php
 /*
  +--------------------------------------------------------------------+
- | CiviCRM version 4.2                                                |
+ | CiviCRM version 4.3                                                |
  +--------------------------------------------------------------------+
- | Copyright CiviCRM LLC (c) 2004-2012                                |
+ | Copyright CiviCRM LLC (c) 2004-2013                                |
  +--------------------------------------------------------------------+
  | This file is a part of CiviCRM.                                    |
  |                                                                    |
@@ -28,7 +28,7 @@
 /**
  *
  * @package CRM
- * @copyright CiviCRM LLC (c) 2004-2012
+ * @copyright CiviCRM LLC (c) 2004-2013
  * $Id$
  *
  */
@@ -44,6 +44,17 @@ class CRM_Mailing_BAO_Job extends CRM_Mailing_DAO_Job {
     parent::__construct();
   }
 
+  function create ($params){
+    $job = new CRM_Mailing_BAO_Job();
+    $job->mailing_id = $params['mailing_id'];
+    $job->status = $params['status'];
+    $job->scheduled_date = $params['scheduled_date'];
+    $job->is_test = $params['is_test'];
+    $job->save();
+    $mailing = new CRM_Mailing_BAO_Mailing();
+    $eq = $mailing->getRecipients($job->id, $params['mailing_id'], NULL, NULL, true, false);
+    return $job;
+  }
   /**
    * Initiate all pending/ready jobs
    *
@@ -60,9 +71,9 @@ class CRM_Mailing_BAO_Job extends CRM_Mailing_DAO_Job {
 
     if (!empty($testParams)) {
       $query = "
-			SELECT *
-			  FROM $jobTable
-			 WHERE id = {$testParams['job_id']}";
+      SELECT *
+        FROM $jobTable
+       WHERE id = {$testParams['job_id']}";
       $job->query($query);
     }
     else {
@@ -78,22 +89,22 @@ class CRM_Mailing_BAO_Job extends CRM_Mailing_DAO_Job {
       // Select the first child job that is scheduled
       // CRM-6835
       $query = "
-			SELECT   j.*
-			  FROM   $jobTable     j,
-					 $mailingTable m
-			 WHERE   m.id = j.mailing_id AND m.domain_id = {$domainID}
+      SELECT   j.*
+        FROM   $jobTable     j,
+           $mailingTable m
+       WHERE   m.id = j.mailing_id AND m.domain_id = {$domainID}
                      {$modeClause}
-			   AND   j.is_test = 0
-			   AND   ( ( j.start_date IS null
-			   AND       j.scheduled_date <= $currentTime
-			   AND       j.status = 'Scheduled' )
+         AND   j.is_test = 0
+         AND   ( ( j.start_date IS null
+         AND       j.scheduled_date <= $currentTime
+         AND       j.status = 'Scheduled' )
                 OR     ( j.status = 'Running'
-			   AND       j.end_date IS null ) )
-			   AND (j.job_type = 'child')
-			   AND   {$mailingACL}
-			ORDER BY j.mailing_id,
-					 j.id
-			";
+         AND       j.end_date IS null ) )
+         AND (j.job_type = 'child')
+         AND   {$mailingACL}
+      ORDER BY j.mailing_id,
+           j.id
+      ";
 
       $job->query($query);
     }
@@ -279,20 +290,20 @@ class CRM_Mailing_BAO_Job extends CRM_Mailing_DAO_Job {
     // Select all the mailing jobs that are created from
     // when the mailing is submitted or scheduled.
     $query = "
-		SELECT   j.*
-		  FROM   $jobTable     j,
-				 $mailingTable m
-		 WHERE   m.id = j.mailing_id AND m.domain_id = {$domainID}
+    SELECT   j.*
+      FROM   $jobTable     j,
+         $mailingTable m
+     WHERE   m.id = j.mailing_id AND m.domain_id = {$domainID}
                  $workflowClause
                  $modeClause
-		   AND   j.is_test = 0
-		   AND   ( ( j.start_date IS null
-		   AND       j.scheduled_date <= $currentTime
-		   AND       j.status = 'Scheduled'
-		   AND       j.end_date IS null ) )
-		   AND ((j.job_type is NULL) OR (j.job_type <> 'child'))
-		ORDER BY j.scheduled_date,
-				 j.start_date";
+       AND   j.is_test = 0
+       AND   ( ( j.start_date IS null
+       AND       j.scheduled_date <= $currentTime
+       AND       j.status = 'Scheduled'
+       AND       j.end_date IS null ) )
+       AND ((j.job_type is NULL) OR (j.job_type <> 'child'))
+    ORDER BY j.scheduled_date,
+         j.start_date";
 
 
     $job->query($query);
@@ -464,7 +475,7 @@ VALUES (%1, %2, %3, %4, %5, %6, %7)
                     WHERE       $eqTable.job_id = " . $this->id . "
                         AND     $edTable.id IS null
                         AND     $ebTable.id IS null
-                        AND		$contactTable.is_opt_out = 0";
+                        AND    $contactTable.is_opt_out = 0";
 
     if ($mailing->sms_provider_id) {
       $query = "
@@ -485,7 +496,7 @@ VALUES (%1, %2, %3, %4, %5, %6, %7)
                     WHERE       $eqTable.job_id = " . $this->id . "
                         AND     $edTable.id IS null
                         AND     $ebTable.id IS null
-                        AND		$contactTable.is_opt_out = 0";
+                        AND    $contactTable.is_opt_out = 0";
     }
     $eq->query($query);
 
@@ -509,7 +520,7 @@ VALUES (%1, %2, %3, %4, %5, %6, %7)
     CRM_Mailing_BAO_Mailing::tokenReplace($mailing);
 
     // get and format attachments
-    $attachments = &CRM_Core_BAO_File::getEntityFile('civicrm_mailing', $mailing->id);
+    $attachments = CRM_Core_BAO_File::getEntityFile('civicrm_mailing', $mailing->id);
 
     if (defined('CIVICRM_MAIL_SMARTY') && CIVICRM_MAIL_SMARTY) {
       CRM_Core_Smarty::registerStringResource();
@@ -773,7 +784,7 @@ AND    status IN ( 'Scheduled', 'Running', 'Paused' )
       );
       CRM_Core_DAO::executeQuery($sql, $params);
 
-      CRM_Core_Session::setStatus(ts('The mailing has been canceled.'));
+      CRM_Core_Session::setStatus(ts('The mailing has been canceled.'), ts('Canceled'), 'success');
     }
   }
 
@@ -863,7 +874,6 @@ AND    status IN ( 'Scheduled', 'Running', 'Paused' )
         'source_contact_id' => $mailing->scheduled_id,
         // CRM-9519
         'target_contact_id' => array_unique($targetParams),
-        'target_contact_id' => $targetParams,
         'activity_type_id' => $activityTypeID,
         'source_record_id' => $this->mailing_id,
         'activity_date_time' => $job_date,

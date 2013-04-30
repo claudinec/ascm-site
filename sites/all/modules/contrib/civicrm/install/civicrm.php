@@ -1,9 +1,9 @@
 <?php
 /*
  +--------------------------------------------------------------------+
- | CiviCRM version 4.2                                                |
+ | CiviCRM version 4.3                                                |
  +--------------------------------------------------------------------+
- | Copyright CiviCRM LLC (c) 2004-2012                                |
+ | Copyright CiviCRM LLC (c) 2004-2013                                |
  +--------------------------------------------------------------------+
  | This file is a part of CiviCRM.                                    |
  |                                                                    |
@@ -28,7 +28,7 @@
 /**
  *
  * @package CRM
- * @copyright CiviCRM LLC (c) 2004-2012
+ * @copyright CiviCRM LLC (c) 2004-2013
  * $Id$
  *
  */
@@ -88,9 +88,7 @@ function civicrm_main(&$config) {
 
   civicrm_source($dsn, $sqlPath . DIRECTORY_SEPARATOR . 'civicrm.mysql');
 
-  if (isset($config['loadGenerated']) &&
-    $config['loadGenerated']
-  ) {
+  if (!empty($config['loadGenerated'])) {
     civicrm_source($dsn, $sqlPath . DIRECTORY_SEPARATOR . 'civicrm_generated.mysql', TRUE);
   }
   else {
@@ -120,6 +118,7 @@ function civicrm_main(&$config) {
   civicrm_write_file($configFile,
     $string
   );
+
 }
 
 function civicrm_source($dsn, $fileName, $lineMode = FALSE) {
@@ -229,13 +228,14 @@ function civicrm_cms_base() {
   // for drupal
   $numPrevious = 6;
 
-  if (!isset($_SERVER['HTTPS']) ||
-    strtolower($_SERVER['HTTPS']) == 'off'
+  if (isset($_SERVER['HTTPS']) &&
+    !empty($_SERVER['HTTPS']) &&
+    strtolower($_SERVER['HTTPS']) != 'off'
   ) {
-    $url = 'http://' . $_SERVER['HTTP_HOST'];
+    $url = 'https://' . $_SERVER['HTTP_HOST'];
   }
   else {
-    $url = 'https://' . $_SERVER['HTTP_HOST'];
+    $url = 'http://' . $_SERVER['HTTP_HOST'];
   }
 
   $baseURL = $_SERVER['SCRIPT_NAME'];

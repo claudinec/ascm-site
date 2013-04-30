@@ -1,34 +1,34 @@
 <?php
 /*
-  +--------------------------------------------------------------------+
-  | CiviCRM version 4.2                                                |
-  +--------------------------------------------------------------------+
-  | Copyright CiviCRM LLC (c) 2004-2012                                |
-  +--------------------------------------------------------------------+
-  | This file is a part of CiviCRM.                                    |
-  |                                                                    |
-  | CiviCRM is free software; you can copy, modify, and distribute it  |
-  | under the terms of the GNU Affero General Public License           |
-  | Version 3, 19 November 2007 and the CiviCRM Licensing Exception.   |
-  |                                                                    |
-  | CiviCRM is distributed in the hope that it will be useful, but     |
-  | WITHOUT ANY WARRANTY; without even the implied warranty of         |
-  | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.               |
-  | See the GNU Affero General Public License for more details.        |
-  |                                                                    |
-  | You should have received a copy of the GNU Affero General Public   |
-  | License and the CiviCRM Licensing Exception along                  |
-  | with this program; if not, contact CiviCRM LLC                     |
-  | at info[AT]civicrm[DOT]org. If you have questions about the        |
-  | GNU Affero General Public License or the licensing of CiviCRM,     |
-  | see the CiviCRM license FAQ at http://civicrm.org/licensing        |
-  +--------------------------------------------------------------------+
+ +--------------------------------------------------------------------+
+ | CiviCRM version 4.3                                                |
+ +--------------------------------------------------------------------+
+ | Copyright CiviCRM LLC (c) 2004-2013                                |
+ +--------------------------------------------------------------------+
+ | This file is a part of CiviCRM.                                    |
+ |                                                                    |
+ | CiviCRM is free software; you can copy, modify, and distribute it  |
+ | under the terms of the GNU Affero General Public License           |
+ | Version 3, 19 November 2007 and the CiviCRM Licensing Exception.   |
+ |                                                                    |
+ | CiviCRM is distributed in the hope that it will be useful, but     |
+ | WITHOUT ANY WARRANTY; without even the implied warranty of         |
+ | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.               |
+ | See the GNU Affero General Public License for more details.        |
+ |                                                                    |
+ | You should have received a copy of the GNU Affero General Public   |
+ | License and the CiviCRM Licensing Exception along                  |
+ | with this program; if not, contact CiviCRM LLC                     |
+ | at info[AT]civicrm[DOT]org. If you have questions about the        |
+ | GNU Affero General Public License or the licensing of CiviCRM,     |
+ | see the CiviCRM license FAQ at http://civicrm.org/licensing        |
+ +--------------------------------------------------------------------+
 */
 
 /**
  *
  * @package CRM
- * @copyright CiviCRM LLC (c) 2004-2012
+ * @copyright CiviCRM LLC (c) 2004-2013
  * $Id$
  *
  */
@@ -44,50 +44,100 @@ class CRM_Contact_BAO_GroupContactCache extends CRM_Contact_DAO_GroupContactCach
    *
    * @return boolean true if we did not regenerate, false if we did
    */
-  static function check($groupID) {
-    if (empty($groupID)) {
-      return TRUE;
-    }
-
-    if (!is_array($groupID)) {
-      $groupID = array($groupID);
-    }
-    // note escapeString is a must here and we can't send the imploded value as second arguement to
-    // the executeQuery(), since that would put single quote around the string and such a string
-    // of comma separated integers would not work.
-    $groupID = CRM_Core_DAO::escapeString(implode(', ', $groupID));
-
-    $config = CRM_Core_Config::singleton();
-    $smartGroupCacheTimeout = isset($config->smartGroupCacheTimeout) && is_numeric($config->smartGroupCacheTimeout) ? $config->smartGroupCacheTimeout : 0;
-
-    //make sure to give original timezone settings again.
-    $originalTimezone = date_default_timezone_get();
-    date_default_timezone_set('UTC');
-    $now = date('YmdHis');
-    date_default_timezone_set($originalTimezone);
-
-    $query = "
-SELECT  g.id
-FROM    civicrm_group g
-WHERE   g.id IN ( {$groupID} )
-AND     ( g.saved_search_id IS NOT NULL OR
-          g.children IS NOT NULL )
-AND     ( g.cache_date IS NULL OR
-          ( TIMESTAMPDIFF(MINUTE, g.cache_date, $now) >= $smartGroupCacheTimeout )
-        )
-";
-
-    $dao = CRM_Core_DAO::executeQuery($query);
-    $groupIDs = array();
-    while ($dao->fetch()) {
-      $groupIDs[] = $dao->id;
-    }
-
+  static function check($groupIDs) {
     if (empty($groupIDs)) {
       return TRUE;
     }
+
+    return self::loadAll($groupIDs);
+  }
+
+  /**
+   * Check to see if we have cache entries for this group
+   * if not, regenerate, else return
+   *
+   * @param int/array $groupID groupID of group that we are checking against
+   *                           if empty, all groups are checked
+   * @param int       $limit   limits the number of groups we evaluate
+   *
+   * @return boolean true if we did not regenerate, false if we did
+   */
+  static function loadAll($groupIDs = null, $limit = 0) {
+    // ensure that all the smart groups are loaded
+    // this function is expensive and should be sparingly used if groupIDs is empty
+
+    if (empty($groupIDs)) {
+      $groupIDClause = null;
+      $groupIDs = array( );
+    }
     else {
-      self::add($groupIDs);
+      if (!is_array($groupIDs)) {
+        $groupIDs = array($groupIDs);
+      }
+
+      // note escapeString is a must here and we can't send the imploded value as second arguement to
+      // the executeQuery(), since that would put single quote around the string and such a string
+      // of comma separated integers would not work.
+      $groupIDString = CRM_Core_DAO::escapeString(implode(', ', $groupID));
+
+      $groupIDClause = "AND (g.id IN ( {$groupIDString} ))";
+    }
+
+    $smartGroupCacheTimeout = self::smartGroupCacheTimeout();
+
+    //make sure to give original timezone settings again.
+    $now = CRM_Utils_Date::getUTCTime();
+
+    $limitClause = $orderClause = NULL;
+    if ($limit > 0) {
+      $limitClause = " LIMIT 0, $limit";
+      $orderClause = " ORDER BY g.cache_date, g.refresh_date";
+    }
+    $query = "
+SELECT  g.id
+FROM    civicrm_group g
+WHERE   ( g.saved_search_id IS NOT NULL OR
+          g.children IS NOT NULL )
+AND     ( g.cache_date IS NULL OR
+          ( TIMESTAMPDIFF(MINUTE, g.cache_date, $now) >= $smartGroupCacheTimeout ) OR
+          ( $now >= g.refresh_date )
+        )
+        $groupIDClause
+        $limitClause
+        $orderClause
+";
+
+    $dao = CRM_Core_DAO::executeQuery($query);
+    $processGroupIDs = array();
+    $refreshGroupIDs = $groupIDs;
+    while ($dao->fetch()) {
+      $processGroupIDs[] = $dao->id;
+
+      // remove this id from refreshGroupIDs
+      foreach ($refreshGroupIDs as $idx => $gid) {
+        if ($gid == $dao->id) {
+          unset($refreshGroupIDs[$idx]);
+          break;
+        }
+      }
+    }
+
+    if (!empty($refreshGroupIDs)) {
+      $refreshGroupIDString = CRM_Core_DAO::escapeString(implode(', ', $refreshGroupIDString));
+      $time  = CRM_Utils_Date::getUTCTime('YmdHis', $smartGroupCacheTimeout * 60);
+      $query = "
+UPDATE civicrm_group g
+SET    g.refresh_date = $time
+WHERE  g.id IN ( {$refreshGroupIDString} )
+AND    g.refresh_date IS NULL
+";
+    }
+
+    if (empty($processGroupIDs)) {
+      return TRUE;
+    }
+    else {
+      self::add($processGroupIDs);
       return FALSE;
     }
   }
@@ -136,24 +186,21 @@ AND     ( g.cache_date IS NULL OR
     if ($processed) {
       // also update the group with cache date information
       //make sure to give original timezone settings again.
-      $originalTimezone = date_default_timezone_get();
-      date_default_timezone_set('UTC');
-      $now = date('YmdHis');
-      date_default_timezone_set($originalTimezone);
+      $now     = CRM_Utils_Date::getUTCTime();
+      $refresh = 'null';
     }
     else {
-      $now = 'null';
+      $now     = 'null';
+      $refresh = 'null';
     }
 
     $groupIDs = implode(',', $groupID);
     $sql = "
 UPDATE civicrm_group
-SET    cache_date = $now
+SET    cache_date = $now, refresh_date = $refresh
 WHERE  id IN ( $groupIDs )
 ";
-    CRM_Core_DAO::executeQuery($sql,
-      CRM_Core_DAO::$_nullArray
-    );
+    CRM_Core_DAO::executeQuery($sql);
   }
 
   static function remove($groupID = NULL, $onceOnly = TRUE) {
@@ -180,26 +227,22 @@ WHERE  id IN ( $groupIDs )
       unset(self::$_alreadyLoaded[$groupID]);
     }
 
-    //when there are difference in timezones for mysql and php.
-    //cache_date set null not behaving properly, CRM-6855
+    $refresh = null;
+    $params  = array();
+    $smartGroupCacheTimeout = self::smartGroupCacheTimeout();
 
-    //make sure to give original timezone settings again.
-    $originalTimezone = date_default_timezone_get();
-    date_default_timezone_set('UTC');
-    $now = date('YmdHis');
-    date_default_timezone_set($originalTimezone);
+    $now         = CRM_Utils_Date::getUTCTime();
+    $refreshTime = CRM_Utils_Date::getUTCTime('YmdHis', $smartGroupCacheTimeout * 60);
 
     if (!isset($groupID)) {
-      $config = CRM_Core_Config::singleton();
-      $smartGroupCacheTimeout = isset($config->smartGroupCacheTimeout) && is_numeric($config->smartGroupCacheTimeout) ? $config->smartGroupCacheTimeout : 0;
-
       if ($smartGroupCacheTimeout == 0) {
         $query = "
 TRUNCATE civicrm_group_contact_cache
 ";
         $update = "
 UPDATE civicrm_group g
-SET    cache_date = null
+SET    cache_date = null,
+       refresh_date = null
 ";
       }
       else {
@@ -211,25 +254,31 @@ WHERE      TIMESTAMPDIFF(MINUTE, g.cache_date, $now) >= $smartGroupCacheTimeout
 ";
         $update = "
 UPDATE civicrm_group g
-SET    cache_date = null
+SET    cache_date = null,
+       refresh_date = null
 WHERE  TIMESTAMPDIFF(MINUTE, cache_date, $now) >= $smartGroupCacheTimeout
 ";
+        $refresh = "
+UPDATE civicrm_group g
+SET    refresh_date = $refreshTime
+WHERE  TIMESTAMPDIFF(MINUTE, cache_date, $now) < $smartGroupCacheTimeout
+AND    refresh_date IS NULL
+";
       }
-      $params = array();
     }
     elseif (is_array($groupID)) {
+      $groupIDs = implode(', ', $groupID);
       $query = "
 DELETE     g
 FROM       civicrm_group_contact_cache g
-WHERE      g.group_id IN ( %1 )
+WHERE      g.group_id IN ( $groupIDs )
 ";
       $update = "
 UPDATE civicrm_group g
-SET    cache_date = null
-WHERE  id IN ( %1 )
+SET    cache_date = null,
+       refresh_date = null
+WHERE  id IN ( $groupIDs )
 ";
-      $groupIDs = implode(', ', $groupID);
-      $params = array(1 => array($groupIDs, 'String'));
     }
     else {
       $query = "
@@ -239,13 +288,18 @@ WHERE      g.group_id = %1
 ";
       $update = "
 UPDATE civicrm_group g
-SET    cache_date = null
+SET    cache_date = null,
+       refresh_date = null
 WHERE  id = %1
 ";
       $params = array(1 => array($groupID, 'Integer'));
     }
 
     CRM_Core_DAO::executeQuery($query, $params);
+
+    if ($refresh) {
+      CRM_Core_DAO::executeQuery($refresh, $params);
+    }
 
     // also update the cache_date for these groups
     CRM_Core_DAO::executeQuery($update, $params);
@@ -297,23 +351,23 @@ WHERE  id = %1
         $query =
           new CRM_Contact_BAO_Query(
             $ssParams, $returnProperties, NULL,
-            FALSE, FALSE, 1,
-            TRUE, TRUE,
-            FALSE,
+          FALSE, FALSE, 1,
+          TRUE, TRUE,
+          FALSE,
             CRM_Utils_Array::value('display_relationship_type', $formValues),
             CRM_Utils_Array::value('operator', $formValues, 'AND')
-          );
+        );
         $query->_useDistinct = FALSE;
         $query->_useGroupBy  = FALSE;
         $searchSQL           =
           $query->searchQuery(
             0, 0, NULL,
-            FALSE, FALSE,
-            FALSE, TRUE,
-            TRUE,
-            NULL, NULL, NULL,
-            TRUE
-          );
+          FALSE, FALSE,
+          FALSE, TRUE,
+          TRUE,
+          NULL, NULL, NULL,
+          TRUE
+        );
       }
       $groupID = CRM_Utils_Type::escape($groupID, 'Integer');
       $sql = $searchSQL . " AND contact_a.id NOT IN (
@@ -377,5 +431,81 @@ AND  civicrm_group_contact.group_id = $groupID ";
       }
     }
   }
+
+  static function smartGroupCacheTimeout() {
+    $config = CRM_Core_Config::singleton();
+
+    if (
+      isset($config->smartGroupCacheTimeout) &&
+      is_numeric($config->smartGroupCacheTimeout) &&
+      $config->smartGroupCacheTimeout > 0) {
+      return $config->smartGroupCacheTimeout;
+    }
+
+    // lets have a min cache time of 5 mins if not set
+    return 5;
+  }
+
+  static function contactGroup($contactID) {
+    if (empty($contactID)) {
+      return;
+    }
+
+    if (is_array($contactID)) {
+      $contactIDs = $contactID;
+    }
+    else {
+      $contactIDs = array($contactID);
+    }
+
+    self::loadAll();
+
+    $contactIDString = CRM_Core_DAO::escapeString(implode(', ', $contactIDs));
+    $sql = "
+SELECT     gc.group_id, gc.contact_id, g.title, g.children, g.description
+FROM       civicrm_group_contact_cache gc
+INNER JOIN civicrm_group g ON g.id = gc.group_id
+WHERE      gc.contact_id IN ($contactIDString)
+ORDER BY   gc.contact_id, g.children
+";
+
+    $dao = CRM_Core_DAO::executeQuery($sql);
+    $contactGroup = array();
+    $prevContactID = null;
+    while ($dao->fetch()) {
+      if (
+        $prevContactID &&
+        $prevContactID != $dao->contact_id
+      ) {
+        $contactGroup[$prevContactID]['groupTitle'] = implode(', ', $contactGroup[$prevContactID]['groupTitle']);
+      }
+      $prevContactID = $dao->contact_id;
+      if (!array_key_exists($dao->contact_id, $contactGroup)) {
+        $contactGroup[$dao->contact_id] =
+          array( 'group' => array(), 'groupTitle' => array());
+      }
+
+      $contactGroup[$dao->contact_id]['group'][] =
+        array(
+          'id' => $dao->group_id,
+          'title' => $dao->title,
+          'description' => $dao->description,
+          'children' => $dao->children
+        );
+      $contactGroup[$dao->contact_id]['groupTitle'][] = $dao->title;
+    }
+
+    if ($prevContactID) {
+      $contactGroup[$prevContactID]['groupTitle'] = implode(', ', $contactGroup[$prevContactID]['groupTitle']);
+    }
+
+    if (is_numeric($contactID)) {
+      return $contactGroup[$contactID];
+    }
+    else {
+      return $contactGroup;
+    }
+  }
+
 }
 

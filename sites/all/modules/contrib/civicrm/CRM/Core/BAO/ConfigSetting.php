@@ -1,9 +1,9 @@
 <?php
 /*
  +--------------------------------------------------------------------+
- | CiviCRM version 4.2                                                |
+ | CiviCRM version 4.3                                                |
  +--------------------------------------------------------------------+
- | Copyright CiviCRM LLC (c) 2004-2012                                |
+ | Copyright CiviCRM LLC (c) 2004-2013                                |
  +--------------------------------------------------------------------+
  | This file is a part of CiviCRM.                                    |
  |                                                                    |
@@ -29,7 +29,7 @@
  *
  *
  * @package CRM
- * @copyright CiviCRM LLC (c) 2004-2012
+ * @copyright CiviCRM LLC (c) 2004-2013
  * $Id$
  *
  */
@@ -39,6 +39,22 @@
  *
  */
 class CRM_Core_BAO_ConfigSetting {
+
+  /**
+   * Function to create civicrm settings. This is the same as add but it clears the cache and
+   * reloads the config object
+   *
+   * @params array $params associated array of civicrm variables
+   *
+   * @return null
+   * @static
+   */
+  static function create($params) {
+    self::add($params);
+    $cache = CRM_Utils_Cache::singleton();
+    $cache->delete('CRM_Core_Config');
+    $config = CRM_Core_Config::singleton(TRUE, TRUE);
+  }
 
   /**
    * Function to add civicrm settings
@@ -54,10 +70,15 @@ class CRM_Core_BAO_ConfigSetting {
     // also set a template url so js files can use this
     // CRM-6194
     $params['civiRelativeURL'] = CRM_Utils_System::url('CIVI_BASE_TEMPLATE');
-    $params['civiRelativeURL'] = str_replace('CIVI_BASE_TEMPLATE',
-      '',
+    $params['civiRelativeURL'] =
+      str_replace(
+        'CIVI_BASE_TEMPLATE',
+        '',
       $params['civiRelativeURL']
     );
+
+    // also add the version number for use by template / js etc
+    $params['civiVersion'] = CRM_Utils_System::version();
 
     $domain = new CRM_Core_DAO_Domain();
     $domain->id = CRM_Core_Config::domainID();
@@ -202,9 +223,7 @@ class CRM_Core_BAO_ConfigSetting {
     $domain->find(TRUE);
     if ($domain->config_backend) {
       $defaults = unserialize($domain->config_backend);
-      if ($defaults === FALSE ||
-        !is_array($defaults)
-      ) {
+      if ($defaults === FALSE || !is_array($defaults)) {
         $defaults = array();
         return;
       }
