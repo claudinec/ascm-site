@@ -1,9 +1,9 @@
 <?php
 /*
  +--------------------------------------------------------------------+
- | CiviCRM version 4.2                                                |
+ | CiviCRM version 4.3                                                |
  +--------------------------------------------------------------------+
- | Copyright CiviCRM LLC (c) 2004-2012                                |
+ | Copyright CiviCRM LLC (c) 2004-2013                                |
  +--------------------------------------------------------------------+
  | This file is a part of CiviCRM.                                    |
  |                                                                    |
@@ -28,7 +28,7 @@
 /**
  *
  * @package CRM
- * @copyright CiviCRM LLC (c) 2004-2012
+ * @copyright CiviCRM LLC (c) 2004-2013
  * $Id$
  *
  */
@@ -153,10 +153,10 @@ class CRM_Contribute_Import_Field {
       case 'currency':
         return CRM_Utils_Rule::currencyCode($this->_value);
 
-      case 'contribution_type':
+        case 'financial_type':
         static $contributionTypes = NULL;
         if (!$contributionTypes) {
-          $contributionTypes = CRM_Contribute_PseudoConstant::contributionType();
+                $contributionTypes = CRM_Contribute_PseudoConstant::financialType();
         }
         if (in_array($this->_value, $contributionTypes)) {
           return TRUE;

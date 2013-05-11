@@ -1,8 +1,8 @@
 {*
  +--------------------------------------------------------------------+
- | CiviCRM version 4.2                                                |
+ | CiviCRM version 4.3                                                |
  +--------------------------------------------------------------------+
- | Copyright CiviCRM LLC (c) 2004-2012                                |
+ | Copyright CiviCRM LLC (c) 2004-2013                                |
  +--------------------------------------------------------------------+
  | This file is a part of CiviCRM.                                    |
  |                                                                    |
@@ -33,7 +33,7 @@
     <br /><br />
 <table class="report">
       <thead class="sticky">
-       	   <th scope="col">{ts}Event{/ts}</th>
+            <th scope="col">{ts}Event{/ts}</th>
            <th scope="col">{ts}Type{/ts}</th>
            <th scope="col">{ts}Public{/ts}</th>
            <th scope="col">{ts}Date(s){/ts}</th>
@@ -58,7 +58,7 @@
     <br /><br />
 <table class="report">
       <thead class="sticky">
-       	   <th scope="col">{ts}Contribution Page{/ts}</th>
+            <th scope="col">{ts}Contribution Page{/ts}</th>
            <th scope="col">{ts}Type{/ts}</th>
            <th scope="col">{ts}Date(s){/ts}</th>
       </thead>

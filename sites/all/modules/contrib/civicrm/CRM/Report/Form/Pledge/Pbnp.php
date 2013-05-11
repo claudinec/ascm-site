@@ -3,9 +3,9 @@
 
 /*
  +--------------------------------------------------------------------+
- | CiviCRM version 4.2                                                |
+ | CiviCRM version 4.3                                                |
  +--------------------------------------------------------------------+
- | Copyright CiviCRM LLC (c) 2004-2012                                |
+ | Copyright CiviCRM LLC (c) 2004-2013                                |
  +--------------------------------------------------------------------+
  | This file is a part of CiviCRM.                                    |
  |                                                                    |
@@ -30,7 +30,7 @@
 /**
  *
  * @package CRM
- * @copyright CiviCRM LLC (c) 2004-2012
+ * @copyright CiviCRM LLC (c) 2004-2013
  * $Id$
  *
  */
@@ -40,9 +40,12 @@ class CRM_Report_Form_Pledge_Pbnp extends CRM_Report_Form {
     'barChart' => 'Bar Chart',
     'pieChart' => 'Pie Chart',
   );
-
+  public $_drilldownReport = array('pledge/summary' => 'Link to Detail Report');
+  
   protected $_customGroupExtends = array(
-    'Pledge'); function __construct() {
+    'Pledge');
+  
+  function __construct() {
     $this->_columns = array(
       'civicrm_contact' =>
       array(
@@ -71,14 +74,19 @@ class CRM_Report_Form_Pledge_Pbnp extends CRM_Report_Form {
           array('title' => ts('Pledge Made'),
             'required' => TRUE,
           ),
-          'contribution_type_id' =>
-          array('title' => ts('Contribution Type'),
+          'financial_type_id' =>
+          array('title' => ts('Financial Type'),
             'requried' => TRUE,
           ),
           'amount' =>
           array('title' => ts('Amount'),
             'required' => TRUE,
             'type' => CRM_Utils_Type::T_MONEY,
+          ),
+          'currency' =>
+          array(
+            'required' => TRUE,
+            'no_display' => TRUE,
           ),
           'status_id' =>
           array('title' => ts('Status'),
@@ -91,10 +99,17 @@ class CRM_Report_Form_Pledge_Pbnp extends CRM_Report_Form {
             'title' => 'Pledge Made',
             'operatorType' => CRM_Report_Form::OP_DATE,
           ),
-          'contribution_type_id' =>
-          array('title' => ts('Contribution Type'),
+          'currency' =>
+          array('title' => 'Currency',
             'operatorType' => CRM_Report_Form::OP_MULTISELECT,
-            'options' => CRM_Contribute_PseudoConstant::contributionType(),
+            'options' => CRM_Core_OptionGroup::values('currencies_enabled'),
+            'default' => NULL,
+            'type' => CRM_Utils_Type::T_STRING,
+          ),
+          'financial_type_id' =>
+          array( 'title'   => ts('Financial Type'),
+            'operatorType' => CRM_Report_Form::OP_MULTISELECT,
+            'options'      => CRM_Contribute_PseudoConstant::financialType(),
           ),
         ),
         'grouping' => 'pledge-fields',
@@ -156,6 +171,7 @@ class CRM_Report_Form_Pledge_Pbnp extends CRM_Report_Form {
     );
 
     $this->_tagFilter = TRUE;
+    $this->_currencyColumn = 'civicrm_pledge_currency';
     parent::__construct();
   }
 
@@ -237,7 +253,8 @@ class CRM_Report_Form_Pledge_Pbnp extends CRM_Report_Form {
   function groupBy() {
     $this->_groupBy = "
          GROUP BY {$this->_aliases['civicrm_pledge']}.contact_id, 
-                  {$this->_aliases['civicrm_pledge']}.id";
+                  {$this->_aliases['civicrm_pledge']}.id,
+                  {$this->_aliases['civicrm_pledge']}.currency";
   }
 
   function orderBy() {
@@ -287,10 +304,11 @@ class CRM_Report_Form_Pledge_Pbnp extends CRM_Report_Form {
         }
       }
 
-      //handle the Contribution Type Ids
-      if (array_key_exists('civicrm_pledge_contribution_type_id', $row)) {
-        if ($value = $row['civicrm_pledge_contribution_type_id']) {
-          $rows[$rowNum]['civicrm_pledge_contribution_type_id'] = CRM_Contribute_PseudoConstant::contributionType($value, FALSE);
+      //handle the Financial Type Ids
+      if (array_key_exists('civicrm_pledge_financial_type_id', $row)) {
+        if ($value = $row['civicrm_pledge_financial_type_id']) {
+          $rows[$rowNum]['civicrm_pledge_financial_type_id'] = 
+            CRM_Contribute_PseudoConstant::financialType($value, false);
         }
         $entryFound = TRUE;
       }
@@ -326,7 +344,7 @@ class CRM_Report_Form_Pledge_Pbnp extends CRM_Report_Form {
         $url = CRM_Report_Utils_Report::getNextUrl('pledge/summary',
           'reset=1&force=1&id_op=eq&id_value=' .
           $row['civicrm_contact_id'],
-          $this->_absoluteUrl, $this->_id
+          $this->_absoluteUrl, $this->_id, $this->_drilldownReport
         );
         $rows[$rowNum]['civicrm_contact_sort_name_link'] = $url;
         $rows[$rowNum]['civicrm_contact_sort_name_hover'] = ts("View Pledge Details for this contact");

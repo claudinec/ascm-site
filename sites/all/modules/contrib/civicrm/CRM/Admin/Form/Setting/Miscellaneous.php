@@ -1,9 +1,9 @@
 <?php
 /*
  +--------------------------------------------------------------------+
- | CiviCRM version 4.2                                                |
+ | CiviCRM version 4.3                                                |
  +--------------------------------------------------------------------+
- | Copyright CiviCRM LLC (c) 2004-2012                                |
+ | Copyright CiviCRM LLC (c) 2004-2013                                |
  +--------------------------------------------------------------------+
  | This file is a part of CiviCRM.                                    |
  |                                                                    |
@@ -28,7 +28,7 @@
 /**
  *
  * @package CRM
- * @copyright CiviCRM LLC (c) 2004-2012
+ * @copyright CiviCRM LLC (c) 2004-2013
  * $Id$
  *
  */
@@ -39,6 +39,14 @@
  */
 class CRM_Admin_Form_Setting_Miscellaneous extends CRM_Admin_Form_Setting {
 
+  protected $_settings = array(
+    'max_attachments' => CRM_Core_BAO_Setting::SYSTEM_PREFERENCES_NAME,
+    'contact_undelete' => CRM_Core_BAO_Setting::SYSTEM_PREFERENCES_NAME,
+    'versionCheck' => CRM_Core_BAO_Setting::SYSTEM_PREFERENCES_NAME,
+    'maxFileSize' => CRM_Core_BAO_Setting::SYSTEM_PREFERENCES_NAME,
+    'doNotAttachPDFReceipt' => CRM_Core_BAO_Setting::SYSTEM_PREFERENCES_NAME,
+  );
+
   /**
    * Function to build the form
    *
@@ -48,7 +56,6 @@ class CRM_Admin_Form_Setting_Miscellaneous extends CRM_Admin_Form_Setting {
   public function buildQuickForm() {
     CRM_Utils_System::setTitle(ts('Settings - Undelete, Logging and ReCAPTCHA'));
 
-    $this->addYesNo('contactUndelete', ts('Contact Trash & Undelete'));
 
     // also check if we can enable triggers
     $validTriggerPermission = CRM_Core_DAO::checkTriggerViewPermission(FALSE);
@@ -62,20 +69,10 @@ class CRM_Admin_Form_Setting_Miscellaneous extends CRM_Admin_Form_Setting {
     $this->assign('validTriggerPermission', $validTriggerPermission);
     $this->addYesNo('logging', ts('Logging'), NULL, NULL, $attribs);
 
-    $this->addYesNo('versionCheck', ts('Version Check & Statistics Reporting'));
-
-    $this->addYesNo('doNotAttachPDFReceipt', ts('Attach PDF copy to receipts'));
-
     $this->addElement('text', 'wkhtmltopdfPath', ts('Path to wkhtmltopdf executable'),
       array('size' => 64, 'maxlength' => 256)
     );
 
-    $this->addElement('text', 'maxAttachments', ts('Maximum Attachments'),
-      array('size' => 2, 'maxlength' => 8)
-    );
-    $this->addElement('text', 'maxFileSize', ts('Maximum File Size'),
-      array('size' => 2, 'maxlength' => 8)
-    );
     $this->addElement('text', 'recaptchaPublicKey', ts('Public Key'),
       array('size' => 64, 'maxlength' => 64)
     );
@@ -93,8 +90,6 @@ class CRM_Admin_Form_Setting_Miscellaneous extends CRM_Admin_Form_Setting {
       array('size' => 64, 'maxlength' => 64)
     );
 
-    $this->addRule('maxAttachments', ts('Value should be a positive number'), 'positiveInteger');
-    $this->addRule('maxFileSize', ts('Value should be a positive number'), 'positiveInteger');
     $this->addRule('checksumTimeout', ts('Value should be a positive number'), 'positiveInteger');
 
     parent::buildQuickForm();
@@ -113,23 +108,20 @@ class CRM_Admin_Form_Setting_Miscellaneous extends CRM_Admin_Form_Setting {
 
   public function postProcess() {
     // store the submitted values in an array
+    $config = CRM_Core_Config::singleton();
     $params = $this->controller->exportValues($this->_name);
-
 
     // get current logging status
     $values = $this->exportValues();
 
     parent::postProcess();
 
-    $config = CRM_Core_Config::singleton();
     if ($config->logging != $values['logging']) {
       $logging = new CRM_Logging_Schema;
       if ($values['logging']) {
-        $config->logging = TRUE;
         $logging->enableLogging();
       }
       else {
-        $config->logging = FALSE;
         $logging->disableLogging();
       }
     }

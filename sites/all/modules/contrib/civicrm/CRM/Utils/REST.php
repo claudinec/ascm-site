@@ -1,9 +1,9 @@
 <?php
 /*
    +--------------------------------------------------------------------+
-   | CiviCRM version 4.2                                                |
+   | CiviCRM version 4.3                                                |
    +--------------------------------------------------------------------+
-   | Copyright CiviCRM LLC (c) 2004-2012                                |
+   | Copyright CiviCRM LLC (c) 2004-2013                                |
    +--------------------------------------------------------------------+
    | This file is a part of CiviCRM.                                    |
    |                                                                    |
@@ -29,7 +29,7 @@
  * This class handles all REST client requests.
  *
  * @package CRM
- * @copyright CiviCRM LLC (c) 2004-2012
+ * @copyright CiviCRM LLC (c) 2004-2013
  *
  */
 class CRM_Utils_REST {
@@ -85,7 +85,7 @@ class CRM_Utils_REST {
    */
   public function authenticate($name, $pass) {
 
-    $result = &CRM_Utils_System::authenticate($name, $pass);
+    $result = CRM_Utils_System::authenticate($name, $pass);
 
     if (empty($result)) {
       return self::error('Could not authenticate user, invalid name or password.');
@@ -114,8 +114,7 @@ class CRM_Utils_REST {
   }
 
   // Generates values needed for error messages
-  function error($message = 'Unknown Error') {
-
+  static function error($message = 'Unknown Error') {
     $values = array(
       'error_message' => $message,
       'is_error' => 1,
@@ -124,7 +123,7 @@ class CRM_Utils_REST {
   }
 
   // Generates values needed for non-error responses.
-  function simple($params) {
+  static function simple($params) {
     $values = array('is_error' => 0);
     $values += $params;
     return $values;
@@ -135,7 +134,7 @@ class CRM_Utils_REST {
     return self::output($result);
   }
 
-  function output(&$result) {
+  static function output(&$result) {
     $hier = FALSE;
     if (is_scalar($result)) {
       if (!$result) {
@@ -159,7 +158,7 @@ class CRM_Utils_REST {
       header('Content-Type: text/javascript');
       $json = json_encode(array_merge($result));
       if (CRM_Utils_Array::value('debug', $_REQUEST)) {
-        return CRM_Utils_REST::jsonFormated($json);
+        return self::jsonFormated($json);
       }
       return $json;
     }
@@ -191,7 +190,7 @@ class CRM_Utils_REST {
     return $xml;
   }
 
-  function jsonFormated($json) {
+  static function jsonFormated($json) {
     $tabcount   = 0;
     $result     = '';
     $inquote    = FALSE;
@@ -269,7 +268,7 @@ class CRM_Utils_REST {
     return $result;
   }
 
-  function handle() {
+  static function handle() {
     // Get the function name being called from the q parameter in the query string
     $q = CRM_Utils_array::value('q', $_REQUEST);
     // or for the rest interface, from fnName
@@ -359,8 +358,7 @@ class CRM_Utils_REST {
     return self::process($args);
   }
 
-  static
-  function process(&$args, $restInterface = TRUE) {
+  static function process(&$args, $restInterface = TRUE) {
     $params = &self::buildParamList();
 
     $params['check_permissions'] = TRUE;
@@ -420,8 +418,7 @@ class CRM_Utils_REST {
     return $result;
   }
 
-  static
-  function &buildParamList() {
+  static function &buildParamList() {
     $params = array();
 
     $skipVars = array(
@@ -436,7 +433,7 @@ class CRM_Utils_REST {
     if (array_key_exists('json', $_REQUEST) &&  $_REQUEST['json'][0] == "{") {
       $params = json_decode($_REQUEST['json'], TRUE);
       if(empty($params)) {
-        echo json_encode(array('is_error' => 1, 'error_message', 'invalid json format: ?{"param_with_double_quote":"value"}'));
+        echo json_encode(array('is_error' => 1, 'error_message', 'Unable to decode supplied JSON.'));
         CRM_Utils_System::civiExit();
       }
     }
@@ -451,8 +448,7 @@ class CRM_Utils_REST {
     return $params;
   }
 
-  static
-  function fatal($pearError) {
+  static function fatal($pearError) {
     header('Content-Type: text/xml');
     $error = array();
     $error['code'] = $pearError->getCode();
@@ -469,31 +465,21 @@ class CRM_Utils_REST {
     CRM_Utils_System::civiExit();
   }
 
-  static
-  function APIDoc() {
+  static function APIDoc() {
 
     CRM_Utils_System::setTitle("API Parameters");
     $template = CRM_Core_Smarty::singleton();
-    return CRM_Utils_System::theme('page',
-      $template->fetch('CRM/Core/APIDoc.tpl'),
-      TRUE
+    return CRM_Utils_System::theme(
+      $template->fetch('CRM/Core/APIDoc.tpl')
     );
   }
 
-  static
-  function ajaxDoc() {
-
-    CRM_Utils_System::setTitle("API explorer and generator");
-    $template = CRM_Core_Smarty::singleton();
-    return CRM_Utils_System::theme('page',
-      $template->fetch('CRM/Core/AjaxDoc.tpl'),
-      TRUE
-    );
+  static function ajaxDoc() {
+    return CRM_Utils_System::redirect(CRM_Utils_System::url('civicrm/api/explorer'));
   }
 
   /** used to load a template "inline", eg. for ajax, without having to build a menu for each template */
-  static
-  function loadTemplate () {
+  static  function loadTemplate () {
     $request = CRM_Utils_Request::retrieve( 'q', 'String');
     if (false !== strpos($request, '..')) {
       die ("SECURITY FATAL: the url can't contain '..'. Please report the issue on the forum at civicrm.org");
@@ -529,12 +515,12 @@ class CRM_Utils_REST {
         $config = CRM_Core_Config::singleton();
         $content = $smarty->fetch( 'CRM/common/'. strtolower($config->userFramework) .'.tpl' );
 
-        if ($region = CRM_Core_Region::instance('html-header', FALSE)) {
+        if (!defined('CIVICRM_UF_HEAD') && $region = CRM_Core_Region::instance('html-header', FALSE)) {
           CRM_Utils_System::addHTMLHead($region->render(''));
         }
         CRM_Utils_System::appendTPLFile( $tpl, $content );
 
-        return CRM_Utils_System::theme( 'page', $content, true);
+        return CRM_Utils_System::theme($content);
 
       } else {
         $content = "<!-- .tpl file embeded: $tpl -->\n";
@@ -548,13 +534,12 @@ class CRM_Utils_REST {
    * http://example.org/civicrm/api/json?entity=Contact&action=Get"&json={"contact_type":"Individual","email.get.email":{}} to take all the emails from individuals
    * works for POST & GET (POST recommended)
    **/
-  static
-  function ajaxJson() {
+  static function ajaxJson() {
     require_once 'api/v3/utils.php';
     if (!$config->debug && (!array_key_exists('HTTP_X_REQUESTED_WITH', $_SERVER) ||
         $_SERVER['HTTP_X_REQUESTED_WITH'] != "XMLHttpRequest"
       )) {
-      $error = civicrm_api3_create_error("SECURITY ALERT: Ajax requests can only be issued by javascript clients, eg. $().crmAPI().",
+      $error = civicrm_api3_create_error("SECURITY ALERT: Ajax requests can only be issued by javascript clients, eg. CRM.api().",
         array(
           'IP' => $_SERVER['REMOTE_ADDR'],
           'level' => 'security',
@@ -600,8 +585,7 @@ class CRM_Utils_REST {
     CRM_Utils_System::civiExit();
   }
 
-  static
-  function ajax() {
+  static function ajax() {
     // this is driven by the menu system, so we can use permissioning to
     // restrict calls to this etc
     // the request has to be sent by an ajax call. First line of protection against csrf
@@ -612,7 +596,7 @@ class CRM_Utils_REST {
       )
     ) {
       require_once 'api/v3/utils.php';
-      $error = civicrm_api3_create_error("SECURITY ALERT: Ajax requests can only be issued by javascript clients, eg. $().crmAPI().",
+      $error = civicrm_api3_create_error("SECURITY ALERT: Ajax requests can only be issued by javascript clients, eg. CRM.api().",
         array(
           'IP' => $_SERVER['REMOTE_ADDR'],
           'level' => 'security',
@@ -643,9 +627,7 @@ class CRM_Utils_REST {
     $className = CRM_Utils_Array::value('className', $_REQUEST);
 
     // If the function isn't in the civicrm namespace, reject the request.
-    if (($args[0] != 'civicrm' &&
-        count($args) != 3
-      ) && !$className) {
+    if (($args[0] != 'civicrm' && count($args) != 3) && !$className) {
       return self::error('Unknown function invocation.');
     }
 
@@ -662,8 +644,7 @@ class CRM_Utils_REST {
 
     // If the function isn't in the civicrm namespace or request
     // is for login or ping
-    if (empty($args) ||
-      $args[0] != 'civicrm' ||
+    if (empty($args) || $args[0] != 'civicrm' ||
       ((count($args) != 3) && ($args[1] != 'login') && ($args[1] != 'ping')) ||
       $args[1] == 'ping'
     ) {
@@ -682,9 +663,7 @@ class CRM_Utils_REST {
     $uid = NULL;
     $session = CRM_Core_Session::singleton();
 
-    if ($session->get('PHPSESSID') &&
-      $session->get('cms_user_id')
-    ) {
+    if ($session->get('PHPSESSID') && $session->get('cms_user_id')) {
       $uid = $session->get('cms_user_id');
     }
 

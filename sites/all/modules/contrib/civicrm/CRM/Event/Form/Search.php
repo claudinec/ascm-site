@@ -1,9 +1,9 @@
 <?php
 /*
  +--------------------------------------------------------------------+
- | CiviCRM version 4.2                                                |
+ | CiviCRM version 4.3                                                |
  +--------------------------------------------------------------------+
- | Copyright CiviCRM LLC (c) 2004-2012                                |
+ | Copyright CiviCRM LLC (c) 2004-2013                                |
  +--------------------------------------------------------------------+
  | This file is a part of CiviCRM.                                    |
  |                                                                    |
@@ -21,14 +21,14 @@
  | with this program; if not, contact CiviCRM LLC                     |
  | at info[AT]civicrm[DOT]org. If you have questions about the        |
  | GNU Affero General Public License or the licensing of CiviCRM,     |
- | see the CiviCRM license FAQ at http://civicrm.org/licensing        |    
+ | see the CiviCRM license FAQ at http://civicrm.org/licensing        |
  +--------------------------------------------------------------------+
 */
 
 /**
  *
  * @package CRM
- * @copyright CiviCRM LLC (c) 2004-2012
+ * @copyright CiviCRM LLC (c) 2004-2013
  * $Id$
  *
  */
@@ -143,7 +143,8 @@ class CRM_Event_Form_Search extends CRM_Core_Form {
    *
    * @return void
    * @access public
-   */ function preProcess() {
+   */
+  function preProcess() {
     $this->set('searchFormName', 'Search');
 
     /**
@@ -156,11 +157,10 @@ class CRM_Event_Form_Search extends CRM_Core_Form {
     $this->_done = FALSE;
     $this->defaults = array();
 
-    /* 
-         * we allow the controller to set force/reset externally, useful when we are being 
-         * driven by the wizard framework 
-         */
-
+    /*
+     * we allow the controller to set force/reset externally, useful when we are being
+     * driven by the wizard framework
+     */
     $this->_reset   = CRM_Utils_Request::retrieve('reset', 'Boolean', CRM_Core_DAO::$_nullObject);
     $this->_force   = CRM_Utils_Request::retrieve('force', 'Boolean', $this, FALSE);
     $this->_limit   = CRM_Utils_Request::retrieve('limit', 'Positive', $this);
@@ -237,11 +237,10 @@ class CRM_Event_Form_Search extends CRM_Core_Form {
 
     CRM_Event_BAO_Query::buildSearchForm($this);
 
-    /* 
-         * add form checkboxes for each row. This is needed out here to conform to QF protocol 
-         * of all elements being declared in builQuickForm 
-         */
-
+    /*
+     * add form checkboxes for each row. This is needed out here to conform to QF protocol
+     * of all elements being declared in builQuickForm
+     */
     $rows = $this->get('rows');
     if (is_array($rows)) {
       $lineItems = $eventIds = array();
@@ -403,7 +402,7 @@ class CRM_Event_Form_Search extends CRM_Core_Form {
       // check actionName and if next, then do not repeat a search, since we are going to the next page
 
       // hack, make sure we reset the task values
-      $stateMachine = &$this->controller->getStateMachine();
+      $stateMachine = $this->controller->getStateMachine();
       $formName = $stateMachine->getTaskFormName();
       $this->controller->resetPage($formName);
       return;
@@ -446,7 +445,7 @@ class CRM_Event_Form_Search extends CRM_Core_Form {
     );
     $controller->setEmbedded(TRUE);
 
-    $query = &$selector->getQuery();
+    $query = $selector->getQuery();
     if ($this->_context == 'user') {
       $query->setSkipPermission(TRUE);
     }
@@ -475,8 +474,7 @@ class CRM_Event_Form_Search extends CRM_Core_Form {
    * @static
    * @access public
    */
-  static
-  function formRule($fields) {
+  static function formRule($fields) {
     $errors = array();
 
     if ($fields['event_name'] && !is_numeric($fields['event_id'])) {
@@ -500,7 +498,7 @@ class CRM_Event_Form_Search extends CRM_Core_Form {
    *
    * @return array the default array reference
    */
-  function &setDefaultValues() {
+  function setDefaultValues() {
     $defaults = array();
     $defaults = $this->_formValues;
     return $defaults;

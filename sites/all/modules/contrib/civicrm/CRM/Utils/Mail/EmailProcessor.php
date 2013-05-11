@@ -1,9 +1,9 @@
 <?php
 /*
  +--------------------------------------------------------------------+
- | CiviCRM version 4.2                                                |
+ | CiviCRM version 4.3                                                |
  +--------------------------------------------------------------------+
- | Copyright CiviCRM LLC (c) 2004-2012                                |
+ | Copyright CiviCRM LLC (c) 2004-2013                                |
  +--------------------------------------------------------------------+
  | This file is a part of CiviCRM.                                    |
  |                                                                    |
@@ -28,7 +28,7 @@
 /**
  *
  * @package CRM
- * @copyright CiviCRM LLC (c) 2004-2012
+ * @copyright CiviCRM LLC (c) 2004-2013
  * $Id$
  *
  */
@@ -135,9 +135,9 @@ class CRM_Utils_Mail_EmailProcessor {
       EMAIL_ACTIVITY_TYPE_ID :
       CRM_Core_OptionGroup::getValue(
         'activity_type',
-        'Inbound Email',
-        'name'
-      );
+      'Inbound Email',
+      'name'
+    );
 
     if (!$emailActivityTypeId) {
       CRM_Core_Error::fatal(ts('Could not find a valid Activity Type ID for Inbound Email'));

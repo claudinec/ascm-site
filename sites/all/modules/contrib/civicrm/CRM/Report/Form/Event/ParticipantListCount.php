@@ -3,9 +3,9 @@
 
 /*
  +--------------------------------------------------------------------+
- | CiviCRM version 4.2		                         				  |
+ | CiviCRM version 4.3		                         				  |
  +--------------------------------------------------------------------+
- | Copyright CiviCRM LLC (c) 2004-2012							      |
+ | Copyright CiviCRM LLC (c) 2004-2013							      |
  +--------------------------------------------------------------------+
  | This file is a part of CiviCRM.								      |
  |																      |
@@ -30,16 +30,19 @@
 /**
  *
  * @package CRM
- * @copyright CiviCRM LLC (c) 2004-2012
+ * @copyright CiviCRM LLC (c) 2004-2013
  * $Id$
  *
  */
-class CRM_Report_Form_Event_ParticipantListCount extends CRM_Report_Form {
+class CRM_Report_Form_Event_ParticipantListCount extends CRM_Report_Form_Event {
 
   protected $_summary = NULL;
 
   protected $_customGroupExtends = array(
-    'Participant'); function __construct() {
+    'Participant'); 
+
+  public $_drilldownReport = array('event/income' => 'Link to Detail Report');
+  function __construct() {
     $this->_columns = array(
       'civicrm_contact' =>
       array(
@@ -137,7 +140,7 @@ class CRM_Report_Form_Event_ParticipantListCount extends CRM_Report_Form {
             'name' => 'event_id',
             'title' => ts('Event'),
             'operatorType' => CRM_Report_Form::OP_MULTISELECT,
-            'options' => CRM_Event_PseudoConstant::event(NULL, NULL, "is_template IS NULL OR is_template = 0"),
+            'options' => $this->getEventFilterOptions(),
           ),
           'sid' =>
           array(
@@ -336,8 +339,7 @@ class CRM_Report_Form_Event_ParticipantListCount extends CRM_Report_Form {
     $this->_select = "SELECT " . implode(', ', $select) . " ";
   }
 
-  static
-  function formRule($fields, $files, $self) {
+  static function formRule($fields, $files, $self) {
     $errors = $grouping = array();
     return $errors;
   }
@@ -510,7 +512,7 @@ class CRM_Report_Form_Event_ParticipantListCount extends CRM_Report_Form {
           $rows[$rowNum]['civicrm_participant_event_id'] = CRM_Event_PseudoConstant::event($value, FALSE);
           $url = CRM_Report_Utils_Report::getNextUrl('event/Income',
             'reset=1&force=1&event_id_op=eq&event_id_value=' . $value,
-            $this->_absoluteUrl, $this->_id
+            $this->_absoluteUrl, $this->_id, $this->_drilldownReport
           );
           $rows[$rowNum]['civicrm_participant_event_id_link'] = $url;
           $rows[$rowNum]['civicrm_participant_event_id_hover'] = ts("View Event Income Details for this Event");

@@ -1,8 +1,8 @@
 {*
  +--------------------------------------------------------------------+
- | CiviCRM version 4.2                                                |
+ | CiviCRM version 4.3                                                |
  +--------------------------------------------------------------------+
- | Copyright CiviCRM LLC (c) 2004-2012                                |
+ | Copyright CiviCRM LLC (c) 2004-2013                                |
  +--------------------------------------------------------------------+
  | This file is a part of CiviCRM.                                    |
  |                                                                    |
@@ -29,23 +29,13 @@
   {assign var="count" value=$customGroupCount%2}
   {if ($count eq $side) or $skipTitle }
     {foreach from=$customValues item=cd_edit key=cvID}
-      <div class="customFieldGroup ui-corner-all {$cd_edit.name} crm-custom-set-block-{$customGroupId}">
-        <table id="{$cd_edit.name}_{$count}" >
-          <tr class="columnheader">
-            <td colspan="2" class="grouplabel">
-              <a href="#" class="show-block {if $cd_edit.collapse_display eq 0 } expanded collapsed {else} collapsed {/if}" >
-                {$cd_edit.title}
-              </a>
-            </td>
-          </tr>
-          <tr class= "{if $cd_edit.collapse_display}hiddenElement{/if}">
-            <td>
-              <div class="crm-summary-block" id="custom-set-block-{$customGroupId}">
-                {include file="CRM/Contact/Page/View/CustomDataFieldView.tpl" customGroupId=$customGroupId}
-              </div>
-            </td>
-          </tr>
-        </table>
+      <div class="customFieldGroup crm-collapsible{if $cd_edit.collapse_display} collapsed{/if} ui-corner-all {$cd_edit.name} crm-custom-set-block-{$customGroupId}">
+        <div class="collapsible-title">
+          {$cd_edit.title}
+        </div>
+        <div class="crm-summary-block" id="custom-set-block-{$customGroupId}">
+          {include file="CRM/Contact/Page/View/CustomDataFieldView.tpl" customGroupId=$customGroupId}
+        </div>
       </div>
     {/foreach}
   {/if}

@@ -1,9 +1,9 @@
 <?php
 /*
  +--------------------------------------------------------------------+
- | CiviCRM version 4.2                                                |
+ | CiviCRM version 4.3                                                |
  +--------------------------------------------------------------------+
- | Copyright CiviCRM LLC (c) 2004-2012                                |
+ | Copyright CiviCRM LLC (c) 2004-2013                                |
  +--------------------------------------------------------------------+
  | This file is a part of CiviCRM.                                    |
  |                                                                    |
@@ -29,7 +29,7 @@
  *
  *
  * @package CRM
- * @copyright CiviCRM LLC (c) 2004-2012
+ * @copyright CiviCRM LLC (c) 2004-2013
  * $Id$
  *
  */
@@ -211,32 +211,17 @@ class CRM_Event_Form_ManageEvent_Registration extends CRM_Event_Form_ManageEvent
    *
    * @return void
    */
-  function setShowHide(&$defaults) {
+  function setShowHide($defaults) {
     $this->_showHide = new CRM_Core_ShowHideBlocks(array('registration' => 1),
       ''
     );
     if (empty($defaults)) {
-      $this->_showHide->addShow('registration_screen_show');
-      $this->_showHide->addShow('confirm_show');
-      $this->_showHide->addShow('mail_show');
-      $this->_showHide->addShow('thankyou_show');
       $this->_showHide->addHide('registration');
-      $this->_showHide->addHide('registration_screen');
-      $this->_showHide->addHide('confirm');
-      $this->_showHide->addHide('mail');
-      $this->_showHide->addHide('thankyou');
       $this->_showHide->addHide('additional_profile_pre');
       $this->_showHide->addHide('additional_profile_post');
       $this->_showHide->addHide('id-approval-text');
     }
     else {
-      $this->_showHide->addShow('confirm');
-      $this->_showHide->addShow('mail');
-      $this->_showHide->addShow('thankyou');
-      $this->_showHide->addHide('registration_screen_show');
-      $this->_showHide->addHide('confirm_show');
-      $this->_showHide->addHide('mail_show');
-      $this->_showHide->addHide('thankyou_show');
       if (!CRM_Utils_Array::value('is_multiple_registrations', $defaults)) {
         $this->_showHide->addHide('additional_profile_pre');
         $this->_showHide->addHide('additional_profile_post');
@@ -245,6 +230,7 @@ class CRM_Event_Form_ManageEvent_Registration extends CRM_Event_Form_ManageEvent
         $this->_showHide->addHide('id-approval-text');
       }
     }
+    $this->assign('defaultsEmpty', empty($defaults));
     $this->_showHide->addToTemplate();
   }
 
@@ -288,7 +274,7 @@ class CRM_Event_Form_ManageEvent_Registration extends CRM_Event_Form_ManageEvent
     }
 
     $params = array(
-      'level' => 'Fuzzy',
+      'used'         => 'Supervised',
       'contact_type' => 'Individual',
     );
     $dedupeRuleFields = CRM_Dedupe_BAO_Rule::dedupeRuleFields($params);
@@ -454,8 +440,7 @@ class CRM_Event_Form_ManageEvent_Registration extends CRM_Event_Form_ManageEvent
    * @static
    * @access public
    */
-  static
-  function formRule($values, $files, $form) {
+  static function formRule($values, $files, $form) {
     if (CRM_Utils_Array::value('is_online_registration', $values)) {
 
       if (!$values['confirm_title']) {
@@ -473,6 +458,15 @@ class CRM_Event_Form_ManageEvent_Registration extends CRM_Event_Form_ManageEvent
           $errorMsg['confirm_from_email'] = ts('Please enter Confirmation Email FROM Email Address.');
         }
       }
+      
+      if ($values['registration_start_date'] && $values['registration_end_date']) {
+        $start = CRM_Utils_Date::processDate($values['registration_start_date']);
+        $end   = CRM_Utils_Date::processDate($values['registration_end_date']);
+        if ($end < $start) {
+          $errorMsg['registration_end_date'] = ts('Registration end date should be after Registration start date');
+        }
+      }
+
       //check that the selected profiles have either firstname+lastname or email required
       $profileIds = array(
         CRM_Utils_Array::value('custom_pre_id', $values),
@@ -626,8 +620,7 @@ class CRM_Event_Form_ManageEvent_Registration extends CRM_Event_Form_ManageEvent
    *
    * @return boolean
    */
-  static
-  function getEmailFields($profileIds) {
+  static function getEmailFields($profileIds) {
     $emailFields = array();
     foreach ($profileIds as $profileId) {
       if ($profileId && is_numeric($profileId)) {
@@ -647,8 +640,7 @@ class CRM_Event_Form_ManageEvent_Registration extends CRM_Event_Form_ManageEvent
    *
    * @return boolean
    */
-  static
-  function isProfileComplete($profileIds) {
+  static function isProfileComplete($profileIds) {
     $profileReqFields = array();
     foreach ($profileIds as $profileId) {
       if ($profileId && is_numeric($profileId)) {
@@ -680,8 +672,7 @@ class CRM_Event_Form_ManageEvent_Registration extends CRM_Event_Form_ManageEvent
    * Add additional profiles from the form to an array of profile ids.
    *
    */
-  static
-  function addMultipleProfiles(&$profileIds, $values, $field) {
+  static function addMultipleProfiles(&$profileIds, $values, $field) {
     if ($multipleProfiles = CRM_Utils_Array::value($field, $values)) {
       foreach ($multipleProfiles as $profileId) {
         $profileIds[] = $profileId;

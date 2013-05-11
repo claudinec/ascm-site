@@ -2,9 +2,9 @@
 
 /*
  +--------------------------------------------------------------------+
- | CiviCRM version 4.2                                                |
+ | CiviCRM version 4.3                                                |
  +--------------------------------------------------------------------+
- | Copyright CiviCRM LLC (c) 2004-2012                                |
+ | Copyright CiviCRM LLC (c) 2004-2013                                |
  +--------------------------------------------------------------------+
  | This file is a part of CiviCRM.                                    |
  |                                                                    |
@@ -29,13 +29,12 @@
 /**
  *
  * @package CRM
- * @copyright CiviCRM LLC (c) 2004-2012
+ * @copyright CiviCRM LLC (c) 2004-2013
  * $Id$
  *
  */
 class CRM_Pledge_BAO_Query {
-  static
-  function &getFields() {
+  static function &getFields() {
     $fields = CRM_Pledge_BAO_Pledge::exportableFields();
     return $fields;
   }
@@ -46,8 +45,7 @@ class CRM_Pledge_BAO_Query {
    * @return void
    * @access public
    */
-  static
-  function select(&$query) {
+  static function select(&$query) {
     if (($query->_mode & CRM_Contact_BAO_Query::MODE_PLEDGE) ||
       CRM_Utils_Array::value('pledge_id', $query->_returnProperties)
     ) {
@@ -101,9 +99,9 @@ class CRM_Pledge_BAO_Query {
       $query->_element['pledge_outstanding_amount'] = 1;
     }
 
-    if (CRM_Utils_Array::value('pledge_contribution_type', $query->_returnProperties)) {
-      $query->_select['pledge_contribution_type'] = "(SELECT civicrm_contribution_type.name FROM civicrm_contribution_type WHERE civicrm_contribution_type.id = civicrm_pledge.contribution_type_id) as pledge_contribution_type";
-      $query->_element['pledge_contribution_type'] = 1;
+    if (CRM_Utils_Array::value('pledge_financial_type', $query->_returnProperties)) {
+      $query->_select['pledge_financial_type']  = "(SELECT civicrm_financial_type.name FROM civicrm_financial_type WHERE civicrm_financial_type.id = civicrm_pledge.financial_type_id) as pledge_financial_type";
+      $query->_element['pledge_financial_type'] = 1;
       $query->_tables['civicrm_pledge'] = $query->_whereTables['civicrm_pledge'] = 1;
     }
 
@@ -200,10 +198,8 @@ class CRM_Pledge_BAO_Query {
     }
   }
 
-  static
-  function where(&$query) {
-    $isTest = FALSE;
-    $grouping = NULL;
+  static function where(&$query) {
+    $testCondition = $grouping = NULL;
     foreach (array_keys($query->_params) as $id) {
       if (!CRM_Utils_Array::value(0, $query->_params[$id])) {
         continue;
@@ -212,24 +208,24 @@ class CRM_Pledge_BAO_Query {
         if ($query->_mode == CRM_Contact_BAO_QUERY::MODE_CONTACTS) {
           $query->_useDistinct = TRUE;
         }
-        if ($query->_params[$id][0] == 'pledge_test') {
-          $isTest = TRUE;
+        if ($query->_params[$id][0] == 'participant_test') {
+          $testCondition = $id;
+          continue;
         }
         $grouping = $query->_params[$id][3];
         self::whereClauseSingle($query->_params[$id], $query);
       }
     }
-
-    if ($grouping !== NULL &&
-      !$isTest
+    // Only add test condition if other fields are selected
+    if ($grouping !== NULL && $testCondition &&
+      // we dont want to include all tests for sql OR CRM-7827
+      $query->getOperator() != 'OR'
     ) {
-      $values = array('pledge_test', '=', 0, $grouping, 0);
-      self::whereClauseSingle($values, $query);
+      self::whereClauseSingle($query->_params[$testCondition], $query);
     }
   }
 
-  static
-  function whereClauseSingle(&$values, &$query) {
+  static function whereClauseSingle(&$values, &$query) {
     list($name, $op, $value, $grouping, $wildcard) = $values;
 
     switch ($name) {
@@ -295,7 +291,7 @@ class CRM_Pledge_BAO_Query {
         $statusValues = CRM_Core_OptionGroup::values('contribution_status');
 
         $names = array();
-        if (is_array($val)) {
+        if (isset($val) && is_array($val)) {
           foreach ($val as $id => $dontCare) {
             $names[] = $statusValues[$id];
           }
@@ -355,25 +351,26 @@ class CRM_Pledge_BAO_Query {
         return;
 
       case 'pledge_test':
+      case 'pledge_is_test':
         $query->_where[$grouping][] = CRM_Contact_BAO_Query::buildClause('civicrm_pledge.is_test',
           $op,
           $value,
-          'Integer'
+          'Boolean'
         );
         if ($value) {
-          $query->_qill[$grouping][] = ts('Find Test Pledges');
+          $query->_qill[$grouping][] = ts('Pledge is a Test');
         }
         $query->_tables['civicrm_pledge'] = $query->_whereTables['civicrm_pledge'] = 1;
         return;
 
-      case 'pledge_contribution_type_id':
-        $type = CRM_Contribute_PseudoConstant::contributionType($value);
-        $query->_where[$grouping][] = CRM_Contact_BAO_Query::buildClause('civicrm_pledge.contribution_type_id',
+      case 'pledge_financial_type_id':
+        $type = CRM_Contribute_PseudoConstant::financialType($value);
+        $query->_where[$grouping][] = CRM_Contact_BAO_Query::buildClause('civicrm_pledge.financial_type_id',
           $op,
           $value,
           'Integer'
         );
-        $query->_qill[$grouping][] = ts('Contribution Type - %1', array(1 => $type));
+            $query->_qill[$grouping][] = ts( 'Financial Type - %1', array( 1 => $type ) );
         $query->_tables['civicrm_pledge'] = $query->_whereTables['civicrm_pledge'] = 1;
         return;
 
@@ -384,7 +381,7 @@ class CRM_Pledge_BAO_Query {
           $value,
           'Integer'
         );
-        $query->_qill[$grouping][] = ts('Contribution Page - %1', array(1 => $page));
+        $query->_qill[$grouping][] = ts('Financial Page - %1', array(1 => $page));
         $query->_tables['civicrm_pledge'] = $query->_whereTables['civicrm_pledge'] = 1;
         return;
 
@@ -432,8 +429,7 @@ class CRM_Pledge_BAO_Query {
     }
   }
 
-  static
-  function from($name, $mode, $side) {
+  static function from($name, $mode, $side) {
     $from = NULL;
 
     switch ($name) {
@@ -446,8 +442,8 @@ class CRM_Pledge_BAO_Query {
         $from .= " $side JOIN civicrm_option_value pledge_status ON (civicrm_pledge.status_id = pledge_status.value AND option_group_pledge_status.id = pledge_status.option_group_id ) ";
         break;
 
-      case 'pledge_contribution_type':
-        $from .= " $side JOIN civicrm_contribution_type ON civicrm_pledge.contribution_type_id = civicrm_contribution_type.id ";
+      case 'pledge_financial_type':
+            $from .= " $side JOIN civicrm_financial_type ON civicrm_pledge.financial_type_id = civicrm_financial_type.id ";
         break;
 
       case 'pledge_contact_b':
@@ -484,8 +480,7 @@ class CRM_Pledge_BAO_Query {
   /**
    * Ideally this function should include fields that are displayed in the selector
    */
-  static
-  function defaultReturnProperties($mode,
+  static function defaultReturnProperties($mode,
     $includeCustomFields = TRUE
   ) {
     $properties = NULL;
@@ -506,7 +501,7 @@ class CRM_Pledge_BAO_Query {
         'pledge_status_id' => 1,
         'pledge_is_test' => 1,
         'pledge_contribution_page_id' => 1,
-        'pledge_contribution_type' => 1,
+        'pledge_financial_type' => 1,
         'pledge_frequency_interval' => 1,
         'pledge_frequency_unit' => 1,
         'pledge_currency' => 1,
@@ -519,8 +514,7 @@ class CRM_Pledge_BAO_Query {
   /**
    * This includes any extra fields that might need for export etc
    */
-  static
-  function extraReturnProperties($mode) {
+  static function extraReturnProperties($mode) {
     $properties = NULL;
 
     if ($mode & CRM_Contact_BAO_Query::MODE_PLEDGE) {
@@ -548,8 +542,7 @@ class CRM_Pledge_BAO_Query {
     return $properties;
   }
 
-  static
-  function buildSearchForm(&$form) {
+  static function buildSearchForm(&$form) {
     // pledge related dates
     CRM_Core_Form_Date::buildDateRange($form, 'pledge_start_date', 1, '_low', '_high', ts('From'), FALSE, FALSE);
     CRM_Core_Form_Date::buildDateRange($form, 'pledge_end_date', 1, '_low', '_high', ts('From'), FALSE, FALSE);
@@ -558,8 +551,7 @@ class CRM_Pledge_BAO_Query {
     // pledge payment related dates
     CRM_Core_Form_Date::buildDateRange($form, 'pledge_payment_date', 1, '_low', '_high', ts('From'), FALSE, FALSE);
 
-    $form->addElement('checkbox', 'pledge_test', ts('Find Test Pledges?'));
-
+    $form->addYesNo('pledge_test', ts('Pledge is a Test?'));
     $form->add('text', 'pledge_amount_low', ts('From'), array('size' => 8, 'maxlength' => 8));
     $form->addRule('pledge_amount_low', ts('Please enter a valid money value (e.g. %1).', array(1 => CRM_Utils_Money::format('9.99', ' '))), 'money');
 
@@ -586,18 +578,18 @@ class CRM_Pledge_BAO_Query {
 
     $form->addGroup($paymentStatus, 'pledge_payment_status_id', ts('Pledge Payment Status'));
 
-    $form->add('select', 'pledge_contribution_type_id',
-      ts('Contribution Type'),
+    $form->add('select', 'pledge_financial_type_id',
+      ts( 'Financial Type' ),
       array(
         '' => ts('- select -')) +
-      CRM_Contribute_PseudoConstant::contributionType()
+        CRM_Contribute_PseudoConstant::financialType()
     );
 
     $form->add('select', 'pledge_contribution_page_id',
       ts('Contribution Page'),
       array(
-        '' => ts('- select -')) +
-      CRM_Contribute_PseudoConstant::contributionPage()
+        '' => ts('- any -')) +
+        CRM_Contribute_PseudoConstant::contributionPage()
     );
 
     //add fields for honor search
@@ -614,7 +606,7 @@ class CRM_Pledge_BAO_Query {
     $form->add('select', 'pledge_frequency_unit',
       ts('Pledge Frequency'),
       array(
-        '' => ts('- select -')) + $freqUnitsDisplay
+        '' => ts('- any -')) + $freqUnitsDisplay
     );
 
     // add all the custom  searchable fields
@@ -638,13 +630,12 @@ class CRM_Pledge_BAO_Query {
     CRM_Campaign_BAO_Campaign::addCampaignInComponentSearch($form, 'pledge_campaign_id');
 
     $form->assign('validCiviPledge', TRUE);
+    $form->setDefaults(array('pledge_test' => 0));
   }
 
-  static
-  function searchAction(&$row, $id) {}
+  static function searchAction(&$row, $id) {}
 
-  static
-  function tableNames(&$tables) {
+  static function tableNames(&$tables) {
     //add status table
     if (CRM_Utils_Array::value('pledge_status', $tables) ||
       CRM_Utils_Array::value('civicrm_pledge_payment', $tables)

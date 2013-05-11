@@ -1,9 +1,9 @@
 <?php
 /*
  +--------------------------------------------------------------------+
- | CiviCRM version 4.2                                                |
+ | CiviCRM version 4.3                                                |
  +--------------------------------------------------------------------+
- | Copyright CiviCRM LLC (c) 2004-2012                                |
+ | Copyright CiviCRM LLC (c) 2004-2013                                |
  +--------------------------------------------------------------------+
  | This file is a part of CiviCRM.                                    |
  |                                                                    |
@@ -31,7 +31,7 @@
  * abstract class.
  *
  * @package CRM
- * @copyright CiviCRM LLC (c) 2004-2012
+ * @copyright CiviCRM LLC (c) 2004-2013
  * $Id$
  *
  */
@@ -50,7 +50,6 @@ class CRM_Event_Info extends CRM_Core_Component_Info {
       'showActivitiesInCore' => 1,
     );
   }
-
 
   // docs inherited from interface
   public function getPermissions() {
@@ -100,7 +99,7 @@ class CRM_Event_Info extends CRM_Core_Component_Info {
   }
 
   // add shortcut to Create New
-  public function creatNewShortcut(&$shortCuts) {
+  public function creatNewShortcut(&$shortCuts, $newCredit) {
     if (CRM_Core_Permission::check('access CiviEvent') &&
       CRM_Core_Permission::check('edit event participants')
     ) {
@@ -110,6 +109,15 @@ class CRM_Event_Info extends CRM_Core_Component_Info {
             'ref' => 'new-participant',
             'title' => ts('Event Registration'),
           )));
+      if ($newCredit) {
+        $title = ts('Event Registration') . '<br />&nbsp;&nbsp;(' . ts('credit card') . ')';
+        $shortCuts = array_merge($shortCuts, array(
+          array('path' => 'civicrm/participant/add',
+              'query' => "reset=1&action=add&context=standalone&mode=live",
+              'ref' => 'new-participant-cc',
+              'title' => $title,
+            )));        
+      }
     }
   }
 }

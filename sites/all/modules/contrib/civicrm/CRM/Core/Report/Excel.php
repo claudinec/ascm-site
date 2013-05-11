@@ -1,9 +1,9 @@
 <?php
 /*
  +--------------------------------------------------------------------+
- | CiviCRM version 4.2                                                |
+ | CiviCRM version 4.3                                                |
  +--------------------------------------------------------------------+
- | Copyright CiviCRM LLC (c) 2004-2012                                |
+ | Copyright CiviCRM LLC (c) 2004-2013                                |
  +--------------------------------------------------------------------+
  | This file is a part of CiviCRM.                                    |
  |                                                                    |
@@ -178,9 +178,8 @@ class CRM_Core_Report_Excel {
     // end for
     echo "</tbody></table>";
   }
-
-  function writeCSVFile($fileName, &$header, &$rows, $titleHeader = NULL, $outputHeader = TRUE) {
-    if ($outputHeader) {
+    function writeCSVFile( $fileName, &$header, &$rows, $titleHeader = null, $outputHeader = true, $saveFile = null ) {
+        if ( $outputHeader && !$saveFile ) {
       CRM_Utils_System::download(CRM_Utils_String::munge($fileName),
         'text/x-csv',
         CRM_Core_DAO::$_nullObject,
@@ -190,7 +189,10 @@ class CRM_Core_Report_Excel {
     }
 
     if (!empty($rows)) {
-      self::makeCSVTable($header, $rows, $titleHeader, TRUE, $outputHeader);
+            $print = true;
+            if( $saveFile )
+                $print = 0;
+            return self::makeCSVTable( $header, $rows, $titleHeader, $print, $outputHeader );
     }
   }
 }
