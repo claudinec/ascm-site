@@ -2,6 +2,7 @@ name = ASCM CRM
 description = Lightweight custom CRM
 core = 7.x
 package = ASCM
+version = 7.x-1.0
 php = 5.2.4
 dependencies[] = addressfield
 dependencies[] = autocomplete_widgets
