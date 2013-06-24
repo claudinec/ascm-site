@@ -27,6 +27,14 @@ function ascm_crm_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'organisation' => array(
+      'name' => t('Organisation'),
+      'base' => 'node_content',
+      'description' => t('Organisation record type.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
   );
   return $items;
 }
