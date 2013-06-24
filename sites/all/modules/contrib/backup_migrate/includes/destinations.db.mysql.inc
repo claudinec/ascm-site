@@ -64,6 +64,22 @@ class backup_migrate_destination_db_mysql extends backup_migrate_destination_db 
               $destination->set_name($key .": ". $destination->get_display_location());
             }
             $out[$destination->get_id()] = $destination;
+            // Make sure the connection is valid.
+            if ($destination->_get_db_connection()) {
+              // Treat the default database differently because it is probably the only one available.
+              if ($key == 'default:default') {
+                $destination->set_id('db');
+                $destination->set_name(t('Default Database'));
+                // Dissalow backing up to the default database because that's confusing and potentially dangerous.
+                $destination->remove_op('scheduled backup');
+                $destination->remove_op('manual backup');
+              }
+              else {
+                $destination->set_id('db:'. $key);
+                $destination->set_name($key .": ". $destination->get_display_location());
+              }
+              $out[$destination->get_id()] = $destination;              
+            } 
           }
         }
       }
@@ -364,9 +380,10 @@ class backup_migrate_destination_db_mysql extends backup_migrate_destination_db 
    */
   function _get_db_connection() {
     if (!$this->connection) {
-      $this->connection = parent::_get_db_connection();
-      // Set the sql mode because the default is ANSI,TRADITIONAL which is not aware of collation or storage engine.
-      $this->connection->exec("SET sql_mode=''");
+      if ($this->connection = parent::_get_db_connection()) {
+        // Set the sql mode because the default is ANSI,TRADITIONAL which is not aware of collation or storage engine.
+        $this->connection->exec("SET sql_mode=''");        
+      }
     }
     return $this->connection;
   }

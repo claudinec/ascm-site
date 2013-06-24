@@ -62,7 +62,6 @@ modules directory for your site and enable it on the `admin/build/modules` page.
 To take full advantage of some of the workflow benefits provided by Features,
 you should install [Drush][1].
 
-
 Basic usage
 -----------
 Features is geared toward usage by developers and site builders. It

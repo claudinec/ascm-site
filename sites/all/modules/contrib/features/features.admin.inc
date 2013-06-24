@@ -4,7 +4,6 @@
  * @file
  * Forms for Features admin screens
  */
-
 /**
  * Form constructor for features export form.
  *
@@ -278,6 +277,9 @@ function _features_export_form_components(&$form, &$form_state) {
 
   $sections = array('included', 'detected', 'added');
   foreach ($export['components'] as $component => $component_info) {
+    if (!variable_get('features_admin_show_component_' . $component, TRUE)) {
+      continue;
+    }
     $label = (isset($component_info['name']) ?
       $component_info['name'] . " <span>(" . check_plain($component) . ")</span>" : check_plain($component));
 
@@ -438,6 +440,10 @@ function _features_export_build($feature, &$form_state) {
   foreach ($components as $component => $component_info) {
     if ($reset) {
       unset($form_state['values'][$component]);
+    }
+    if (!variable_get('features_admin_show_component_' . $component, TRUE)) {
+      unset($components[$component]);
+      continue;
     }
     // User-selected components take precedence.
     $stub[$component] = array();
@@ -927,14 +933,14 @@ function features_admin_form($form, $form_state) {
         }
       }
       if (!empty($unmet_dependencies)) {
-        $description .= "<div class='dependencies'>" . t('Unmet dependencies: @dependencies', array('@dependencies' => implode(', ', $unmet_dependencies))) . "</div>";
+        $description .= "<div class='dependencies'>" . t('Unmet dependencies: !dependencies', array('!dependencies' => implode(', ', $unmet_dependencies))) . "</div>";
         $disabled = TRUE;
       }
     }
 
     if (!empty($module->dependents)) {
       $disabled = TRUE;
-      $description .= "<div class='requirements'>". t('Required by: @dependents', array('@dependents' => implode(', ', $module->dependents))) ."</div>";
+      $description .= "<div class='requirements'>". t('Required by: !dependents', array('!dependents' => implode(', ', $module->dependents))) ."</div>";
     }
 
     // Detect potential conflicts
