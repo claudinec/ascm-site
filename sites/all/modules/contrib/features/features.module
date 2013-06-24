@@ -264,14 +264,6 @@ function features_form($node, $form_state) {
 }
 
 /**
- */
-function features_node_access($node, $op, $account) {
-  return node_node_access($node, $op, $account);
-}
-
-/**
-=======
->>>>>>> feature/import-individuals
  * Implements hook_permission().
  */
 function features_permission() {

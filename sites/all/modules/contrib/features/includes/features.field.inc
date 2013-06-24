@@ -221,11 +221,7 @@ function _field_instance_features_export_sort(&$field, $sort = TRUE) {
   );
 
   if ($sort) {
-<<<<<<< HEAD
-    ksort($field);
-=======
     uksort($field, 'strnatcmp');
->>>>>>> feature/import-individuals
   }
   foreach ($field as $k => $v) {
     if (is_array($v)) {

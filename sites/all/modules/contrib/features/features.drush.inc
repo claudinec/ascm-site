@@ -183,13 +183,6 @@ function drush_features_list() {
         $storage = dt('Needs review');
         break;
     }
-    $rows[] = array(
-      $m->info['name'],
-      $m->name,
-      $m->status ? dt('Enabled') : dt('Disabled'),
-      $m->info['version'],
-    $storage
-    );
     if (
       ($m->status == 0 && ($status == 'all' || $status == 'disabled')) ||
       ($m->status == 1 && ($status == 'all' || $status == 'enabled'))
@@ -601,9 +594,6 @@ function _drush_features_generate_export(&$info, &$module_name) {
     $version_minor = array_pop($version_explode);
     // Increment minor version number if numeric or not a dev release.
     if (is_numeric($version_minor) || strpos($version_minor, 'dev') !== (strlen($version_minor) - 3)) {
-<<<<<<< HEAD
-      ++$version_minor;
-=======
       // Check for prefixed versions (alpha, beta, rc).
       if (ctype_digit($version_minor)) {
         ++$version_minor;
@@ -618,7 +608,6 @@ function _drush_features_generate_export(&$info, &$module_name) {
         $pattern = '/[0-9]+$/';
         $version_minor = preg_replace($pattern, $number, $version_minor);
       }
->>>>>>> feature/import-individuals
     }
     array_push($version_explode, $version_minor);
     // Rebuild version string.
