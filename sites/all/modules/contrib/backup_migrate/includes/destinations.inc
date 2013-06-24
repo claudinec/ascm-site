@@ -27,10 +27,6 @@ function backup_migrate_get_destination_types() {
  */
 function backup_migrate_backup_migrate_destination_types() {
   $out = array();
-  if (variable_get('backup_migrate_allow_backup_to_file', TRUE)) {
-    $out += array(
-      'file' => array(
-        'description' => t('Save the backup files to any directory on the server which the web-server can write to.'),
   if (!module_exists('nodesquirrel')) {
     $out += array(
       'nodesquirrel' => array(

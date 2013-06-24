@@ -51,19 +51,6 @@ class backup_migrate_destination_db_mysql extends backup_migrate_destination_db 
         if ($info['driver'] === 'mysql') {
           $url = $info['driver'] . '://' . $info['username'] . ':' . $info['password'] . '@' . $info['host'] . (isset($info['port']) ? ':' . $info['port'] : '') . '/' . $info['database'];
           if ($destination = backup_migrate_create_destination('mysql', array('url' => $url))) {
-            // Treat the default database differently because it is probably the only one available.
-            if ($key == 'default:default') {
-              $destination->set_id('db');
-              $destination->set_name(t('Default Database'));
-              // Dissalow backing up to the default database because that's confusing and potentially dangerous.
-              $destination->remove_op('scheduled backup');
-              $destination->remove_op('manual backup');
-            }
-            else {
-              $destination->set_id('db:'. $key);
-              $destination->set_name($key .": ". $destination->get_display_location());
-            }
-            $out[$destination->get_id()] = $destination;
             // Make sure the connection is valid.
             if ($destination->_get_db_connection()) {
               // Treat the default database differently because it is probably the only one available.

@@ -192,6 +192,7 @@ class backup_migrate_destination_files extends backup_migrate_destination {
    * Check that a web accessible directory has been properly secured, othewise attempt to secure it.
    */
   function check_web_dir($directory) {
+    // If the directory is specified with an absolute path, strip the site root.
     $directory = substr(drupal_realpath($directory), strlen(drupal_realpath($_SERVER['DOCUMENT_ROOT']) . base_path()));
 
     file_create_htaccess($directory, TRUE);
@@ -241,7 +242,6 @@ class backup_migrate_destination_files extends backup_migrate_destination {
    * Check if a file can be read remotely via http.
    */
   function test_file_readable_remotely($path, $contents) {
-    // TODO: Proper checking for absolute paths.
     $url = $GLOBALS['base_url'] . '/' . str_replace('\\', '/', $path);
     $result = drupal_http_request($url);
     if (!empty($result->data) && strpos($result->data, $contents) !== FALSE) {
