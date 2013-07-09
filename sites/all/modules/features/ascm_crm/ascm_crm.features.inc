@@ -19,6 +19,13 @@ function ascm_crm_ctools_plugin_api() {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function ascm_crm_views_api() {
+  return array("version" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function ascm_crm_node_info() {
