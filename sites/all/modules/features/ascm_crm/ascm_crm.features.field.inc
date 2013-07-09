@@ -76,7 +76,7 @@ function ascm_crm_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 11,
+        'weight' => '11',
       ),
     ),
   );
@@ -159,7 +159,7 @@ function ascm_crm_field_default_fields() {
           ),
         ),
         'type' => 'addressfield_standard',
-        'weight' => 9,
+        'weight' => '9',
       ),
     ),
   );
@@ -177,7 +177,7 @@ function ascm_crm_field_default_fields() {
       'locked' => '0',
       'module' => 'date',
       'settings' => array(
-        'cache_count' => 4,
+        'cache_count' => '4',
         'cache_enabled' => 0,
         'granularity' => array(
           'day' => 'day',
@@ -242,7 +242,7 @@ function ascm_crm_field_default_fields() {
           'year_range' => '-3:+3',
         ),
         'type' => 'date_text',
-        'weight' => 7,
+        'weight' => '7',
       ),
     ),
   );
@@ -297,7 +297,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'email_textfield',
-        'weight' => 8,
+        'weight' => '8',
       ),
     ),
   );
@@ -326,7 +326,7 @@ function ascm_crm_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
-        'max_length' => 255,
+        'max_length' => '255',
       ),
       'translatable' => '0',
       'type' => 'text',
@@ -366,7 +366,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 4,
+        'weight' => '4',
       ),
     ),
   );
@@ -395,7 +395,7 @@ function ascm_crm_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
-        'max_length' => 255,
+        'max_length' => '255',
       ),
       'translatable' => '0',
       'type' => 'text',
@@ -435,7 +435,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 3,
+        'weight' => '3',
       ),
     ),
   );
@@ -464,7 +464,7 @@ function ascm_crm_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
-        'max_length' => 255,
+        'max_length' => '255',
       ),
       'translatable' => '0',
       'type' => 'text',
@@ -510,7 +510,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'autocomplete_widgets_flddata',
-        'weight' => 2,
+        'weight' => '2',
       ),
     ),
   );
@@ -539,7 +539,7 @@ function ascm_crm_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
-        'max_length' => 255,
+        'max_length' => '255',
       ),
       'translatable' => '0',
       'type' => 'text',
@@ -585,7 +585,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'autocomplete_widgets_flddata',
-        'weight' => 5,
+        'weight' => '5',
       ),
     ),
   );
@@ -614,7 +614,7 @@ function ascm_crm_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
-        'max_length' => 255,
+        'max_length' => '255',
       ),
       'translatable' => '0',
       'type' => 'text',
@@ -654,7 +654,91 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 6,
+        'weight' => '6',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-individual-field_user_reference'.
+  $fields['node-individual-field_user_reference'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_user_reference',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(),
+        ),
+        'target_type' => 'user',
+      ),
+      'translatable' => '0',
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'individual',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'link' => 1,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => '9',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_user_reference',
+      'label' => 'User reference',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => '60',
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => '12',
       ),
     ),
   );
@@ -699,7 +783,7 @@ function ascm_crm_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '0',
+          'weight' => 0,
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -717,18 +801,18 @@ function ascm_crm_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'display_summary' => 1,
-        'text_processing' => 1,
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => 20,
+          'rows' => '20',
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 4,
+        'weight' => '4',
       ),
     ),
   );
@@ -877,6 +961,7 @@ function ascm_crm_field_default_fields() {
   t('Name suffix');
   t('Notes');
   t('Previous family name');
+  t('User reference');
 
   return $fields;
 }
