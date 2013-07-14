@@ -76,7 +76,7 @@ function ascm_crm_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '11',
+        'weight' => 11,
       ),
     ),
   );
@@ -159,7 +159,7 @@ function ascm_crm_field_default_fields() {
           ),
         ),
         'type' => 'addressfield_standard',
-        'weight' => '9',
+        'weight' => 9,
       ),
     ),
   );
@@ -177,7 +177,7 @@ function ascm_crm_field_default_fields() {
       'locked' => '0',
       'module' => 'date',
       'settings' => array(
-        'cache_count' => '4',
+        'cache_count' => 4,
         'cache_enabled' => 0,
         'granularity' => array(
           'day' => 'day',
@@ -242,7 +242,7 @@ function ascm_crm_field_default_fields() {
           'year_range' => '-3:+3',
         ),
         'type' => 'date_text',
-        'weight' => '7',
+        'weight' => 7,
       ),
     ),
   );
@@ -297,7 +297,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'email_textfield',
-        'weight' => '8',
+        'weight' => 8,
       ),
     ),
   );
@@ -326,7 +326,7 @@ function ascm_crm_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
-        'max_length' => '255',
+        'max_length' => 255,
       ),
       'translatable' => '0',
       'type' => 'text',
@@ -366,7 +366,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => '4',
+        'weight' => 4,
       ),
     ),
   );
@@ -395,7 +395,7 @@ function ascm_crm_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
-        'max_length' => '255',
+        'max_length' => 255,
       ),
       'translatable' => '0',
       'type' => 'text',
@@ -435,7 +435,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => '3',
+        'weight' => 3,
       ),
     ),
   );
@@ -464,7 +464,7 @@ function ascm_crm_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
-        'max_length' => '255',
+        'max_length' => 255,
       ),
       'translatable' => '0',
       'type' => 'text',
@@ -510,7 +510,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'autocomplete_widgets_flddata',
-        'weight' => '2',
+        'weight' => 2,
       ),
     ),
   );
@@ -539,7 +539,7 @@ function ascm_crm_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
-        'max_length' => '255',
+        'max_length' => 255,
       ),
       'translatable' => '0',
       'type' => 'text',
@@ -585,7 +585,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'autocomplete_widgets_flddata',
-        'weight' => '5',
+        'weight' => 5,
       ),
     ),
   );
@@ -614,7 +614,7 @@ function ascm_crm_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
-        'max_length' => '255',
+        'max_length' => 255,
       ),
       'translatable' => '0',
       'type' => 'text',
@@ -654,7 +654,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => '6',
+        'weight' => 6,
       ),
     ),
   );
@@ -783,7 +783,7 @@ function ascm_crm_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -801,18 +801,18 @@ function ascm_crm_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'display_summary' => 1,
-        'text_processing' => '1',
+        'text_processing' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => '20',
+          'rows' => 20,
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '4',
+        'weight' => 4,
       ),
     ),
   );
