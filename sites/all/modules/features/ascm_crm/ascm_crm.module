@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ASCM CRM feature.
+ */
+
+include_once 'ascm_crm.features.inc';
