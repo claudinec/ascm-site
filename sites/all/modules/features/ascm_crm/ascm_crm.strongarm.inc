@@ -41,6 +41,35 @@ function ascm_crm_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'content_access_individual';
+  $strongarm->value = array(
+    'view_own' => array(
+      0 => 2,
+      1 => 3,
+    ),
+    'view' => array(
+      0 => 3,
+    ),
+  );
+  $export['content_access_individual'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_access_organisation';
+  $strongarm->value = array(
+    'view_own' => array(
+      0 => 3,
+    ),
+    'view' => array(
+      0 => 3,
+    ),
+  );
+  $export['content_access_organisation'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__individual';
   $strongarm->value = array(
     'view_modes' => array(
@@ -76,6 +105,9 @@ function ascm_crm_strongarm() {
         ),
         'path' => array(
           'weight' => '1',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '14',
         ),
       ),
       'display' => array(),
@@ -211,6 +243,13 @@ function ascm_crm_strongarm() {
   $strongarm->name = 'pathauto_node_individual_pattern';
   $strongarm->value = 'individual/[node:title]';
   $export['pathauto_node_individual_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_organisation_pattern';
+  $strongarm->value = 'organisation/[node:title]';
+  $export['pathauto_node_organisation_pattern'] = $strongarm;
 
   return $export;
 }

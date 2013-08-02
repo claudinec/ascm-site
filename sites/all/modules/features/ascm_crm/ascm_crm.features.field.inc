@@ -76,7 +76,7 @@ function ascm_crm_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 11,
+        'weight' => '12',
       ),
     ),
   );
@@ -159,7 +159,7 @@ function ascm_crm_field_default_fields() {
           ),
         ),
         'type' => 'addressfield_standard',
-        'weight' => 9,
+        'weight' => '11',
       ),
     ),
   );
@@ -177,7 +177,7 @@ function ascm_crm_field_default_fields() {
       'locked' => '0',
       'module' => 'date',
       'settings' => array(
-        'cache_count' => 4,
+        'cache_count' => '4',
         'cache_enabled' => 0,
         'granularity' => array(
           'day' => 'day',
@@ -224,6 +224,89 @@ function ascm_crm_field_default_fields() {
       'label' => 'Date of birth',
       'required' => 0,
       'settings' => array(
+        'default_value' => 'blank',
+        'default_value2' => 'same',
+        'default_value_code' => '',
+        'default_value_code2' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'date',
+        'settings' => array(
+          'increment' => 15,
+          'input_format' => 'd/m/Y - H:i:s',
+          'input_format_custom' => '',
+          'label_position' => 'above',
+          'text_parts' => array(),
+          'year_range' => '-3:+3',
+        ),
+        'type' => 'date_text',
+        'weight' => '7',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-individual-field_date_of_death'.
+  $fields['node-individual-field_date_of_death'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_date_of_death',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'date',
+      'settings' => array(
+        'cache_count' => '4',
+        'cache_enabled' => 0,
+        'granularity' => array(
+          'day' => 'day',
+          'hour' => 0,
+          'minute' => 0,
+          'month' => 'month',
+          'second' => 0,
+          'year' => 'year',
+        ),
+        'timezone_db' => '',
+        'todate' => '',
+        'tz_handling' => 'none',
+      ),
+      'translatable' => '0',
+      'type' => 'datetime',
+    ),
+    'field_instance' => array(
+      'bundle' => 'individual',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'date',
+          'settings' => array(
+            'format_type' => 'long',
+            'fromto' => 'both',
+            'multiple_from' => '',
+            'multiple_number' => '',
+            'multiple_to' => '',
+          ),
+          'type' => 'date_default',
+          'weight' => 11,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_date_of_death',
+      'label' => 'Date of death',
+      'required' => 0,
+      'settings' => array(
         'default_value' => 'now',
         'default_value2' => 'same',
         'default_value_code' => '',
@@ -242,7 +325,76 @@ function ascm_crm_field_default_fields() {
           'year_range' => '-3:+3',
         ),
         'type' => 'date_text',
-        'weight' => 7,
+        'weight' => '9',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-individual-field_deceased'.
+  $fields['node-individual-field_deceased'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_deceased',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => '',
+          1 => 'Deceased',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'list_boolean',
+    ),
+    'field_instance' => array(
+      'bundle' => 'individual',
+      'default_value' => array(
+        0 => array(
+          'value' => 0,
+        ),
+      ),
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => 10,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_deceased',
+      'label' => 'Deceased',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(
+          'display_label' => 1,
+        ),
+        'type' => 'options_onoff',
+        'weight' => '8',
       ),
     ),
   );
@@ -297,7 +449,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'email_textfield',
-        'weight' => 8,
+        'weight' => '10',
       ),
     ),
   );
@@ -366,7 +518,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 4,
+        'weight' => '4',
       ),
     ),
   );
@@ -435,7 +587,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 3,
+        'weight' => '3',
       ),
     ),
   );
@@ -510,7 +662,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'autocomplete_widgets_flddata',
-        'weight' => 2,
+        'weight' => '2',
       ),
     ),
   );
@@ -585,7 +737,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'autocomplete_widgets_flddata',
-        'weight' => 5,
+        'weight' => '5',
       ),
     ),
   );
@@ -654,7 +806,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 6,
+        'weight' => '6',
       ),
     ),
   );
@@ -738,7 +890,7 @@ function ascm_crm_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => '12',
+        'weight' => '13',
       ),
     ),
   );
@@ -954,6 +1106,8 @@ function ascm_crm_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Address');
   t('Date of birth');
+  t('Date of death');
+  t('Deceased');
   t('Email');
   t('Family name');
   t('Given name');
