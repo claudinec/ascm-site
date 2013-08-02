@@ -14,7 +14,7 @@ function ascm_crm_field_default_fields() {
   $fields['node-individual-body'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(
         0 => 'node',
@@ -65,14 +65,14 @@ function ascm_crm_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'display_summary' => 0,
-        'text_processing' => 1,
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => 20,
+          'rows' => '10',
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
@@ -85,7 +85,7 @@ function ascm_crm_field_default_fields() {
   $fields['node-individual-field_address'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '3',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_address',
@@ -342,7 +342,7 @@ function ascm_crm_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '1',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -411,7 +411,7 @@ function ascm_crm_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '0',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -480,7 +480,7 @@ function ascm_crm_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '2',
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -747,7 +747,7 @@ function ascm_crm_field_default_fields() {
   $fields['node-organisation-body'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(
         0 => 'node',
@@ -821,7 +821,7 @@ function ascm_crm_field_default_fields() {
   $fields['node-organisation-field_address'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '3',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_address',
