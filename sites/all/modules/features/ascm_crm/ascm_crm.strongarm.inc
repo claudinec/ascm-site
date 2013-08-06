@@ -14,7 +14,7 @@ function ascm_crm_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ant_individual';
-  $strongarm->value = '2';
+  $strongarm->value = '1';
   $export['ant_individual'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -28,7 +28,7 @@ function ascm_crm_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ant_pattern_individual';
-  $strongarm->value = '[node:field_given_name] [node:field_family_name]';
+  $strongarm->value = '[node:field_name_prefix] [node:field_given_name] [node:field_family_name]';
   $export['ant_pattern_individual'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -37,6 +37,35 @@ function ascm_crm_strongarm() {
   $strongarm->name = 'ant_pattern_organisation';
   $strongarm->value = '';
   $export['ant_pattern_organisation'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_access_individual';
+  $strongarm->value = array(
+    'view_own' => array(
+      0 => 2,
+      1 => 3,
+    ),
+    'view' => array(
+      0 => 3,
+    ),
+  );
+  $export['content_access_individual'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_access_organisation';
+  $strongarm->value = array(
+    'view_own' => array(
+      0 => 3,
+    ),
+    'view' => array(
+      0 => 3,
+    ),
+  );
+  $export['content_access_organisation'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -65,6 +94,9 @@ function ascm_crm_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'print' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -73,6 +105,9 @@ function ascm_crm_strongarm() {
         ),
         'path' => array(
           'weight' => '1',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '14',
         ),
       ),
       'display' => array(),
@@ -160,6 +195,7 @@ function ascm_crm_strongarm() {
   $strongarm->name = 'node_options_individual';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_individual'] = $strongarm;
 
@@ -169,6 +205,7 @@ function ascm_crm_strongarm() {
   $strongarm->name = 'node_options_organisation';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_organisation'] = $strongarm;
 
@@ -206,6 +243,13 @@ function ascm_crm_strongarm() {
   $strongarm->name = 'pathauto_node_individual_pattern';
   $strongarm->value = 'individual/[node:title]';
   $export['pathauto_node_individual_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_organisation_pattern';
+  $strongarm->value = 'organisation/[node:title]';
+  $export['pathauto_node_organisation_pattern'] = $strongarm;
 
   return $export;
 }
