@@ -1,0 +1,11 @@
+name = ASCM Blocks
+description = Blocks and boxes
+core = 7.x
+package = ASCM
+version = 7.x-1.0
+project = ascm_blocks
+dependencies[] = boxes
+dependencies[] = ctools
+features[box][] = google_calendar
+features[ctools][] = boxes:box:1
+features[features_api][] = api:1
