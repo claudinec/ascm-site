@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ASCM Blocks feature.
+ */
+
+include_once 'ascm_blocks.features.inc';
