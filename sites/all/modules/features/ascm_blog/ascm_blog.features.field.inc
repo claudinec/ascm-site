@@ -14,7 +14,7 @@ function ascm_blog_field_default_fields() {
   $fields['node-article-body'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(
         0 => 'node',
@@ -50,7 +50,7 @@ function ascm_blog_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -65,21 +65,35 @@ function ascm_blog_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'body',
       'label' => 'Body',
-      'required' => FALSE,
+      'required' => 1,
       'settings' => array(
-        'display_summary' => TRUE,
-        'text_processing' => 1,
+        'display_summary' => 1,
+        'text_processing' => '1',
         'user_register_form' => FALSE,
+        'wysiwyg_fields' => array(
+          'settings' => array(
+            'advanced' => array(
+              'delete' => 1,
+              'hide' => 1,
+            ),
+            'formatters' => array(),
+            'icon' => '6f7621a02161e347e66d99d8ace540a3',
+            'label' => 'Body',
+          ),
+          'status' => 0,
+        ),
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => 20,
+          'rows' => '20',
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
         'weight' => -4,
       ),
+      'workbench_access_field' => 0,
     ),
   );
 
@@ -120,13 +134,19 @@ function ascm_blog_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'image',
+          'module' => 'media_colorbox',
           'settings' => array(
-            'image_link' => '',
-            'image_style' => 'large',
+            'audio_playlist' => 0,
+            'colorbox_caption' => 'title',
+            'colorbox_gallery' => 'post',
+            'colorbox_gallery_custom' => '',
+            'colorbox_view_mode' => 'colorbox',
+            'file_view_mode' => 'colorbox',
+            'fixed_height' => '',
+            'fixed_width' => '',
           ),
-          'type' => 'image',
-          'weight' => -1,
+          'type' => 'media_colorbox',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -135,7 +155,7 @@ function ascm_blog_field_default_fields() {
             'image_link' => 'content',
             'image_style' => 'medium',
           ),
-          'type' => 'image',
+          'type' => 'hidden',
           'weight' => -1,
         ),
       ),
@@ -153,15 +173,39 @@ function ascm_blog_field_default_fields() {
         'min_resolution' => '',
         'title_field' => 0,
         'user_register_form' => FALSE,
+        'wysiwyg_fields' => array(
+          'settings' => array(
+            'advanced' => array(
+              'delete' => 1,
+              'hide' => 1,
+            ),
+            'formatters' => array(
+              'file_rendered' => 'file_rendered',
+            ),
+            'icon' => 'd50522754f0bc7cc44d2f5231a467fe8',
+            'label' => 'Image',
+          ),
+          'status' => 0,
+        ),
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'image',
+        'module' => 'media',
         'settings' => array(
-          'preview_image_style' => 'thumbnail',
+          'allowed_schemes' => array(
+            'private' => 'private',
+            'public' => 'public',
+          ),
+          'allowed_types' => array(
+            0 => 0,
+            'audio' => 0,
+            'default' => 0,
+            'image' => 'image',
+            'video' => 0,
+          ),
           'progress_indicator' => 'throbber',
         ),
-        'type' => 'image_image',
+        'type' => 'media_generic',
         'weight' => -1,
       ),
       'workbench_access_field' => 0,
@@ -213,7 +257,7 @@ function ascm_blog_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 10,
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
