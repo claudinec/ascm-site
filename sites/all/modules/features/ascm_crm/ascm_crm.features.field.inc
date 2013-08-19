@@ -242,7 +242,7 @@ function ascm_crm_field_default_fields() {
           'year_range' => '-3:+3',
         ),
         'type' => 'date_text',
-        'weight' => '7',
+        'weight' => 7,
       ),
     ),
   );
@@ -518,7 +518,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => '4',
+        'weight' => 4,
       ),
     ),
   );
@@ -587,7 +587,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => '3',
+        'weight' => 3,
       ),
     ),
   );
@@ -662,7 +662,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'autocomplete_widgets_flddata',
-        'weight' => '2',
+        'weight' => 2,
       ),
     ),
   );
@@ -737,7 +737,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'autocomplete_widgets_flddata',
-        'weight' => '5',
+        'weight' => 5,
       ),
     ),
   );
@@ -806,7 +806,7 @@ function ascm_crm_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => '6',
+        'weight' => 6,
       ),
     ),
   );
