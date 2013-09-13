@@ -13,13 +13,13 @@ function ascm_admin_user_default_roles() {
   // Exported role: administrator.
   $roles['administrator'] = array(
     'name' => 'administrator',
-    'weight' => '2',
+    'weight' => 2,
   );
 
   // Exported role: staff.
   $roles['staff'] = array(
     'name' => 'staff',
-    'weight' => '3',
+    'weight' => 3,
   );
 
   return $roles;
