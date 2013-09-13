@@ -11,6 +11,10 @@ function entityreference_uninstall() {
  * Implements hook_field_schema().
  */
 function entityreference_field_schema($field) {
+  if (!module_exists('entityreference')) {
+    return;
+  }
+
   if ($field['type'] == 'entityreference') {
     // Load the base table configuration from the cache.
     $base_tables = variable_get('entityreference:base-tables', array());
