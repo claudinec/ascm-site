@@ -39,7 +39,7 @@ function blogger_importer_trigger_nodes_batch($form, &$form_state) {
 
   // make sure the node type allows for anonymous comments
   if (!user_access('post comments', drupal_anonymous_user())) {
-    return drupal_set_message(t("Anonymoys user does not have permissions to post comments. Please !link to import comments.",
+    return drupal_set_message(t("Anonymous user does not have permissions to post comments. Please !link to import comments.",
       array('!link' => l('correct this', 'admin/people/permissions') )
       ), 'error');
   }
