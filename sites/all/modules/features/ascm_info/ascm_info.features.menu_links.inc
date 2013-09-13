@@ -24,10 +24,10 @@ function ascm_info_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -49,
   );
-  // Exported menu link: main-menu:node/1990
-  $menu_links['main-menu:node/1990'] = array(
+  // Exported menu link: main-menu:node/1970
+  $menu_links['main-menu:node/1970'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'node/1990',
+    'link_path' => 'node/1970',
     'router_path' => 'node/%',
     'link_title' => 'Resources',
     'options' => array(),
