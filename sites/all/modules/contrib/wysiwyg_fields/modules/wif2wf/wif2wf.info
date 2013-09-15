@@ -4,9 +4,9 @@ dependencies[] = wysiwyg_fields
 core = 7.x
 hidden = TRUE
 
-; Information added by drupal.org packaging script on 2013-07-25
+; Information added by drupal.org packaging script on 2013-09-11
 version = "7.x-1.x-dev"
 core = "7.x"
 project = "wysiwyg_fields"
-datestamp = "1374722519"
+datestamp = "1378903320"
 
