@@ -22,7 +22,7 @@ function ascm_crm_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -84,7 +84,7 @@ function ascm_crm_field_default_field_instances() {
           'use_widget_handlers' => 1,
         ),
         'type' => 'addressfield_default',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -99,6 +99,18 @@ function ascm_crm_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
+      'wysiwyg_fields' => array(
+        'settings' => array(
+          'advanced' => array(
+            'delete' => 1,
+            'hide' => 1,
+          ),
+          'formatters' => array(),
+          'icon' => '6f7621a02161e347e66d99d8ace540a3',
+          'label' => 'Address',
+        ),
+        'status' => 0,
+      ),
     ),
     'widget' => array(
       'active' => 1,
@@ -116,6 +128,71 @@ function ascm_crm_field_default_field_instances() {
       ),
       'type' => 'addressfield_standard',
       'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance: 'node-individual-field_date_death'
+  $field_instances['node-individual-field_date_death'] = array(
+    'bundle' => 'individual',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+        ),
+        'type' => 'date_default',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_date_death',
+    'label' => 'Date of death',
+    'required' => 0,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+      'wysiwyg_fields' => array(
+        'settings' => array(
+          'advanced' => array(
+            'delete' => 1,
+            'hide' => 1,
+          ),
+          'formatters' => array(),
+          'icon' => '6f7621a02161e347e66d99d8ace540a3',
+          'label' => 'Date death',
+        ),
+        'status' => 0,
+      ),
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'increment' => 15,
+        'input_format' => 'Y-m-d H:i:s',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'text_parts' => array(),
+        'year_range' => '-3:+3',
+      ),
+      'type' => 'date_text',
+      'weight' => 9,
     ),
   );
 
@@ -184,7 +261,7 @@ function ascm_crm_field_default_field_instances() {
         'module' => 'email',
         'settings' => array(),
         'type' => 'email_default',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -288,6 +365,60 @@ function ascm_crm_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-individual-field_is_deceased'
+  $field_instances['node-individual-field_is_deceased'] = array(
+    'bundle' => 'individual',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 11,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_is_deceased',
+    'label' => 'Is deceased',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+      'wysiwyg_fields' => array(
+        'settings' => array(
+          'advanced' => array(
+            'delete' => 1,
+            'hide' => 1,
+          ),
+          'formatters' => array(),
+          'icon' => '6f7621a02161e347e66d99d8ace540a3',
+          'label' => 'Is deceased',
+        ),
+        'status' => 0,
+      ),
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 8,
     ),
   );
 
@@ -437,7 +568,7 @@ function ascm_crm_field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -478,7 +609,7 @@ function ascm_crm_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -538,7 +669,7 @@ function ascm_crm_field_default_field_instances() {
           'use_widget_handlers' => 1,
         ),
         'type' => 'addressfield_default',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -585,7 +716,7 @@ function ascm_crm_field_default_field_instances() {
         'module' => 'email',
         'settings' => array(),
         'type' => 'email_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -617,10 +748,10 @@ function ascm_crm_field_default_field_instances() {
   t('Address');
   t('Date of birth');
   t('Date of death');
-  t('Deceased');
   t('Email');
   t('Family name');
   t('Given name');
+  t('Is deceased');
   t('Name prefix');
   t('Name suffix');
   t('Notes');

@@ -28,7 +28,7 @@ function ascm_crm_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ant_pattern_individual';
-  $strongarm->value = '[node:field_name_prefix] [node:field_given_name] [node:field_family_name]';
+  $strongarm->value = '[node:field_given_name] [node:field_family_name]';
   $export['ant_pattern_individual'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -238,6 +238,9 @@ function ascm_crm_strongarm() {
         'custom_settings' => FALSE,
       ),
       'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'print' => array(
         'custom_settings' => FALSE,
       ),
     ),
