@@ -103,6 +103,16 @@ function ascm_crm_feeds_importer_default() {
             'target' => 'field_email',
             'unique' => FALSE,
           ),
+          12 => array(
+            'source' => 'Is Deceased',
+            'target' => 'field_is_deceased',
+            'unique' => FALSE,
+          ),
+          13 => array(
+            'source' => 'Deceased Date',
+            'target' => 'field_date_death:start',
+            'unique' => FALSE,
+          ),
         ),
         'update_existing' => '2',
         'input_format' => 'plain_text',
