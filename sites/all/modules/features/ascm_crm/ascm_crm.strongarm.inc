@@ -205,7 +205,7 @@ function ascm_crm_strongarm() {
           'weight' => '1',
         ),
         'xmlsitemap' => array(
-          'weight' => '14',
+          'weight' => '16',
         ),
       ),
       'display' => array(),
