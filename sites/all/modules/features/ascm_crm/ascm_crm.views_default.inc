@@ -191,7 +191,6 @@ function ascm_crm_views_default_views() {
     4 => 0,
   );
   $handler->display->display_options['path'] = 'contacts/admin';
->>>>>>> hotfix/contacts-admin
   $export['search_contacts'] = $view;
 
   return $export;
