@@ -1,6 +1,12 @@
 HISTORY
 =======
 
+Deployed 2013-11-20
+-------------------
+
+- Security update: Revisioning
+- Added view for deceased contacts
+
 Deployed 2013-11-07
 -------------------
 
