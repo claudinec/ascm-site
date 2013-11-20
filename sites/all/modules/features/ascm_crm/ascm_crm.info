@@ -91,5 +91,6 @@ features[variable][] = node_submitted_individual
 features[variable][] = node_submitted_organisation
 features[variable][] = pathauto_node_individual_pattern
 features[variable][] = pathauto_node_organisation_pattern
+features[views_view][] = deceased_contacts
 features[views_view][] = search_contacts
 features_exclude[dependencies][ascm_blog] = ascm_blog
