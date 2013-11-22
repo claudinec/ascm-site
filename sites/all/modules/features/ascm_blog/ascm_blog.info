@@ -22,7 +22,6 @@ features[field_base][] = field_tags
 features[field_instance][] = node-article-body
 features[field_instance][] = node-article-field_image
 features[field_instance][] = node-article-field_tags
-features[menu_links][] = main-menu:blog
 features[node][] = article
 features[taxonomy][] = tags
 features[variable][] = comment_anonymous_article
