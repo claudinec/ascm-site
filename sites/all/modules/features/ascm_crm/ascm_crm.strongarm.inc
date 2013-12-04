@@ -143,10 +143,12 @@ function ascm_crm_strongarm() {
   $strongarm->value = array(
     'view_own' => array(
       0 => 2,
-      1 => 3,
+      1 => 4,
+      2 => 3,
     ),
     'view' => array(
-      0 => 3,
+      0 => 4,
+      1 => 3,
     ),
   );
   $export['content_access_individual'] = $strongarm;
@@ -157,10 +159,12 @@ function ascm_crm_strongarm() {
   $strongarm->name = 'content_access_organisation';
   $strongarm->value = array(
     'view_own' => array(
-      0 => 3,
+      0 => 4,
+      1 => 3,
     ),
     'view' => array(
-      0 => 3,
+      0 => 4,
+      1 => 3,
     ),
   );
   $export['content_access_organisation'] = $strongarm;
