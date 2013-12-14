@@ -1,6 +1,11 @@
 HISTORY
 =======
 
+Sprint 43 (2013-12-14)
+----------------------
+
+- Remove VBO from public blog display
+
 Deployed 2013-11-22
 -------------------
 
