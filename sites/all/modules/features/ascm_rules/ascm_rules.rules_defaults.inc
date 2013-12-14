@@ -20,7 +20,7 @@ function ascm_rules_default_rules_configuration() {
         { "mail" : {
             "to" : "webw@ascm.org.au",
             "subject" : "New comment received at [site:name]",
-            "message" : "Comment from: [comment:name]\\r\\n\\r\\nURL: [comment:url]\\r\\n\\r\\nComment:\\r\\n\\r\\n[comment:comment-body]\\r\\n\\r\\n",
+            "message" : "Comment from: [comment:name]\\r\\n\\r\\nURL: [comment:url]\\r\\n\\r\\nComment:\\r\\n\\r\\n[comment:body]\\r\\n\\r\\n",
             "language" : [ "" ]
           }
         }
