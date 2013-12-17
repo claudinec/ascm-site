@@ -49,5 +49,38 @@ function ascm_blocks_context_default_contexts() {
   t('blocks');
   $export['contact-blocks'] = $context;
 
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'front-blocks';
+  $context->description = 'Blocks to display on the front page.';
+  $context->tag = 'blocks';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        '<front>' => '<front>',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-slideshow-block' => array(
+          'module' => 'views',
+          'delta' => 'slideshow-block',
+          'region' => 'three_33_second',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Blocks to display on the front page.');
+  t('blocks');
+  $export['front-blocks'] = $context;
+
   return $export;
 }
