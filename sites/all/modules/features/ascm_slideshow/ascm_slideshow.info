@@ -14,6 +14,7 @@ features[features_api][] = api:2
 features[field_base][] = field_slide_image
 features[field_instance][] = node-slide-body
 features[field_instance][] = node-slide-field_slide_image
+features[image][] = slide
 features[node][] = slide
 features[variable][] = comment_anonymous_slide
 features[variable][] = comment_default_mode_slide
