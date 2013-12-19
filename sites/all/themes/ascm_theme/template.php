@@ -35,13 +35,46 @@ function footheme_process_page(&$vars) {
 
 /**
  * Override or insert variables into the node templates.
+ *
+ * From example at http://adaptivethemes.com/documentation/using-gpanels
  */
-/* -- Delete this line if you want to use these functions
-function footheme_preprocess_node(&$vars) {
+function ascm_theme_preprocess_node(&$vars) {
+  // Setup variables to hold the regions blocks, so we can print them in node.tpl.php
+  if ($blocks_two_33_66_top = block_get_blocks_by_region('two_33_66_top')) {
+    $vars['two_33_66_top'] = $blocks_two_33_66_top;
+    $vars['two_33_66_top']['#theme_wrappers'] = array('region');
+    $vars['two_33_66_top']['#region'] = 'two_33_66_top';
+  }
+  else {
+    $vars['two_33_66_top'] = '';
+  }
+  if ($blocks_two_33_66_first = block_get_blocks_by_region('two_33_66_first')) {
+    $vars['two_33_66_first'] = $blocks_two_33_66_first;
+    $vars['two_33_66_first']['#theme_wrappers'] = array('region');
+    $vars['two_33_66_first']['#region'] = 'two_33_66_first';
+  }
+  else {
+    $vars['two_33_66_first'] = '';
+  }
+  if ($blocks_two_33_66_second = block_get_blocks_by_region('two_33_66_second')) {
+    $vars['two_33_66_second'] = $blocks_two_33_66_second;
+    $vars['two_33_66_second']['#theme_wrappers'] = array('region');
+    $vars['two_33_66_second']['#region'] = 'two_33_66_second';
+  }
+  else {
+    $vars['two_33_66_second'] = '';
+  }
+  if ($blocks_two_33_66_bottom = block_get_blocks_by_region('two_33_66_bottom')) {
+    $vars['two_33_66_bottom'] = $blocks_two_33_66_bottom;
+    $vars['two_33_66_bottom']['#theme_wrappers'] = array('region');
+    $vars['two_33_66_bottom']['#region'] = 'two_33_66_bottom';
+  }
+  else {
+    $vars['two_33_66_bottom'] = '';
+  }
 }
-function footheme_process_node(&$vars) {
-}
-// */
+// function ascm_theme_process_node(&$vars) {
+// }
 
 
 /**

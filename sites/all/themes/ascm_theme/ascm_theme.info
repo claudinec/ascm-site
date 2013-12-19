@@ -78,9 +78,13 @@
   regions[content_aside] = Content bottom panel
   regions[menu_bar] = Menu Bar
   regions[header] = Header panel
-  regions[three_33_first] = Top panel first
-  regions[three_33_second] = Top panel second
-  regions[three_33_third] = Top panel third
+  ; regions[three_33_first] = Top panel first
+  ; regions[three_33_second] = Top panel second
+  ; regions[three_33_third] = Top panel third
+  regions[two_33_66_top] = 33-66 GPanel top
+  regions[two_33_66_first] = 33-66 GPanel first
+  regions[two_33_66_second] = 33-66 GPanel second
+  regions[two_33_66_bottom] = 33-66 GPanel bottom
   regions[secondary_content] = Features panel
   regions[tertiary_content] = Bottom panel
   regions[four_first] = Footer panel first
