@@ -41,8 +41,8 @@ function ascm_slideshow_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => 900,
-          'height' => 300,
+          'width' => 960,
+          'height' => 480,
           'upscale' => 0,
         ),
         'weight' => 1,
