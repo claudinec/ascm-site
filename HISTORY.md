@@ -1,7 +1,11 @@
 HISTORY
 =======
 
-Sprint 43 (2013-12-14)
+Release 1.2 (Sprint 44, 2013-12-16)
+  - Install Views Slideshow
+  - Logo in left corner
+
+Sprint 43 (2013-12-09)
 ----------------------
 
 - Remove VBO from public blog display
