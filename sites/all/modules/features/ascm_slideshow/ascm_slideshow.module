@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ASCM Slideshow feature.
+ */
+
+include_once 'ascm_slideshow.features.inc';
