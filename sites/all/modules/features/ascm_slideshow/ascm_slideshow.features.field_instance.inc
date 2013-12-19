@@ -65,7 +65,7 @@ function ascm_slideshow_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'slide',
         ),
         'type' => 'image',
         'weight' => 1,
