@@ -1,5 +1,5 @@
-HISTORY
-=======
+CHANGELOG
+=========
 
 Release 1.2.1 (2014-01-13)
 --------------------------
@@ -25,7 +25,7 @@ Deployed 2013-11-22
 - Security updates
   - Drupal 7.24
   - Entityreference
-- #29 Add admin display to blog view
+- Add admin display to blog view
 
 Deployed 2013-11-20
 -------------------
