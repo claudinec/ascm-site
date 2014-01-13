@@ -1,9 +1,18 @@
 HISTORY
 =======
 
+Release 1.2.1 (2014-01-13)
+--------------------------
+
+- Refactor code repository
+- Host on Bitbucket
+- Rebuild on Brie
+
 Release 1.2 (Sprint 44, 2013-12-16)
-  - Install Views Slideshow
-  - Logo in left corner
+-----------------------------------
+
+- Install Views Slideshow
+- Logo in left corner
 
 Sprint 43 (2013-12-09)
 ----------------------
