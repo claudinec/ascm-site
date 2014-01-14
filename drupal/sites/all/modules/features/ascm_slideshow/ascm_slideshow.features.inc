@@ -42,7 +42,7 @@ function ascm_slideshow_image_default_styles() {
         'name' => 'image_scale',
         'data' => array(
           'width' => 960,
-          'height' => 480,
+          'height' => 320,
           'upscale' => 0,
         ),
         'weight' => 1,

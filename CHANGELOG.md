@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+Release 1.2.2 (2014-01-14)
+--------------------------
+
+- Update slideshow image styles and layout
+
 Release 1.2.1 (2014-01-13)
 --------------------------
 

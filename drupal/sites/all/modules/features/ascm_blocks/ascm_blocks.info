@@ -12,7 +12,6 @@ features[box][] = contact_header
 features[box][] = google_calendar
 features[box][] = postal_address
 features[context][] = contact-blocks
-features[context][] = front-blocks
 features[ctools][] = boxes:box:1
 features[ctools][] = context:context:3
 features[features_api][] = api:2
