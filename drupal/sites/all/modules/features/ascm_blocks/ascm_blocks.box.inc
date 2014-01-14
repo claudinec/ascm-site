@@ -19,9 +19,10 @@ function ascm_blocks_default_box() {
   $box->description = 'Contact form header';
   $box->options = array(
     'body' => array(
-      'value' => '<p>You can also contact us using the following form.</p>',
+      'value' => '<p>You can also contact us using the following form.</p><p>To updated your details on our contact database, please use the form on the <a href="/form/update-your-contact-details">\'Update your contact details\'</a> page.</p>',
       'format' => 'filtered_html',
     ),
+    'additional_classes' => '',
   );
   $export['contact_header'] = $box;
 
