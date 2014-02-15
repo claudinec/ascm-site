@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+Release 1.2.3 (2014-02-15)
+--------------------------
+
+- Remove CRM feature
+- Update file directory and path settings for slideshow
+
 Release 1.2.2 (2014-01-14)
 --------------------------
 
