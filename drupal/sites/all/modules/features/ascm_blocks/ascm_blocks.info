@@ -8,6 +8,7 @@ dependencies[] = boxes
 dependencies[] = context
 dependencies[] = ctools
 dependencies[] = views
+features[box][] = ascm_logo
 features[box][] = contact_header
 features[box][] = google_calendar
 features[box][] = postal_address
