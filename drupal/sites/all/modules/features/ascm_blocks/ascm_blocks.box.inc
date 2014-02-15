@@ -13,6 +13,22 @@ function ascm_blocks_default_box() {
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
+  $box->delta = 'ascm_logo';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'ASCM Logo';
+  $box->options = array(
+    'body' => array(
+      'value' => '<p><img alt="" class="image-style-large media-image attr__typeof__foaf:Image img__fid__27 img__view_mode__media_large attr__format__media_large" height="319" src="http://ascm.dev/sites/default/files/styles/large/public/logo_320.gif?itok=ISnhWdpE" typeof="foaf:Image" width="301"></p>',
+      'format' => 'filtered_html',
+    ),
+    'additional_classes' => '',
+  );
+  $export['ascm_logo'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
   $box->delta = 'contact_header';
   $box->plugin_key = 'simple';
   $box->title = '';
