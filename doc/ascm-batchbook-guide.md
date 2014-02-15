@@ -1,3 +1,5 @@
+# Contact management with Batchbook
+
 ASCM uses an online Contact Relationship Management (CRM) system called Batchbook to maintain a database of current and former members, supporters, and other useful contacts. ASCM staff and volunteers should use this system rather than personal address lists, as a centralised system enables us to keep information up-to-date and reduces duplication.
 
 If you have any questions about any of this, **please ask Claudine** at claudine@ascm.org.au
