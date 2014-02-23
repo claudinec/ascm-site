@@ -11,6 +11,7 @@ dependencies[] = views
 features[box][] = ascm_logo
 features[box][] = contact_header
 features[box][] = google_calendar
+features[box][] = mailchimp_subscribe
 features[box][] = postal_address
 features[context][] = contact-blocks
 features[context][] = front-blocks
