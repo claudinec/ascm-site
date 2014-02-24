@@ -1,6 +1,18 @@
 CHANGELOG
 =========
 
+Release 1.3.0 (2014-02-23)
+--------------------------
+
+- Add Recent News block to front page
+- Add Mailchimp subscription block
+
+Release 1.2.3 (2014-02-15)
+--------------------------
+
+- Remove CRM feature
+- Update file directory and path settings for slideshow
+
 Release 1.2.2 (2014-01-14)
 --------------------------
 

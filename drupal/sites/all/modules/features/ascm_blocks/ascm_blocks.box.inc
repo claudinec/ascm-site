@@ -13,6 +13,22 @@ function ascm_blocks_default_box() {
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
+  $box->delta = 'ascm_logo';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'ASCM Logo';
+  $box->options = array(
+    'body' => array(
+      'value' => '<p><img alt="" class="image-style-large media-image attr__typeof__foaf:Image img__fid__27 img__view_mode__media_large attr__format__media_large" height="319" src="http://www.ascm.org.au/sites/default/files/styles/large/public/logo_320_1.png?itok=G1QUOdzN" typeof="foaf:Image" width="301"></p>',
+      'format' => 'filtered_html',
+    ),
+    'additional_classes' => '',
+  );
+  $export['ascm_logo'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
   $box->delta = 'contact_header';
   $box->plugin_key = 'simple';
   $box->title = '';
@@ -41,6 +57,28 @@ function ascm_blocks_default_box() {
     'additional_classes' => '',
   );
   $export['google_calendar'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'mailchimp_subscribe';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'Mailchimp subscription form';
+  $box->options = array(
+    'body' => array(
+      'value' => '<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">#mc_embed_signup{background:#fbfbf6; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup"><form action="http://ascm.us7.list-manage2.com/subscribe/post?u=ae2cbdec99e306d03a9160339&amp;id=bf6cbbd774" class="validate" id="mc-embedded-subscribe-form" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank"><label for="mce-EMAIL">Subscribe to our mailing list</label> <input class="email" id="mce-EMAIL" name="EMAIL" placeholder="email address" required="" type="email" value=""> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--><div style="position: absolute; left: -5000px;"><input name="b_ae2cbdec99e306d03a9160339_bf6cbbd774" type="text" value=""></div><div class="clear"><input class="button" id="mc-embedded-subscribe" name="subscribe" type="submit" value="Subscribe"></div></form></div><!--End mc_embed_signup-->',
+      'format' => 'full_html',
+    ),
+    'additional_classes' => '',
+  );
+  $export['mailchimp_subscribe'] = $box;
 
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */

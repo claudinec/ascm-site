@@ -93,13 +93,13 @@ function ascm_slideshow_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => '30',
+          'weight' => '2',
         ),
         'xmlsitemap' => array(
-          'weight' => '30',
+          'weight' => '1',
         ),
       ),
       'display' => array(),
@@ -145,6 +145,13 @@ function ascm_slideshow_strongarm() {
   $strongarm->name = 'node_submitted_slide';
   $strongarm->value = 1;
   $export['node_submitted_slide'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_slide_pattern';
+  $strongarm->value = 'slide/[node:title]';
+  $export['pathauto_node_slide_pattern'] = $strongarm;
 
   return $export;
 }

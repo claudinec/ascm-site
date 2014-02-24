@@ -94,7 +94,17 @@ function ascm_blog_strongarm() {
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'title' => array(
+          'weight' => '0',
+        ),
+        'path' => array(
+          'weight' => '5',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '6',
+        ),
+      ),
       'display' => array(),
     ),
   );
