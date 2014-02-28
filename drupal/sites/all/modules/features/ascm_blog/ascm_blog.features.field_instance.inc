@@ -95,7 +95,7 @@ function ascm_blog_field_default_field_instances() {
     'settings' => array(
       'description_field' => 0,
       'file_directory' => 'attachments',
-      'file_extensions' => 'pdf',
+      'file_extensions' => 'pdf doc docx odt',
       'max_filesize' => '',
       'user_register_form' => FALSE,
       'wysiwyg_fields' => array(
@@ -120,6 +120,7 @@ function ascm_blog_field_default_field_instances() {
           'public' => 'public',
         ),
         'allowed_types' => array(
+          0 => 0,
           'audio' => 0,
           'default' => 0,
           'image' => 'image',
