@@ -45,6 +45,21 @@ function ascm_blocks_default_box() {
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
+  $box->delta = 'facebook_badge';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'Facebook badge';
+  $box->options = array(
+    'body' => array(
+      'value' => '<!-- Facebook Badge START --><a href="https://www.facebook.com/AustralianStudentChristianMovement" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="Australian Student Christian Movement">Australian Student Christian Movement</a><br/><a href="https://www.facebook.com/AustralianStudentChristianMovement" target="_TOP" title="Australian Student Christian Movement"><img src="https://badge.facebook.com/badge/450718285008569.1930.1294250275.png" style="border: 0px;" /></a><br/><a href="https://en-gb.facebook.com/advertising" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="Make your own badge!">Promote your Page too</a><!-- Facebook Badge END -->',
+      'format' => 'full_html',
+    ),
+  );
+  $export['facebook_badge'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
   $box->delta = 'google_calendar';
   $box->plugin_key = 'simple';
   $box->title = '';
