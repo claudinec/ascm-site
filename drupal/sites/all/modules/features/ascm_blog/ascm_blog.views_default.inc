@@ -76,10 +76,13 @@ function ascm_blog_views_default_views() {
 
   /* Display: Feed */
   $handler = $view->new_display('feed', 'Feed', 'feed_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Blog';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['style_plugin'] = 'rss';
   $handler->display->display_options['row_plugin'] = 'node_rss';
   $handler->display->display_options['path'] = 'blog/feed';
+  $handler->display->display_options['sitename_title'] = 1;
 
   /* Display: Admin */
   $handler = $view->new_display('page', 'Admin', 'page_1');
