@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+Release 1.3.1 (2014-03-10)
+--------------------------
+
+- Add favicon, logo, and screenshot to theme
+
 Release 1.3.0 (2014-02-23)
 --------------------------
 
