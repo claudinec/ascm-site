@@ -5,7 +5,7 @@
 
   name        = ASCM theme
   description = ASCM theme based on Footheme.
-  
+  screenshot  = screenshot.png
 
 
 ;----------// Drupal and AT Core compatibility - dont change this!
@@ -63,9 +63,7 @@
   ; following as a guide:
   ;
   ; ie_scripts[lte IE 8] = js/my-script.js
-  
-  
-  
+
 ;----------// Regions
 
   ; Copy and paste the region list from your base theme - these are the
