@@ -10,6 +10,7 @@ dependencies[] = file
 dependencies[] = image
 dependencies[] = media
 dependencies[] = media_colorbox
+dependencies[] = scheduler
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
