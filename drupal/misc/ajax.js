@@ -622,7 +622,11 @@ Drupal.ajax.prototype.commands = {
    * Command to update a form's build ID.
    */
   updateBuildId: function(ajax, response, status) {
+<<<<<<< HEAD
     $('input[name="form_build_id"][value="' + response.old + '"]').val(response.new);
+=======
+    $('input[name="form_build_id"][value="' + response['old'] + '"]').val(response['new']);
+>>>>>>> release/1.3.2
   }
 };
 
