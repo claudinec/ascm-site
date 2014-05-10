@@ -12,7 +12,11 @@
 define('VERSION', '7.27');
 =======
 define('VERSION', '7.28');
+<<<<<<< HEAD
 >>>>>>> release/security-20140510
+=======
+>>>>>>> release/1.3.2
+>>>>>>> b72ff09f754ca57cb23cd625dd9ac393fbaf2a13
 
 /**
  * Core API compatibility.

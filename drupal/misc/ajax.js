@@ -626,7 +626,11 @@ Drupal.ajax.prototype.commands = {
     $('input[name="form_build_id"][value="' + response.old + '"]').val(response.new);
 =======
     $('input[name="form_build_id"][value="' + response['old'] + '"]').val(response['new']);
+<<<<<<< HEAD
 >>>>>>> release/security-20140510
+=======
+>>>>>>> release/1.3.2
+>>>>>>> b72ff09f754ca57cb23cd625dd9ac393fbaf2a13
   }
 };
 
