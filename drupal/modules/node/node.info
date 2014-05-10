@@ -9,8 +9,15 @@ required = TRUE
 configure = admin/structure/types
 stylesheets[all][] = node.css
 
+<<<<<<< HEAD
 ; Information added by Drupal.org packaging script on 2014-04-16
 version = "7.27"
 project = "drupal"
 datestamp = "1397687057"
+=======
+; Information added by Drupal.org packaging script on 2014-05-08
+version = "7.28"
+project = "drupal"
+datestamp = "1399522731"
+>>>>>>> release/security-20140510
 

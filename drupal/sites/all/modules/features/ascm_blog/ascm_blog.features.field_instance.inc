@@ -63,7 +63,7 @@ function ascm_blog_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => -4,
+      'weight' => 1,
     ),
     'workbench_access_field' => 0,
   );
@@ -95,7 +95,11 @@ function ascm_blog_field_default_field_instances() {
     'settings' => array(
       'description_field' => 0,
       'file_directory' => 'attachments',
+<<<<<<< HEAD
       'file_extensions' => 'pdf doc docx odt',
+=======
+      'file_extensions' => 'pdf doc docx odt rtf',
+>>>>>>> release/security-20140510
       'max_filesize' => '',
       'user_register_form' => FALSE,
       'wysiwyg_fields' => array(
@@ -213,7 +217,7 @@ function ascm_blog_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => -1,
+      'weight' => 3,
     ),
     'workbench_access_field' => 0,
   );
@@ -254,7 +258,7 @@ function ascm_blog_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => -4,
+      'weight' => 2,
     ),
   );
 

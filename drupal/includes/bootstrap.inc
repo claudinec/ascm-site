@@ -8,7 +8,11 @@
 /**
  * The current system version.
  */
+<<<<<<< HEAD
 define('VERSION', '7.27');
+=======
+define('VERSION', '7.28');
+>>>>>>> release/security-20140510
 
 /**
  * Core API compatibility.
