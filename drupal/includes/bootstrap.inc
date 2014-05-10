@@ -8,15 +8,15 @@
 /**
  * The current system version.
  */
-<<<<<<< HEAD
-define('VERSION', '7.27');
-=======
 define('VERSION', '7.28');
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> release/security-20140510
 =======
 >>>>>>> release/1.3.2
 >>>>>>> b72ff09f754ca57cb23cd625dd9ac393fbaf2a13
+=======
+>>>>>>> 6d05354989054a9507a643c834705f0297fd51ef
 
 /**
  * Core API compatibility.
