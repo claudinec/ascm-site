@@ -1,4 +1,6 @@
 
+<<<<<<< HEAD
+=======
 Drupal 7.28, 2014-05-08
 -----------------------
 - Fixed a regression introduced in Drupal 7.27 that caused JavaScript to break
@@ -41,6 +43,7 @@ Drupal 7.28, 2014-05-08
 - Numerous API documentation improvements.
 - Additional automated test coverage.
 
+>>>>>>> release/1.3.2
 Drupal 7.27, 2014-04-16
 ----------------------
 - Fixed security issues (information disclosure). See SA-CORE-2014-002.
