@@ -95,11 +95,7 @@ function ascm_blog_field_default_field_instances() {
     'settings' => array(
       'description_field' => 0,
       'file_directory' => 'attachments',
-<<<<<<< HEAD
-      'file_extensions' => 'pdf doc docx odt',
-=======
       'file_extensions' => 'pdf doc docx odt rtf',
->>>>>>> release/1.3.2
       'max_filesize' => '',
       'user_register_form' => FALSE,
       'wysiwyg_fields' => array(
