@@ -9,6 +9,7 @@ core = 6.x
 hidden = TRUE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; Information added by Drupal.org packaging script on 2014-04-16
 version = "7.27"
 project = "drupal"
@@ -19,4 +20,10 @@ version = "7.28"
 project = "drupal"
 datestamp = "1399522731"
 >>>>>>> release/1.3.2
+=======
+; Information added by Drupal.org packaging script on 2014-01-15
+version = "7.26"
+project = "drupal"
+datestamp = "1389815930"
+>>>>>>> parent of d062505... security updates: core 7.28, mimemail, revisioning, resolves #14
 
