@@ -1,6 +1,16 @@
 CHANGELOG
 =========
 
+Release 1.3.3 (2014-05-10)
+--------------------------
+
+- Fix conflicted update to 7.28
+
+Release 1.3.2 (2014-05-10)
+--------------------------
+
+- Security updates: core 7.28, mimemail, revisioning
+
 Release 1.3.1 (2014-03-10)
 --------------------------
 
