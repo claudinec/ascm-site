@@ -3,7 +3,7 @@
 /**
  * @file
  * Template.php - process theme data for your sub-theme.
- * 
+ *
  * Rename each function and instance of "footheme" to match
  * your subthemes name, e.g. if you name your theme "footheme" then the function
  * name will be "footheme_preprocess_hook". Tip - you can search/replace
