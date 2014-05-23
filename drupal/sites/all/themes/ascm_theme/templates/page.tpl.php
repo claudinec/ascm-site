@@ -1,4 +1,11 @@
 <?php // Corolla ?>
+
+<!-- Freshdesk popup -->
+<script type="text/javascript" src="http://assets.freshdesk.com/widget/freshwidget.js"></script>
+<script type="text/javascript">
+  FreshWidget.init("", {"queryString": "&widgetType=popup", "widgetType": "popup", "buttonType": "text", "buttonText": "Support", "buttonColor": "white", "buttonBg": "#8e9e35", "alignment": "2", "offset": "235px", "formHeight": "500px", "url": "https://claudinechionh.freshdesk.com"} );
+</script>
+
 <div id="page-wrapper">
   <div id="page" class="<?php print $classes; ?>">
 
