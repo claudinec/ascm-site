@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+Release 1.3.5 (2014-05-31)
+--------------------------
+
+- Security update: Views
+- Security update: Stage file proxy
+- Update Freshdesk popup: Feedback not support
+
 Release 1.3.4 (2014-05-23)
 --------------------------
 
