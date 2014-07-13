@@ -62,7 +62,7 @@ function ascm_blocks_default_box() {
   $box->api_version = 1;
   $box->delta = 'google_calendar';
   $box->plugin_key = 'simple';
-  $box->title = '';
+  $box->title = 'Upcoming Events';
   $box->description = 'Google Calendar embed code';
   $box->options = array(
     'body' => array(
