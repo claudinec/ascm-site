@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+Release 1.3.6 (2014-07-13)
+--------------------------
+
+- Bold links for main menu and node content
+
 Release 1.3.5 (2014-05-31)
 --------------------------
 

@@ -1,5 +1,5 @@
 /**
- * Footheme footheme.css
+ * ascm_theme.css
  *
  * Use this file to add your custom styles.
  *
@@ -7,3 +7,8 @@
  * remember to update the name in the info file
  * as well.
  */
+
+/* Bold links for main menu and node content. */
+.block-main-menu a, .node-content a {
+  font-weight: bold;
+}
