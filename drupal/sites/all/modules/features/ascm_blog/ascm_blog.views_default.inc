@@ -12,7 +12,7 @@ function ascm_blog_views_default_views() {
 
   $view = new view();
   $view->name = 'blog';
-  $view->description = '';
+  $view->description = 'Blog view';
   $view->tag = 'default';
   $view->base_table = 'node';
   $view->human_name = 'Blog';
