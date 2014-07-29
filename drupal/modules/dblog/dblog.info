@@ -5,16 +5,8 @@ version = VERSION
 core = 7.x
 files[] = dblog.test
 
-; Information added by Drupal.org packaging script on 2014-05-08
-version = "7.28"
+; Information added by Drupal.org packaging script on 2014-07-24
+version = "7.30"
 project = "drupal"
-datestamp = "1399522731"
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> release/security-20140510
-=======
->>>>>>> release/1.3.2
->>>>>>> b72ff09f754ca57cb23cd625dd9ac393fbaf2a13
-=======
->>>>>>> 6d05354989054a9507a643c834705f0297fd51ef
+datestamp = "1406239730"
 
