@@ -35,6 +35,7 @@ function ascm_admin_wysiwyg_default_profiles() {
           'Redo' => 1,
           'Link' => 1,
           'Unlink' => 1,
+          'Blockquote' => 1,
           'HorizontalRule' => 1,
           'Cut' => 1,
           'Copy' => 1,
@@ -42,9 +43,6 @@ function ascm_admin_wysiwyg_default_profiles() {
           'PasteText' => 1,
           'PasteFromWord' => 1,
           'RemoveFormat' => 1,
-        ),
-        'imce' => array(
-          'imce' => 1,
         ),
         'drupal' => array(
           'media' => 1,

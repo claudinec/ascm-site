@@ -1,6 +1,45 @@
 CHANGELOG
 =========
 
+Release 1.4.1 (2014-08-04)
+--------------------------
+
+- Add photo thumbnail to blog teaser display
+- Install Views RSS and add tags to blog RSS feed
+
+Release 1.4 (2014-08-04)
+------------------------
+
+- Upcoming Events
+- Webform Mailchimp
+
+Release 1.3.6 (2014-07-13)
+--------------------------
+
+- Bold links for main menu and node content
+
+Release 1.3.5 (2014-05-31)
+--------------------------
+
+- Security update: Views
+- Security update: Stage file proxy
+- Update Freshdesk popup: Feedback not support
+
+Release 1.3.4 (2014-05-23)
+--------------------------
+
+- Add js for freshdesk popup
+
+Release 1.3.3 (2014-05-10)
+--------------------------
+
+- Fix conflicted update to 7.28
+
+Release 1.3.2 (2014-05-10)
+--------------------------
+
+- Security updates: core 7.28, mimemail, revisioning
+
 Release 1.3.1 (2014-03-10)
 --------------------------
 

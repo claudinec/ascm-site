@@ -85,7 +85,7 @@ function ascm_blog_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'node',
@@ -95,11 +95,7 @@ function ascm_blog_field_default_field_instances() {
     'settings' => array(
       'description_field' => 0,
       'file_directory' => 'attachments',
-<<<<<<< HEAD
-      'file_extensions' => 'pdf doc docx odt',
-=======
       'file_extensions' => 'pdf doc docx odt rtf',
->>>>>>> release/1.3.2
       'max_filesize' => '',
       'user_register_form' => FALSE,
       'wysiwyg_fields' => array(
@@ -161,13 +157,18 @@ function ascm_blog_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'colorbox',
         'settings' => array(
-          'image_link' => 'content',
-          'image_style' => 'medium',
+          'colorbox_caption' => 'title',
+          'colorbox_caption_custom' => '',
+          'colorbox_gallery' => 'post',
+          'colorbox_gallery_custom' => '',
+          'colorbox_image_style' => 'slide',
+          'colorbox_multivalue_index' => NULL,
+          'colorbox_node_style' => 'thumbnail',
         ),
-        'type' => 'hidden',
-        'weight' => -1,
+        'type' => 'colorbox',
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'node',
@@ -238,10 +239,13 @@ function ascm_blog_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 10,
+        'module' => 'ds',
+        'settings' => array(
+          'taxonomy_term_link' => 1,
+          'taxonomy_term_separator' => ' / ',
+        ),
+        'type' => 'ds_taxonomy_separator',
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
