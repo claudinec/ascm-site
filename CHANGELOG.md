@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+Release 1.4.1 (2014-08-04)
+--------------------------
+
+- Add photo thumbnail to blog teaser display
+- Install Views RSS and add tags to blog RSS feed
+
 Release 1.4 (2014-08-04)
 ------------------------
 
