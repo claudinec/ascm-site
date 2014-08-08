@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+Release 2014-08-08
+------------------
+
+- Add tags to book pages
+- Core update to 7.31
+
 Release 1.4.1 (2014-08-04)
 --------------------------
 
