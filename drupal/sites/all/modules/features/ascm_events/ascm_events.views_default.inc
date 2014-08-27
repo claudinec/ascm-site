@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * yg_events.views_default.inc
+ * ascm_events.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function yg_events_views_default_views() {
+function ascm_events_views_default_views() {
   $export = array();
 
   $view = new view();

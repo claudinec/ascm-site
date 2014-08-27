@@ -1,20 +1,20 @@
 <?php
 /**
  * @file
- * yg_events.features.inc
+ * ascm_events.features.inc
  */
 
 /**
  * Implements hook_views_api().
  */
-function yg_events_views_api() {
+function ascm_events_views_api() {
   return array("version" => "3.0");
 }
 
 /**
  * Implements hook_node_info().
  */
-function yg_events_node_info() {
+function ascm_events_node_info() {
   $items = array(
     'event' => array(
       'name' => t('Event'),

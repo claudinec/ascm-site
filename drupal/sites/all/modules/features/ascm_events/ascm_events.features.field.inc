@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * yg_events.features.field.inc
+ * ascm_events.features.field.inc
  */
 
 /**
  * Implements hook_field_default_fields().
  */
-function yg_events_field_default_fields() {
+function ascm_events_field_default_fields() {
   $fields = array();
 
   // Exported field: 'node-event-body'.
