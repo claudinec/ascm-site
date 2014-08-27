@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+Release 1.4.2 (2014-08-27)
+--------------------------
+
+- Blog feed: use author name instead of author uid
+- Add side bar for other people's events
+
 Release 2014-08-08
 ------------------
 
