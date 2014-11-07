@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+Release 1.4.3 (2014-11-07)
+--------------------------
+
+- Filter Events view by today or later
+- Menu for other SCMs and related organisations
+
 Release 1.4.2 (2014-08-27)
 --------------------------
 
