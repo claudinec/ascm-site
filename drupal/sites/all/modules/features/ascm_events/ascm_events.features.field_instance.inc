@@ -92,12 +92,24 @@ function ascm_events_field_default_field_instances() {
       'default_value_code' => '',
       'default_value_code2' => '',
       'user_register_form' => FALSE,
+      'wysiwyg_fields' => array(
+        'settings' => array(
+          'advanced' => array(
+            'delete' => 1,
+            'hide' => 1,
+          ),
+          'formatters' => array(),
+          'icon' => '6f7621a02161e347e66d99d8ace540a3',
+          'label' => 'Date',
+        ),
+        'status' => 0,
+      ),
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'date',
       'settings' => array(
-        'display_all_day' => 0,
+        'display_all_day' => 1,
         'increment' => 15,
         'input_format' => 'Y-m-d H:i:s',
         'input_format_custom' => '',
@@ -106,7 +118,7 @@ function ascm_events_field_default_field_instances() {
         'text_parts' => array(),
         'year_range' => '-3:+3',
       ),
-      'type' => 'date_select',
+      'type' => 'date_popup',
       'weight' => 32,
     ),
   );
@@ -253,7 +265,7 @@ function ascm_events_field_default_field_instances() {
     'bundle' => 'event',
     'default_value' => array(
       0 => array(
-        'value' => 'Yarra Greens',
+        'value' => 'ASCM',
       ),
     ),
     'deleted' => 0,
@@ -280,6 +292,18 @@ function ascm_events_field_default_field_instances() {
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
+      'wysiwyg_fields' => array(
+        'settings' => array(
+          'advanced' => array(
+            'delete' => 1,
+            'hide' => 1,
+          ),
+          'formatters' => array(),
+          'icon' => '6f7621a02161e347e66d99d8ace540a3',
+          'label' => 'Hosted by',
+        ),
+        'status' => 0,
+      ),
     ),
     'widget' => array(
       'active' => 1,
