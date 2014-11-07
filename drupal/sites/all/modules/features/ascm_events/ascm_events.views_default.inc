@@ -91,7 +91,7 @@ function ascm_events_views_default_views() {
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = 'Upcoming events hosted by Yarra Greens, neighbouring Greens branches, and other friendly organisations.';
+  $handler->display->display_options['header']['area']['content'] = 'Upcoming events hosted by ASCM and other friendly organisations.';
   $handler->display->display_options['header']['area']['format'] = 'filtered_html';
   $handler->display->display_options['path'] = 'events';
   $handler->display->display_options['menu']['type'] = 'normal';
