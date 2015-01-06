@@ -1,0 +1,8 @@
+filename = "ascm.dev-2014-08-04T22-01-09"
+description = ""
+datestamp = "1407153675"
+generator = "Backup and Migrate (http://drupal.org/project/backup_migrate)"
+generatorversion = "7.x-2.x"
+sites[0][version] = "7.30"
+sites[0][name] = "Australian Student Christian Movement"
+sites[0][url] = "http://ascm.dev/"
