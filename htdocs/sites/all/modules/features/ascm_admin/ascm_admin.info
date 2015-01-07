@@ -37,6 +37,5 @@ features[variable][] = mandrill_api_key
 features[variable][] = site_default_country
 features[variable][] = site_mail
 features[variable][] = site_name
-features[views_view][] = individuals
 features[wysiwyg][] = filtered_html
 mtime = 1407158284
