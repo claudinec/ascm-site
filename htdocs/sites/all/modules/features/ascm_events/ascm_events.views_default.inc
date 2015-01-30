@@ -78,12 +78,12 @@ function ascm_events_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'event' => 'event',
   );
-  /* Filter criterion: Content: Date -  start date (field_date) */
-  $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
-  $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
-  $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
-  $handler->display->display_options['filters']['field_date_value']['operator'] = '>=';
-  $handler->display->display_options['filters']['field_date_value']['default_date'] = 'today';
+  /* Filter criterion: Content: Date - end date (field_date:value2) */
+  $handler->display->display_options['filters']['field_date_value2']['id'] = 'field_date_value2';
+  $handler->display->display_options['filters']['field_date_value2']['table'] = 'field_data_field_date';
+  $handler->display->display_options['filters']['field_date_value2']['field'] = 'field_date_value2';
+  $handler->display->display_options['filters']['field_date_value2']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_date_value2']['default_date'] = 'today';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
