@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ASCM Admin feature.
+ */
+
+include_once 'ascm_admin.features.inc';
