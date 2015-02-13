@@ -24,6 +24,13 @@ function ascm_blog_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 1,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -75,6 +82,13 @@ function ascm_blog_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 4,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'file',
         'settings' => array(),
@@ -155,6 +169,22 @@ function ascm_blog_field_default_field_instances() {
         'type' => 'media_colorbox',
         'weight' => 2,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'media_colorbox',
+        'settings' => array(
+          'audio_playlist' => 0,
+          'colorbox_caption' => 'title',
+          'colorbox_gallery' => 'post',
+          'colorbox_gallery_custom' => '',
+          'colorbox_view_mode' => 'colorbox',
+          'file_view_mode' => 'media_preview',
+          'fixed_height' => '',
+          'fixed_width' => '',
+        ),
+        'type' => 'media_colorbox',
+        'weight' => 2,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'colorbox',
@@ -166,6 +196,7 @@ function ascm_blog_field_default_field_instances() {
           'colorbox_image_style' => 'slide',
           'colorbox_multivalue_index' => NULL,
           'colorbox_node_style' => 'thumbnail',
+          'colorbox_node_style_first' => '',
         ),
         'type' => 'colorbox',
         'weight' => 1,
@@ -231,6 +262,13 @@ function ascm_blog_field_default_field_instances() {
     'description' => 'Enter a comma-separated list of words to describe your content.',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 3,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'taxonomy',
         'settings' => array(),

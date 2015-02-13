@@ -22,7 +22,14 @@ function ascm_info_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -78,7 +85,14 @@ function ascm_info_field_default_field_instances() {
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 1,
+        'weight' => 2,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -141,16 +155,23 @@ function ascm_info_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
         'module' => 'ds',
         'settings' => array(
           'taxonomy_term_link' => 1,
           'taxonomy_term_separator' => ' / ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 2,
+        'weight' => 3,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'ds',
+        'settings' => array(
+          'taxonomy_term_link' => 1,
+          'taxonomy_term_separator' => ' / ',
+        ),
+        'type' => 'ds_taxonomy_separator',
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
