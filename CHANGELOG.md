@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+Release 1.4.4 (2015-02-13)
+--------------------------
+
+- Security release: Views 3.10
+- Install Markdown content filter (why did I not have this before?)
+
 Release 1.4.3 (2014-11-07)
 --------------------------
 
