@@ -1,6 +1,14 @@
 CHANGELOG
 =========
 
+Release 1.4.6 (2015-02-16)
+--------------------------
+
+- Remove unused Rules feature and module
+- Install FB and Twitter modules
+- Delete Individual content and node type
+- Resize Google Calendar widget to 280x280
+
 Release 1.4.5 (2015-02-13)
 --------------------------
 
