@@ -1,3 +1,6 @@
 [submodule "htdocs/sites/all/themes/ascm_theme"]
 	path = htdocs/sites/all/themes/ascm_theme
 	url = git@github.com:claudinec/ascm_theme.git
+[submodule "htdocs/sites/all/libraries/facebook-php-sdk"]
+	path = htdocs/sites/all/libraries/facebook-php-sdk
+	url = git@github.com:facebookarchive/facebook-php-sdk.git
