@@ -66,7 +66,7 @@ function ascm_blocks_default_box() {
   $box->description = 'Google Calendar embed code';
   $box->options = array(
     'body' => array(
-      'value' => '<iframe src="https://www.google.com/calendar/embed?src=australianscm%40gmail.com&ctz=Australia/Sydney&showPrint=0&showTabs=0&mode=AGENDA" style="border: 0" width="300" height="225" frameborder="0" scrolling="no"></iframe>',
+      'value' => '<iframe src="https://www.google.com/calendar/embed?src=australianscm%40gmail.com&ctz=Australia/Sydney&showPrint=0&showTabs=0&mode=AGENDA" style="border: 0" width="280" height="280" frameborder="0" scrolling="no"></iframe>',
       'format' => 'full_html',
     ),
     'additional_classes' => '',
