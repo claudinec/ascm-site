@@ -7,16 +7,22 @@
 include_once 'ascm_admin.features.inc';
 
 /**
- * Implements hook_update_N().
- *
- * Delete Individual content type (it's still here even though CRM feature
- * has been removed.)
+ * Delete Individual content then delete the content type (it's still here
+ * even though CRM feature has been removed.)
  */
-function ascm_admin_update_7001() {
-$types = node_type_get_names();
-  foreach( $types as $type=>$type_name ){
-    if ($type == 'individual'){
-      node_type_delete($type);
+function ascm_admin_update_7004() {
+  // Delete Individual content first.
+  $node_query = "SELECT nid FROM node WHERE type='individual'";
+  $result = db_query($node_query);
+  foreach ($result as $node) {
+    node_delete($node->nid);
+  }
+
+  // Delete the 'individual' content type.
+  $types = node_type_get_names();
+    foreach( $types as $type=>$type_name ){
+      if ($type == 'individual') {
+        // node_type_delete($type);
     }
   }
 }
