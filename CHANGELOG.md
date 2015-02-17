@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+Release 1.4.7 (2015-02-17)
+--------------------------
+
+- Patch Mailchimp to segment campaigns programatically:
+  https://www.drupal.org/node/1874392#comment-8717749
+
 Release 1.4.6 (2015-02-16)
 --------------------------
 
