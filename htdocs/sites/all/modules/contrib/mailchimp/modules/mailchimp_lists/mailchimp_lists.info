@@ -4,16 +4,15 @@ package = MailChimp
 core = 7.x
 dependencies[] = mailchimp
 dependencies[] = entity
-dependencies[] = entity_token
+dependencies[] = options
 
 configure = admin/config/services/mailchimp/lists
 
-files[] = lib/mailchimp_lists.entity.inc
 files[] = tests/mailchimp_lists.test
 
-; Information added by drupal.org packaging script on 2013-07-25
-version = "7.x-2.12"
+; Information added by Drupal.org packaging script on 2014-11-07
+version = "7.x-3.2"
 core = "7.x"
 project = "mailchimp"
-datestamp = "1374771079"
+datestamp = "1415393260"
 
