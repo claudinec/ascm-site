@@ -319,24 +319,6 @@ function mailchimp_campaign_get_segments($id) {
 }
 
 /**
- * Return all available static segments.
- *
- * @param string $id
- *  The list id to connect to.
- *
- * @return array
- */
-function mailchimp_campaign_get_segments($id) {
-  $output = array();
-
-  if ($mcapi = mailchimp_get_api_object()) {
-    $output = $mcapi->listStaticSegments($id);
-  }
-
-  return $output;
-}
-
-/**
  * Return all available user templates.
  *
  * @return array().
