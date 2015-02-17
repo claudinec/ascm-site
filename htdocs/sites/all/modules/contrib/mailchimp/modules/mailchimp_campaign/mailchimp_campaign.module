@@ -197,11 +197,12 @@ function mailchimp_campaign_theme($existing, $type, $theme, $path) {
  * @param $template
  * @param $options
  * @param null $campaign_id
+ * @param array $segment_opts
  *
  * @return string
  *   New or existing campaign ID.
  */
-function mailchimp_campaign_save_campaign($template, $options, $campaign_id = NULL) {
+function mailchimp_campaign_save_campaign($template, $options, $campaign_id = NULL, $segment_opts = array()) {
   $mcapi = mailchimp_get_api_object();
   $options += array(
     'generate_text' => TRUE,
@@ -218,7 +219,7 @@ function mailchimp_campaign_save_campaign($template, $options, $campaign_id = NU
   // Save campaign to MailChimp. (Only regular campaigns are supported)
   $is_new = empty($campaign_id);
   if ($is_new) {
-    $campaign_id = $mcapi->campaignCreate('regular', $options, $content);
+    $campaign_id = $mcapi->campaignCreate('regular', $options, $content, $segment_opts);
   }
   else {
     // updates must be done one value at a time
@@ -297,6 +298,42 @@ function mailchimp_campaign_delete_campaign($cid) {
     mailchimp_campaign_delete($cid);
     watchdog('mailchimp_campaign', 'MailChimp campaign %cid was deleted.', array('%cid' => $cid));
   }
+}
+
+/**
+ * Return all available static segments.
+ *
+ * @param string $id
+ *  The list id to connect to.
+ *
+ * @return array
+ */
+function mailchimp_campaign_get_segments($id) {
+  $output = array();
+
+  if ($mcapi = mailchimp_get_api_object()) {
+    $output = $mcapi->listStaticSegments($id);
+  }
+
+  return $output;
+}
+
+/**
+ * Return all available static segments.
+ *
+ * @param string $id
+ *  The list id to connect to.
+ *
+ * @return array
+ */
+function mailchimp_campaign_get_segments($id) {
+  $output = array();
+
+  if ($mcapi = mailchimp_get_api_object()) {
+    $output = $mcapi->listStaticSegments($id);
+  }
+
+  return $output;
 }
 
 /**
