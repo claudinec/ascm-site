@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+Release 1.4.8 (2015-02-17)
+--------------------------
+
+- Upgrade Mailchimp module from 2.12 to 3.2
+  (Adds list segments)
+
 Release 1.4.7 (2015-02-17)
 --------------------------
 
