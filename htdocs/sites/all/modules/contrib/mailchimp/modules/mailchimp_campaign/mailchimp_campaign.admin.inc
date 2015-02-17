@@ -28,7 +28,11 @@ function mailchimp_campaign_campaign_form($form, &$form_state, MailChimpCampaign
     '#description' => t('Select the list this campaign should be sent to.'),
     '#options' => _mailchimp_campaign_build_option_list(mailchimp_get_lists()),
     '#default_value' => ($campaign) ? $campaign->mc_data['list_id'] : -1,
-    '#required' => TRUE
+    '#required' => TRUE,
+    '#ajax' => array(
+      'callback' => 'mailchimp_campaign_list_callback',
+      'wrapper' => 'segment-sections'
+    )
   );
   $form['from_email'] = array(
     '#type' => 'textfield',
@@ -58,6 +62,33 @@ function mailchimp_campaign_campaign_form($form, &$form_state, MailChimpCampaign
       'wrapper' => 'content-sections'
     )
   );
+
+  $form['segment'] = array(
+    '#id' => 'segment-sections',
+    '#type' => 'fieldset',
+    '#title' => t('Segment'),
+    '#collapsible' => FALSE,
+    '#collapsed' => FALSE,
+  );
+
+  if (isset($form_state['campaign']->mc_data['segment_text'])) {
+    $form['segment']['text'] = array(
+      '#markup' => $form_state['campaign']->mc_data['segment_text'],
+    );
+  }
+  else {
+    $saves_segments = $form_state['values']['list_id']
+      ? mailchimp_campaign_get_segments($form_state['values']['list_id'])
+      : array();
+
+    $form['segment']['static_segment_id'] = array(
+      '#type' => 'select',
+      '#title' => t('Static segment ID'),
+      '#title_display' => 'invisible',
+      '#options' => _mailchimp_campaign_build_option_list($saves_segments),
+    );
+  }
+
   $form['content'] = array(
     '#id' => 'content-sections',
     '#type' => 'fieldset',
@@ -147,6 +178,18 @@ function mailchimp_campaign_template_callback($form, $form_state) {
 }
 
 /**
+ * AJAX callback when changing list id.
+ *
+ * @param $form
+ * @param $form_state
+ *
+ * @return mixed
+ */
+function mailchimp_campaign_list_callback($form, $form_state) {
+  return $form['segment'];
+}
+
+/**
  * Preview callback for mailchimp_campaign_campaign_form().
  *
  * @param $form
@@ -192,8 +235,21 @@ function mailchimp_campaign_campaign_form_submit($form, &$form_state) {
     'template_id' => $values['template_id']
   );
 
+  if ($values['static_segment_id']) {
+    $segment_opts = array(
+      'match' => 'any',
+      'conditions' => array(
+        array(
+          'field' => 'static_segment',
+          'value' => $values['static_segment_id'],
+          'op' => 'eq',
+        ),
+      ),
+    );
+  }
+
   $campaign_id = (isset($form_state['campaign']) ? $form_state['campaign']->mc_campaign_id : NULL);
-  mailchimp_campaign_save_campaign($values['content'], $options, $campaign_id);
+  mailchimp_campaign_save_campaign($values['content'], $options, $campaign_id, $segment_opts);
 
   cache_clear_all('mailchimp_campaign_campaigns', 'cache');
 
