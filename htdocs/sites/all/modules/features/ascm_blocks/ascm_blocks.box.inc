@@ -29,6 +29,21 @@ function ascm_blocks_default_box() {
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
+  $box->delta = 'contact_brief';
+  $box->plugin_key = 'simple';
+  $box->title = 'Contact us';
+  $box->description = 'Contact - brief info';
+  $box->options = array(
+    'body' => array(
+      'value' => '<p>PO Box 4386<br>MELBOURNE UNIVERSITY<br>VIC 3052</p><p><a href="/contact">Email us</a></p>',
+      'format' => 'filtered_html',
+    ),
+  );
+  $export['contact_brief'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
   $box->delta = 'contact_header';
   $box->plugin_key = 'simple';
   $box->title = '';
