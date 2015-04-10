@@ -125,5 +125,26 @@ function ascm_blocks_default_box() {
   );
   $export['postal_address'] = $box;
 
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'social';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'Social links';
+  $box->options = array(
+    'body' => array(
+      'value' => '<p>
+<a href="https://www.facebook.com/AustralianStudentChristianMovement"><img src="sites/all/themes/ascm_theme/images/f_logo_32.png" alt="Facebook"></a>
+<a href="https://twitter.com/australianscm"><img src="sites/all/themes/ascm_theme/images/bird_blue_32.png" alt="Twitter"></a>
+<a href="https://instagram.com/australianscm"><img src="sites/all/themes/ascm_theme/images/Instagram_Glyph_Logo_32.png" alt="Instagram">
+</p>
+',
+      'format' => 'filtered_html',
+    ),
+    'additional_classes' => '',
+  );
+  $export['social'] = $box;
+
   return $export;
 }
