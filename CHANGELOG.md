@@ -1,6 +1,14 @@
 CHANGELOG
 =========
 
+Release 1.5-dev
+---------------
+
+- Install Switchtheme (feature/1.5-switchtheme)
+- feature/1.5-blog-view:
+  - No publication info in teaser view, only in article view
+  - Article, book page and event display: trim to 200 in teaser view
+
 Release 1.4.8 (2015-02-17)
 --------------------------
 
