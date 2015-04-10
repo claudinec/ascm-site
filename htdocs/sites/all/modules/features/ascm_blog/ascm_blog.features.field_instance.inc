@@ -282,7 +282,7 @@ function ascm_blog_field_default_field_instances() {
         'weight' => 3,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'ds',
         'settings' => array(
           'taxonomy_term_link' => 1,
