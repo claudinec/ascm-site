@@ -88,9 +88,7 @@ function ascm_blocks_default_box() {
   $box->options = array(
     'body' => array(
       'value' => '<p>
-<a href="https://www.facebook.com/AustralianStudentChristianMovement"><img src="sites/all/themes/ascm_theme/images/f_logo_32.png" alt="Facebook"></a>
-<a href="https://twitter.com/australianscm"><img src="sites/all/themes/ascm_theme/images/bird_blue_32.png" alt="Twitter"></a>
-<a href="https://instagram.com/australianscm"><img src="sites/all/themes/ascm_theme/images/Instagram_Glyph_Logo_32.png" alt="Instagram">
+<a href="https://www.facebook.com/AustralianStudentChristianMovement"><img src="sites/all/themes/ascm_theme/images/f_logo_32.png" alt="Facebook"></a> <a href="https://twitter.com/australianscm"><img src="sites/all/themes/ascm_theme/images/bird_blue_32.png" alt="Twitter"></a> <a href="https://instagram.com/australianscm"><img src="sites/all/themes/ascm_theme/images/Instagram_Glyph_Logo_32.png" alt="Instagram">
 </p>
 ',
       'format' => 'filtered_html',
