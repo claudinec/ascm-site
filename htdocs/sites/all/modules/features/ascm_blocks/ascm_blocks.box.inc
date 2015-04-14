@@ -13,18 +13,17 @@ function ascm_blocks_default_box() {
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
-  $box->delta = 'ascm_logo';
+  $box->delta = 'contact_brief';
   $box->plugin_key = 'simple';
-  $box->title = '';
-  $box->description = 'ASCM Logo';
+  $box->title = 'Contact us';
+  $box->description = 'Contact - brief info';
   $box->options = array(
     'body' => array(
-      'value' => '<p><img alt="" class="image-style-large media-image attr__typeof__foaf:Image img__fid__27 img__view_mode__media_large attr__format__media_large" height="319" src="http://www.ascm.org.au/sites/default/files/styles/large/public/logo_320_1.png?itok=G1QUOdzN" typeof="foaf:Image" width="301"></p>',
+      'value' => '<p>PO Box 4386<br>MELBOURNE UNIVERSITY<br>VIC 3052</p><p><a href="/contact">Email us</a></p>',
       'format' => 'filtered_html',
     ),
-    'additional_classes' => '',
   );
-  $export['ascm_logo'] = $box;
+  $export['contact_brief'] = $box;
 
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
@@ -41,37 +40,6 @@ function ascm_blocks_default_box() {
     'additional_classes' => '',
   );
   $export['contact_header'] = $box;
-
-  $box = new stdClass();
-  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
-  $box->api_version = 1;
-  $box->delta = 'facebook_badge';
-  $box->plugin_key = 'simple';
-  $box->title = '';
-  $box->description = 'Facebook badge';
-  $box->options = array(
-    'body' => array(
-      'value' => '<!-- Facebook Badge START --><a href="https://www.facebook.com/AustralianStudentChristianMovement" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="Australian Student Christian Movement">Australian Student Christian Movement</a><br/><a href="https://www.facebook.com/AustralianStudentChristianMovement" target="_TOP" title="Australian Student Christian Movement"><img src="https://badge.facebook.com/badge/450718285008569.1930.1294250275.png" style="border: 0px;" /></a><br/><a href="https://en-gb.facebook.com/advertising" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="Make your own badge!">Promote your Page too</a><!-- Facebook Badge END -->',
-      'format' => 'full_html',
-    ),
-  );
-  $export['facebook_badge'] = $box;
-
-  $box = new stdClass();
-  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
-  $box->api_version = 1;
-  $box->delta = 'google_calendar';
-  $box->plugin_key = 'simple';
-  $box->title = 'Upcoming Events';
-  $box->description = 'Google Calendar embed code';
-  $box->options = array(
-    'body' => array(
-      'value' => '<iframe src="https://www.google.com/calendar/embed?src=australianscm%40gmail.com&ctz=Australia/Sydney&showPrint=0&showTabs=0&mode=AGENDA" style="border: 0" width="280" height="280" frameborder="0" scrolling="no"></iframe>',
-      'format' => 'full_html',
-    ),
-    'additional_classes' => '',
-  );
-  $export['google_calendar'] = $box;
 
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
@@ -109,6 +77,27 @@ function ascm_blocks_default_box() {
     ),
   );
   $export['postal_address'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'social';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'Social links';
+  $box->options = array(
+    'body' => array(
+      'value' => '<p>
+<a href="https://www.facebook.com/AustralianStudentChristianMovement"><img src="sites/all/themes/ascm_theme/images/f_logo_32.png" alt="Facebook"></a>
+<a href="https://twitter.com/australianscm"><img src="sites/all/themes/ascm_theme/images/bird_blue_32.png" alt="Twitter"></a>
+<a href="https://instagram.com/australianscm"><img src="sites/all/themes/ascm_theme/images/Instagram_Glyph_Logo_32.png" alt="Instagram">
+</p>
+',
+      'format' => 'filtered_html',
+    ),
+    'additional_classes' => '',
+  );
+  $export['social'] = $box;
 
   return $export;
 }
