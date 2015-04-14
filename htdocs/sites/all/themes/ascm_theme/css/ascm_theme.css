@@ -12,3 +12,14 @@
 .block-main-menu a, .node-content a {
   font-weight: bold;
 }
+
+/* Inline buttons. */
+.boxes-box-social {
+    display: inline-block;
+    float: none;
+}
+
+/* Compress line spacing. */
+p {
+    line-height: 1;
+}
