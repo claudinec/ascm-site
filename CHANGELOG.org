@@ -1,6 +1,7 @@
 * CHANGELOG
   
-** Release 1.5-dev
+** Release 1.5
+<2015-04-14 Tue>
 
 - Install Switchtheme (feature/1.5-switchtheme)
 - feature/1.5-blog-view:
