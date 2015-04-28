@@ -15,11 +15,11 @@
 
 /* Inline buttons. */
 .boxes-box-social {
-    display: inline-block;
-    float: none;
+    display: inline;
 }
 
 /* Compress line spacing. */
 p {
     line-height: 1;
 }
+
