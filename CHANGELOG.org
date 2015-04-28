@@ -1,5 +1,12 @@
 * CHANGELOG
   
+** Security update
+<2015-04-28 Tue>
+
+hotfix/security-20150428
+
+- ds 7.x-2.8
+
 ** Release 1.5
 <2015-04-14 Tue>
 
