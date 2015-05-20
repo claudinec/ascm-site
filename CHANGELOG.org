@@ -1,5 +1,14 @@
 * CHANGELOG
-  
+
+** Release 1.5.1
+
+20 May 2015
+
+Security update:
+
+- Mailchimp 7.x-3.3
+- Views 7.x-3.11
+
 ** Security update
 <2015-04-28 Tue>
 
