@@ -98,6 +98,7 @@ function ascm_blog_field_default_field_bases() {
           'parent' => 0,
         ),
       ),
+      'options_list_callback' => '_taxonomy_access_term_options',
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
