@@ -42,7 +42,13 @@ function ascm_admin_wysiwyg_default_profiles() {
           'Paste' => 1,
           'PasteText' => 1,
           'PasteFromWord' => 1,
+          'ShowBlocks' => 1,
           'RemoveFormat' => 1,
+          'Format' => 1,
+          'Font' => 1,
+          'FontSize' => 1,
+          'Styles' => 1,
+          'Table' => 1,
         ),
         'drupal' => array(
           'media' => 1,
