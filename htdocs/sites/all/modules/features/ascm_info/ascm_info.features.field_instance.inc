@@ -74,6 +74,65 @@ function ascm_info_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-book-field_access'
+  $field_instances['node-book-field_access'] = array(
+    'bundle' => 'book',
+    'default_value' => array(
+      0 => array(
+        'tid' => 82,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 4,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_access',
+    'label' => 'Access',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+      'wysiwyg_fields' => array(
+        'settings' => array(
+          'advanced' => array(
+            'delete' => 1,
+            'hide' => 1,
+          ),
+          'formatters' => array(),
+          'icon' => '6f7621a02161e347e66d99d8ace540a3',
+          'label' => 'Access',
+        ),
+        'status' => 0,
+      ),
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 35,
+    ),
+  );
+
   // Exported field_instance: 'node-book-field_attachments'
   $field_instances['node-book-field_attachments'] = array(
     'bundle' => 'book',
@@ -213,6 +272,7 @@ function ascm_info_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Access');
   t('Attachments');
   t('Body');
   t('Tags');
