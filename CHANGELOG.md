@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Release 1.6
+
+- Set up staff access for Handbook content, using Taxonomy Access
+- Add format and style buttons to CKEditor to allow headings
+- Remove unused Slide show feature
+
 ## Release 1.5.2
 
 - Add link to title for event teaser display
