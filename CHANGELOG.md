@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## Security updates 1.6.1
+
+Pivotal: https://www.pivotaltracker.com/story/show/97479078
+
+- Drupal 7.38
+- Feeds 7.x-2.0-alpha9
+
 ## Release 1.6
 
 - Set up staff access for Handbook content, using Taxonomy Access
