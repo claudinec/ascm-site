@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Security updates
+
+6 Jul 2015
+
+- Views Bulk Operations 7.x-3.3
+
 ## Security updates 1.6.1
 
 Pivotal: https://www.pivotaltracker.com/story/show/97479078
