@@ -179,10 +179,10 @@ function ascm_info_field_default_field_instances() {
         ),
         'file_path' => array(
           'options' => array(
-            'pathauto' => 0,
+            'pathauto' => 1,
             'transliterate' => 0,
           ),
-          'value' => '',
+          'value' => 'info',
         ),
         'retroactive_update' => 0,
       ),
@@ -211,7 +211,7 @@ function ascm_info_field_default_field_instances() {
             'attach' => 'attach',
             'clipboard' => 0,
             'imce' => 'imce',
-            'reference' => 0,
+            'reference' => 'reference',
             'remote' => 0,
             'upload' => 'upload',
           ),
