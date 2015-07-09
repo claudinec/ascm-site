@@ -74,7 +74,7 @@ function ascm_events_field_default_field_bases() {
   // Exported field_base: 'field_file_attachments'
   $field_bases['field_file_attachments'] = array(
     'active' => 1,
-    'cardinality' => 3,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_file_attachments',
