@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Release 1.6.2
+
+- Filefield sources and IMCE browser for Info pages
+
 ## Security updates
 
 6 Jul 2015
