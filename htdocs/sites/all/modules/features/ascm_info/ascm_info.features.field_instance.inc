@@ -185,7 +185,7 @@ function ascm_info_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'media',
+      'module' => 'multiupload_filefield_widget',
       'settings' => array(
         'allowed_schemes' => array(
           'private' => 'private',
@@ -199,7 +199,7 @@ function ascm_info_field_default_field_instances() {
         ),
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'media_generic',
+      'type' => 'file_mfw',
       'weight' => 32,
     ),
     'workbench_access_field' => 0,
