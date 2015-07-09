@@ -10,6 +10,7 @@ dependencies[] = ds
 dependencies[] = features
 dependencies[] = file
 dependencies[] = media
+dependencies[] = multiupload_filefield_widget
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = taxonomy_access
