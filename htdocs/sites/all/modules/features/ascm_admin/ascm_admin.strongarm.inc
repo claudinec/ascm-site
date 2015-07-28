@@ -56,7 +56,7 @@ function ascm_admin_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_mail';
-  $strongarm->value = 'webw@ascm.org.au';
+  $strongarm->value = 'tech@ascm.org.au';
   $export['site_mail'] = $strongarm;
 
   $strongarm = new stdClass();
