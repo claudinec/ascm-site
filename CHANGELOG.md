@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Release 1.6.3
+
+- Update site email address
+- Use default frontpage view and remove Blog Feed display
+
 ## Release 1.6.2
 
 - Filefield sources and IMCE browser for Info pages
