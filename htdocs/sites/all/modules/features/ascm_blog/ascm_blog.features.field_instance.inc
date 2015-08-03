@@ -22,7 +22,7 @@ function ascm_blog_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -167,7 +167,7 @@ function ascm_blog_field_default_field_instances() {
           'fixed_width' => '',
         ),
         'type' => 'media_colorbox',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'full' => array(
         'label' => 'hidden',

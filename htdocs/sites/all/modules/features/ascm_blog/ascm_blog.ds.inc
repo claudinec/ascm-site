@@ -21,16 +21,16 @@ function ascm_blog_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'title',
-        1 => 'body',
-        2 => 'field_image',
+        1 => 'field_image',
+        2 => 'body',
         3 => 'field_tags',
         4 => 'field_attachments',
       ),
     ),
     'fields' => array(
       'title' => 'ds_content',
-      'body' => 'ds_content',
       'field_image' => 'ds_content',
+      'body' => 'ds_content',
       'field_tags' => 'ds_content',
       'field_attachments' => 'ds_content',
     ),
