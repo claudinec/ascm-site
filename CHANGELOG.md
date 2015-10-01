@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Release 1.6.4
+
+- Update core from 7.38 to 7.39
+- Update Ctools from 1.7 to 1.9
+- Update Google Analytics Reports from 1.3 to 3.0
+
 ## Release 1.6.3
 
 - Update site email address
