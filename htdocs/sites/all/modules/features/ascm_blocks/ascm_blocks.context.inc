@@ -114,7 +114,7 @@ function ascm_blocks_context_default_contexts() {
     t('Where to display event block');
     t('blocks');
     $export['event-blocks'] = $context;
-
+    
 
   return $export;
 }
