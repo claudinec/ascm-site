@@ -82,5 +82,39 @@ function ascm_blocks_context_default_contexts() {
   t('blocks');
   $export['front-blocks'] = $context;
 
+  $context = new stdClass();
+    $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+    $context->api_version = 3;
+    $context->name = 'event-blocks';
+    $context->description = 'Where to display event block';
+    $context->tag = 'blocks';
+    $context->conditions = array(
+      'path' => array(
+        'values' => array(
+          '~events' => '~events',
+        ),
+      ),
+    );
+    $context->reactions = array(
+      'block' => array(
+        'blocks' => array(
+          'views-events-block_1' => array(
+            'module' => 'views',
+            'delta' => 'events-block_1',
+            'region' => 'sidebar_first',
+            'weight' => '-5',
+          ),
+        ),
+      ),
+    );
+    $context->condition_mode = 0;
+
+    // Translatables
+    // Included for use with string extractors like potx.
+    t('Where to display event block');
+    t('blocks');
+    $export['event-blocks'] = $context;
+
+
   return $export;
 }
