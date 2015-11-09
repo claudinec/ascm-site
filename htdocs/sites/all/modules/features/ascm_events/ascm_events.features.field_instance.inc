@@ -390,7 +390,7 @@ function ascm_events_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'large',
         ),
         'type' => 'image',
         'weight' => 1,
@@ -405,7 +405,7 @@ function ascm_events_field_default_field_instances() {
           'colorbox_gallery_custom' => '',
           'colorbox_image_style' => '',
           'colorbox_multivalue_index' => NULL,
-          'colorbox_node_style' => '',
+          'colorbox_node_style' => 'large',
           'colorbox_node_style_first' => '',
         ),
         'type' => 'colorbox',
