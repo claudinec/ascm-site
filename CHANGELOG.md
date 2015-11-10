@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Security updates 2015-11-10
+
+- Drupal core 7.41
+- colorbox-7.x-2.10
+
 ## Release 1.6.4
 
 - Update core from 7.38 to 7.39
