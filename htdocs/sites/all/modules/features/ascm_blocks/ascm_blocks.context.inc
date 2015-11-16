@@ -58,6 +58,7 @@ function ascm_blocks_context_default_contexts() {
   $context->conditions = array(
     'path' => array(
       'values' => array(
+        '~admin/*' => '~admin/*',
         '~events' => '~events',
       ),
     ),
