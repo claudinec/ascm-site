@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Release 1.6.5
+
+- Remove custom Mailchimp subscribe form and add form from Mailchimp Signup module
+
 ## Security updates 2015-11-10
 
 - Drupal core 7.41
