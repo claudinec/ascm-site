@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## Release 1.6.6
+
+19 Jan 2016
+
+- Remove Freshdesk popup from page.tpl.php.
+- Add links to gitreports form on contact form and footer.
+
 ## Release 1.6.5
 
 - Remove custom Mailchimp subscribe form and add form from Mailchimp Signup module
