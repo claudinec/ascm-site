@@ -19,9 +19,10 @@ function ascm_blocks_default_box() {
   $box->description = 'Contact - brief info';
   $box->options = array(
     'body' => array(
-      'value' => '<p>PO Box 4386<br>MELBOURNE UNIVERSITY<br>VIC 3052</p><p><a href="/contact">Email us</a></p>',
+      'value' => '<p>PO Box 4386<br>MELBOURNE UNIVERSITY<br>VIC 3052</p><p><a href="/contact">Email us</a></p><p><a href="https://gitreports.com/issue/claudinec/ascm-site">Website problem?</a></p>',
       'format' => 'filtered_html',
     ),
+    'additional_classes' => '',
   );
   $export['contact_brief'] = $box;
 
@@ -34,7 +35,7 @@ function ascm_blocks_default_box() {
   $box->description = 'Contact form header';
   $box->options = array(
     'body' => array(
-      'value' => '<p>You can also contact us using the following form.</p><p>To updated your details on our contact database, please use the form on the <a href="/form/update-your-contact-details">\'Update your contact details\'</a> page.</p>',
+      'value' => '<p>You can also contact us using the following form.</p><p>To updated your details on our contact database, please use the form on the <a href="/form/update-your-contact-details">\'Update your contact details\'</a> page.</p><p>If you\'ve found a problem with this website, please <a href="https://gitreports.com/issue/claudinec/ascm-site">submit a report</a>.</p>',
       'format' => 'filtered_html',
     ),
     'additional_classes' => '',
