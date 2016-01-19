@@ -1,11 +1,5 @@
 <?php // Corolla ?>
 
-<!-- Freshdesk popup -->
-<script type="text/javascript" src="http://assets.freshdesk.com/widget/freshwidget.js"></script>
-<script type="text/javascript">
-  FreshWidget.init("", {"queryString": "&widgetType=popup&formTitle=Feedback&submitThanks=Thank+you+for+your+feedback", "widgetType": "popup", "buttonType": "text", "buttonText": "Feedback", "buttonColor": "white", "buttonBg": "#8e9e35", "alignment": "2", "offset": "235px", "submitThanks": "Thank you for your feedback", "formHeight": "500px", "url": "https://claudinechionh.freshdesk.com"} );
-</script>
-
 <div id="page-wrapper">
   <div id="page" class="<?php print $classes; ?>">
 
