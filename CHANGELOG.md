@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Release 2016.01.30
+
+Change release numbers (back) to date.
+
+Update addressfield_tokens to 7.x-1.x-dev and applied patch in https://www.drupal.org/node/2413823#comment-10467875.
+
 ## Release 1.6.6
 
 19 Jan 2016
