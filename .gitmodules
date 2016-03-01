@@ -1,3 +1,6 @@
 [submodule "htdocs/sites/all/themes/ascm_theme"]
 	path = htdocs/sites/all/themes/ascm_theme
 	url = git@github.com:claudinec/ascm_theme.git
+[submodule "web/sites/all/themes/custom"]
+	path = web/sites/all/themes/custom
+	url = git@github.com:claudinec/ascm_theme.git
