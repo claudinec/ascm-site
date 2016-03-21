@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Release 2016.03.21
+
+- Update Drupal core to 7.43  
+  Closes GH-11.
+
 ## Release 2016.01.30
 
 Change release numbers (back) to date.
