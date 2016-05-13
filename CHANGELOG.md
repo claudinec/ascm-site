@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Release 2016.05.13
+
+- Update Features module to 7.x-2.10.
+
 ## Release 2016.03.21
 
 - Update Drupal core to 7.43  
