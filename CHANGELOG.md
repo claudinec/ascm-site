@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## NEXT
+
+- Update Features to 7.x-2.10
+- Add Bootstrap base theme
+
 ## Release 2016.05.13
 
 - Update Features module to 7.x-2.10.
