@@ -38,6 +38,12 @@ function ascm_blocks_context_default_contexts() {
           'region' => 'content',
           'weight' => '-9',
         ),
+        'mailchimp_signup-subscribe' => array(
+          'module' => 'mailchimp_signup',
+          'delta' => 'subscribe',
+          'region' => 'footer',
+          'weight' => '-10',
+        ),
       ),
     ),
   );

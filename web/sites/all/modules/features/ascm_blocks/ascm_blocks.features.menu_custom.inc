@@ -21,6 +21,5 @@ function ascm_blocks_menu_default_menu_custom() {
   t('Other SCMs and related organisations.');
   t('Other organisations');
 
-
   return $menus;
 }

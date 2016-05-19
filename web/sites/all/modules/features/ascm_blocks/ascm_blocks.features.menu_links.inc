@@ -10,7 +10,7 @@
 function ascm_blocks_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: menu-other-organisations_australian-young-christian-workers:http://ycw.org.au/
+  // Exported menu link: menu-other-organisations_australian-young-christian-workers:http://ycw.org.au/.
   $menu_links['menu-other-organisations_australian-young-christian-workers:http://ycw.org.au/'] = array(
     'menu_name' => 'menu-other-organisations',
     'link_path' => 'http://ycw.org.au/',
@@ -30,7 +30,7 @@ function ascm_blocks_menu_default_menu_links() {
     'weight' => -48,
     'customized' => 1,
   );
-  // Exported menu link: menu-other-organisations_world-student-christian-federation:http://www.wscfglobal.org/
+  // Exported menu link: menu-other-organisations_world-student-christian-federation:http://www.wscfglobal.org/.
   $menu_links['menu-other-organisations_world-student-christian-federation:http://www.wscfglobal.org/'] = array(
     'menu_name' => 'menu-other-organisations',
     'link_path' => 'http://www.wscfglobal.org/',
@@ -50,7 +50,7 @@ function ascm_blocks_menu_default_menu_links() {
     'weight' => -50,
     'customized' => 1,
   );
-  // Exported menu link: menu-other-organisations_wscf-asia-pacific-region:http://wscfap.org/
+  // Exported menu link: menu-other-organisations_wscf-asia-pacific-region:http://wscfap.org/.
   $menu_links['menu-other-organisations_wscf-asia-pacific-region:http://wscfap.org/'] = array(
     'menu_name' => 'menu-other-organisations',
     'link_path' => 'http://wscfap.org/',
@@ -70,12 +70,12 @@ function ascm_blocks_menu_default_menu_links() {
     'weight' => -49,
     'customized' => 1,
   );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Australian Young Christian Workers');
   t('WSCF Asia-Pacific Region');
   t('World Student Christian Federation');
-
 
   return $menu_links;
 }
