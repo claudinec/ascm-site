@@ -41,13 +41,6 @@ function ascm_admin_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'mandrill_api_key';
-  $strongarm->value = '4Tcbc77CVE9IIO9T_qor1A';
-  $export['mandrill_api_key'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'site_default_country';
   $strongarm->value = 'AU';
   $export['site_default_country'] = $strongarm;
