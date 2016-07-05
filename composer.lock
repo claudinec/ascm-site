@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "21a8c06dd5fe0a22b776797cc552e51d17d7e7dd"
+                "reference": "3c90d491bafa3d0a1bd57a7d001da839a08d2f88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/21a8c06dd5fe0a22b776797cc552e51d17d7e7dd",
-                "reference": "21a8c06dd5fe0a22b776797cc552e51d17d7e7dd",
+                "url": "https://api.github.com/repos/composer/installers/zipball/3c90d491bafa3d0a1bd57a7d001da839a08d2f88",
+                "reference": "3c90d491bafa3d0a1bd57a7d001da839a08d2f88",
                 "shasum": ""
             },
             "require": {
@@ -81,6 +81,7 @@
                 "dokuwiki",
                 "drupal",
                 "elgg",
+                "expressionengine",
                 "fuelphp",
                 "grav",
                 "installer",
@@ -106,7 +107,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-04-24 13:17:36"
+            "time": "2016-06-24 07:03:15"
         },
         {
             "name": "derhasi/composer-preserve-paths",
@@ -339,7 +340,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/bootstrap",
-                "reference": "768435492c9a38a169a4453ddf8530ac031772d3"
+                "reference": "49ada7a064baf43e5874f56fa099442adb0baf0b"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -356,7 +357,7 @@
             ],
             "description": "Built to use Bootstrap, a sleek, intuitive, and powerful front-end framework for faster and easier web development.",
             "homepage": "https://www.drupal.org/project/bootstrap",
-            "time": "2016-03-16 15:10:05"
+            "time": "2016-06-13 12:57:58"
         },
         {
             "name": "drupal/ctools",
@@ -364,7 +365,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/ctools",
-                "reference": "5aa6dba4dcf81ec24f7a6cdec3033c463ce74dbf"
+                "reference": "b065ec5f6f3e693e4d87123d68f84fa16ea95e05"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -394,9 +395,12 @@
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
             "description": "A library of helpful tools by Merlin of Chaos.",
             "homepage": "https://www.drupal.org/project/ctools",
-            "time": "2016-02-19 22:05:26"
+            "time": "2016-06-16 07:18:43"
         },
         {
             "name": "drupal/drupal",
@@ -404,7 +408,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/drupal",
-                "reference": "d33ac7eb6d1e8a0da7fb07454c1b6b32ba00ca7e"
+                "reference": "f68bbb9a7dcb657b1a4c4587de2dac93fd3f5f1e"
             },
             "replace": {
                 "drupal/aggregator": "self.version",
@@ -497,7 +501,7 @@
             ],
             "description": "Handles general site configuration for administrators.",
             "homepage": "https://www.drupal.org/project/drupal",
-            "time": "2016-04-08 03:26:40"
+            "time": "2016-07-05 04:02:57"
         },
         {
             "name": "drupal/entity",

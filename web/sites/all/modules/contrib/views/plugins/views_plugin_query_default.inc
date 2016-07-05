@@ -1592,7 +1592,7 @@ class views_plugin_query_default extends views_plugin_query {
           'sort' => 'views_handler_sort_group_by_numeric',
         ),
       )
-    );
+    ) + views_fetch_plugin_data('query_aggregate');
   }
 
   /**
@@ -1639,6 +1639,7 @@ class views_plugin_query_default extends views_plugin_query {
       foreach ($ids as $key => $id) {
         $result[$key] = isset($entities[$id]) ? $entities[$id] : FALSE;
       }
+<<<<<<< HEAD
     }
     else {
       // There's no way in core to load revisions in bulk.
@@ -1658,6 +1659,27 @@ class views_plugin_query_default extends views_plugin_query {
         }
       }
     }
+=======
+    }
+    else {
+      // There's no way in core to load revisions in bulk.
+      $result = array();
+      foreach ($ids as $key => $id) {
+        // Nodes can be dealt with in core.
+        if ($entity_type == 'node') {
+          $result[$key] = node_load(NULL, $id);
+        }
+        // Otherwise see if entity is enabled.
+        elseif (module_exists('entity')) {
+          $result[$key] = entity_revision_load($entity_type, $id);
+        }
+        else {
+          // Otherwise this isn't supported.
+          watchdog('views', 'Attempt to load a revision on an unsupported entity type @entity_type.', array('@entity_type' => $entity_type), WATCHDOG_WARNING);
+        }
+      }
+    }
+>>>>>>> security-20160705
 
     return array($entity_type, $result);
   }
