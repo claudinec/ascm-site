@@ -2237,37 +2237,6 @@ class LocaleContentFunctionalTest extends DrupalWebTestCase {
 
     $this->drupalLogout();
   }
-
-  /**
-   * Verifies that nodes may be created with different languages.
-   */
-  function testNodeCreationWithLanguage() {
-    // Create an admin user and log them in.
-    $perms = array(
-      // Standard node permissions.
-      'create page content',
-      'administer content types',
-      'administer nodes',
-      'bypass node access',
-      // Locale.
-      'administer languages',
-    );
-    $web_user = $this->drupalCreateUser($perms);
-    $this->drupalLogin($web_user);
-
-    // Create some test nodes using different langcodes.
-    foreach (array(LANGUAGE_NONE, 'en', 'fr') as $langcode) {
-      $node_args = array(
-        'type' => 'page',
-        'promote' => 1,
-        'language' => $langcode,
-      );
-      $node = $this->drupalCreateNode($node_args);
-      $node_reloaded = node_load($node->nid, NULL, TRUE);
-      $this->assertEqual($node_reloaded->language, $langcode, format_string('The language code of the node was successfully set to @langcode.', array('@langcode' => $langcode)));
-    }
-  }
-
 }
 
 /**
@@ -3170,48 +3139,5 @@ class LocaleCSSAlterTest extends DrupalWebTestCase {
     $this->assertRaw('@import url("' . $base_url . '/modules/system/system.base.css' . $query_string . '");' . "\n" . '@import url("' . $base_url . '/modules/system/system.base-rtl.css' . $query_string . '");' . "\n", 'CSS: system.base-rtl.css is added directly after system.base.css.');
     $this->assertRaw('@import url("' . $base_url . '/modules/system/system.menus.css' . $query_string . '");' . "\n" . '@import url("' . $base_url . '/modules/system/system.menus-rtl.css' . $query_string . '");' . "\n", 'CSS: system.menus-rtl.css is added directly after system.menus.css.');
     $this->assertRaw('@import url("' . $base_url . '/modules/system/system.messages.css' . $query_string . '");' . "\n" . '@import url("' . $base_url . '/modules/system/system.messages-rtl.css' . $query_string . '");' . "\n", 'CSS: system.messages-rtl.css is added directly after system.messages.css.');
-  }
-}
-
-/**
- * Tests locale translation safe string handling.
- */
-class LocaleStringIsSafeTest extends DrupalWebTestCase {
-  public static function getInfo() {
-    return array(
-      'name' => 'Test if a string is safe',
-      'description' => 'Tests locale translation safe string handling.',
-      'group' => 'Locale',
-    );
-  }
-
-  function setUp() {
-    parent::setUp('locale');
-  }
-
-  /**
-   * Tests for locale_string_is_safe().
-   */
-  public function testLocaleStringIsSafe() {
-    // Check a translatable string without HTML.
-    $string = 'Hello world!';
-    $result = locale_string_is_safe($string);
-    $this->assertTrue($result);
-
-    // Check a translatable string which includes trustable HTML.
-    $string = 'Hello <strong>world</strong>!';
-    $result = locale_string_is_safe($string);
-    $this->assertTrue($result);
-
-    // Check an untranslatable string which includes untrustable HTML (according
-    // to the locale_string_is_safe() function definition).
-    $string = 'Hello <img src="world.png" alt="world" />!';
-    $result = locale_string_is_safe($string);
-    $this->assertFalse($result);
-
-    // Check a translatable string which includes a token in an href attribute.
-    $string = 'Hi <a href="[current-user:url]">user</a>';
-    $result = locale_string_is_safe($string);
-    $this->assertTrue($result);
   }
 }

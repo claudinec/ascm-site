@@ -39,8 +39,8 @@ class DatabaseSchema_mysql extends DatabaseSchema {
       $info['table'] = substr($table, ++$pos);
     }
     else {
-      $db_info = $this->connection->getConnectionOptions();
-      $info['database'] = $db_info['database'];
+      $db_info = Database::getConnectionInfo();
+      $info['database'] = $db_info[$this->connection->getTarget()]['database'];
       $info['table'] = $table;
     }
     return $info;

@@ -39,7 +39,7 @@ function theme_addressfield_formatter__citystate($vars) {
   
   // If there's no location, render an alternate
   if (empty($out)) {
-    return '';
+    $out[] = 'Undefined';
   }
   
   // Render the location components

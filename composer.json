@@ -22,7 +22,7 @@
     "drupal/views": "^7.3",
     "drupal/rules": "^7.2"
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "RC",
   "conflict": {
     "drupal/core": "8.*"
   },
