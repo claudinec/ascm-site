@@ -20,7 +20,9 @@
     "drupal/token": "~7.1.5",
     "drupal/bootstrap": "^7.3",
     "drupal/views": "^7.3",
-    "drupal/rules": "^7.2"
+    "drupal/rules": "^7.2",
+    "drupal/views_slideshow": "^7.3",
+    "drupal/libraries": "^7.2"
   },
   "minimum-stability": "RC",
   "conflict": {

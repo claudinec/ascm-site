@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c769e062a50a3d9e1d6271a4941ef46d",
-    "content-hash": "40ca81e5769d433e0003dcf19b835e75",
+    "hash": "b3da3ffc18fa1ff77957a1e19f0870f2",
+    "content-hash": "a6ba99c062baa51143a54907f402163f",
     "packages": [
         {
             "name": "composer/installers",
@@ -618,6 +618,38 @@
             "time": "2012-09-19 12:57:26"
         },
         {
+            "name": "drupal/libraries",
+            "version": "7.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/libraries",
+                "reference": "943761c08b01c76574ec6b2a6f6cd8ce19fe4987"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/libraries-7.x-2.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/system": ">=7.11.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-2.x": "7.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows version-dependent and shared usage of external libraries.",
+            "homepage": "https://www.drupal.org/project/libraries",
+            "time": "2016-05-12 17:50:14"
+        },
+        {
             "name": "drupal/rules",
             "version": "7.2.9",
             "source": {
@@ -723,6 +755,44 @@
             "description": "Create customized lists and queries from your database.",
             "homepage": "https://www.drupal.org/project/views",
             "time": "2016-06-15 19:37:02"
+        },
+        {
+            "name": "drupal/views_slideshow",
+            "version": "7.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_slideshow",
+                "reference": "d1d737104246735768d508a1010480c12a89a78d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_slideshow-7.x-3.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/views": ">=7.3.0"
+            },
+            "replace": {
+                "drupal/views_slideshow_cycle": "self.version"
+            },
+            "suggest": {
+                "drupal/libraries": "Required by drupal/views_slideshow_cycle"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-3.x": "7.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides a View style that displays rows as a jQuery slideshow.  This is an API and requires Views Slideshow Cycle or another module that supports the API.",
+            "homepage": "https://www.drupal.org/project/views_slideshow",
+            "time": "2013-09-13 04:01:05"
         }
     ],
     "packages-dev": [],
