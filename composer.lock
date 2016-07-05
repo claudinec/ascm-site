@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9bbc7ca679a3347641e1cf807a4d3221",
-    "content-hash": "ee9e2287e0b7d213be714024899cdfef",
+    "hash": "dc211e7331b55c018b6e5fa8b6470a7a",
+    "content-hash": "09e1bcf110b716f4a01eee59f47f4801",
     "packages": [
         {
             "name": "composer/installers",
@@ -158,41 +158,6 @@
                 "nested package"
             ],
             "time": "2015-10-20 13:44:48"
-        },
-        {
-            "name": "drupal/adaptivetheme",
-            "version": "7.3.2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/adaptivetheme",
-                "reference": "1023272e08df86e51d9f5e26da79ae97af66d289"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/adaptivetheme-7.x-3.2.zip",
-                "reference": "1023272e08df86e51d9f5e26da79ae97af66d289",
-                "shasum": null
-            },
-            "require": {
-                "drupal/drupal": "7.*"
-            },
-            "replace": {
-                "drupal/adaptivetheme_admin": "self.version",
-                "drupal/adaptivetheme_subtheme": "self.version"
-            },
-            "type": "drupal-theme",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-3.x": "7.3.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "AT Core is the framework that drives the responsive layout system and provides an extensive set of tools for theme development. You do not need to enable this theme. Use the provided AT Subtheme to get started.",
-            "homepage": "https://www.drupal.org/project/adaptivetheme",
-            "time": "2014-03-22 22:47:18"
         },
         {
             "name": "drupal/addressfield",

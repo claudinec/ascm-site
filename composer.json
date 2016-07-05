@@ -9,7 +9,6 @@
     "composer/installers": "~1.0",
     "derhasi/composer-preserve-paths": "0.1.*",
     "drupal/drupal": "7.*",
-    "drupal/adaptivetheme": "^7.3",
     "drupal/addressfield": "~7.1.0",
     "drupal/addressfield_phone": "~7.1.1",
     "drupal/addressfield_tokens": "~7.1.5",
