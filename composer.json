@@ -56,7 +56,7 @@
     "drupal/webform": "^7.4",
     "drupal/webform_mailchimp": "^7.1"
   },
-  "minimum-stability": "RC",
+  "minimum-stability": "beta",
   "conflict": {
     "drupal/core": "8.*"
   },
