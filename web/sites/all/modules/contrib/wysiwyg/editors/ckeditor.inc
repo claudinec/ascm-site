@@ -55,9 +55,7 @@ function wysiwyg_ckeditor_editor() {
  * Return an install note.
  */
 function wysiwyg_ckeditor_install_note() {
-  $output = '<p class="warning">' . t('Do NOT download the "CKEditor for Drupal" edition.') . '</br>';
-  $output .= t('Make sure you install the full package as not all plugins work with the standard package.') . '</p>';
-  return $output;
+  return '<p class="warning">' . t('Do NOT download the "CKEditor for Drupal" edition.') . '</p>';
 }
 
 /**
@@ -80,8 +78,7 @@ function wysiwyg_ckeditor_version($editor) {
     // version:'CKEditor 3.0 SVN',revision:'3665'
     // version:'3.0 RC',revision:'3753'
     // version:'3.0.1',revision:'4391'
-    // version:"4.0",revision:"769d96134b"
-    if (preg_match('@version:[\'"](?:CKEditor )?([\d\.]+)(?:.+revision:[\'"]([[:xdigit:]]+))?@', $line, $version)) {
+    if (preg_match('@version:\'(?:CKEditor )?([\d\.]+)(?:.+revision:\'([\d]+))?@', $line, $version)) {
       fclose($library);
       // Version numbers need to have three parts since 3.0.1.
       $version[1] = preg_replace('/^(\d+)\.(\d+)$/', '${1}.${2}.0', $version[1]);
@@ -289,7 +286,7 @@ function wysiwyg_ckeditor_settings($editor, $config, $theme) {
           }
           // Add buttons.
           if ($type == 'buttons') {
-            $settings['toolbar'][wysiwyg_ckeditor_group($button)][] = $button;
+            $settings['toolbar'][] = $button;
           }
           // Add external Drupal plugins to the list of extensions.
           if ($type == 'buttons' && !empty($plugins[$plugin]['proxy'])) {
@@ -318,17 +315,8 @@ function wysiwyg_ckeditor_settings($editor, $config, $theme) {
       $settings['extraPlugins'] = implode(',', $extra_plugins);
     }
   }
-
-  // Organize groups to use lables to improves accesibility
-  // http://docs.ckeditor.com/#!/guide/dev_toolbar-section-3.
-  $groups_toolbar = array();
-  foreach ($settings['toolbar'] as $group => $items) {
-    $groups_toolbar[] = array(
-      'name' => $group,
-      'items' => $items,
-    );
-  }
-  $settings['toolbar'] = $groups_toolbar;
+  // For now, all buttons are placed into one row.
+  $settings['toolbar'] = array($settings['toolbar']);
 
   return $settings;
 }
@@ -456,7 +444,6 @@ function wysiwyg_ckeditor_plugins($editor) {
         'Maximize' => t('Maximize'),
         'SpellChecker' => t('Check spelling'), 'Scayt' => t('Check spelling as you type'),
         'About' => t('About'),
-        'Templates' => t('Templates'),
       ),
       'internal' => TRUE,
     ),
@@ -475,95 +462,3 @@ function wysiwyg_ckeditor_plugins($editor) {
   return $plugins;
 }
 
-/**
- * Define grouping for ckEditor buttons.
- */
-function wysiwyg_ckeditor_group($button) {
-  switch ($button) {
-    case 'Source':
-      $group = 'document';
-      break;
-
-    case 'Cut':
-    case 'Copy':
-    case 'Paste':
-    case 'PasteText':
-    case 'PasteFromWord':
-    case 'Undo':
-    case 'Redo':
-      $group = 'clipboard';
-      break;
-
-    case 'Find':
-    case 'Replace':
-    case 'SelectAll':
-    case 'SpellChecker':
-    case 'Scayt':
-      $group = 'editing';
-      break;
-
-    case 'Bold':
-    case 'Italic':
-    case 'Underline':
-    case 'Strike':
-    case 'Subscript':
-    case 'Superscript':
-    case 'RemoveFormat':
-      $group = 'basicstyles';
-      break;
-
-    case 'NumberedList':
-    case 'BulletedList':
-    case 'Outdent':
-    case 'Indent':
-    case 'Blockquote':
-    case 'CreateDiv':
-    case 'JustifyLeft':
-    case 'JustifyCenter':
-    case 'JustifyRight':
-    case 'JustifyBlock':
-    case 'BidiLtr':
-    case 'BidiRtl':
-      $group = 'paragraph';
-      break;
-
-    case 'Link':
-    case 'Unlink':
-    case 'Anchor':
-      $group = 'links';
-      break;
-
-    case 'Image':
-    case 'Flash':
-    case 'Table':
-    case 'HorizontalRule':
-    case 'Smiley':
-    case 'SpecialChar':
-    case 'Iframe':
-    case 'Templates':
-      $group = 'insert';
-      break;
-
-    case 'Styles':
-    case 'Format':
-    case 'Font':
-    case 'FontSize':
-      $group = 'styles';
-      break;
-
-    case 'TextColor':
-    case 'BGColor':
-      $group = 'colors';
-      break;
-
-    case 'Maximize':
-    case 'ShowBlocks':
-    case 'About':
-      $group = 'tools';
-      break;
-
-    default:
-      $group = 'other';
-  }
-  return $group;
-}
