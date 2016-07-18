@@ -45,7 +45,7 @@
     "drupal/link": "^7.1",
     "drupal/linkchecker": "^7.1",
     "drupal/logintoboggan": "^7.1",
-    "drupal/mailchimp": "^7.3",
+    "drupal/mailchimp": "^7.4",
     "drupal/mollom": "^7.2",
     "drupal/revisioning": "^7.1",
     "drupal/rules": "^7.2",
@@ -55,7 +55,7 @@
     "drupal/views": "^7.3",
     "drupal/views_slideshow": "^7.3",
     "drupal/webform": "^7.4",
-    "drupal/webform_mailchimp": "^7.1",
+    "drupal/webform_mailchimp": "^7.2",
     "guzzlehttp/guzzle": "^6.2",
     "mailchimp/mailchimp": "^2.0"
   },

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "82a47b88f660ab7708f2d1fbf0e9dd2b",
-    "content-hash": "46b28cc7b57d9a96fc71ff1b468acf52",
+    "hash": "b54ccfcc9a4d33caffd94145bb0f480e",
+    "content-hash": "cb3d3c13c4e3318d7b8677b3b8a1752f",
     "packages": [
         {
             "name": "composer/installers",
@@ -539,7 +539,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/composer_manager-7.x-1.8.zip",
-                "reference": null,
+                "reference": "61d7a62d3bb44976503409081a1d159b02194d7b",
                 "shasum": null
             },
             "require": {
@@ -1896,7 +1896,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/webform_mailchimp-7.x-2.0-beta1.zip",
-                "reference": "1f55e157b1e798f5b67e02c65fc0d7ba2fbd302a",
+                "reference": null,
                 "shasum": null
             },
             "require": {
