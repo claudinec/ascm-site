@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b54ccfcc9a4d33caffd94145bb0f480e",
-    "content-hash": "cb3d3c13c4e3318d7b8677b3b8a1752f",
+    "hash": "b66fd06bca0035648d637b543a7ce468",
+    "content-hash": "469b7983dfe6a204fdc637d1a0625218",
     "packages": [
         {
             "name": "composer/installers",
@@ -1109,6 +1109,64 @@
             "time": "2015-10-13 10:16:40"
         },
         {
+            "name": "drupal/fb",
+            "version": "7.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/fb",
+                "reference": "bff56f813ab7702ec22ca1665fba4a0548d7e43b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fb-7.x-3.4-beta4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/fb_app": "self.version",
+                "drupal/fb_canvas": "self.version",
+                "drupal/fb_connect": "self.version",
+                "drupal/fb_devel": "self.version",
+                "drupal/fb_example": "self.version",
+                "drupal/fb_form": "self.version",
+                "drupal/fb_friend": "self.version",
+                "drupal/fb_graph": "self.version",
+                "drupal/fb_invite": "self.version",
+                "drupal/fb_permission": "self.version",
+                "drupal/fb_registration": "self.version",
+                "drupal/fb_rules": "self.version",
+                "drupal/fb_stream": "self.version",
+                "drupal/fb_tab": "self.version",
+                "drupal/fb_user": "self.version",
+                "drupal/fb_user_app": "self.version",
+                "drupal/fb_views": "self.version"
+            },
+            "suggest": {
+                "drupal/devel": "Required by drupal/fb_devel",
+                "drupal/fb_app": "Required by drupal/fb_example, drupal/fb_friend, drupal/fb_permission, drupal/fb_registration, drupal/fb_user_app, drupal/fb_canvas, drupal/fb_connect, drupal/fb_tab, drupal/fb_user",
+                "drupal/fb_form": "Required by drupal/fb_friend",
+                "drupal/fb_user": "Required by drupal/fb_views",
+                "drupal/rules": "Required by drupal/fb_rules",
+                "drupal/views": "Required by drupal/fb_views"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-3.x": "7.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "(fb.module) Initializes facebook's PHP and Javascript client libraries.  Enables FBML Like buttons and other <a href=http://developers.facebook.com/plugins target=_blank>social plugins</a>.  (See <em>modules/fb/README.txt</em>.)",
+            "homepage": "https://www.drupal.org/project/fb",
+            "time": "2013-10-24 06:08:48"
+        },
+        {
             "name": "drupal/features",
             "version": "7.2.10",
             "source": {
@@ -1896,7 +1954,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/webform_mailchimp-7.x-2.0-beta1.zip",
-                "reference": null,
+                "reference": "1f55e157b1e798f5b67e02c65fc0d7ba2fbd302a",
                 "shasum": null
             },
             "require": {
