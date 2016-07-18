@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b66fd06bca0035648d637b543a7ce468",
-    "content-hash": "469b7983dfe6a204fdc637d1a0625218",
+    "hash": "4ac5c06aae9ec6b00a274c7ef11459e7",
+    "content-hash": "89c3ce69d407249a06d780c7001bf2bc",
     "packages": [
         {
             "name": "composer/installers",
@@ -1119,7 +1119,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/fb-7.x-3.4-beta4.zip",
-                "reference": null,
+                "reference": "bff56f813ab7702ec22ca1665fba4a0548d7e43b",
                 "shasum": null
             },
             "require": {
@@ -1975,6 +1975,38 @@
             "description": "Creates a Mailchimp Webform component.",
             "homepage": "https://www.drupal.org/project/webform_mailchimp",
             "time": "2013-09-17 12:52:38"
+        },
+        {
+            "name": "drupal/workbench",
+            "version": "7.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/workbench",
+                "reference": "f1356c75f9a7a20d79ee03b8fcd731df84398022"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/workbench-7.x-1.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/views": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Workbench editorial suite.",
+            "homepage": "https://www.drupal.org/project/workbench",
+            "time": "2011-07-26 14:09:44"
         },
         {
             "name": "drupal/wysiwyg",
