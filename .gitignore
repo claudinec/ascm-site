@@ -11,8 +11,8 @@ logs/*
 drush/contrib
 vendor
 web/core
-web/modules/contrib
-web/themes/contrib
+web/sites/all/modules/contrib
+web/sites/all/themes/contrib
 web/profiles/contrib
 
 # Ignore Drupal's file directory
