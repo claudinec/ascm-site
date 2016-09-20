@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f8c57f6fe0c108fb53e8efbabbee354c",
-    "content-hash": "9088dd965f49d3b04e5d17ebf09593c7",
+    "hash": "b4eda1626e38212089a204b9060cca7e",
+    "content-hash": "1d81f964655d81b4bb1db218e8f8ade6",
     "packages": [
         {
             "name": "composer/installers",
@@ -238,7 +238,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/addressfield_phone-7.x-1.3.zip",
-                "reference": null,
+                "reference": "b27f716157b1e11b8c629e8f0bb713b2acc218b4",
                 "shasum": null
             },
             "require": {
@@ -317,40 +317,8 @@
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
             "description": "Provides a dropdown menu to most administrative tasks and other common destinations (to users with the proper permissions).",
-            "homepage": "https://www.drupal.org/project/admin_menu",
-            "time": "2014-12-19 21:59:50"
-        },
-        {
-            "name": "drupal/advanced_help",
-            "version": "dev-7.x-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/advanced_help",
-                "reference": "7f3d4cfb82dff7a6c93dbe5d730bf0e7c354adfe"
-            },
-            "require": {
-                "drupal/drupal": "7.*"
-            },
-            "replace": {
-                "drupal/help_example": "self.version"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Provide extended help and documentation.",
-            "homepage": "https://www.drupal.org/project/advanced_help",
-            "time": "2016-01-31 06:50:08"
+            "homepage": "https://www.drupal.org/project/admin_menu"
         },
         {
             "name": "drupal/advanced_help",
@@ -577,7 +545,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/ctools-7.x-1.10.zip",
-                "reference": null,
+                "reference": "72634bbb9ff05a71199426ea883bac3cf2866c96",
                 "shasum": null
             },
             "require": {
@@ -861,7 +829,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/ds-7.x-2.13.zip",
-                "reference": "2ccb1ddb42cb0dcf406bec5d8a70cc19ef2a1f0e",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -904,7 +872,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/email-7.x-1.3.zip",
-                "reference": "25dd1a4e3cf1efd2606874909b42c79d4fffcc84",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1082,8 +1050,8 @@
             "version": "dev-7.x-1.x",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/token",
-                "reference": "cf53b4089dd7d3821aeb93f237eb7c8d656b878b"
+                "url": "https://git.drupal.org/project/filefield_paths",
+                "reference": "e016a2edd0221250b03d4ec9538109e94ef8bc0d"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -1168,7 +1136,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/honeypot-7.x-1.22.zip",
-                "reference": "2cb39868ba8037718992017bb3b5e16a2165c8a8",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1224,7 +1192,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/imce_filefield-7.x-1.1.zip",
-                "reference": "335e052d92f599e0a5c91e5736c8cd052ba1c78c",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1257,7 +1225,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/imce_wysiwyg-7.x-1.0.zip",
-                "reference": "ed0ff649a082746496da1bbad00a804836c7a683",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1316,7 +1284,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/link-7.x-1.4.zip",
-                "reference": "3cfdc1848d00dc5d5a7b2e9e9b7e85a04fdbe9f5",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1407,7 +1375,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/mailchimp-7.x-4.5.zip",
-                "reference": "9c946c4d5aabbfdce3ff75040b3b405907328b03",
+                "reference": null,
                 "shasum": null
             },
             "require": {
