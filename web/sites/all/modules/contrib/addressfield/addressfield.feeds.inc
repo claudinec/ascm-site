@@ -6,10 +6,10 @@
  */
 
 /**
- * Implements hook_feeds_node_processor_targets_alter().
+ * Implements hook_feeds_processor_targets_alter().
  */
-function addressfield_feeds_processor_targets_alter(&$targets, $entity_type, $bundle_name) {
-  foreach (field_info_instances($entity_type, $bundle_name) as $name => $instance) {
+function addressfield_feeds_processor_targets_alter(&$targets, $entity_type, $bundle) {
+  foreach (field_info_instances($entity_type, $bundle) as $name => $instance) {
     $info = field_info_field($name);
     if ($info['type'] == 'addressfield') {
       foreach ($info['columns'] as $sub_field => $schema_info) {
@@ -34,7 +34,7 @@ function addressfield_feeds_processor_targets_alter(&$targets, $entity_type, $bu
  *   An entity object, for instance a node object.
  * @param $target
  *   A string identifying the target on the node.
- * @param $value
+ * @param $values
  *   The value to populate the target with.
  */
 function addressfield_set_target($source, $entity, $target, $values) {
@@ -48,12 +48,12 @@ function addressfield_set_target($source, $entity, $target, $values) {
 
   // If the field is already set on the given entity, update the existing value
   // array. Otherwise start with a fresh field value array.
-  $field = isset($entity->$field_name) ? $entity->$field_name : array();
+  $field = isset($entity->{$field_name}) ? $entity->{$field_name} : array();
 
   // Loop over the field values array...
   foreach ($values as $delta => $value) {
     $field[LANGUAGE_NONE][$delta][$sub_field] = $value;
   }
 
-  $entity->$field_name = $field;
+  $entity->{$field_name} = $field;
 }

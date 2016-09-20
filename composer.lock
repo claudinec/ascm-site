@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b6ec3759cc852edd8ad2bac278c27f03",
-    "content-hash": "fa59d8bebba4f7d0112eabcde93c7b20",
+    "hash": "f8c57f6fe0c108fb53e8efbabbee354c",
+    "content-hash": "9088dd965f49d3b04e5d17ebf09593c7",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "dev-master",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "b3d1f3125a77af66d2bfd934c775150e4c9aecc3"
+                "reference": "d78064c68299743e0161004f2de3a0204e33b804"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/b3d1f3125a77af66d2bfd934c775150e4c9aecc3",
-                "reference": "b3d1f3125a77af66d2bfd934c775150e4c9aecc3",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d78064c68299743e0161004f2de3a0204e33b804",
+                "reference": "d78064c68299743e0161004f2de3a0204e33b804",
                 "shasum": ""
             },
             "require": {
@@ -40,8 +40,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Composer\\Installers\\": "src/"
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -56,28 +56,35 @@
                 }
             ],
             "description": "A multi-framework Composer library installer",
-            "homepage": "http://composer.github.com/installers/",
+            "homepage": "https://composer.github.io/installers/",
             "keywords": [
                 "Craft",
                 "Dolibarr",
                 "Hurad",
+                "ImageCMS",
                 "MODX Evo",
+                "Mautic",
                 "OXID",
+                "Plentymarkets",
+                "RadPHP",
                 "SMF",
                 "Thelia",
                 "WolfCMS",
                 "agl",
                 "aimeos",
                 "annotatecms",
+                "attogram",
                 "bitrix",
                 "cakephp",
                 "chef",
+                "cockpit",
                 "codeigniter",
                 "concrete5",
                 "croogo",
                 "dokuwiki",
                 "drupal",
                 "elgg",
+                "expressionengine",
                 "fuelphp",
                 "grav",
                 "installer",
@@ -94,29 +101,31 @@
                 "piwik",
                 "ppi",
                 "puppet",
+                "reindex",
                 "roundcube",
                 "shopware",
                 "silverstripe",
                 "symfony",
                 "typo3",
                 "wordpress",
+                "yawik",
                 "zend",
                 "zikula"
             ],
-            "time": "2016-02-27 14:38:36"
+            "time": "2016-08-13 20:53:52"
         },
         {
             "name": "derhasi/composer-preserve-paths",
-            "version": "0.1.2",
+            "version": "0.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/derhasi/composer-preserve-paths.git",
-                "reference": "13309cebd530c3f5e9bfa238aa496076a644540b"
+                "reference": "e10d7acbc84df0d58faf2470049f53c97a4a1503"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/derhasi/composer-preserve-paths/zipball/13309cebd530c3f5e9bfa238aa496076a644540b",
-                "reference": "13309cebd530c3f5e9bfa238aa496076a644540b",
+                "url": "https://api.github.com/repos/derhasi/composer-preserve-paths/zipball/e10d7acbc84df0d58faf2470049f53c97a4a1503",
+                "reference": "e10d7acbc84df0d58faf2470049f53c97a4a1503",
                 "shasum": ""
             },
             "require": {
@@ -155,7 +164,7 @@
                 "installer",
                 "nested package"
             ],
-            "time": "2015-06-17 18:21:27"
+            "time": "2015-10-20 13:44:48"
         },
         {
             "name": "drupal/adaptivetheme",
@@ -163,7 +172,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/adaptivetheme",
-                "reference": "28947fe1b82e4d590034c7e23b8fefb37a671d6a"
+                "reference": "587934b488cbeb1b2469dd5f66828dd4f3b45a71"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -179,9 +188,12 @@
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
             "description": "AT Core is the framework that drives the responsive layout system and provides an extensive set of tools for theme development. You do not need to enable this theme. Use the provided AT Subtheme to get started.",
             "homepage": "https://www.drupal.org/project/adaptivetheme",
-            "time": "2015-01-16 19:15:41"
+            "time": "2016-07-13 09:36:21"
         },
         {
             "name": "drupal/addressfield",
@@ -208,6 +220,9 @@
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
             "description": "Manage a flexible address field, implementing the xNAL standard.",
             "homepage": "https://www.drupal.org/project/addressfield",
             "time": "2015-12-30 11:19:03"
@@ -218,11 +233,11 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/addressfield_phone",
-                "reference": "8be46013083b78915339e3357554ab891174cdf0"
+                "reference": "b27f716157b1e11b8c629e8f0bb713b2acc218b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/addressfield_phone-7.x-1.2.zip",
+                "url": "https://ftp.drupal.org/files/projects/addressfield_phone-7.x-1.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -238,9 +253,12 @@
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
             "description": "Implements a phone field in an addressfield format handler.",
             "homepage": "https://www.drupal.org/project/addressfield_phone",
-            "time": "2015-04-02 20:11:02"
+            "time": "2016-03-11 12:49:56"
         },
         {
             "name": "drupal/addressfield_tokens",
@@ -263,6 +281,9 @@
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
             "description": "Creates tokens for address fields, adds new addressfield renders, and adds webform integration.",
             "homepage": "https://www.drupal.org/project/addressfield_tokens",
             "time": "2015-05-28 17:01:15"
@@ -278,7 +299,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/admin_menu-7.x-3.0-rc5.zip",
-                "reference": null,
+                "reference": "59a4fe3d4da5a80dd6abec5873a9930ccfb15c17",
                 "shasum": null
             },
             "require": {
@@ -300,12 +321,46 @@
             "homepage": "https://www.drupal.org/project/admin_menu"
         },
         {
+            "name": "drupal/advanced_help",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/advanced_help",
+                "reference": "7f3d4cfb82dff7a6c93dbe5d730bf0e7c354adfe"
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/help_example": "self.version"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provide extended help and documentation.",
+            "homepage": "https://www.drupal.org/project/advanced_help",
+            "time": "2016-01-31 06:50:08"
+        },
+        {
             "name": "drupal/ctools",
             "version": "dev-7.x-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/ctools",
-                "reference": "5aa6dba4dcf81ec24f7a6cdec3033c463ce74dbf"
+                "reference": "72634bbb9ff05a71199426ea883bac3cf2866c96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ctools-7.x-1.10.zip",
+                "reference": null,
+                "shasum": null
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -335,9 +390,12 @@
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
             "description": "A library of helpful tools by Merlin of Chaos.",
             "homepage": "https://www.drupal.org/project/ctools",
-            "time": "2016-02-19 22:05:26"
+            "time": "2016-08-17 17:06:24"
         },
         {
             "name": "drupal/drupal",
@@ -345,7 +403,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/drupal",
-                "reference": "199086149342862bb51d666cf9ec992e246249ca"
+                "reference": "2051d8c94ee8dc050f132752fa9554fb567a70b6"
             },
             "replace": {
                 "drupal/aggregator": "self.version",
@@ -433,9 +491,12 @@
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
             "description": "Handles general site configuration for administrators.",
             "homepage": "https://www.drupal.org/project/drupal",
-            "time": "2016-02-24 19:30:28"
+            "time": "2016-09-11 21:11:29"
         },
         {
             "name": "drupal/entity",
@@ -443,7 +504,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity",
-                "reference": "4d76c5c2302e225fea2db7aba08d48f3558bf275"
+                "reference": "1fa8f2dcb25ab26904c3d910399eaf23e17232bc"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -458,9 +519,12 @@
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
             "description": "Enables modules to work with any entity type and to provide entities.",
             "homepage": "https://www.drupal.org/project/entity",
-            "time": "2015-02-27 17:08:22"
+            "time": "2016-03-17 17:02:49"
         },
         {
             "name": "drupal/footheme",
@@ -480,6 +544,9 @@
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
             "description": "Your description here.",
             "homepage": "https://www.drupal.org/project/footheme",
             "time": "2012-12-18 18:24:58"
@@ -490,7 +557,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/token",
-                "reference": "d9f4e54356922db0b3c0a746095ce1c05ef26b78"
+                "reference": "cf53b4089dd7d3821aeb93f237eb7c8d656b878b"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -502,9 +569,12 @@
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
             "description": "Provides a user interface for the Token API and some missing core tokens.",
             "homepage": "https://www.drupal.org/project/token",
-            "time": "2015-12-27 17:30:45"
+            "time": "2016-04-08 04:02:39"
         }
     ],
     "packages-dev": [],
