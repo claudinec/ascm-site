@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>http://www.ascm.org.au/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>http://www.ascm.org.au/blog</loc></url>
+<url><loc>http://www.ascm.org.au/contact</loc></url>
+<url><loc>http://www.ascm.org.au/events</loc></url>
+<url><loc>http://www.ascm.org.au/form/update-your-contact-details</loc></url>
+<url><loc>http://www.ascm.org.au/info/about-australian-student-christian-movement</loc><lastmod>2013-09-02T14:05Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://www.ascm.org.au/info/unsure-what-scm</loc><lastmod>2013-07-14T05:12Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://www.ascm.org.au/info/mission-and-vocation-statement</loc><lastmod>2013-07-14T05:13Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://www.ascm.org.au/info/logo</loc><lastmod>2013-07-14T05:14Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://www.ascm.org.au/info/history</loc><lastmod>2015-02-08T08:25Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://www.ascm.org.au/info/resources</loc></url>
+<url><loc>http://www.ascm.org.au/info/climate-change-forum-melbourne-august-2013</loc><lastmod>2015-03-19T01:45Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://www.ascm.org.au/info/climate-change-resources</loc><lastmod>2015-03-19T01:45Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://www.ascm.org.au/info/staff-handbook</loc><lastmod>2015-05-31T07:15Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://www.ascm.org.au/info/ascm-content-editors-guide</loc><lastmod>2015-05-31T07:15Z</lastmod><changefreq>never</changefreq></url>
+<url><loc>http://www.ascm.org.au/info/mission-east-timor</loc><lastmod>2015-03-19T01:54Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://www.ascm.org.au/info/brigida-corte-real-2013</loc><lastmod>2015-03-19T01:48Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://www.ascm.org.au/info/christine-tsoi-2013</loc><lastmod>2015-03-19T01:48Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://www.ascm.org.au/info/zulmira-fonseca-c-amaral-2013</loc><lastmod>2015-03-19T01:48Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://www.ascm.org.au/info/aidan-stewart-2013</loc><lastmod>2015-03-19T01:48Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://www.ascm.org.au/content/support-ascm</loc></url>
+<url><loc>http://www.ascm.org.au/info/mission-east-timor-2014</loc><lastmod>2015-03-19T01:50Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://www.ascm.org.au/info/ascm-officers</loc><lastmod>2015-02-08T11:46Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://www.ascm.org.au/info/victorian-scm</loc><lastmod>2015-05-31T07:17Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://www.ascm.org.au/info/other-organisations</loc><lastmod>2016-01-04T18:21Z</lastmod><changefreq>monthly</changefreq></url>
+</urlset>

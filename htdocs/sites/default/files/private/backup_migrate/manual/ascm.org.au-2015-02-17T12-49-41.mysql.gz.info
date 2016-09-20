@@ -1,0 +1,8 @@
+filename = "ascm.org.au-2015-02-17T12-49-41"
+description = ""
+datestamp = "1424137782"
+generator = "Backup and Migrate (http://drupal.org/project/backup_migrate)"
+generatorversion = "7.x-2.x"
+sites[0][version] = "7.34"
+sites[0][name] = "Australian Student Christian Movement"
+sites[0][url] = "http://ascm.org.au/"
