@@ -24,7 +24,6 @@ function _webform_defaults_addressfield() {
       'description'               => '',
       'available_countries'       => array(),
       'default_country'           => '',
-      'format_handlers'           => array(),
       'csv_separate'              => 0,
     ),
   );
@@ -63,13 +62,6 @@ function _webform_edit_addressfield($component) {
     '#description' => t('Select which country should be selected as the default.'),
     '#options' => array_merge(array(0 => t('- None -')), _addressfield_country_options_list()),
     '#default_value' => $component['extra']['default_country'],
-  );
-  $form['extra']['format_handlers'] = array(
-    '#type' => 'checkboxes',
-    '#title' => t('Format handlers'),
-    '#options' => addressfield_format_plugins_options(),
-    '#required' => TRUE,
-    '#default_value' => !empty($component['extra']['format_handlers']) ? $component['extra']['format_handlers'] : array('address'),
   );
   $form['extra']['csv_separate'] = array(
     '#type' => 'radios',
@@ -145,8 +137,7 @@ function _webform_render_addressfield($component, $value = NULL, $filter = TRUE)
   $context = array(
     'mode' => 'form',
   );
-  $handlers = !empty($component['extra']['format_handlers']) ? $component['extra']['format_handlers'] : array('address');
-  $element += addressfield_generate($address, $handlers, $context);
+  $element += addressfield_generate($address, array('address'), $context);
 
   if (!empty($available)) {
     $element['country']['#options'] = array_intersect_key($element['country']['#options'], $available);
