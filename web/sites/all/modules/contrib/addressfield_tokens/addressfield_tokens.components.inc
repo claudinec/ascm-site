@@ -23,6 +23,10 @@ function _webform_defaults_addressfield() {
       'attributes'                => array(),
       'description'               => '',
       'available_countries'       => array(),
+<<<<<<< HEAD
+=======
+      'default_country'           => '',
+>>>>>>> master
       'csv_separate'              => 0,
     ),
   );
@@ -53,6 +57,17 @@ function _webform_edit_addressfield($component) {
     '#options' => _addressfield_country_options_list(),
     '#default_value' => $component['extra']['available_countries'],
   );
+<<<<<<< HEAD
+=======
+  $form['extra']['default_country'] = array(
+    '#type' => 'select',
+    '#multiple' => FALSE,
+    '#title' => t('Default country'),
+    '#description' => t('Select which country should be selected as the default.'),
+    '#options' => array_merge(array(0 => t('- None -')), _addressfield_country_options_list()),
+    '#default_value' => $component['extra']['default_country'],
+  );
+>>>>>>> master
   $form['extra']['csv_separate'] = array(
     '#type' => 'radios',
     '#title' => t('CSV download'),
@@ -125,7 +140,11 @@ function _webform_render_addressfield($component, $value = NULL, $filter = TRUE)
     'mode' => 'form',
   );
   $element += addressfield_generate($address, array('address'), $context);
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> master
   if (!empty($available)) {
     $element['country']['#options'] = array_intersect_key($element['country']['#options'], $available);
   }

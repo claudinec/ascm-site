@@ -72,9 +72,11 @@
                 "agl",
                 "aimeos",
                 "annotatecms",
+                "attogram",
                 "bitrix",
                 "cakephp",
                 "chef",
+                "cockpit",
                 "codeigniter",
                 "concrete5",
                 "croogo",
@@ -98,12 +100,14 @@
                 "piwik",
                 "ppi",
                 "puppet",
+                "reindex",
                 "roundcube",
                 "shopware",
                 "silverstripe",
                 "symfony",
                 "typo3",
                 "wordpress",
+                "yawik",
                 "zend",
                 "zikula"
             ],
@@ -441,12 +445,20 @@
                 "shasum": null
             },
             "require": {
+                "drupal/ctools": "7.*",
                 "drupal/drupal": "7.*"
             },
-            "type": "drupal-theme",
+            "replace": {
+                "drupal/environment_indicator_variable": "self.version"
+            },
+            "suggest": {
+                "drupal/variable_realm": "Required by drupal/environment_indicator_variable",
+                "drupal/variable_store": "Required by drupal/environment_indicator_variable"
+            },
+            "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-7.x-3.x": "7.3.x-dev"
+                    "dev-7.x-2.x": "7.2.x-dev"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
