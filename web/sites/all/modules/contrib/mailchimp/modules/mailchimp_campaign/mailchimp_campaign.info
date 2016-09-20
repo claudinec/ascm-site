@@ -12,10 +12,3 @@ files[] = includes/mailchimp_campaign.controller.inc
 files[] = tests/mailchimp_campaigns.test
 
 configure = admin/config/services/mailchimp/campaigns
-
-; Information added by Drupal.org packaging script on 2016-05-14
-version = "7.x-4.4"
-core = "7.x"
-project = "mailchimp"
-datestamp = "1463208549"
-

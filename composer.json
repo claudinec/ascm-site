@@ -58,8 +58,6 @@
     "drupal/webform_mailchimp": "^7.2",
     "guzzlehttp/guzzle": "^6.2",
     "mailchimp/mailchimp": "^2.0"
-    "drupal/webform": "^7.4",
-    "drupal/webform_mailchimp": "^7.1"
   },
   "minimum-stability": "beta",
   "conflict": {

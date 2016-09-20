@@ -7,10 +7,3 @@ files[] = search404.install
 
 configure = admin/config/search/search404
 
-
-; Information added by Drupal.org packaging script on 2016-02-29
-version = "7.x-1.4"
-core = "7.x"
-project = "search404"
-datestamp = "1456722437"
-

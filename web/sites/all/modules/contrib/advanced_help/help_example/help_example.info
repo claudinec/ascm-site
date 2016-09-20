@@ -2,7 +2,6 @@ name = Advanced help example
 description = A example help module to demonstrate the advanced help module.
 core = 7.x
 dependencies[] = advanced_help
-<<<<<<< HEAD
 
 attributions[wikipedia_adaption][type] = 'asset'
 attributions[wikipedia_adaption][weight] = -10
@@ -32,5 +31,3 @@ attributions[gutmans][work_url] = 'http://en.wikipedia.org/wiki/File:Andi_Gutman
 attributions[gutmans][title] = 'Andi Gutmans'
 attributions[gutmans][license] = 'Creative Commons BY 2.0'
 attributions[gutmans][license_url] = 'http://creativecommons.org/licenses/by/2.0/deed.en'
-=======
->>>>>>> master

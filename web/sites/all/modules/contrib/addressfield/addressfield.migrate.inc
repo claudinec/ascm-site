@@ -5,11 +5,6 @@
  * Base integration with the Migrate API class.
  */
 
-// Avoid issues when migrate module is disabled.
-if (!class_exists('MigrateFieldHandler')) {
-  return;
-}
-
 /**
  * Implements hook_migrate_api().
  */

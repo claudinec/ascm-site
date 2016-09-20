@@ -12,10 +12,3 @@ files[] = tests/ds.exportables.test
 files[] = tests/ds.views.test
 files[] = tests/ds.forms.test
 configure = admin/structure/ds
-
-; Information added by Drupal.org packaging script on 2016-04-26
-version = "7.x-2.14"
-core = "7.x"
-project = "ds"
-datestamp = "1461696967"
-

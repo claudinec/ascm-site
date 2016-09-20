@@ -8,9 +8,3 @@ dependencies[] = fb
 files[] = fb_app.module
 files[] = fb_app.install
 files[] = fb_app.admin.inc
-; Information added by drupal.org packaging script on 2013-10-24
-version = "7.x-3.4-beta4"
-core = "7.x"
-project = "fb"
-datestamp = "1382597430"
-
