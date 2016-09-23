@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "66804b90ffa74f7e3f54d42751455b8c",
-    "content-hash": "e0fcb29932036e5af36df0f90ef4f674",
+    "hash": "e9c2ba329b1e29ab0533e085559b3a1d",
+    "content-hash": "c7f913bcab6dcb2a29e51ed6036017cc",
     "packages": [
         {
             "name": "composer/installers",
@@ -215,7 +215,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/addressfield_phone-7.x-1.3.zip",
-                "reference": "b27f716157b1e11b8c629e8f0bb713b2acc218b4",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -282,7 +282,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/admin_menu-7.x-3.0-rc5.zip",
-                "reference": "59a4fe3d4da5a80dd6abec5873a9930ccfb15c17",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -352,7 +352,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/auto_nodetitle-7.x-1.0.zip",
-                "reference": "4b3ee8118356c17ad06cf2127335809dac5cd73d",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -383,7 +383,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/autocomplete_widgets-7.x-1.0-rc1.zip",
-                "reference": "ec642f6db3d8b568760a63ae040fde0499f40275",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -477,7 +477,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/boxes-7.x-1.2.zip",
-                "reference": "9ce35b717dc168703dee802460d21c6e200006ae",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -510,7 +510,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/chart-7.x-1.1.zip",
-                "reference": "930a9ce69e38cf68881a7bb85f1d4bd70117ae68",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -770,7 +770,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/diff-7.x-3.2.zip",
-                "reference": "adb43040a4e8f950ae604b7d3698f493075cb04f",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1010,16 +1010,16 @@
         },
         {
             "name": "drupal/entity",
-            "version": "7.1.7",
+            "version": "7.1.8",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity",
-                "reference": "4d76c5c2302e225fea2db7aba08d48f3558bf275"
+                "reference": "1fa8f2dcb25ab26904c3d910399eaf23e17232bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity-7.x-1.7.zip",
-                "reference": "4d76c5c2302e225fea2db7aba08d48f3558bf275",
+                "url": "https://ftp.drupal.org/files/projects/entity-7.x-1.8.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1040,7 +1040,7 @@
             ],
             "description": "Enables modules to work with any entity type and to provide entities.",
             "homepage": "https://www.drupal.org/project/entity",
-            "time": "2015-02-27 17:08:22"
+            "time": "2016-03-17 17:02:49"
         },
         {
             "name": "drupal/entityreference",
@@ -1186,7 +1186,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/features-7.x-2.10.zip",
-                "reference": "41fd9b821b03cbdc6476428f375f16c9f8dc4185",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1445,7 +1445,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/imce_wysiwyg-7.x-1.0.zip",
-                "reference": "ed0ff649a082746496da1bbad00a804836c7a683",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1688,7 +1688,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/revisioning-7.x-1.9.zip",
-                "reference": "537521e39d59c768e670d2b162e20752f9b3a9fb",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1892,7 +1892,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/webform-7.x-4.14.zip",
-                "reference": "9bc81f8869868c48470aa383c1a5166ba3255669",
+                "reference": null,
                 "shasum": null
             },
             "require": {
