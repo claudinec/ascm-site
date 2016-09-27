@@ -30,7 +30,6 @@
     "drupal/entity": "~7.1.6",
     "drupal/entityreference": "^7.1",
     "drupal/environment_indicator": "^7.2",
-    "drupal/fb": "^7.3",
     "drupal/features": "^7.2",
     "drupal/filefield_paths": "^7.1",
     "drupal/filefield_sources": "^7.1",
@@ -50,9 +49,9 @@
     "drupal/smtp": "^7.1",
     "drupal/token": "~7.1.5",
     "drupal/views": "^7.3",
-    "drupal/views_slideshow": "^7.3",
     "drupal/webform": "^7.4",
-    "drupal/webform_mailchimp": "^7.1"
+    "drupal/webform_mailchimp": "^7.1",
+    "guzzlehttp/guzzle": "^3.8"
   },
   "minimum-stability": "dev",
   "conflict": {

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b4eda1626e38212089a204b9060cca7e",
-    "content-hash": "1d81f964655d81b4bb1db218e8f8ade6",
+    "hash": "7b2c421523f6ff8d0c83a07c6957a80c",
+    "content-hash": "1e25b2dda30506c4a7f93ea362b78bad",
     "packages": [
         {
             "name": "composer/installers",
@@ -317,8 +317,12 @@
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
             "description": "Provides a dropdown menu to most administrative tasks and other common destinations (to users with the proper permissions).",
-            "homepage": "https://www.drupal.org/project/admin_menu"
+            "homepage": "https://www.drupal.org/project/admin_menu",
+            "time": "2014-12-19 21:59:50"
         },
         {
             "name": "drupal/advanced_help",
@@ -359,7 +363,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/autocomplete_widgets-7.x-1.0-rc1.zip",
-                "reference": null,
+                "reference": "ec642f6db3d8b568760a63ae040fde0499f40275",
                 "shasum": null
             },
             "require": {
@@ -723,7 +727,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/drupal",
-                "reference": "2051d8c94ee8dc050f132752fa9554fb567a70b6"
+                "reference": "0c770aa8b46a64584f46346484df5237ef37c79b"
             },
             "replace": {
                 "drupal/aggregator": "self.version",
@@ -816,7 +820,7 @@
             ],
             "description": "Handles general site configuration for administrators.",
             "homepage": "https://www.drupal.org/project/drupal",
-            "time": "2016-09-11 21:11:29"
+            "time": "2016-09-26 12:32:04"
         },
         {
             "name": "drupal/ds",
@@ -829,7 +833,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/ds-7.x-2.13.zip",
-                "reference": null,
+                "reference": "2ccb1ddb42cb0dcf406bec5d8a70cc19ef2a1f0e",
                 "shasum": null
             },
             "require": {
@@ -872,7 +876,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/email-7.x-1.3.zip",
-                "reference": null,
+                "reference": "25dd1a4e3cf1efd2606874909b42c79d4fffcc84",
                 "shasum": null
             },
             "require": {
@@ -984,43 +988,6 @@
             "time": "2016-09-16 07:06:23"
         },
         {
-            "name": "drupal/fb",
-            "version": "dev-7.x-4.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/fb",
-                "reference": "1357a90bec71ee2dc087a34ab0be4ac9a03ac368"
-            },
-            "require": {
-                "drupal/drupal": "7.*"
-            },
-            "replace": {
-                "drupal/fb_canvas": "self.version",
-                "drupal/fb_connect": "self.version",
-                "drupal/fb_devel": "self.version",
-                "drupal/fb_invite": "self.version",
-                "drupal/fb_opengraph": "self.version",
-                "drupal/fb_post": "self.version",
-                "drupal/fb_user": "self.version"
-            },
-            "suggest": {
-                "drupal/devel": "Required by drupal/fb_devel"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-4.x": "7.4.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Integration with Facebook Platform APIs.",
-            "homepage": "https://www.drupal.org/project/fb",
-            "time": "2014-09-08 17:09:16"
-        },
-        {
             "name": "drupal/features",
             "version": "dev-7.x-2.x",
             "source": {
@@ -1103,7 +1070,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/google_analytics",
-                "reference": "c302a2fb19ccd8acba42198cac5c6e57be4c5a1b"
+                "reference": "95367cc634bb10b6e936568b01405481a84cb875"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -1123,7 +1090,7 @@
             ],
             "description": "Allows your site to be tracked by Google Analytics by adding a Javascript tracking code to every page.",
             "homepage": "https://www.drupal.org/project/google_analytics",
-            "time": "2016-09-12 19:10:55"
+            "time": "2016-09-23 10:22:09"
         },
         {
             "name": "drupal/honeypot",
@@ -1136,7 +1103,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/honeypot-7.x-1.22.zip",
-                "reference": null,
+                "reference": "2cb39868ba8037718992017bb3b5e16a2165c8a8",
                 "shasum": null
             },
             "require": {
@@ -1192,7 +1159,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/imce_filefield-7.x-1.1.zip",
-                "reference": null,
+                "reference": "335e052d92f599e0a5c91e5736c8cd052ba1c78c",
                 "shasum": null
             },
             "require": {
@@ -1225,7 +1192,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/imce_wysiwyg-7.x-1.0.zip",
-                "reference": null,
+                "reference": "ed0ff649a082746496da1bbad00a804836c7a683",
                 "shasum": null
             },
             "require": {
@@ -1284,7 +1251,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/link-7.x-1.4.zip",
-                "reference": null,
+                "reference": "3cfdc1848d00dc5d5a7b2e9e9b7e85a04fdbe9f5",
                 "shasum": null
             },
             "require": {
@@ -1366,21 +1333,21 @@
         },
         {
             "name": "drupal/mailchimp",
-            "version": "dev-7.x-4.x",
+            "version": "7.4.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/mailchimp",
-                "reference": "9c946c4d5aabbfdce3ff75040b3b405907328b03"
+                "reference": "02655b25a8a5ad5377b883d1d44fccb66cc8330c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/mailchimp-7.x-4.5.zip",
-                "reference": null,
+                "url": "https://ftp.drupal.org/files/projects/mailchimp-7.x-4.4.zip",
+                "reference": "02655b25a8a5ad5377b883d1d44fccb66cc8330c",
                 "shasum": null
             },
             "require": {
                 "drupal/drupal": "7.*",
-                "thinkshout/mailchimp-api-php": ">=1.0.3"
+                "drupal/libraries": ">=7.2.0"
             },
             "replace": {
                 "drupal/mailchimp_activity": "self.version",
@@ -1402,16 +1369,11 @@
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "license": [
-                "GNU-2.0+"
+                "GPL-2.0+"
             ],
             "description": "MailChimp email service integration.",
             "homepage": "https://www.drupal.org/project/mailchimp",
-            "keywords": [
-                "email",
-                "mailchimp",
-                "php"
-            ],
-            "time": "2016-08-31 21:36:16"
+            "time": "2016-05-14 06:35:51"
         },
         {
             "name": "drupal/mollom",
@@ -1473,7 +1435,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/search404",
-                "reference": "eff79fdb8be4d372a2c7681a3c7a23a59c617947"
+                "reference": "841f75bf4076f6bd2dbea9032c885f4033e88776"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -1490,7 +1452,7 @@
             ],
             "description": "Automatically search for the keywords in URLs that result in 404 errors and show results instead of Page-Not-Found. ",
             "homepage": "https://www.drupal.org/project/search404",
-            "time": "2016-07-26 05:18:36"
+            "time": "2016-09-26 12:06:00"
         },
         {
             "name": "drupal/smtp",
@@ -1548,7 +1510,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/views",
-                "reference": "8d81d9ae73b570b9be612723eb563da371d02f3d"
+                "reference": "63e1d67c7125cdcf7e5aeaeefe375f8c49ce92d8"
             },
             "require": {
                 "drupal/ctools": "7.*",
@@ -1569,39 +1531,7 @@
             ],
             "description": "Create customized lists and queries from your database.",
             "homepage": "https://www.drupal.org/project/views",
-            "time": "2016-08-18 12:32:54"
-        },
-        {
-            "name": "drupal/views_slideshow",
-            "version": "dev-7.x-3.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/views_slideshow",
-                "reference": "a54f7d1752e436e6634f92e4398678c1dfe07da7"
-            },
-            "require": {
-                "drupal/drupal": "7.*",
-                "drupal/views": "7.*"
-            },
-            "replace": {
-                "drupal/views_slideshow_cycle": "self.version"
-            },
-            "suggest": {
-                "drupal/libraries": "Required by drupal/views_slideshow_cycle"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-3.x": "7.3.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Provides a View style that displays rows as a jQuery slideshow.  This is an API and requires Views Slideshow Cycle or another module that supports the API.",
-            "homepage": "https://www.drupal.org/project/views_slideshow",
-            "time": "2016-02-18 22:39:08"
+            "time": "2016-09-22 10:08:07"
         },
         {
             "name": "drupal/webform",
@@ -1663,7 +1593,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/wysiwyg",
-                "reference": "18deb5ab9cc5255822a7d336891d043d35e660d2"
+                "reference": "a1d638d0716af0ca6168b43807bbd2ceac83280c"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -1680,44 +1610,70 @@
             ],
             "description": "Allows to edit content with client-side editors.",
             "homepage": "https://www.drupal.org/project/wysiwyg",
-            "time": "2016-04-25 12:26:37"
+            "time": "2016-09-26 20:27:20"
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.2.1",
+            "version": "v3.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "3f808fba627f2c5b69e2501217bf31af349c1427"
+                "reference": "4de0618a01b34aa1c8c33a3f13f396dcd3882eba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/3f808fba627f2c5b69e2501217bf31af349c1427",
-                "reference": "3f808fba627f2c5b69e2501217bf31af349c1427",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/4de0618a01b34aa1c8c33a3f13f396dcd3882eba",
+                "reference": "4de0618a01b34aa1c8c33a3f13f396dcd3882eba",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/promises": "^1.0",
-                "guzzlehttp/psr7": "^1.3.1",
-                "php": ">=5.5"
+                "ext-curl": "*",
+                "php": ">=5.3.3",
+                "symfony/event-dispatcher": ">=2.1"
+            },
+            "replace": {
+                "guzzle/batch": "self.version",
+                "guzzle/cache": "self.version",
+                "guzzle/common": "self.version",
+                "guzzle/http": "self.version",
+                "guzzle/inflection": "self.version",
+                "guzzle/iterator": "self.version",
+                "guzzle/log": "self.version",
+                "guzzle/parser": "self.version",
+                "guzzle/plugin": "self.version",
+                "guzzle/plugin-async": "self.version",
+                "guzzle/plugin-backoff": "self.version",
+                "guzzle/plugin-cache": "self.version",
+                "guzzle/plugin-cookie": "self.version",
+                "guzzle/plugin-curlauth": "self.version",
+                "guzzle/plugin-error-response": "self.version",
+                "guzzle/plugin-history": "self.version",
+                "guzzle/plugin-log": "self.version",
+                "guzzle/plugin-md5": "self.version",
+                "guzzle/plugin-mock": "self.version",
+                "guzzle/plugin-oauth": "self.version",
+                "guzzle/service": "self.version",
+                "guzzle/stream": "self.version"
             },
             "require-dev": {
-                "ext-curl": "*",
-                "phpunit/phpunit": "^4.0",
-                "psr/log": "^1.0"
+                "doctrine/cache": "*",
+                "monolog/monolog": "1.*",
+                "phpunit/phpunit": "3.7.*",
+                "psr/log": "1.0.*",
+                "symfony/class-loader": "*",
+                "zendframework/zend-cache": "<2.3",
+                "zendframework/zend-log": "<2.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.2-dev"
+                    "dev-master": "3.8-dev"
                 }
             },
             "autoload": {
-                "files": [
-                    "src/functions_include.php"
-                ],
-                "psr-4": {
-                    "GuzzleHttp\\": "src/"
+                "psr-0": {
+                    "Guzzle": "src/",
+                    "Guzzle\\Tests": "tests/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1729,9 +1685,13 @@
                     "name": "Michael Dowling",
                     "email": "mtdowling@gmail.com",
                     "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Guzzle Community",
+                    "homepage": "https://github.com/guzzle/guzzle/contributors"
                 }
             ],
-            "description": "Guzzle is a PHP HTTP client library",
+            "description": "Guzzle is a PHP HTTP client library and framework for building RESTful web service clients",
             "homepage": "http://guzzlephp.org/",
             "keywords": [
                 "client",
@@ -1742,40 +1702,48 @@
                 "rest",
                 "web service"
             ],
-            "time": "2016-07-15 17:22:37"
+            "time": "2014-01-28 22:29:15"
         },
         {
-            "name": "guzzlehttp/promises",
-            "version": "1.2.0",
+            "name": "symfony/event-dispatcher",
+            "version": "2.8.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/guzzle/promises.git",
-                "reference": "c10d860e2a9595f8883527fa0021c7da9e65f579"
+                "url": "https://github.com/symfony/event-dispatcher.git",
+                "reference": "889983a79a043dfda68f38c38b6dba092dd49cd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/c10d860e2a9595f8883527fa0021c7da9e65f579",
-                "reference": "c10d860e2a9595f8883527fa0021c7da9e65f579",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/889983a79a043dfda68f38c38b6dba092dd49cd8",
+                "reference": "889983a79a043dfda68f38c38b6dba092dd49cd8",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0"
+                "php": ">=5.3.9"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0"
+                "psr/log": "~1.0",
+                "symfony/config": "~2.0,>=2.0.5|~3.0.0",
+                "symfony/dependency-injection": "~2.6|~3.0.0",
+                "symfony/expression-language": "~2.6|~3.0.0",
+                "symfony/stopwatch": "~2.3|~3.0.0"
+            },
+            "suggest": {
+                "symfony/dependency-injection": "",
+                "symfony/http-kernel": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "2.8-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "GuzzleHttp\\Promise\\": "src/"
+                    "Symfony\\Component\\EventDispatcher\\": ""
                 },
-                "files": [
-                    "src/functions_include.php"
+                "exclude-from-classmap": [
+                    "/Tests/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1784,167 +1752,17 @@
             ],
             "authors": [
                 {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "Guzzle promises library",
-            "keywords": [
-                "promise"
-            ],
-            "time": "2016-05-18 16:56:05"
-        },
-        {
-            "name": "guzzlehttp/psr7",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/psr7.git",
-                "reference": "64862e854f876bc5aee2996cab2f552db8586065"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/64862e854f876bc5aee2996cab2f552db8586065",
-                "reference": "64862e854f876bc5aee2996cab2f552db8586065",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "psr/http-message": "~1.0"
-            },
-            "provide": {
-                "psr/http-message-implementation": "1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                },
-                "files": [
-                    "src/functions_include.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 },
                 {
-                    "name": "Tobias Schultze",
-                    "homepage": "https://github.com/Tobion"
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "PSR-7 message implementation that also provides common utility methods",
-            "keywords": [
-                "http",
-                "message",
-                "request",
-                "response",
-                "stream",
-                "uri",
-                "url"
-            ],
-            "time": "2016-08-03 09:33:34"
-        },
-        {
-            "name": "psr/http-message",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/http-message.git",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Http\\Message\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interface for HTTP messages",
-            "homepage": "https://github.com/php-fig/http-message",
-            "keywords": [
-                "http",
-                "http-message",
-                "psr",
-                "psr-7",
-                "request",
-                "response"
-            ],
-            "time": "2016-08-06 14:39:51"
-        },
-        {
-            "name": "thinkshout/mailchimp-api-php",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thinkshout/mailchimp-api-php.git",
-                "reference": "11f1f1fed19882130eb85eaf0ee4df287e02f889"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thinkshout/mailchimp-api-php/zipball/11f1f1fed19882130eb85eaf0ee4df287e02f889",
-                "reference": "11f1f1fed19882130eb85eaf0ee4df287e02f889",
-                "shasum": ""
-            },
-            "require": {
-                "guzzlehttp/guzzle": "6.2.1",
-                "php": ">=5.5.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.8.21"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Mailchimp\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "description": "PHP library for v3 of the MailChimp API",
-            "homepage": "https://github.com/thinkshout/mailchimp-api-php",
-            "keywords": [
-                "mail",
-                "mailchimp"
-            ],
-            "time": "2016-09-06 20:49:51"
+            "description": "Symfony EventDispatcher Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-07-28 16:56:28"
         }
     ],
     "packages-dev": [],
