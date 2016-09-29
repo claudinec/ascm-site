@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "19b5896a2a552d31b9474e22063c4b09",
-    "content-hash": "44dc7887aa9b76f2aeb800ae1b2c9844",
+    "hash": "d256d6c5fa4d1745a03d02b5aa8fbbde",
+    "content-hash": "268dfc0432fd210b0182484443803153",
     "packages": [
         {
             "name": "composer/installers",
@@ -353,6 +353,31 @@
             "time": "2016-01-31 06:50:08"
         },
         {
+            "name": "drupal/auto_nodetitle",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/auto_nodetitle",
+                "reference": "98d66fb24d54113bbdfba0d1797239493473cd78"
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows hiding of the content title field and automatic title creation.",
+            "homepage": "https://www.drupal.org/project/auto_nodetitle",
+            "time": "2011-09-08 16:07:46"
+        },
+        {
             "name": "drupal/autocomplete_widgets",
             "version": "7.1.0-rc1",
             "source": {
@@ -469,6 +494,38 @@
             "description": "The next generation of Blocks as Entities",
             "homepage": "https://www.drupal.org/project/boxes",
             "time": "2012-05-09 01:52:35"
+        },
+        {
+            "name": "drupal/chart",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/chart",
+                "reference": "83399e50dfbf5eb595870ff94968c895be669de4"
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/chart_views": "self.version",
+                "drupal/system_charts": "self.version"
+            },
+            "suggest": {
+                "drupal/views": "Required by drupal/chart_views"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Google Chart API integration.",
+            "homepage": "https://www.drupal.org/project/chart",
+            "time": "2014-11-06 23:33:04"
         },
         {
             "name": "drupal/composer_manager",
@@ -988,6 +1045,43 @@
             "time": "2016-09-16 07:06:23"
         },
         {
+            "name": "drupal/fb",
+            "version": "dev-7.x-4.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/fb",
+                "reference": "1357a90bec71ee2dc087a34ab0be4ac9a03ac368"
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/fb_canvas": "self.version",
+                "drupal/fb_connect": "self.version",
+                "drupal/fb_devel": "self.version",
+                "drupal/fb_invite": "self.version",
+                "drupal/fb_opengraph": "self.version",
+                "drupal/fb_post": "self.version",
+                "drupal/fb_user": "self.version"
+            },
+            "suggest": {
+                "drupal/devel": "Required by drupal/fb_devel"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-4.x": "7.4.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Integration with Facebook Platform APIs.",
+            "homepage": "https://www.drupal.org/project/fb",
+            "time": "2014-09-08 17:09:16"
+        },
+        {
             "name": "drupal/features",
             "version": "dev-7.x-2.x",
             "source": {
@@ -1428,6 +1522,41 @@
             "description": "Allows the creation and modification of content while the current revision remains unchanged and publicly visible until the changes have been reviewed by a moderator.",
             "homepage": "https://www.drupal.org/project/revisioning",
             "time": "2016-03-07 10:24:23"
+        },
+        {
+            "name": "drupal/rules",
+            "version": "dev-7.x-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/rules",
+                "reference": "1f2c06b33b7be2ac754d70161611dc81868f2157"
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/entity": "7.*",
+                "drupal/entity_token": "7.*"
+            },
+            "replace": {
+                "drupal/rules_admin": "self.version",
+                "drupal/rules_i18n": "self.version",
+                "drupal/rules_scheduler": "self.version"
+            },
+            "suggest": {
+                "drupal/i18n_string": "Required by drupal/rules_i18n"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-2.x": "7.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "React on events and conditionally evaluate actions.",
+            "homepage": "https://www.drupal.org/project/rules",
+            "time": "2016-01-15 17:28:46"
         },
         {
             "name": "drupal/search404",
