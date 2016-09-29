@@ -55,7 +55,8 @@
     "drupal/auto_nodetitle": "^7.1",
     "drupal/chart": "^7.1",
     "drupal/fb": "^7.3",
-    "drupal/rules": "^7.2"
+    "drupal/rules": "^7.2",
+    "drupal/views_slideshow": "^7.3"
   },
   "minimum-stability": "dev",
   "conflict": {
