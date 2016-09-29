@@ -238,7 +238,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/addressfield_phone-7.x-1.3.zip",
-                "reference": "b27f716157b1e11b8c629e8f0bb713b2acc218b4",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -299,7 +299,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/admin_menu-7.x-3.0-rc5.zip",
-                "reference": "59a4fe3d4da5a80dd6abec5873a9930ccfb15c17",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -388,7 +388,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/autocomplete_widgets-7.x-1.0-rc1.zip",
-                "reference": "ec642f6db3d8b568760a63ae040fde0499f40275",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -606,7 +606,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/ctools-7.x-1.10.zip",
-                "reference": "72634bbb9ff05a71199426ea883bac3cf2866c96",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -890,7 +890,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/ds-7.x-2.13.zip",
-                "reference": "2ccb1ddb42cb0dcf406bec5d8a70cc19ef2a1f0e",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -933,7 +933,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/email-7.x-1.3.zip",
-                "reference": "25dd1a4e3cf1efd2606874909b42c79d4fffcc84",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -959,7 +959,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity",
-                "reference": "1fa8f2dcb25ab26904c3d910399eaf23e17232bc"
+                "reference": "79d7dbe2a6af1e72d805f3567b3c586092a83dc4"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -979,7 +979,7 @@
             ],
             "description": "Enables modules to work with any entity type and to provide entities.",
             "homepage": "https://www.drupal.org/project/entity",
-            "time": "2016-03-17 17:02:49"
+            "time": "2016-09-28 13:13:07"
         },
         {
             "name": "drupal/entityreference",
@@ -1197,7 +1197,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/honeypot-7.x-1.22.zip",
-                "reference": "2cb39868ba8037718992017bb3b5e16a2165c8a8",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1253,7 +1253,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/imce_filefield-7.x-1.1.zip",
-                "reference": "335e052d92f599e0a5c91e5736c8cd052ba1c78c",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1286,7 +1286,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/imce_wysiwyg-7.x-1.0.zip",
-                "reference": "ed0ff649a082746496da1bbad00a804836c7a683",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1345,7 +1345,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/link-7.x-1.4.zip",
-                "reference": "3cfdc1848d00dc5d5a7b2e9e9b7e85a04fdbe9f5",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1427,21 +1427,21 @@
         },
         {
             "name": "drupal/mailchimp",
-            "version": "7.4.4",
+            "version": "dev-7.x-4.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/mailchimp",
-                "reference": "02655b25a8a5ad5377b883d1d44fccb66cc8330c"
+                "reference": "9c946c4d5aabbfdce3ff75040b3b405907328b03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/mailchimp-7.x-4.4.zip",
-                "reference": "02655b25a8a5ad5377b883d1d44fccb66cc8330c",
+                "url": "https://ftp.drupal.org/files/projects/mailchimp-7.x-4.5.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
                 "drupal/drupal": "7.*",
-                "drupal/libraries": ">=7.2.0"
+                "thinkshout/mailchimp-api-php": ">=1.0.3"
             },
             "replace": {
                 "drupal/mailchimp_activity": "self.version",
@@ -1463,11 +1463,16 @@
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "GNU-2.0+"
             ],
             "description": "MailChimp email service integration.",
             "homepage": "https://www.drupal.org/project/mailchimp",
-            "time": "2016-05-14 06:35:51"
+            "keywords": [
+                "email",
+                "mailchimp",
+                "php"
+            ],
+            "time": "2016-08-31 21:36:16"
         },
         {
             "name": "drupal/mollom",
@@ -1564,7 +1569,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/search404",
-                "reference": "841f75bf4076f6bd2dbea9032c885f4033e88776"
+                "reference": "c8ecc07c552aa6fea9518f2c500465d9c2e5aa53"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -1581,7 +1586,7 @@
             ],
             "description": "Automatically search for the keywords in URLs that result in 404 errors and show results instead of Page-Not-Found. ",
             "homepage": "https://www.drupal.org/project/search404",
-            "time": "2016-09-26 12:06:00"
+            "time": "2016-09-27 09:42:02"
         },
         {
             "name": "drupal/smtp",
@@ -1774,45 +1779,99 @@
             "time": "2016-09-26 20:27:20"
         },
         {
-            "name": "symfony/event-dispatcher",
-            "version": "2.8.x-dev",
+            "name": "guzzlehttp/guzzle",
+            "version": "6.2.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "889983a79a043dfda68f38c38b6dba092dd49cd8"
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "3f808fba627f2c5b69e2501217bf31af349c1427"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/889983a79a043dfda68f38c38b6dba092dd49cd8",
-                "reference": "889983a79a043dfda68f38c38b6dba092dd49cd8",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/3f808fba627f2c5b69e2501217bf31af349c1427",
+                "reference": "3f808fba627f2c5b69e2501217bf31af349c1427",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.3.1",
+                "php": ">=5.5"
             },
             "require-dev": {
-                "psr/log": "~1.0",
-                "symfony/config": "~2.0,>=2.0.5|~3.0.0",
-                "symfony/dependency-injection": "~2.6|~3.0.0",
-                "symfony/expression-language": "~2.6|~3.0.0",
-                "symfony/stopwatch": "~2.3|~3.0.0"
-            },
-            "suggest": {
-                "symfony/dependency-injection": "",
-                "symfony/http-kernel": ""
+                "ext-curl": "*",
+                "phpunit/phpunit": "^4.0",
+                "psr/log": "^1.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "6.2-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2016-07-15 17:22:37"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "c10d860e2a9595f8883527fa0021c7da9e65f579"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/c10d860e2a9595f8883527fa0021c7da9e65f579",
+                "reference": "c10d860e2a9595f8883527fa0021c7da9e65f579",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Symfony\\Component\\EventDispatcher\\": ""
+                    "GuzzleHttp\\Promise\\": "src/"
                 },
-                "exclude-from-classmap": [
-                    "/Tests/"
+                "files": [
+                    "src/functions_include.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1821,17 +1880,167 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
                 }
             ],
-            "description": "Symfony EventDispatcher Component",
-            "homepage": "https://symfony.com",
-            "time": "2016-07-28 16:56:28"
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2016-05-18 16:56:05"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "64862e854f876bc5aee2996cab2f552db8586065"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/64862e854f876bc5aee2996cab2f552db8586065",
+                "reference": "64862e854f876bc5aee2996cab2f552db8586065",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "time": "2016-08-03 09:33:34"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06 14:39:51"
+        },
+        {
+            "name": "thinkshout/mailchimp-api-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thinkshout/mailchimp-api-php.git",
+                "reference": "452cb170e19c9431ddd0405dfee04ec132a0ffbd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thinkshout/mailchimp-api-php/zipball/452cb170e19c9431ddd0405dfee04ec132a0ffbd",
+                "reference": "452cb170e19c9431ddd0405dfee04ec132a0ffbd",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "6.2.1",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.21"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mailchimp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "PHP library for v3 of the MailChimp API",
+            "homepage": "https://github.com/thinkshout/mailchimp-api-php",
+            "keywords": [
+                "mail",
+                "mailchimp"
+            ],
+            "time": "2016-09-23 00:22:36"
         }
     ],
     "packages-dev": [],
