@@ -32,7 +32,6 @@
     "drupal/entity": "^7.1",
     "drupal/entityreference": "^7.1",
     "drupal/environment_indicator": "^7.2",
-    "drupal/fb": "^7.3",
     "drupal/features": "^7.2",
     "drupal/filefield_paths": "^7.1",
     "drupal/filefield_sources": "^7.1",
