@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Release 2016.09.29
+
+- Clean up, fix Composer setup.
+  Closes GH-8, GH-13.
+
 ## Release 2016.07.05
 
 - Update Features to 7.x-2.10
