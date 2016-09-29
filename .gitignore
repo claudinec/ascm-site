@@ -21,5 +21,6 @@ web/sites/default/files
 .idea
 
 # Ignore private files
+.env
 private/
-
+.vagrant/
