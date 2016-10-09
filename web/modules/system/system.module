@@ -3366,8 +3366,7 @@ function system_goto_action($entity, $context) {
  */
 function system_block_ip_action() {
   $ip = ip_address();
-  db_merge('blocked_ips')
-    ->key(array('ip' => $ip))
+  db_insert('blocked_ips')
     ->fields(array('ip' => $ip))
     ->execute();
   watchdog('action', 'Banned IP address %ip', array('%ip' => $ip));
