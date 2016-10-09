@@ -1,8 +1,0 @@
-filename = "AustralianStudentChristianMovement-2014-01-14T15-29-39"
-description = ""
-datestamp = "1389673794"
-generator = "Backup and Migrate (http://drupal.org/project/backup_migrate)"
-generatorversion = "7.x-2.x"
-sites[0][version] = "7.24"
-sites[0][name] = "Australian Student Christian Movement"
-sites[0][url] = "http://default/"
