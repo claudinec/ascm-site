@@ -18,9 +18,9 @@ web/profiles/contrib
 # Ignore Drupal's file directory
 web/sites/default/files
 
-# Ignore Vagrant files
+# Ignore Vagrant directory
 .vagrant/
-Vagrantfile
 
 # Ignore all settings files
 settings.php
+.env
