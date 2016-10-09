@@ -1,5 +1,0 @@
-name = FB Invite Friends
-description = (fb_invite.module) Adds a page where connected users invite friends to the application.
-package = Drupal for Facebook - contrib
-core = 7.x
-dependencies[] = fb
