@@ -1,0 +1,9 @@
+name = Environment indicator
+description = Adds a color indicator for the different environments.
+core = 7.x
+
+configure = admin/config/development/environment-indicator
+
+dependencies[] = ctools
+
+files[] = plugins/export_ui/ctools_export_ui_environment_indicator.class.php

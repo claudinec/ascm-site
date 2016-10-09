@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## NEXT
+## Release 2016.07.05
 
 - Update Features to 7.x-2.10
 - Add Bootstrap base theme

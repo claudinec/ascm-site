@@ -1,0 +1,7 @@
+name = Display Suite Disqus
+description = Adds Disqus support to Display Suite.
+core = 7.x
+package = Display Suite
+
+dependencies[] = ds
+dependencies[] = disqus

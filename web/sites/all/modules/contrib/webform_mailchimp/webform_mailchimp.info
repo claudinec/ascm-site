@@ -1,0 +1,9 @@
+
+name = Webform Mailchimp
+description = Creates a Mailchimp Webform component.
+core = 7.x
+dependencies[] = webform
+dependencies[] = mailchimp
+package = Webform
+
+files[] = webform_mailchimp.module
