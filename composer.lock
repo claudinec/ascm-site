@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c5680f6f0df4d987498b65d7ab7c2289",
-    "content-hash": "3eae11f37577fa7648111d94c412c32d",
+    "hash": "7df6ae869013e73e2eb4e9fb8190582d",
+    "content-hash": "c1d362e2792765e88955c5347f467c36",
     "packages": [
         {
             "name": "composer/installers",
@@ -428,34 +428,45 @@
         },
         {
             "name": "drupal/backup_migrate",
-            "version": "7.3.1",
+            "version": "dev-3.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/backup_migrate",
-                "reference": "174bb364b71887a23140efea626d2843b57bd4cf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/backup_migrate-7.x-3.1.zip",
-                "reference": "174bb364b71887a23140efea626d2843b57bd4cf",
-                "shasum": null
+                "reference": "9a3800f1dd2d3fc8c789073e4552c38bf70ed955"
             },
             "require": {
-                "drupal/drupal": "7.*"
+                "drupal/drupal": "~7.0"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-7.x-3.x": "7.3.x-dev"
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-3.1+6-dev",
+                    "datestamp": "1435783439"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
                 "GPL-2.0+"
             ],
+            "authors": [
+                {
+                    "name": "dgorton",
+                    "homepage": "https://www.drupal.org/user/19044"
+                },
+                {
+                    "name": "ronan",
+                    "homepage": "https://www.drupal.org/user/72815"
+                }
+            ],
             "description": "Backup the Drupal database and files or migrate them to another environment.",
             "homepage": "https://www.drupal.org/project/backup_migrate",
-            "time": "2015-05-11 13:05:29"
+            "support": {
+                "source": "http://cgit.drupalcode.org/backup_migrate"
+            },
+            "time": "2015-07-01 20:41:14"
         },
         {
             "name": "drupal/bootstrap",
@@ -4602,13 +4613,13 @@
         "drupal/autocomplete_widgets": 5,
         "drupal/feeds": 20,
         "drupal/conditional_fields": 20,
-        "drupal/file_entity": 20,
         "drupal/media_colorbox": 20,
         "drupal/mimemail": 20,
         "drupal/views_rss": 20,
         "drupal/wysiwyg_fields": 20,
         "drupal/typogrify": 20,
-        "drupal/webform_mailchimp": 20
+        "drupal/webform_mailchimp": 20,
+        "drupal/file_entity": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
