@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d5c3a433dc6892255d75700d7e1fc301",
-    "content-hash": "b8e9af4c7202bb0da3fc882343a92d9e",
+    "hash": "1430ba33707896cd7a9f43ef2ed8b875",
+    "content-hash": "6138b800a77b6a5db195adfe36be63f2",
     "packages": [
         {
             "name": "composer/installers",
@@ -1919,38 +1919,116 @@
         },
         {
             "name": "drupal/google_analytics_reports",
-            "version": "7.3.1",
+            "version": "dev-3.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/google_analytics_reports",
                 "reference": "8e9dc74c587021eab74691f47594cf7527dd47df"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/google_analytics_reports-7.x-3.1.zip",
-                "reference": null,
-                "shasum": null
-            },
             "require": {
-                "drupal/drupal": "7.*",
-                "drupal/views": "7.*"
-            },
-            "replace": {
-                "drupal/google_analytics_reports_api": "self.version"
+                "drupal/drupal": "~7.0",
+                "drupal/google_analytics_reports_api": "*",
+                "drupal/views": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-7.x-3.x": "7.3.x-dev"
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-3.1+0-dev",
+                    "datestamp": "1468146539"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
                 "GPL-2.0+"
             ],
+            "authors": [
+                {
+                    "name": "Plazik",
+                    "homepage": "https://www.drupal.org/user/982724"
+                },
+                {
+                    "name": "grendzy",
+                    "homepage": "https://www.drupal.org/user/96647"
+                },
+                {
+                    "name": "jantoine",
+                    "homepage": "https://www.drupal.org/user/192192"
+                },
+                {
+                    "name": "jkitching",
+                    "homepage": "https://www.drupal.org/user/159067"
+                },
+                {
+                    "name": "jojonaloha",
+                    "homepage": "https://www.drupal.org/user/1579186"
+                },
+                {
+                    "name": "raspberryman",
+                    "homepage": "https://www.drupal.org/user/71464"
+                }
+            ],
             "description": "Display statistics from Google Analytics using Views.",
             "homepage": "https://www.drupal.org/project/google_analytics_reports",
+            "support": {
+                "source": "http://cgit.drupalcode.org/google_analytics_reports"
+            },
             "time": "2016-07-10 11:19:11"
+        },
+        {
+            "name": "drupal/google_analytics_reports_api",
+            "version": "dev-3.x",
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/google_analytics_reports": "self.version"
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-3.1+0-dev",
+                    "datestamp": "1468146539"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Plazik",
+                    "homepage": "https://www.drupal.org/user/982724"
+                },
+                {
+                    "name": "grendzy",
+                    "homepage": "https://www.drupal.org/user/96647"
+                },
+                {
+                    "name": "jantoine",
+                    "homepage": "https://www.drupal.org/user/192192"
+                },
+                {
+                    "name": "jkitching",
+                    "homepage": "https://www.drupal.org/user/159067"
+                },
+                {
+                    "name": "jojonaloha",
+                    "homepage": "https://www.drupal.org/user/1579186"
+                },
+                {
+                    "name": "raspberryman",
+                    "homepage": "https://www.drupal.org/user/71464"
+                }
+            ],
+            "description": "API to access statistics from the <a href=\"https://developers.google.com/analytics/devguides/reporting/core/v3/\">Google Analytics Core Reporting API</a>.",
+            "homepage": "https://www.drupal.org/project/google_analytics_reports",
+            "support": {
+                "source": "http://cgit.drupalcode.org/google_analytics_reports"
+            }
         },
         {
             "name": "drupal/honeypot",
@@ -2386,21 +2464,21 @@
         },
         {
             "name": "drupal/mailchimp",
-            "version": "4.4.0",
+            "version": "7.x-4.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/mailchimp",
-                "reference": "7.x-4.4"
+                "reference": "7.x-4.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/mailchimp-7.x-4.4.zip",
+                "url": "https://ftp.drupal.org/files/projects/mailchimp-7.x-4.6.zip",
                 "reference": null,
-                "shasum": "8ecb387a85bb9f548606b52797f4157b787b4a77"
+                "shasum": "53cf1bfa970d4da1c1b40bf9ee8694d59ffbbcd9"
             },
             "require": {
                 "drupal/drupal": "~7.0",
-                "drupal/libraries": "^2.0"
+                "thinkshout/mailchimp-api-php": ">=1.0.3"
             },
             "suggest": {
                 "drupal/drupal": "Required by drupal/mailchimp_lists",
@@ -2414,13 +2492,13 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "7.x-4.4",
-                    "datestamp": "1472682839"
+                    "version": "7.x-4.6",
+                    "datestamp": "1477691639"
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GNU-2.0+"
             ],
             "authors": [
                 {
@@ -2464,8 +2542,14 @@
                     "homepage": "https://www.drupal.org/user/105595"
                 }
             ],
-            "description": "MailChimp email service integration.",
+            "description": "Mailchimp integration for Drupal.",
             "homepage": "https://www.drupal.org/project/mailchimp",
+            "keywords": [
+                "Mailchimp",
+                "email",
+                "mailchimp",
+                "php"
+            ],
             "support": {
                 "source": "http://cgit.drupalcode.org/mailchimp"
             }
@@ -4032,38 +4116,74 @@
         },
         {
             "name": "drupal/views",
-            "version": "7.3.14",
+            "version": "dev-3.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/views",
-                "reference": "485b697082cf2ec42cc596eed952daa6f61e8012"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views-7.x-3.14.zip",
-                "reference": null,
-                "shasum": null
+                "reference": "63e1d67c7125cdcf7e5aeaeefe375f8c49ce92d8"
             },
             "require": {
-                "drupal/ctools": "7.*",
-                "drupal/drupal": "7.*"
-            },
-            "replace": {
-                "drupal/views_ui": "self.version"
+                "drupal/ctools": "*",
+                "drupal/drupal": "~7.0"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-7.x-3.x": "7.3.x-dev"
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-3.14+7-dev",
+                    "datestamp": "1474538939"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
                 "GPL-2.0+"
             ],
+            "authors": [
+                {
+                    "name": "Lendude",
+                    "homepage": "https://www.drupal.org/user/690914"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "colan",
+                    "homepage": "https://www.drupal.org/user/58704"
+                },
+                {
+                    "name": "damiankloip",
+                    "homepage": "https://www.drupal.org/user/1037976"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "dww",
+                    "homepage": "https://www.drupal.org/user/46549"
+                },
+                {
+                    "name": "esmerel",
+                    "homepage": "https://www.drupal.org/user/164022"
+                },
+                {
+                    "name": "merlinofchaos",
+                    "homepage": "https://www.drupal.org/user/26979"
+                },
+                {
+                    "name": "tim.plunkett",
+                    "homepage": "https://www.drupal.org/user/241634"
+                }
+            ],
             "description": "Create customized lists and queries from your database.",
             "homepage": "https://www.drupal.org/project/views",
-            "time": "2016-06-15 19:37:02"
+            "support": {
+                "source": "http://cgit.drupalcode.org/views"
+            },
+            "time": "2016-09-22 10:08:07"
         },
         {
             "name": "drupal/views_bulk_operations",
@@ -4179,36 +4299,74 @@
         },
         {
             "name": "drupal/webform",
-            "version": "7.4.14",
+            "version": "dev-4.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/webform",
-                "reference": "9bc81f8869868c48470aa383c1a5166ba3255669"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-7.x-4.14.zip",
-                "reference": null,
-                "shasum": null
+                "reference": "82d3ec711b1b7fc968e4e74c8af7ba899a34d526"
             },
             "require": {
-                "drupal/ctools": "7.*",
-                "drupal/drupal": "7.*",
-                "drupal/views": "7.*"
+                "drupal/ctools": "*",
+                "drupal/drupal": "~7.0",
+                "drupal/views": "*"
+            },
+            "suggest": {
+                "drupal/token": "Required by drupal/webform"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-7.x-4.x": "7.4.x-dev"
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-4.14+8-dev",
+                    "datestamp": "1477686239"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
                 "GPL-2.0+"
             ],
+            "authors": [
+                {
+                    "name": "DanChadwick",
+                    "homepage": "https://www.drupal.org/user/504278"
+                },
+                {
+                    "name": "Liam Morland",
+                    "homepage": "https://www.drupal.org/user/493050"
+                },
+                {
+                    "name": "fenstrat",
+                    "homepage": "https://www.drupal.org/user/362649"
+                },
+                {
+                    "name": "podarok",
+                    "homepage": "https://www.drupal.org/user/116002"
+                },
+                {
+                    "name": "quicksketch",
+                    "homepage": "https://www.drupal.org/user/35821"
+                },
+                {
+                    "name": "sanchiz",
+                    "homepage": "https://www.drupal.org/user/1671246"
+                },
+                {
+                    "name": "tedbow",
+                    "homepage": "https://www.drupal.org/user/240860"
+                },
+                {
+                    "name": "torotil",
+                    "homepage": "https://www.drupal.org/user/865256"
+                }
+            ],
             "description": "Enables the creation of forms and questionnaires.",
             "homepage": "https://www.drupal.org/project/webform",
-            "time": "2016-08-24 17:42:46"
+            "support": {
+                "source": "http://cgit.drupalcode.org/webform"
+            },
+            "time": "2016-10-28 20:18:16"
         },
         {
             "name": "drupal/webform_mailchimp",
@@ -4304,35 +4462,66 @@
         },
         {
             "name": "drupal/workbench",
-            "version": "7.1.0",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/workbench",
-                "reference": "f1356c75f9a7a20d79ee03b8fcd731df84398022"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/workbench-7.x-1.0.zip",
-                "reference": null,
-                "shasum": null
+                "reference": "6856e4a5b445ee802c898d27347bb45eb44ea43e"
             },
             "require": {
-                "drupal/drupal": "7.*",
-                "drupal/views": "7.*"
+                "drupal/drupal": "~7.0",
+                "drupal/views": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.2+2-dev",
+                    "datestamp": "1299284809"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
                 "GPL-2.0+"
             ],
+            "authors": [
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "agentrickard",
+                    "homepage": "https://www.drupal.org/user/20975"
+                },
+                {
+                    "name": "bbinkovitz",
+                    "homepage": "https://www.drupal.org/user/161263"
+                },
+                {
+                    "name": "becw",
+                    "homepage": "https://www.drupal.org/user/81067"
+                },
+                {
+                    "name": "caroltron",
+                    "homepage": "https://www.drupal.org/user/171342"
+                },
+                {
+                    "name": "robeano",
+                    "homepage": "https://www.drupal.org/user/67660"
+                },
+                {
+                    "name": "stevector",
+                    "homepage": "https://www.drupal.org/user/179805"
+                }
+            ],
             "description": "Workbench editorial suite.",
             "homepage": "https://www.drupal.org/project/workbench",
-            "time": "2011-07-26 14:09:44"
+            "support": {
+                "source": "http://cgit.drupalcode.org/workbench"
+            },
+            "time": "2013-03-26 16:11:42"
         },
         {
             "name": "drupal/wysiwyg",
@@ -4477,16 +4666,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.2.2",
+            "version": "6.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "ebf29dee597f02f09f4d5bbecc68230ea9b08f60"
+                "reference": "3f808fba627f2c5b69e2501217bf31af349c1427"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ebf29dee597f02f09f4d5bbecc68230ea9b08f60",
-                "reference": "ebf29dee597f02f09f4d5bbecc68230ea9b08f60",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/3f808fba627f2c5b69e2501217bf31af349c1427",
+                "reference": "3f808fba627f2c5b69e2501217bf31af349c1427",
                 "shasum": ""
             },
             "require": {
@@ -4535,7 +4724,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2016-10-08 15:01:37"
+            "time": "2016-07-15 17:22:37"
         },
         {
             "name": "guzzlehttp/promises",
@@ -4590,16 +4779,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.3.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "5c6447c9df362e8f8093bda8f5d8873fe5c7f65b"
+                "reference": "64862e854f876bc5aee2996cab2f552db8586065"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/5c6447c9df362e8f8093bda8f5d8873fe5c7f65b",
-                "reference": "5c6447c9df362e8f8093bda8f5d8873fe5c7f65b",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/64862e854f876bc5aee2996cab2f552db8586065",
+                "reference": "64862e854f876bc5aee2996cab2f552db8586065",
                 "shasum": ""
             },
             "require": {
@@ -4635,16 +4824,23 @@
                     "name": "Michael Dowling",
                     "email": "mtdowling@gmail.com",
                     "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "homepage": "https://github.com/Tobion"
                 }
             ],
-            "description": "PSR-7 message implementation",
+            "description": "PSR-7 message implementation that also provides common utility methods",
             "keywords": [
                 "http",
                 "message",
+                "request",
+                "response",
                 "stream",
-                "uri"
+                "uri",
+                "url"
             ],
-            "time": "2016-06-24 23:00:38"
+            "time": "2016-08-03 09:33:34"
         },
         {
             "name": "mailchimp/mailchimp",
@@ -4694,7 +4890,7 @@
         },
         {
             "name": "psr/http-message",
-            "version": "1.0.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
@@ -4741,6 +4937,42 @@
                 "response"
             ],
             "time": "2016-08-06 14:39:51"
+        },
+        {
+            "name": "thinkshout/mailchimp-api-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thinkshout/mailchimp-api-php.git",
+                "reference": "aa88df4d7f8ebdc3d58fec1f40a9603095e5c132"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thinkshout/mailchimp-api-php/zipball/aa88df4d7f8ebdc3d58fec1f40a9603095e5c132",
+                "reference": "aa88df4d7f8ebdc3d58fec1f40a9603095e5c132",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "6.2.1",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.21"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mailchimp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "PHP library for v3 of the MailChimp API",
+            "homepage": "https://github.com/thinkshout/mailchimp-api-php",
+            "keywords": [
+                "mail",
+                "mailchimp"
+            ],
+            "time": "2016-10-13 17:43:28"
         }
     ],
     "packages-dev": [],
