@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "de63f6903bfdf35494bbf8bb01a7c2f3",
-    "content-hash": "eaeda1eed0e6a86b4fd48f11a583c83a",
+    "hash": "d5c3a433dc6892255d75700d7e1fc301",
+    "content-hash": "b8e9af4c7202bb0da3fc882343a92d9e",
     "packages": [
         {
             "name": "composer/installers",
@@ -2385,12 +2385,98 @@
             "time": "2015-05-01 15:50:05"
         },
         {
+            "name": "drupal/mailchimp",
+            "version": "4.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/mailchimp",
+                "reference": "7.x-4.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/mailchimp-7.x-4.4.zip",
+                "reference": null,
+                "shasum": "8ecb387a85bb9f548606b52797f4157b787b4a77"
+            },
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/libraries": "^2.0"
+            },
+            "suggest": {
+                "drupal/drupal": "Required by drupal/mailchimp_lists",
+                "drupal/entity": "Required by drupal/mailchimp_campaign",
+                "drupal/entity_token": "Required by drupal/mailchimp_lists",
+                "drupal/mailchimp_lists": "Required by drupal/mailchimp_campaign"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-4.4",
+                    "datestamp": "1472682839"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Boggs",
+                    "homepage": "https://www.drupal.org/user/153069"
+                },
+                {
+                    "name": "amyvs",
+                    "homepage": "https://www.drupal.org/user/3181721"
+                },
+                {
+                    "name": "gcb",
+                    "homepage": "https://www.drupal.org/user/1682976"
+                },
+                {
+                    "name": "jami",
+                    "homepage": "https://www.drupal.org/user/409287"
+                },
+                {
+                    "name": "levelos",
+                    "homepage": "https://www.drupal.org/user/54135"
+                },
+                {
+                    "name": "mshaver",
+                    "homepage": "https://www.drupal.org/user/39079"
+                },
+                {
+                    "name": "nrackleff",
+                    "homepage": "https://www.drupal.org/user/463332"
+                },
+                {
+                    "name": "ruscoe",
+                    "homepage": "https://www.drupal.org/user/2722087"
+                },
+                {
+                    "name": "seanberto",
+                    "homepage": "https://www.drupal.org/user/54109"
+                },
+                {
+                    "name": "tauno",
+                    "homepage": "https://www.drupal.org/user/105595"
+                }
+            ],
+            "description": "MailChimp email service integration.",
+            "homepage": "https://www.drupal.org/project/mailchimp",
+            "support": {
+                "source": "http://cgit.drupalcode.org/mailchimp"
+            }
+        },
+        {
             "name": "drupal/mailsystem",
-            "version": "dev-3.x",
+            "version": "dev-2.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/mailsystem",
-                "reference": "4c957ae4c422e0d3ab70ef7b7fd0b4cad65fea51"
+                "reference": "966e13e7024a428e35dfc1e505ae6a774eb148a2"
             },
             "require": {
                 "drupal/drupal": "*"
@@ -2398,11 +2484,11 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-3.x": "3.x-dev"
+                    "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "7.x-3.0-alpha1+8-dev",
-                    "datestamp": "1412135028"
+                    "version": "7.x-2.34+5-dev",
+                    "datestamp": "1455322139"
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
@@ -2436,7 +2522,123 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/mailsystem"
             },
-            "time": "2014-07-19 23:56:59"
+            "time": "2016-02-13 00:06:06"
+        },
+        {
+            "name": "drupal/mandrill",
+            "version": "dev-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/mandrill",
+                "reference": "aa41a4564ace86437cf34f86bcf3928b3e3f6ad6"
+            },
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/libraries": "^2",
+                "drupal/mailsystem": "^2"
+            },
+            "suggest": {
+                "drupal/entity": "Required by drupal/mandrill_template"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-2.2+1-dev",
+                    "datestamp": "1461098640"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Boggs",
+                    "homepage": "https://www.drupal.org/user/153069"
+                },
+                {
+                    "name": "caxy4",
+                    "homepage": "https://www.drupal.org/user/2735491"
+                },
+                {
+                    "name": "gcb",
+                    "homepage": "https://www.drupal.org/user/1682976"
+                },
+                {
+                    "name": "levelos",
+                    "homepage": "https://www.drupal.org/user/54135"
+                },
+                {
+                    "name": "ruscoe",
+                    "homepage": "https://www.drupal.org/user/2722087"
+                },
+                {
+                    "name": "tauno",
+                    "homepage": "https://www.drupal.org/user/105595"
+                }
+            ],
+            "description": "Allow for site emails to be sent through Mandrill.",
+            "homepage": "https://www.drupal.org/project/mandrill",
+            "support": {
+                "source": "http://cgit.drupalcode.org/mandrill"
+            },
+            "time": "2016-04-19 20:39:23"
+        },
+        {
+            "name": "drupal/mandrill_reports",
+            "version": "dev-2.x",
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/mandrill": "self.version"
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-2.2+1-dev",
+                    "datestamp": "1461098640"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Boggs",
+                    "homepage": "https://www.drupal.org/user/153069"
+                },
+                {
+                    "name": "caxy4",
+                    "homepage": "https://www.drupal.org/user/2735491"
+                },
+                {
+                    "name": "gcb",
+                    "homepage": "https://www.drupal.org/user/1682976"
+                },
+                {
+                    "name": "levelos",
+                    "homepage": "https://www.drupal.org/user/54135"
+                },
+                {
+                    "name": "ruscoe",
+                    "homepage": "https://www.drupal.org/user/2722087"
+                },
+                {
+                    "name": "tauno",
+                    "homepage": "https://www.drupal.org/user/105595"
+                }
+            ],
+            "description": "Providing reporting on activity through Mandrill.",
+            "homepage": "https://www.drupal.org/project/mandrill",
+            "support": {
+                "source": "http://cgit.drupalcode.org/mandrill"
+            }
         },
         {
             "name": "drupal/markdown",
@@ -3112,28 +3314,23 @@
         },
         {
             "name": "drupal/phone",
-            "version": "dev-2.x",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/phone",
-                "reference": "4b02be474876ba1926dbcd22072e615c994f2bcb"
+                "reference": "7ad8524adb6b0742a48c2de1f5cc171fe76ce3a1"
             },
             "require": {
-                "drupal/drupal": "*",
-                "drupal/libraries": "^2"
-            },
-            "suggest": {
-                "drupal/cck_phone": "Required by drupal/phone_cck_convert",
-                "drupal/ip2country": "Required by drupal/phone_country_locator"
+                "drupal/drupal": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-2.x": "2.x-dev"
+                    "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "7.x-2.x-dev",
-                    "datestamp": "1361915740"
+                    "version": "7.x-1.0-beta1+0-dev",
+                    "datestamp": "1389732205"
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
@@ -3154,12 +3351,12 @@
                     "homepage": "https://www.drupal.org/user/43798"
                 }
             ],
-            "description": "The phone module lets administrators use a phone number field type and provides a validated FAPI phone element.",
+            "description": "The phone module allows administrators to define a field type for phone numbers.",
             "homepage": "https://www.drupal.org/project/phone",
             "support": {
                 "source": "http://cgit.drupalcode.org/phone"
             },
-            "time": "2013-04-10 20:32:03"
+            "time": "2014-01-14 20:38:45"
         },
         {
             "name": "drupal/querypath",
@@ -4014,6 +4211,98 @@
             "time": "2016-08-24 17:42:46"
         },
         {
+            "name": "drupal/webform_mailchimp",
+            "version": "dev-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/webform_mailchimp",
+                "reference": "ade1ab804ed9550dc358ef11e91ca5a825c00172"
+            },
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/mailchimp": "*",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-2.0-beta1+5-dev",
+                    "datestamp": "1432727581"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Todd Zebert",
+                    "homepage": "https://www.drupal.org/user/762250"
+                },
+                {
+                    "name": "blackdog",
+                    "homepage": "https://www.drupal.org/user/110169"
+                },
+                {
+                    "name": "das-peter",
+                    "homepage": "https://www.drupal.org/user/762870"
+                },
+                {
+                    "name": "levelos",
+                    "homepage": "https://www.drupal.org/user/54135"
+                }
+            ],
+            "description": "Creates a Mailchimp Webform component.",
+            "homepage": "https://www.drupal.org/project/webform_mailchimp",
+            "support": {
+                "source": "http://cgit.drupalcode.org/webform_mailchimp"
+            },
+            "time": "2015-05-27 11:52:49"
+        },
+        {
+            "name": "drupal/webform_phone",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/webform_phone",
+                "reference": "76413ebc7cd17d645a66ddd56653950ed34eb1c8"
+            },
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/phone": "~1.0",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.23+0-dev",
+                    "datestamp": "1441473539"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "RadioActiv",
+                    "homepage": "https://www.drupal.org/user/881922"
+                }
+            ],
+            "description": "Phone Field type for webform.",
+            "homepage": "https://www.drupal.org/project/webform_phone",
+            "support": {
+                "source": "http://cgit.drupalcode.org/webform_phone"
+            },
+            "time": "2015-09-05 17:14:29"
+        },
+        {
             "name": "drupal/workbench",
             "version": "7.1.0",
             "source": {
@@ -4465,11 +4754,11 @@
         "drupal/file_entity": 20,
         "drupal/media_colorbox": 20,
         "drupal/mimemail": 20,
-        "drupal/phone": 20,
         "drupal/views_rss": 20,
         "drupal/wysiwyg_fields": 20,
         "drupal/blogger_importer": 20,
-        "drupal/typogrify": 20
+        "drupal/typogrify": 20,
+        "drupal/webform_mailchimp": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

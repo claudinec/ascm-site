@@ -70,7 +70,7 @@
     "drupal/module_filter": "^2.0",
     "drupal/multiupload_filefield_widget": "^1.13",
     "drupal/oauth_common": "^3.2",
-    "drupal/phone": "2.x-dev",
+    "drupal/phone": "^1",
     "drupal/scheduler": "^1.5",
     "drupal/views_bulk_operations": "^3.3",
     "drupal/views_rss": "2.x-dev",
@@ -80,7 +80,12 @@
     "drupal/typogrify": "1.x-dev",
     "drupal/xmlsitemap": "^2.3",
     "drupal/taxonomy_access": "^1.0",
-    "drupal/twitter_block": "^2.3"
+    "drupal/twitter_block": "^2.3",
+    "drupal/mailsystem": "^2.34",
+    "drupal/mandrill": "^2.3",
+    "drupal/mandrill_reports": "^2.3",
+    "drupal/webform_mailchimp": "2.x-dev",
+    "drupal/webform_phone": "^1.23"
   },
   "minimum-stability": "dev",
   "conflict": {
