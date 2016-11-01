@@ -415,7 +415,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/backup_migrate-7.x-3.1.zip",
-                "reference": null,
+                "reference": "174bb364b71887a23140efea626d2843b57bd4cf",
                 "shasum": null
             },
             "require": {
@@ -437,15 +437,15 @@
         },
         {
             "name": "drupal/bootstrap",
-            "version": "7.3.6",
+            "version": "7.3.7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/bootstrap",
-                "reference": "5f232b2046f109a6c64c945e643abf491daad59b"
+                "reference": "82c9b71a0d43b6ef836c8466ac9e03b0c19b9cfd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap-7.x-3.6.zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap-7.x-3.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -460,11 +460,28 @@
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Carver (markcarver)",
+                    "homepage": "https://www.drupal.org/u/markcarver",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "John McCormick (neardark)",
+                    "homepage": "https://www.drupal.org/u/neardark",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "Fabiano Sant'Ana (wundo)",
+                    "homepage": "https://www.drupal.org/u/wundo",
+                    "role": "Co-maintainer"
+                }
             ],
             "description": "Built to use Bootstrap, a sleek, intuitive, and powerful front-end framework for faster and easier web development.",
-            "homepage": "https://www.drupal.org/project/bootstrap",
-            "time": "2016-08-03 05:16:23"
+            "homepage": "http://drupal.org/project/bootstrap",
+            "time": "2016-10-27 06:21:32"
         },
         {
             "name": "drupal/boxes",
@@ -622,15 +639,15 @@
         },
         {
             "name": "drupal/ctools",
-            "version": "7.1.10",
+            "version": "7.1.11",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/ctools",
-                "reference": "72634bbb9ff05a71199426ea883bac3cf2866c96"
+                "reference": "066772fe2c933e36257dc1f26650d67705ddb296"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ctools-7.x-1.10.zip",
+                "url": "https://ftp.drupal.org/files/projects/ctools-7.x-1.11.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -667,7 +684,7 @@
             ],
             "description": "A library of helpful tools by Merlin of Chaos.",
             "homepage": "https://www.drupal.org/project/ctools",
-            "time": "2016-08-17 17:06:24"
+            "time": "2016-10-16 01:26:59"
         },
         {
             "name": "drupal/date",
@@ -680,7 +697,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/date-7.x-2.10-rc1.zip",
-                "reference": null,
+                "reference": "15fbe471c7cc769df4ef65a91f84365235018c11",
                 "shasum": null
             },
             "require": {
@@ -1089,7 +1106,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/environment_indicator-7.x-2.8.zip",
-                "reference": null,
+                "reference": "e10ef5e0a940fd811b3dd869f7e8b58985e8e459",
                 "shasum": null
             },
             "require": {
