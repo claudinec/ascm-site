@@ -3,7 +3,7 @@
   "description": "Composer template for Drupal projects",
   "repositories": [{
     "type": "composer",
-    "url": "https://packagist.drupal-composer.org"
+    "url": "https://packages.drupal.org/7"
   }],
   "require": {
     "composer/installers": "~1.0",
@@ -60,7 +60,7 @@
     "mailchimp/mailchimp": "^2.0",
     "drupal/workbench": "7.1"
   },
-  "minimum-stability": "beta",
+  "minimum-stability": "dev",
   "conflict": {
     "drupal/core": "8.*"
   },
