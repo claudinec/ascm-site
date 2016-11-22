@@ -2278,8 +2278,7 @@
             "homepage": "https://www.drupal.org/project/libraries",
             "support": {
                 "source": "http://cgit.drupalcode.org/libraries"
-            },
-            "time": "2016-11-13 14:03:48"
+            }
         },
         {
             "name": "drupal/link",
