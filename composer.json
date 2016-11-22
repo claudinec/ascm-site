@@ -29,7 +29,6 @@
     "drupal/email": "^7.1",
     "drupal/entity": "^1.8",
     "drupal/entityreference": "^1.2",
-    "drupal/environment_indicator": "^2.8",
     "drupal/fb": "^7.3",
     "drupal/features": "^7.2",
     "drupal/filefield_paths": "^7.1",
@@ -49,8 +48,6 @@
     "drupal/search404": "^1.4",
     "drupal/smtp": "^1.4",
     "drupal/token": "^1.6",
-    "drupal/views": "^7.3",
-    "drupal/webform": "^7.4",
     "guzzlehttp/guzzle": "^6.2",
     "mailchimp/mailchimp": "^2.0",
     "drupal/workbench": "7.1",
@@ -79,10 +76,11 @@
     "drupal/mailsystem": "^2.0",
     "drupal/mandrill_reports": "^2.3",
     "drupal/webform_mailchimp": "2.x-dev",
-    "drupal/webform_phone": "^1.23",
-    "drupal/libraries": "^2.3",
     "drupal/file_entity": "2.x-dev",
-    "drupal/backup_migrate": "^3.1"
+    "drupal/backup_migrate": "^3.1",
+    "drupal/environment_indicator": "^2.8",
+    "drupal/libraries": "^2.3",
+    "drupal/webform_phone": "^1.23"
   },
   "minimum-stability": "dev",
   "conflict": {
