@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "20eae01009115b4e2a9543260e0615c6",
-    "content-hash": "b8e0c4bcc86de216cda36bb9580ab5c7",
+    "hash": "7ab4fff57a42dba09ae04514dc85eb08",
+    "content-hash": "53d8cc3141fb12fbeee822d41393b85b",
     "packages": [
         {
             "name": "composer/installers",
@@ -2309,26 +2309,27 @@
         },
         {
             "name": "drupal/mailchimp",
-            "version": "4.4.0",
+            "version": "7.x-4.7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/mailchimp",
-                "reference": "7.x-4.4"
+                "reference": "7.x-4.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/mailchimp-7.x-4.4.zip",
+                "url": "https://ftp.drupal.org/files/projects/mailchimp-7.x-4.7.zip",
                 "reference": null,
-                "shasum": "8ecb387a85bb9f548606b52797f4157b787b4a77"
+                "shasum": "192d556bbe9cdd01e6bf388f008eca966907a7bf"
             },
             "require": {
                 "drupal/drupal": "~7.0",
-                "drupal/libraries": "^2.0"
+                "thinkshout/mailchimp-api-php": ">=1.0.5"
             },
             "suggest": {
                 "drupal/drupal": "Required by drupal/mailchimp_lists",
-                "drupal/entity": "Required by drupal/mailchimp_campaign",
+                "drupal/entity": "Required by drupal/mailchimp_automations",
                 "drupal/entity_token": "Required by drupal/mailchimp_lists",
+                "drupal/i18n_string": "Required by drupal/mailchimp_i18n",
                 "drupal/mailchimp_lists": "Required by drupal/mailchimp_campaign"
             },
             "type": "drupal-module",
@@ -2337,13 +2338,13 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "7.x-4.4",
-                    "datestamp": "1472682839"
+                    "version": "7.x-4.7",
+                    "datestamp": "1478578140"
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
-                "GPL-2.0+"
+                "GNU-2.0+"
             ],
             "authors": [
                 {
@@ -2387,8 +2388,14 @@
                     "homepage": "https://www.drupal.org/user/105595"
                 }
             ],
-            "description": "MailChimp email service integration.",
+            "description": "Mailchimp integration for Drupal.",
             "homepage": "https://www.drupal.org/project/mailchimp",
+            "keywords": [
+                "Mailchimp",
+                "email",
+                "mailchimp",
+                "php"
+            ],
             "support": {
                 "source": "http://cgit.drupalcode.org/mailchimp"
             }
@@ -4334,16 +4341,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "dev-master",
+            "version": "6.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "471026d23a14f6eadd0147eb5697f48ebe6adec8"
+                "reference": "3f808fba627f2c5b69e2501217bf31af349c1427"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/471026d23a14f6eadd0147eb5697f48ebe6adec8",
-                "reference": "471026d23a14f6eadd0147eb5697f48ebe6adec8",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/3f808fba627f2c5b69e2501217bf31af349c1427",
+                "reference": "3f808fba627f2c5b69e2501217bf31af349c1427",
                 "shasum": ""
             },
             "require": {
@@ -4392,7 +4399,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2016-11-15 18:22:40"
+            "time": "2016-07-15 17:22:37"
         },
         {
             "name": "guzzlehttp/promises",
@@ -4605,6 +4612,42 @@
                 "response"
             ],
             "time": "2016-08-06 14:39:51"
+        },
+        {
+            "name": "thinkshout/mailchimp-api-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thinkshout/mailchimp-api-php.git",
+                "reference": "4a7c9adf471da345bec0cebe8b05269d3fb1e900"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thinkshout/mailchimp-api-php/zipball/4a7c9adf471da345bec0cebe8b05269d3fb1e900",
+                "reference": "4a7c9adf471da345bec0cebe8b05269d3fb1e900",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "6.2.1",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.21"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mailchimp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "PHP library for v3 of the MailChimp API",
+            "homepage": "https://github.com/thinkshout/mailchimp-api-php",
+            "keywords": [
+                "mail",
+                "mailchimp"
+            ],
+            "time": "2016-11-08 02:37:49"
         }
     ],
     "packages-dev": [],

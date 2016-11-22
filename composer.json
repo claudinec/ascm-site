@@ -53,7 +53,6 @@
     "drupal/views": "^7.3",
     "mailchimp/mailchimp": "^2.0",
     "drupal/webform": "^7.4",
-    "guzzlehttp/guzzle": "^6.2",
     "drupal/workbench": "7.1",
     "drupal/feeds": "2.x-dev",
     "drupal/colorbox": "^2.12",
