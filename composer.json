@@ -88,7 +88,9 @@
     "drupal/webform_phone": "^1.23",
     "drupal/entity": "^1.8",
     "ckeditor/ckeditor": "^4.6",
-    "kraksoft/colorbox": "^1.5"
+    "kraksoft/colorbox": "^1.5",
+    "stinger/ckeditor-lineutils-bundle": "^4.5",
+    "stinger/ckeditor-widget-bundle": "^4.5"
   },
   "minimum-stability": "dev",
   "conflict": {
