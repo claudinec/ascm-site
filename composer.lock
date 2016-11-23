@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e0f7c34c274a7fc1369712c46265a75c",
-    "content-hash": "90539574ab30fb0ea237750e0f06467e",
+    "hash": "fb73906055c6b42194f083ad24340bd1",
+    "content-hash": "ed60cabe0fe3e9d06ef388133ac5a8fe",
     "packages": [
         {
             "name": "composer/installers",
@@ -2278,7 +2278,8 @@
             "homepage": "https://www.drupal.org/project/libraries",
             "support": {
                 "source": "http://cgit.drupalcode.org/libraries"
-            }
+            },
+            "time": "2016-11-13 14:03:48"
         },
         {
             "name": "drupal/link",
@@ -4184,36 +4185,74 @@
         },
         {
             "name": "drupal/webform",
-            "version": "7.4.14",
+            "version": "dev-4.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/webform",
-                "reference": "9bc81f8869868c48470aa383c1a5166ba3255669"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-7.x-4.14.zip",
-                "reference": null,
-                "shasum": null
+                "reference": "fae0fad6c2a288b20df74792819b86cdc99cbfa7"
             },
             "require": {
-                "drupal/ctools": "7.*",
-                "drupal/drupal": "7.*",
-                "drupal/views": "7.*"
+                "drupal/ctools": "*",
+                "drupal/drupal": "~7.0",
+                "drupal/views": "*"
+            },
+            "suggest": {
+                "drupal/token": "Required by drupal/webform"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-7.x-4.x": "7.4.x-dev"
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-4.14+11-dev",
+                    "datestamp": "1479160441"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
                 "GPL-2.0+"
             ],
+            "authors": [
+                {
+                    "name": "DanChadwick",
+                    "homepage": "https://www.drupal.org/user/504278"
+                },
+                {
+                    "name": "Liam Morland",
+                    "homepage": "https://www.drupal.org/user/493050"
+                },
+                {
+                    "name": "fenstrat",
+                    "homepage": "https://www.drupal.org/user/362649"
+                },
+                {
+                    "name": "podarok",
+                    "homepage": "https://www.drupal.org/user/116002"
+                },
+                {
+                    "name": "quicksketch",
+                    "homepage": "https://www.drupal.org/user/35821"
+                },
+                {
+                    "name": "sanchiz",
+                    "homepage": "https://www.drupal.org/user/1671246"
+                },
+                {
+                    "name": "tedbow",
+                    "homepage": "https://www.drupal.org/user/240860"
+                },
+                {
+                    "name": "torotil",
+                    "homepage": "https://www.drupal.org/user/865256"
+                }
+            ],
             "description": "Enables the creation of forms and questionnaires.",
             "homepage": "https://www.drupal.org/project/webform",
-            "time": "2016-08-24 17:42:46"
+            "support": {
+                "source": "http://cgit.drupalcode.org/webform"
+            },
+            "time": "2016-11-14 21:56:28"
         },
         {
             "name": "drupal/webform_mailchimp",

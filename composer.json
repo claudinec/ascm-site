@@ -27,7 +27,6 @@
     "drupal/disqus": "^1.12",
     "drupal/ds": "^7.2",
     "drupal/email": "^7.1",
-    "drupal/entity": "^1.8",
     "drupal/entityreference": "^1.2",
     "drupal/fb": "^7.3",
     "drupal/features": "^7.2",
@@ -80,7 +79,8 @@
     "drupal/backup_migrate": "^3.1",
     "drupal/environment_indicator": "^2.8",
     "drupal/libraries": "^2.3",
-    "drupal/webform_phone": "^1.23"
+    "drupal/webform_phone": "^1.23",
+    "drupal/entity": "^1.8"
   },
   "minimum-stability": "dev",
   "conflict": {
