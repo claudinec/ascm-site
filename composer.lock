@@ -4,9 +4,50 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fb73906055c6b42194f083ad24340bd1",
-    "content-hash": "ed60cabe0fe3e9d06ef388133ac5a8fe",
+    "hash": "24195968cb270e5832f5df7f9c69bd9e",
+    "content-hash": "42a6074eea8311756d38c2cb909f2a3a",
     "packages": [
+        {
+            "name": "ckeditor/ckeditor",
+            "version": "4.6.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ckeditor/ckeditor-releases.git",
+                "reference": "2530c9c5d26f275882da192ba2231ac69e967474"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/2530c9c5d26f275882da192ba2231ac69e967474",
+                "reference": "2530c9c5d26f275882da192ba2231ac69e967474",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+",
+                "LGPL-2.1+",
+                "MPL-1.1+"
+            ],
+            "authors": [
+                {
+                    "name": "CKSource",
+                    "homepage": "http://cksource.com"
+                }
+            ],
+            "description": "JavaScript WYSIWYG web text editor.",
+            "homepage": "http://ckeditor.com",
+            "keywords": [
+                "CKEditor",
+                "editor",
+                "fckeditor",
+                "html",
+                "javascript",
+                "richtext",
+                "text",
+                "wysiwyg"
+            ],
+            "time": "2016-11-16 15:14:40"
+        },
         {
             "name": "composer/installers",
             "version": "v1.2.0",
@@ -290,8 +331,7 @@
             "homepage": "https://www.drupal.org/project/addressfield_tokens",
             "support": {
                 "source": "http://cgit.drupalcode.org/addressfield_tokens"
-            },
-            "time": "2015-05-28 17:01:15"
+            }
         },
         {
             "name": "drupal/admin_menu",
@@ -433,8 +473,7 @@
             "homepage": "https://www.drupal.org/project/autocomplete_widgets",
             "support": {
                 "source": "http://cgit.drupalcode.org/autocomplete_widgets"
-            },
-            "time": "2015-08-29 12:30:34"
+            }
         },
         {
             "name": "drupal/backup_migrate",
@@ -475,8 +514,7 @@
             "homepage": "https://www.drupal.org/project/backup_migrate",
             "support": {
                 "source": "http://cgit.drupalcode.org/backup_migrate"
-            },
-            "time": "2015-07-01 20:41:14"
+            }
         },
         {
             "name": "drupal/bootstrap",
@@ -672,8 +710,7 @@
             "homepage": "https://www.drupal.org/project/ckeditor",
             "support": {
                 "source": "http://cgit.drupalcode.org/ckeditor"
-            },
-            "time": "2016-06-19 22:18:17"
+            }
         },
         {
             "name": "drupal/colorbox",
@@ -727,8 +764,7 @@
             "homepage": "https://www.drupal.org/project/colorbox",
             "support": {
                 "source": "http://cgit.drupalcode.org/colorbox"
-            },
-            "time": "2016-07-28 01:11:45"
+            }
         },
         {
             "name": "drupal/conditional_fields",
@@ -765,8 +801,7 @@
             "homepage": "https://www.drupal.org/project/conditional_fields",
             "support": {
                 "source": "http://cgit.drupalcode.org/conditional_fields"
-            },
-            "time": "2016-03-30 18:35:18"
+            }
         },
         {
             "name": "drupal/context",
@@ -934,8 +969,7 @@
             "homepage": "https://www.drupal.org/project/date",
             "support": {
                 "source": "http://cgit.drupalcode.org/date"
-            },
-            "time": "2016-06-05 13:52:30"
+            }
         },
         {
             "name": "drupal/date_api",
@@ -1133,8 +1167,7 @@
             "homepage": "https://www.drupal.org/project/disqus",
             "support": {
                 "source": "http://cgit.drupalcode.org/disqus"
-            },
-            "time": "2016-03-03 12:28:00"
+            }
         },
         {
             "name": "drupal/drupal",
@@ -1485,8 +1518,7 @@
             "homepage": "https://www.drupal.org/project/entityreference",
             "support": {
                 "source": "http://cgit.drupalcode.org/entityreference"
-            },
-            "time": "2016-10-24 20:37:11"
+            }
         },
         {
             "name": "drupal/environment_indicator",
@@ -1532,8 +1564,7 @@
             "homepage": "https://www.drupal.org/project/environment_indicator",
             "support": {
                 "source": "http://cgit.drupalcode.org/environment_indicator"
-            },
-            "time": "2016-09-16 07:06:23"
+            }
         },
         {
             "name": "drupal/fb",
@@ -1725,8 +1756,7 @@
             "homepage": "https://www.drupal.org/project/feeds",
             "support": {
                 "source": "http://cgit.drupalcode.org/feeds"
-            },
-            "time": "2016-11-13 14:11:42"
+            }
         },
         {
             "name": "drupal/field_tokens",
@@ -1764,8 +1794,7 @@
             "homepage": "https://www.drupal.org/project/field_tokens",
             "support": {
                 "source": "http://cgit.drupalcode.org/field_tokens"
-            },
-            "time": "2016-07-26 01:23:31"
+            }
         },
         {
             "name": "drupal/file_entity",
@@ -1850,8 +1879,7 @@
             "homepage": "https://www.drupal.org/project/file_entity",
             "support": {
                 "source": "http://cgit.drupalcode.org/file_entity"
-            },
-            "time": "2016-06-21 16:32:49"
+            }
         },
         {
             "name": "drupal/filefield_paths",
@@ -2021,8 +2049,7 @@
             "homepage": "https://www.drupal.org/project/honeypot",
             "support": {
                 "source": "http://cgit.drupalcode.org/honeypot"
-            },
-            "time": "2016-03-11 04:27:12"
+            }
         },
         {
             "name": "drupal/icon",
@@ -2066,8 +2093,7 @@
             "homepage": "https://www.drupal.org/project/icon",
             "support": {
                 "source": "http://cgit.drupalcode.org/icon"
-            },
-            "time": "2015-10-13 20:56:39"
+            }
         },
         {
             "name": "drupal/imce",
@@ -2228,8 +2254,7 @@
             "homepage": "https://www.drupal.org/project/job_scheduler",
             "support": {
                 "source": "http://cgit.drupalcode.org/job_scheduler"
-            },
-            "time": "2015-01-21 14:00:51"
+            }
         },
         {
             "name": "drupal/libraries",
@@ -2278,8 +2303,7 @@
             "homepage": "https://www.drupal.org/project/libraries",
             "support": {
                 "source": "http://cgit.drupalcode.org/libraries"
-            },
-            "time": "2016-11-13 14:03:48"
+            }
         },
         {
             "name": "drupal/link",
@@ -2336,8 +2360,7 @@
             "homepage": "https://www.drupal.org/project/link",
             "support": {
                 "source": "http://cgit.drupalcode.org/link"
-            },
-            "time": "2015-12-11 05:10:27"
+            }
         },
         {
             "name": "drupal/linkchecker",
@@ -2374,8 +2397,7 @@
             "homepage": "https://www.drupal.org/project/linkchecker",
             "support": {
                 "source": "http://cgit.drupalcode.org/linkchecker"
-            },
-            "time": "2016-08-07 18:37:04"
+            }
         },
         {
             "name": "drupal/logintoboggan",
@@ -2453,8 +2475,7 @@
             "homepage": "https://www.drupal.org/project/logintoboggan",
             "support": {
                 "source": "http://cgit.drupalcode.org/logintoboggan"
-            },
-            "time": "2016-07-20 08:35:28"
+            }
         },
         {
             "name": "drupal/mailchimp",
@@ -2593,8 +2614,7 @@
             "homepage": "https://www.drupal.org/project/mailsystem",
             "support": {
                 "source": "http://cgit.drupalcode.org/mailsystem"
-            },
-            "time": "2016-02-13 00:06:06"
+            }
         },
         {
             "name": "drupal/mandrill",
@@ -2656,8 +2676,7 @@
             "homepage": "https://www.drupal.org/project/mandrill",
             "support": {
                 "source": "http://cgit.drupalcode.org/mandrill"
-            },
-            "time": "2016-04-19 20:39:23"
+            }
         },
         {
             "name": "drupal/mandrill_reports",
@@ -2759,8 +2778,7 @@
             "homepage": "https://www.drupal.org/project/markdown",
             "support": {
                 "source": "http://cgit.drupalcode.org/markdown"
-            },
-            "time": "2016-11-04 08:19:04"
+            }
         },
         {
             "name": "drupal/media",
@@ -2850,8 +2868,7 @@
             "homepage": "https://www.drupal.org/project/media",
             "support": {
                 "source": "http://cgit.drupalcode.org/media"
-            },
-            "time": "2015-08-17 07:11:01"
+            }
         },
         {
             "name": "drupal/media-file_entity",
@@ -2974,8 +2991,7 @@
             "homepage": "https://www.drupal.org/project/media_colorbox",
             "support": {
                 "source": "http://cgit.drupalcode.org/media_colorbox"
-            },
-            "time": "2013-08-15 15:43:36"
+            }
         },
         {
             "name": "drupal/mimemail",
@@ -3024,8 +3040,7 @@
             "homepage": "https://www.drupal.org/project/mimemail",
             "support": {
                 "source": "http://cgit.drupalcode.org/mimemail"
-            },
-            "time": "2016-09-10 18:06:22"
+            }
         },
         {
             "name": "drupal/module_filter",
@@ -3066,8 +3081,7 @@
             "homepage": "https://www.drupal.org/project/module_filter",
             "support": {
                 "source": "http://cgit.drupalcode.org/module_filter"
-            },
-            "time": "2016-03-21 05:34:27"
+            }
         },
         {
             "name": "drupal/mollom",
@@ -3135,8 +3149,7 @@
             "homepage": "https://www.drupal.org/project/multiupload_filefield_widget",
             "support": {
                 "source": "http://cgit.drupalcode.org/multiupload_filefield_widget"
-            },
-            "time": "2014-05-06 16:15:58"
+            }
         },
         {
             "name": "drupal/oauth",
@@ -3203,8 +3216,7 @@
             "homepage": "https://www.drupal.org/project/oauth",
             "support": {
                 "source": "http://cgit.drupalcode.org/oauth"
-            },
-            "time": "2015-11-05 21:45:17"
+            }
         },
         {
             "name": "drupal/oauth_common",
@@ -3315,8 +3327,7 @@
             "homepage": "https://www.drupal.org/project/pathauto",
             "support": {
                 "source": "http://cgit.drupalcode.org/pathauto"
-            },
-            "time": "2016-08-30 16:59:38"
+            }
         },
         {
             "name": "drupal/phone",
@@ -3361,8 +3372,7 @@
             "homepage": "https://www.drupal.org/project/phone",
             "support": {
                 "source": "http://cgit.drupalcode.org/phone"
-            },
-            "time": "2014-01-14 20:38:45"
+            }
         },
         {
             "name": "drupal/querypath",
@@ -3423,8 +3433,7 @@
             "homepage": "https://www.drupal.org/project/querypath",
             "support": {
                 "source": "http://cgit.drupalcode.org/querypath"
-            },
-            "time": "2012-09-25 16:34:16"
+            }
         },
         {
             "name": "drupal/revisioning",
@@ -3505,8 +3514,7 @@
             "homepage": "https://www.drupal.org/project/rules",
             "support": {
                 "source": "http://cgit.drupalcode.org/rules"
-            },
-            "time": "2016-01-15 17:28:46"
+            }
         },
         {
             "name": "drupal/scheduler",
@@ -3558,8 +3566,7 @@
             "homepage": "https://www.drupal.org/project/scheduler",
             "support": {
                 "source": "http://cgit.drupalcode.org/scheduler"
-            },
-            "time": "2016-11-08 09:49:09"
+            }
         },
         {
             "name": "drupal/search404",
@@ -3604,8 +3611,7 @@
             "homepage": "https://www.drupal.org/project/search404",
             "support": {
                 "source": "http://cgit.drupalcode.org/search404"
-            },
-            "time": "2016-11-17 13:01:09"
+            }
         },
         {
             "name": "drupal/smtp",
@@ -3661,8 +3667,7 @@
             "homepage": "https://www.drupal.org/project/smtp",
             "support": {
                 "source": "http://cgit.drupalcode.org/smtp"
-            },
-            "time": "2016-10-17 10:37:00"
+            }
         },
         {
             "name": "drupal/strongarm",
@@ -3720,8 +3725,7 @@
             "homepage": "https://www.drupal.org/project/strongarm",
             "support": {
                 "source": "http://cgit.drupalcode.org/strongarm"
-            },
-            "time": "2012-08-29 17:21:11"
+            }
         },
         {
             "name": "drupal/taxonomy_access",
@@ -3774,8 +3778,7 @@
             "homepage": "https://www.drupal.org/project/taxonomy_access",
             "support": {
                 "source": "http://cgit.drupalcode.org/taxonomy_access"
-            },
-            "time": "2015-09-19 03:57:30"
+            }
         },
         {
             "name": "drupal/token",
@@ -3891,8 +3894,7 @@
             "homepage": "https://www.drupal.org/project/token_filter",
             "support": {
                 "source": "http://cgit.drupalcode.org/token_filter"
-            },
-            "time": "2015-10-12 17:04:37"
+            }
         },
         {
             "name": "drupal/token_replace_ajax",
@@ -3933,8 +3935,7 @@
             "homepage": "https://www.drupal.org/project/token_replace_ajax",
             "support": {
                 "source": "http://cgit.drupalcode.org/token_replace_ajax"
-            },
-            "time": "2015-08-05 07:15:56"
+            }
         },
         {
             "name": "drupal/twitter_block",
@@ -3987,8 +3988,7 @@
             "homepage": "https://www.drupal.org/project/twitter_block",
             "support": {
                 "source": "http://cgit.drupalcode.org/twitter_block"
-            },
-            "time": "2015-09-15 20:04:43"
+            }
         },
         {
             "name": "drupal/typogrify",
@@ -4033,8 +4033,7 @@
             "homepage": "https://www.drupal.org/project/typogrify",
             "support": {
                 "source": "http://cgit.drupalcode.org/typogrify"
-            },
-            "time": "2015-12-14 09:29:44"
+            }
         },
         {
             "name": "drupal/views",
@@ -4180,8 +4179,7 @@
             "homepage": "https://www.drupal.org/project/views_rss",
             "support": {
                 "source": "http://cgit.drupalcode.org/views_rss"
-            },
-            "time": "2014-12-23 18:24:17"
+            }
         },
         {
             "name": "drupal/webform",
@@ -4251,8 +4249,7 @@
             "homepage": "https://www.drupal.org/project/webform",
             "support": {
                 "source": "http://cgit.drupalcode.org/webform"
-            },
-            "time": "2016-11-14 21:56:28"
+            }
         },
         {
             "name": "drupal/webform_mailchimp",
@@ -4303,8 +4300,7 @@
             "homepage": "https://www.drupal.org/project/webform_mailchimp",
             "support": {
                 "source": "http://cgit.drupalcode.org/webform_mailchimp"
-            },
-            "time": "2015-05-27 11:52:49"
+            }
         },
         {
             "name": "drupal/webform_phone",
@@ -4343,8 +4339,7 @@
             "homepage": "https://www.drupal.org/project/webform_phone",
             "support": {
                 "source": "http://cgit.drupalcode.org/webform_phone"
-            },
-            "time": "2015-09-05 17:14:29"
+            }
         },
         {
             "name": "drupal/workbench",
@@ -4449,8 +4444,7 @@
             "homepage": "https://www.drupal.org/project/wysiwyg_fields",
             "support": {
                 "source": "http://cgit.drupalcode.org/wysiwyg_fields"
-            },
-            "time": "2016-02-07 10:33:49"
+            }
         },
         {
             "name": "drupal/xmlsitemap",
@@ -4516,8 +4510,7 @@
             "homepage": "https://www.drupal.org/project/xmlsitemap",
             "support": {
                 "source": "http://cgit.drupalcode.org/xmlsitemap"
-            },
-            "time": "2016-05-25 15:35:46"
+            }
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -4698,6 +4691,143 @@
             "time": "2016-11-02 14:11:11"
         },
         {
+            "name": "kraksoft/colorbox",
+            "version": "1.5.14-patch1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kraksoft/colorbox.git",
+                "reference": "d46c701d01f4795e793099e010cad0cb7a30d6a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kraksoft/colorbox/zipball/d46c701d01f4795e793099e010cad0cb7a30d6a1",
+                "reference": "d46c701d01f4795e793099e010cad0cb7a30d6a1",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "0.0.*"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "name": "colorbox",
+                    "files": [
+                        "example1/colorbox.css",
+                        "example2/colorbox.css",
+                        "example3/colorbox.css",
+                        "example4/colorbox.css",
+                        "example5/colorbox.css",
+                        "example1/images/*",
+                        "example2/images/*",
+                        "example3/images/*",
+                        "example4/images/*",
+                        "example5/images/*",
+                        "i18n/*",
+                        "jquery.colorbox.js",
+                        "jquery.colorbox-min.js"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jack Moore",
+                    "email": "hello@jacklmoore.com"
+                }
+            ],
+            "description": "A light-weight, customizable lightbox plugin for jQuery",
+            "homepage": "http://www.jacklmoore.com/colorbox",
+            "keywords": [
+                "jquery",
+                "lightbox",
+                "modal",
+                "popup",
+                "ui",
+                "window"
+            ],
+            "time": "2015-01-24 15:47:00"
+        },
+        {
+            "name": "kriswallsmith/assetic",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kriswallsmith/assetic.git",
+                "reference": "e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1",
+                "reference": "e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.1",
+                "symfony/process": "~2.1|~3.0"
+            },
+            "conflict": {
+                "twig/twig": "<1.27"
+            },
+            "require-dev": {
+                "leafo/lessphp": "^0.3.7",
+                "leafo/scssphp": "~0.1",
+                "meenie/javascript-packer": "^1.1",
+                "mrclay/minify": "<2.3",
+                "natxet/cssmin": "3.0.4",
+                "patchwork/jsqueeze": "~1.0|~2.0",
+                "phpunit/phpunit": "~4.8 || ^5.6",
+                "psr/log": "~1.0",
+                "ptachoire/cssembed": "~1.0",
+                "symfony/phpunit-bridge": "~2.7|~3.0",
+                "twig/twig": "~1.23|~2.0",
+                "yfix/packager": "dev-master"
+            },
+            "suggest": {
+                "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
+                "leafo/scssphp": "Assetic provides the integration with the scssphp SCSS compiler",
+                "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin",
+                "patchwork/jsqueeze": "Assetic provides the integration with the JSqueeze JavaScript compressor",
+                "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
+                "twig/twig": "Assetic provides the integration with the Twig templating engine"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Assetic": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kris Wallsmith",
+                    "email": "kris.wallsmith@gmail.com",
+                    "homepage": "http://kriswallsmith.net/"
+                }
+            ],
+            "description": "Asset Management for PHP",
+            "homepage": "https://github.com/kriswallsmith/assetic",
+            "keywords": [
+                "assets",
+                "compression",
+                "minification"
+            ],
+            "time": "2016-11-11 18:43:20"
+        },
+        {
             "name": "mailchimp/mailchimp",
             "version": "2.0.6",
             "source": {
@@ -4792,6 +4922,103 @@
                 "response"
             ],
             "time": "2016-08-06 14:39:51"
+        },
+        {
+            "name": "robloach/component-installer",
+            "version": "0.0.13-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RobLoach/component-installer.git",
+                "reference": "0d02d950266f18124da929980588a0858755aa6d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RobLoach/component-installer/zipball/0d02d950266f18124da929980588a0858755aa6d",
+                "reference": "0d02d950266f18124da929980588a0858755aa6d",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "1.0.0",
+                "kriswallsmith/assetic": "1.*",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "composer/composer": "1.*",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "class": "ComponentInstaller\\Installer"
+            },
+            "autoload": {
+                "psr-0": {
+                    "ComponentInstaller": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Loach",
+                    "homepage": "http://robloach.net"
+                }
+            ],
+            "description": "Allows installation of Components via Composer.",
+            "time": "2015-05-05 12:40:13"
+        },
+        {
+            "name": "symfony/process",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "bb5223b0daac862d40dd1d0d8c16ccaa565716dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/bb5223b0daac862d40dd1d0d8c16ccaa565716dc",
+                "reference": "bb5223b0daac862d40dd1d0d8c16ccaa565716dc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Process Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-11-19 20:35:20"
         }
     ],
     "packages-dev": [],

@@ -1,10 +1,16 @@
 {
   "name": "drupal-composer/drupal-project",
   "description": "Composer template for Drupal projects",
-  "repositories": [{
+  "repositories": [
+  {
     "type": "composer",
     "url": "https://packages.drupal.org/7"
-  }],
+  },
+  {
+    "type": "composer",
+    "url": "https://packagist.org/"
+  }
+],
   "require": {
     "composer/installers": "~1.0",
     "derhasi/composer-preserve-paths": "0.1.*",
@@ -80,7 +86,9 @@
     "drupal/environment_indicator": "^2.8",
     "drupal/libraries": "^2.3",
     "drupal/webform_phone": "^1.23",
-    "drupal/entity": "^1.8"
+    "drupal/entity": "^1.8",
+    "ckeditor/ckeditor": "^4.6",
+    "kraksoft/colorbox": "^1.5"
   },
   "minimum-stability": "dev",
   "conflict": {
