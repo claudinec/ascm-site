@@ -54,11 +54,6 @@ function ascm_admin_filter_default_formats() {
         'status' => 1,
         'settings' => array(),
       ),
-      'wysiwyg_fields' => array(
-        'weight' => 50,
-        'status' => 1,
-        'settings' => array(),
-      ),
     ),
   );
 
