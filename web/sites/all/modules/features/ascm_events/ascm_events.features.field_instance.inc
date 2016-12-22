@@ -10,7 +10,7 @@
 function ascm_events_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-event-body'
+  // Exported field_instance: 'node-event-body'.
   $field_instances['node-event-body'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -61,7 +61,7 @@ function ascm_events_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_date'
+  // Exported field_instance: 'node-event-field_date'.
   $field_instances['node-event-field_date'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -77,6 +77,7 @@ function ascm_events_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => 1,
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'hide',
         ),
         'type' => 'date_default',
@@ -91,6 +92,7 @@ function ascm_events_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => 1,
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'hide',
         ),
         'type' => 'date_default',
@@ -105,6 +107,7 @@ function ascm_events_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'hide',
         ),
         'type' => 'date_default',
@@ -152,7 +155,7 @@ function ascm_events_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_event_url'
+  // Exported field_instance: 'node-event-field_event_url'.
   $field_instances['node-event-field_event_url'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -215,7 +218,7 @@ function ascm_events_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_file_attachments'
+  // Exported field_instance: 'node-event-field_file_attachments'.
   $field_instances['node-event-field_file_attachments'] = array(
     'bundle' => 'event',
     'deleted' => 0,
@@ -310,7 +313,7 @@ function ascm_events_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_hosted_by'
+  // Exported field_instance: 'node-event-field_hosted_by'.
   $field_instances['node-event-field_hosted_by'] = array(
     'bundle' => 'event',
     'default_value' => array(
@@ -379,7 +382,7 @@ function ascm_events_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_image'
+  // Exported field_instance: 'node-event-field_image'.
   $field_instances['node-event-field_image'] = array(
     'bundle' => 'event',
     'deleted' => 0,
@@ -498,7 +501,7 @@ function ascm_events_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_location'
+  // Exported field_instance: 'node-event-field_location'.
   $field_instances['node-event-field_location'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
