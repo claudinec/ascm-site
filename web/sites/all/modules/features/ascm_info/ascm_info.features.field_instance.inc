@@ -29,7 +29,7 @@ function ascm_info_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -96,7 +96,7 @@ function ascm_info_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -151,7 +151,7 @@ function ascm_info_field_default_field_instances() {
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -261,7 +261,7 @@ function ascm_info_field_default_field_instances() {
           'taxonomy_term_separator' => ' / ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
