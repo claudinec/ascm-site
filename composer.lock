@@ -4,9 +4,50 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7df6ae869013e73e2eb4e9fb8190582d",
-    "content-hash": "c1d362e2792765e88955c5347f467c36",
+    "hash": "24195968cb270e5832f5df7f9c69bd9e",
+    "content-hash": "42a6074eea8311756d38c2cb909f2a3a",
     "packages": [
+        {
+            "name": "ckeditor/ckeditor",
+            "version": "4.6.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ckeditor/ckeditor-releases.git",
+                "reference": "2530c9c5d26f275882da192ba2231ac69e967474"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/2530c9c5d26f275882da192ba2231ac69e967474",
+                "reference": "2530c9c5d26f275882da192ba2231ac69e967474",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+",
+                "LGPL-2.1+",
+                "MPL-1.1+"
+            ],
+            "authors": [
+                {
+                    "name": "CKSource",
+                    "homepage": "http://cksource.com"
+                }
+            ],
+            "description": "JavaScript WYSIWYG web text editor.",
+            "homepage": "http://ckeditor.com",
+            "keywords": [
+                "CKEditor",
+                "editor",
+                "fckeditor",
+                "html",
+                "javascript",
+                "richtext",
+                "text",
+                "wysiwyg"
+            ],
+            "time": "2016-11-16 15:14:40"
+        },
         {
             "name": "composer/installers",
             "version": "v1.2.0",
@@ -210,7 +251,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/addressfield_phone",
-                "reference": "b27f716157b1e11b8c629e8f0bb713b2acc218b4"
+                "reference": "9f755b2ddccb54014a0b8ef7bd5cacede4ae2cb4"
             },
             "require": {
                 "drupal/addressfield": "*",
@@ -223,8 +264,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "7.x-1.3+0-dev",
-                    "datestamp": "1457703222"
+                    "version": "7.x-1.3+2-dev",
+                    "datestamp": "1479215340"
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
@@ -246,7 +287,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/addressfield_phone"
             },
-            "time": "2016-03-11 12:49:56"
+            "time": "2016-11-15 13:08:26"
         },
         {
             "name": "drupal/addressfield_tokens",
@@ -290,8 +331,7 @@
             "homepage": "https://www.drupal.org/project/addressfield_tokens",
             "support": {
                 "source": "http://cgit.drupalcode.org/addressfield_tokens"
-            },
-            "time": "2015-05-28 17:01:15"
+            }
         },
         {
             "name": "drupal/admin_menu",
@@ -396,35 +436,44 @@
         },
         {
             "name": "drupal/autocomplete_widgets",
-            "version": "7.1.0-rc1",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/autocomplete_widgets",
-                "reference": "ec642f6db3d8b568760a63ae040fde0499f40275"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/autocomplete_widgets-7.x-1.0-rc1.zip",
-                "reference": "ec642f6db3d8b568760a63ae040fde0499f40275",
-                "shasum": null
+                "reference": "5c3614402f2d4c0b5377afee878ec1c898d96ed1"
             },
             "require": {
-                "drupal/drupal": "7.*",
-                "drupal/list": "7.*"
+                "drupal/drupal": "^7.39"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.0-rc1+1-dev",
+                    "datestamp": "1440851639"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
                 "GPL-2.0+"
             ],
+            "authors": [
+                {
+                    "name": "bleen",
+                    "homepage": "https://www.drupal.org/user/77375"
+                },
+                {
+                    "name": "markus_petrux",
+                    "homepage": "https://www.drupal.org/user/39593"
+                }
+            ],
             "description": "Provides autocomplete widgets for Text and List fields",
             "homepage": "https://www.drupal.org/project/autocomplete_widgets",
-            "time": "2013-04-16 15:10:52"
+            "support": {
+                "source": "http://cgit.drupalcode.org/autocomplete_widgets"
+            }
         },
         {
             "name": "drupal/backup_migrate",
@@ -465,8 +514,7 @@
             "homepage": "https://www.drupal.org/project/backup_migrate",
             "support": {
                 "source": "http://cgit.drupalcode.org/backup_migrate"
-            },
-            "time": "2015-07-01 20:41:14"
+            }
         },
         {
             "name": "drupal/bootstrap",
@@ -662,8 +710,7 @@
             "homepage": "https://www.drupal.org/project/ckeditor",
             "support": {
                 "source": "http://cgit.drupalcode.org/ckeditor"
-            },
-            "time": "2016-06-19 22:18:17"
+            }
         },
         {
             "name": "drupal/colorbox",
@@ -717,8 +764,7 @@
             "homepage": "https://www.drupal.org/project/colorbox",
             "support": {
                 "source": "http://cgit.drupalcode.org/colorbox"
-            },
-            "time": "2016-07-28 01:11:45"
+            }
         },
         {
             "name": "drupal/conditional_fields",
@@ -755,8 +801,7 @@
             "homepage": "https://www.drupal.org/project/conditional_fields",
             "support": {
                 "source": "http://cgit.drupalcode.org/conditional_fields"
-            },
-            "time": "2016-03-30 18:35:18"
+            }
         },
         {
             "name": "drupal/context",
@@ -845,37 +890,20 @@
         },
         {
             "name": "drupal/date",
-            "version": "7.2.10-rc1",
+            "version": "dev-2.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/date",
-                "reference": "15fbe471c7cc769df4ef65a91f84365235018c11"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/date-7.x-2.10-rc1.zip",
-                "reference": "15fbe471c7cc769df4ef65a91f84365235018c11",
-                "shasum": null
+                "reference": "4e2ed49d0faca67ac3f8ef1f64d6e37814aa4fcc"
             },
             "require": {
-                "drupal/drupal": "7.*"
-            },
-            "replace": {
-                "drupal/date_all_day": "self.version",
-                "drupal/date_api": "self.version",
-                "drupal/date_context": "self.version",
-                "drupal/date_migrate": "self.version",
-                "drupal/date_migrate_example": "self.version",
-                "drupal/date_popup": "self.version",
-                "drupal/date_repeat": "self.version",
-                "drupal/date_repeat_field": "self.version",
-                "drupal/date_tools": "self.version",
-                "drupal/date_views": "self.version"
+                "drupal/date_api": "*",
+                "drupal/drupal": "~7.0"
             },
             "suggest": {
                 "drupal/context": "Required by drupal/date_context",
-                "drupal/date_api": "Required by drupal/date_all_day, drupal/date_popup, drupal/date_repeat, drupal/date_repeat_field, drupal/date_views",
-                "drupal/date_repeat": "Required by drupal/date_migrate_example, drupal/date_repeat_field",
+                "drupal/date_api": "Required by drupal/date_popup",
+                "drupal/date_repeat": "Required by drupal/date_repeat_field",
                 "drupal/date_repeat_field": "Required by drupal/date_migrate_example",
                 "drupal/features": "Required by drupal/date_migrate_example",
                 "drupal/migrate": "Required by drupal/date_migrate_example",
@@ -884,16 +912,133 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-7.x-2.x": "7.2.x-dev"
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-2.10-rc1+2-dev",
+                    "datestamp": "1465134839"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
                 "GPL-2.0+"
             ],
+            "authors": [
+                {
+                    "name": "David Goode",
+                    "homepage": "https://www.drupal.org/user/291318"
+                },
+                {
+                    "name": "KarenS",
+                    "homepage": "https://www.drupal.org/user/45874"
+                },
+                {
+                    "name": "arlinsandbulte",
+                    "homepage": "https://www.drupal.org/user/242659"
+                },
+                {
+                    "name": "cafuego",
+                    "homepage": "https://www.drupal.org/user/218525"
+                },
+                {
+                    "name": "developer-x",
+                    "homepage": "https://www.drupal.org/user/399625"
+                },
+                {
+                    "name": "dww",
+                    "homepage": "https://www.drupal.org/user/46549"
+                },
+                {
+                    "name": "podarok",
+                    "homepage": "https://www.drupal.org/user/116002"
+                },
+                {
+                    "name": "sanchiz",
+                    "homepage": "https://www.drupal.org/user/1671246"
+                },
+                {
+                    "name": "vijaycs85",
+                    "homepage": "https://www.drupal.org/user/93488"
+                },
+                {
+                    "name": "webchick",
+                    "homepage": "https://www.drupal.org/user/24967"
+                }
+            ],
             "description": "Makes date/time fields available.",
             "homepage": "https://www.drupal.org/project/date",
-            "time": "2016-04-27 09:40:27"
+            "support": {
+                "source": "http://cgit.drupalcode.org/date"
+            }
+        },
+        {
+            "name": "drupal/date_api",
+            "version": "dev-2.x",
+            "require": {
+                "drupal/date": "self.version",
+                "drupal/drupal": "~7.0"
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-2.10-rc1+2-dev",
+                    "datestamp": "1465134839"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "David Goode",
+                    "homepage": "https://www.drupal.org/user/291318"
+                },
+                {
+                    "name": "KarenS",
+                    "homepage": "https://www.drupal.org/user/45874"
+                },
+                {
+                    "name": "arlinsandbulte",
+                    "homepage": "https://www.drupal.org/user/242659"
+                },
+                {
+                    "name": "cafuego",
+                    "homepage": "https://www.drupal.org/user/218525"
+                },
+                {
+                    "name": "developer-x",
+                    "homepage": "https://www.drupal.org/user/399625"
+                },
+                {
+                    "name": "dww",
+                    "homepage": "https://www.drupal.org/user/46549"
+                },
+                {
+                    "name": "podarok",
+                    "homepage": "https://www.drupal.org/user/116002"
+                },
+                {
+                    "name": "sanchiz",
+                    "homepage": "https://www.drupal.org/user/1671246"
+                },
+                {
+                    "name": "vijaycs85",
+                    "homepage": "https://www.drupal.org/user/93488"
+                },
+                {
+                    "name": "webchick",
+                    "homepage": "https://www.drupal.org/user/24967"
+                }
+            ],
+            "description": "A Date API that can be used by other modules.",
+            "homepage": "https://www.drupal.org/project/date",
+            "support": {
+                "source": "http://cgit.drupalcode.org/date"
+            }
         },
         {
             "name": "drupal/devel",
@@ -1022,8 +1167,7 @@
             "homepage": "https://www.drupal.org/project/disqus",
             "support": {
                 "source": "http://cgit.drupalcode.org/disqus"
-            },
-            "time": "2016-03-03 12:28:00"
+            }
         },
         {
             "name": "drupal/drupal",
@@ -1374,8 +1518,7 @@
             "homepage": "https://www.drupal.org/project/entityreference",
             "support": {
                 "source": "http://cgit.drupalcode.org/entityreference"
-            },
-            "time": "2016-10-24 20:37:11"
+            }
         },
         {
             "name": "drupal/environment_indicator",
@@ -1421,8 +1564,7 @@
             "homepage": "https://www.drupal.org/project/environment_indicator",
             "support": {
                 "source": "http://cgit.drupalcode.org/environment_indicator"
-            },
-            "time": "2016-09-16 07:06:23"
+            }
         },
         {
             "name": "drupal/fb",
@@ -1519,7 +1661,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/feeds",
-                "reference": "27990937fbf52992514dc46be756f79db146ea67"
+                "reference": "23584efbf36272747804a94c10c0569c4cd25664"
             },
             "require": {
                 "drupal/ctools": "*",
@@ -1534,6 +1676,8 @@
                 "drupal/feeds_xpathparser": "Required by drupal/feeds",
                 "drupal/i18n_taxonomy": "Required by drupal/feeds",
                 "drupal/link": "Required by drupal/feeds",
+                "drupal/rules": "Required by drupal/feeds",
+                "drupal/variable": "Required by drupal/feeds",
                 "drupal/views": "Required by drupal/feeds_news"
             },
             "type": "drupal-module",
@@ -1542,8 +1686,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "7.x-2.0-beta2+32-dev",
-                    "datestamp": "1477732739"
+                    "version": "7.x-2.0-beta2+39-dev",
+                    "datestamp": "1479046440"
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
@@ -1612,8 +1756,7 @@
             "homepage": "https://www.drupal.org/project/feeds",
             "support": {
                 "source": "http://cgit.drupalcode.org/feeds"
-            },
-            "time": "2016-10-29 09:13:23"
+            }
         },
         {
             "name": "drupal/field_tokens",
@@ -1651,8 +1794,7 @@
             "homepage": "https://www.drupal.org/project/field_tokens",
             "support": {
                 "source": "http://cgit.drupalcode.org/field_tokens"
-            },
-            "time": "2016-07-26 01:23:31"
+            }
         },
         {
             "name": "drupal/file_entity",
@@ -1737,8 +1879,7 @@
             "homepage": "https://www.drupal.org/project/file_entity",
             "support": {
                 "source": "http://cgit.drupalcode.org/file_entity"
-            },
-            "time": "2016-06-21 16:32:49"
+            }
         },
         {
             "name": "drupal/filefield_paths",
@@ -1908,8 +2049,7 @@
             "homepage": "https://www.drupal.org/project/honeypot",
             "support": {
                 "source": "http://cgit.drupalcode.org/honeypot"
-            },
-            "time": "2016-03-11 04:27:12"
+            }
         },
         {
             "name": "drupal/icon",
@@ -1953,8 +2093,7 @@
             "homepage": "https://www.drupal.org/project/icon",
             "support": {
                 "source": "http://cgit.drupalcode.org/icon"
-            },
-            "time": "2015-10-13 20:56:39"
+            }
         },
         {
             "name": "drupal/imce",
@@ -2115,8 +2254,7 @@
             "homepage": "https://www.drupal.org/project/job_scheduler",
             "support": {
                 "source": "http://cgit.drupalcode.org/job_scheduler"
-            },
-            "time": "2015-01-21 14:00:51"
+            }
         },
         {
             "name": "drupal/libraries",
@@ -2124,7 +2262,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/libraries",
-                "reference": "50761ca86378871109c96b221ad173d58e113672"
+                "reference": "bc427ef087382a04ac1ae3620183c915cb239324"
             },
             "require": {
                 "drupal/drupal": "^7.11"
@@ -2135,8 +2273,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "7.x-2.3+7-dev",
-                    "datestamp": "1467149939"
+                    "version": "7.x-2.3+10-dev",
+                    "datestamp": "1479046140"
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
@@ -2165,8 +2303,7 @@
             "homepage": "https://www.drupal.org/project/libraries",
             "support": {
                 "source": "http://cgit.drupalcode.org/libraries"
-            },
-            "time": "2016-06-28 21:33:50"
+            }
         },
         {
             "name": "drupal/link",
@@ -2223,8 +2360,7 @@
             "homepage": "https://www.drupal.org/project/link",
             "support": {
                 "source": "http://cgit.drupalcode.org/link"
-            },
-            "time": "2015-12-11 05:10:27"
+            }
         },
         {
             "name": "drupal/linkchecker",
@@ -2261,30 +2397,18 @@
             "homepage": "https://www.drupal.org/project/linkchecker",
             "support": {
                 "source": "http://cgit.drupalcode.org/linkchecker"
-            },
-            "time": "2016-08-07 18:37:04"
+            }
         },
         {
             "name": "drupal/logintoboggan",
-            "version": "7.1.5",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/logintoboggan",
-                "reference": "d2a67283dcef7926f106647c081f73edd3039a41"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/logintoboggan-7.x-1.5.zip",
-                "reference": null,
-                "shasum": null
+                "reference": "25ff64afb26968ac9370e9298ab129ce4407db6d"
             },
             "require": {
-                "drupal/drupal": "7.*"
-            },
-            "replace": {
-                "drupal/logintoboggan_content_access_integration": "self.version",
-                "drupal/logintoboggan_rules": "self.version",
-                "drupal/logintoboggan_variable": "self.version"
+                "drupal/drupal": "~7.0"
             },
             "suggest": {
                 "drupal/content_access": "Required by drupal/logintoboggan_content_access_integration",
@@ -2294,16 +2418,64 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.5+9-dev",
+                    "datestamp": "1470328384"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
                 "GPL-2.0+"
             ],
+            "authors": [
+                {
+                    "name": "dooug",
+                    "homepage": "https://www.drupal.org/user/417693"
+                },
+                {
+                    "name": "galooph",
+                    "homepage": "https://www.drupal.org/user/241220"
+                },
+                {
+                    "name": "greg.harvey",
+                    "homepage": "https://www.drupal.org/user/130383"
+                },
+                {
+                    "name": "instanceofjamie",
+                    "homepage": "https://www.drupal.org/user/16327"
+                },
+                {
+                    "name": "ipo4ka704",
+                    "homepage": "https://www.drupal.org/user/2632891"
+                },
+                {
+                    "name": "jdanthinne",
+                    "homepage": "https://www.drupal.org/user/313766"
+                },
+                {
+                    "name": "md2",
+                    "homepage": "https://www.drupal.org/user/243300"
+                },
+                {
+                    "name": "serhiiy",
+                    "homepage": "https://www.drupal.org/user/2689537"
+                },
+                {
+                    "name": "stevecowie",
+                    "homepage": "https://www.drupal.org/user/110518"
+                },
+                {
+                    "name": "sudhirporwal",
+                    "homepage": "https://www.drupal.org/user/400834"
+                }
+            ],
             "description": "Improves Drupal's login system.",
             "homepage": "https://www.drupal.org/project/logintoboggan",
-            "time": "2015-05-01 15:50:05"
+            "support": {
+                "source": "http://cgit.drupalcode.org/logintoboggan"
+            }
         },
         {
             "name": "drupal/mailchimp",
@@ -2442,8 +2614,7 @@
             "homepage": "https://www.drupal.org/project/mailsystem",
             "support": {
                 "source": "http://cgit.drupalcode.org/mailsystem"
-            },
-            "time": "2016-02-13 00:06:06"
+            }
         },
         {
             "name": "drupal/mandrill",
@@ -2505,8 +2676,7 @@
             "homepage": "https://www.drupal.org/project/mandrill",
             "support": {
                 "source": "http://cgit.drupalcode.org/mandrill"
-            },
-            "time": "2016-04-19 20:39:23"
+            }
         },
         {
             "name": "drupal/mandrill_reports",
@@ -2567,7 +2737,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/markdown",
-                "reference": "ed7d6dd774c0bd4ee4b64788c8802b702d561405"
+                "reference": "4e79af528b06b19230b3456af8d0c6f5eefddaf2"
             },
             "require": {
                 "drupal/drupal": "~7.0"
@@ -2578,8 +2748,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "7.x-1.3+2-dev",
-                    "datestamp": "1469493539"
+                    "version": "7.x-1.5+0-dev",
+                    "datestamp": "1478247839"
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
@@ -2608,8 +2778,7 @@
             "homepage": "https://www.drupal.org/project/markdown",
             "support": {
                 "source": "http://cgit.drupalcode.org/markdown"
-            },
-            "time": "2016-07-26 00:34:05"
+            }
         },
         {
             "name": "drupal/media",
@@ -2699,8 +2868,7 @@
             "homepage": "https://www.drupal.org/project/media",
             "support": {
                 "source": "http://cgit.drupalcode.org/media"
-            },
-            "time": "2015-08-17 07:11:01"
+            }
         },
         {
             "name": "drupal/media-file_entity",
@@ -2823,8 +2991,7 @@
             "homepage": "https://www.drupal.org/project/media_colorbox",
             "support": {
                 "source": "http://cgit.drupalcode.org/media_colorbox"
-            },
-            "time": "2013-08-15 15:43:36"
+            }
         },
         {
             "name": "drupal/mimemail",
@@ -2873,8 +3040,7 @@
             "homepage": "https://www.drupal.org/project/mimemail",
             "support": {
                 "source": "http://cgit.drupalcode.org/mimemail"
-            },
-            "time": "2016-09-10 18:06:22"
+            }
         },
         {
             "name": "drupal/module_filter",
@@ -2915,8 +3081,7 @@
             "homepage": "https://www.drupal.org/project/module_filter",
             "support": {
                 "source": "http://cgit.drupalcode.org/module_filter"
-            },
-            "time": "2016-03-21 05:34:27"
+            }
         },
         {
             "name": "drupal/mollom",
@@ -2984,8 +3149,7 @@
             "homepage": "https://www.drupal.org/project/multiupload_filefield_widget",
             "support": {
                 "source": "http://cgit.drupalcode.org/multiupload_filefield_widget"
-            },
-            "time": "2014-05-06 16:15:58"
+            }
         },
         {
             "name": "drupal/oauth",
@@ -3052,8 +3216,7 @@
             "homepage": "https://www.drupal.org/project/oauth",
             "support": {
                 "source": "http://cgit.drupalcode.org/oauth"
-            },
-            "time": "2015-11-05 21:45:17"
+            }
         },
         {
             "name": "drupal/oauth_common",
@@ -3164,8 +3327,7 @@
             "homepage": "https://www.drupal.org/project/pathauto",
             "support": {
                 "source": "http://cgit.drupalcode.org/pathauto"
-            },
-            "time": "2016-08-30 16:59:38"
+            }
         },
         {
             "name": "drupal/phone",
@@ -3210,8 +3372,7 @@
             "homepage": "https://www.drupal.org/project/phone",
             "support": {
                 "source": "http://cgit.drupalcode.org/phone"
-            },
-            "time": "2014-01-14 20:38:45"
+            }
         },
         {
             "name": "drupal/querypath",
@@ -3272,8 +3433,7 @@
             "homepage": "https://www.drupal.org/project/querypath",
             "support": {
                 "source": "http://cgit.drupalcode.org/querypath"
-            },
-            "time": "2012-09-25 16:34:16"
+            }
         },
         {
             "name": "drupal/revisioning",
@@ -3354,8 +3514,7 @@
             "homepage": "https://www.drupal.org/project/rules",
             "support": {
                 "source": "http://cgit.drupalcode.org/rules"
-            },
-            "time": "2016-01-15 17:28:46"
+            }
         },
         {
             "name": "drupal/scheduler",
@@ -3363,7 +3522,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/scheduler",
-                "reference": "c6df094d52e703890977a23a5c0418045717abfd"
+                "reference": "cbda49e2fed27b3510d75e93f12ec471706ae825"
             },
             "require": {
                 "drupal/drupal": "~7.0"
@@ -3377,8 +3536,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "7.x-1.4+14-dev",
-                    "datestamp": "1469360939"
+                    "version": "7.x-1.5+2-dev",
+                    "datestamp": "1478599143"
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
@@ -3407,8 +3566,7 @@
             "homepage": "https://www.drupal.org/project/scheduler",
             "support": {
                 "source": "http://cgit.drupalcode.org/scheduler"
-            },
-            "time": "2016-07-24 11:44:52"
+            }
         },
         {
             "name": "drupal/search404",
@@ -3416,7 +3574,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/search404",
-                "reference": "d48bac7a34ef7f1eb046b5bb2bc70f95845e2c7e"
+                "reference": "df49e4d86090c009b48b9d68a33f552f35c85283"
             },
             "require": {
                 "drupal/drupal": "~7.0"
@@ -3427,8 +3585,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "7.x-1.4+19-dev",
-                    "datestamp": "1476797039"
+                    "version": "7.x-1.4+20-dev",
+                    "datestamp": "1479387839"
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
@@ -3453,8 +3611,7 @@
             "homepage": "https://www.drupal.org/project/search404",
             "support": {
                 "source": "http://cgit.drupalcode.org/search404"
-            },
-            "time": "2016-10-18 13:21:24"
+            }
         },
         {
             "name": "drupal/smtp",
@@ -3510,8 +3667,7 @@
             "homepage": "https://www.drupal.org/project/smtp",
             "support": {
                 "source": "http://cgit.drupalcode.org/smtp"
-            },
-            "time": "2016-10-17 10:37:00"
+            }
         },
         {
             "name": "drupal/strongarm",
@@ -3569,8 +3725,7 @@
             "homepage": "https://www.drupal.org/project/strongarm",
             "support": {
                 "source": "http://cgit.drupalcode.org/strongarm"
-            },
-            "time": "2012-08-29 17:21:11"
+            }
         },
         {
             "name": "drupal/taxonomy_access",
@@ -3623,8 +3778,7 @@
             "homepage": "https://www.drupal.org/project/taxonomy_access",
             "support": {
                 "source": "http://cgit.drupalcode.org/taxonomy_access"
-            },
-            "time": "2015-09-19 03:57:30"
+            }
         },
         {
             "name": "drupal/token",
@@ -3740,8 +3894,7 @@
             "homepage": "https://www.drupal.org/project/token_filter",
             "support": {
                 "source": "http://cgit.drupalcode.org/token_filter"
-            },
-            "time": "2015-10-12 17:04:37"
+            }
         },
         {
             "name": "drupal/token_replace_ajax",
@@ -3782,8 +3935,7 @@
             "homepage": "https://www.drupal.org/project/token_replace_ajax",
             "support": {
                 "source": "http://cgit.drupalcode.org/token_replace_ajax"
-            },
-            "time": "2015-08-05 07:15:56"
+            }
         },
         {
             "name": "drupal/twitter_block",
@@ -3836,8 +3988,7 @@
             "homepage": "https://www.drupal.org/project/twitter_block",
             "support": {
                 "source": "http://cgit.drupalcode.org/twitter_block"
-            },
-            "time": "2015-09-15 20:04:43"
+            }
         },
         {
             "name": "drupal/typogrify",
@@ -3882,8 +4033,7 @@
             "homepage": "https://www.drupal.org/project/typogrify",
             "support": {
                 "source": "http://cgit.drupalcode.org/typogrify"
-            },
-            "time": "2015-12-14 09:29:44"
+            }
         },
         {
             "name": "drupal/views",
@@ -4029,41 +4179,77 @@
             "homepage": "https://www.drupal.org/project/views_rss",
             "support": {
                 "source": "http://cgit.drupalcode.org/views_rss"
-            },
-            "time": "2014-12-23 18:24:17"
+            }
         },
         {
             "name": "drupal/webform",
-            "version": "7.4.14",
+            "version": "dev-4.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/webform",
-                "reference": "9bc81f8869868c48470aa383c1a5166ba3255669"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-7.x-4.14.zip",
-                "reference": null,
-                "shasum": null
+                "reference": "fae0fad6c2a288b20df74792819b86cdc99cbfa7"
             },
             "require": {
-                "drupal/ctools": "7.*",
-                "drupal/drupal": "7.*",
-                "drupal/views": "7.*"
+                "drupal/ctools": "*",
+                "drupal/drupal": "~7.0",
+                "drupal/views": "*"
+            },
+            "suggest": {
+                "drupal/token": "Required by drupal/webform"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-7.x-4.x": "7.4.x-dev"
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-4.14+11-dev",
+                    "datestamp": "1479160441"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
                 "GPL-2.0+"
             ],
+            "authors": [
+                {
+                    "name": "DanChadwick",
+                    "homepage": "https://www.drupal.org/user/504278"
+                },
+                {
+                    "name": "Liam Morland",
+                    "homepage": "https://www.drupal.org/user/493050"
+                },
+                {
+                    "name": "fenstrat",
+                    "homepage": "https://www.drupal.org/user/362649"
+                },
+                {
+                    "name": "podarok",
+                    "homepage": "https://www.drupal.org/user/116002"
+                },
+                {
+                    "name": "quicksketch",
+                    "homepage": "https://www.drupal.org/user/35821"
+                },
+                {
+                    "name": "sanchiz",
+                    "homepage": "https://www.drupal.org/user/1671246"
+                },
+                {
+                    "name": "tedbow",
+                    "homepage": "https://www.drupal.org/user/240860"
+                },
+                {
+                    "name": "torotil",
+                    "homepage": "https://www.drupal.org/user/865256"
+                }
+            ],
             "description": "Enables the creation of forms and questionnaires.",
             "homepage": "https://www.drupal.org/project/webform",
-            "time": "2016-08-24 17:42:46"
+            "support": {
+                "source": "http://cgit.drupalcode.org/webform"
+            }
         },
         {
             "name": "drupal/webform_mailchimp",
@@ -4114,8 +4300,7 @@
             "homepage": "https://www.drupal.org/project/webform_mailchimp",
             "support": {
                 "source": "http://cgit.drupalcode.org/webform_mailchimp"
-            },
-            "time": "2015-05-27 11:52:49"
+            }
         },
         {
             "name": "drupal/webform_phone",
@@ -4154,8 +4339,7 @@
             "homepage": "https://www.drupal.org/project/webform_phone",
             "support": {
                 "source": "http://cgit.drupalcode.org/webform_phone"
-            },
-            "time": "2015-09-05 17:14:29"
+            }
         },
         {
             "name": "drupal/workbench",
@@ -4260,8 +4444,7 @@
             "homepage": "https://www.drupal.org/project/wysiwyg_fields",
             "support": {
                 "source": "http://cgit.drupalcode.org/wysiwyg_fields"
-            },
-            "time": "2016-02-07 10:33:49"
+            }
         },
         {
             "name": "drupal/xmlsitemap",
@@ -4327,8 +4510,7 @@
             "homepage": "https://www.drupal.org/project/xmlsitemap",
             "support": {
                 "source": "http://cgit.drupalcode.org/xmlsitemap"
-            },
-            "time": "2016-05-25 15:35:46"
+            }
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -4336,12 +4518,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "0118099daf4afd2ab648efedf8790645315aa6c4"
+                "reference": "471026d23a14f6eadd0147eb5697f48ebe6adec8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/0118099daf4afd2ab648efedf8790645315aa6c4",
-                "reference": "0118099daf4afd2ab648efedf8790645315aa6c4",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/471026d23a14f6eadd0147eb5697f48ebe6adec8",
+                "reference": "471026d23a14f6eadd0147eb5697f48ebe6adec8",
                 "shasum": ""
             },
             "require": {
@@ -4390,20 +4572,20 @@
                 "rest",
                 "web service"
             ],
-            "time": "2016-10-28 00:09:06"
+            "time": "2016-11-15 18:22:40"
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "c10d860e2a9595f8883527fa0021c7da9e65f579"
+                "reference": "2693c101803ca78b27972d84081d027fca790a1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/c10d860e2a9595f8883527fa0021c7da9e65f579",
-                "reference": "c10d860e2a9595f8883527fa0021c7da9e65f579",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/2693c101803ca78b27972d84081d027fca790a1e",
+                "reference": "2693c101803ca78b27972d84081d027fca790a1e",
                 "shasum": ""
             },
             "require": {
@@ -4441,7 +4623,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2016-05-18 16:56:05"
+            "time": "2016-11-18 17:47:58"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -4449,12 +4631,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "64862e854f876bc5aee2996cab2f552db8586065"
+                "reference": "5f17a79615bd36d52d3b3ce44075aec02605d8bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/64862e854f876bc5aee2996cab2f552db8586065",
-                "reference": "64862e854f876bc5aee2996cab2f552db8586065",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/5f17a79615bd36d52d3b3ce44075aec02605d8bf",
+                "reference": "5f17a79615bd36d52d3b3ce44075aec02605d8bf",
                 "shasum": ""
             },
             "require": {
@@ -4506,7 +4688,144 @@
                 "uri",
                 "url"
             ],
-            "time": "2016-08-03 09:33:34"
+            "time": "2016-11-02 14:11:11"
+        },
+        {
+            "name": "kraksoft/colorbox",
+            "version": "1.5.14-patch1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kraksoft/colorbox.git",
+                "reference": "d46c701d01f4795e793099e010cad0cb7a30d6a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kraksoft/colorbox/zipball/d46c701d01f4795e793099e010cad0cb7a30d6a1",
+                "reference": "d46c701d01f4795e793099e010cad0cb7a30d6a1",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "0.0.*"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "name": "colorbox",
+                    "files": [
+                        "example1/colorbox.css",
+                        "example2/colorbox.css",
+                        "example3/colorbox.css",
+                        "example4/colorbox.css",
+                        "example5/colorbox.css",
+                        "example1/images/*",
+                        "example2/images/*",
+                        "example3/images/*",
+                        "example4/images/*",
+                        "example5/images/*",
+                        "i18n/*",
+                        "jquery.colorbox.js",
+                        "jquery.colorbox-min.js"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jack Moore",
+                    "email": "hello@jacklmoore.com"
+                }
+            ],
+            "description": "A light-weight, customizable lightbox plugin for jQuery",
+            "homepage": "http://www.jacklmoore.com/colorbox",
+            "keywords": [
+                "jquery",
+                "lightbox",
+                "modal",
+                "popup",
+                "ui",
+                "window"
+            ],
+            "time": "2015-01-24 15:47:00"
+        },
+        {
+            "name": "kriswallsmith/assetic",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kriswallsmith/assetic.git",
+                "reference": "e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1",
+                "reference": "e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.1",
+                "symfony/process": "~2.1|~3.0"
+            },
+            "conflict": {
+                "twig/twig": "<1.27"
+            },
+            "require-dev": {
+                "leafo/lessphp": "^0.3.7",
+                "leafo/scssphp": "~0.1",
+                "meenie/javascript-packer": "^1.1",
+                "mrclay/minify": "<2.3",
+                "natxet/cssmin": "3.0.4",
+                "patchwork/jsqueeze": "~1.0|~2.0",
+                "phpunit/phpunit": "~4.8 || ^5.6",
+                "psr/log": "~1.0",
+                "ptachoire/cssembed": "~1.0",
+                "symfony/phpunit-bridge": "~2.7|~3.0",
+                "twig/twig": "~1.23|~2.0",
+                "yfix/packager": "dev-master"
+            },
+            "suggest": {
+                "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
+                "leafo/scssphp": "Assetic provides the integration with the scssphp SCSS compiler",
+                "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin",
+                "patchwork/jsqueeze": "Assetic provides the integration with the JSqueeze JavaScript compressor",
+                "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
+                "twig/twig": "Assetic provides the integration with the Twig templating engine"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Assetic": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kris Wallsmith",
+                    "email": "kris.wallsmith@gmail.com",
+                    "homepage": "http://kriswallsmith.net/"
+                }
+            ],
+            "description": "Asset Management for PHP",
+            "homepage": "https://github.com/kriswallsmith/assetic",
+            "keywords": [
+                "assets",
+                "compression",
+                "minification"
+            ],
+            "time": "2016-11-11 18:43:20"
         },
         {
             "name": "mailchimp/mailchimp",
@@ -4603,6 +4922,103 @@
                 "response"
             ],
             "time": "2016-08-06 14:39:51"
+        },
+        {
+            "name": "robloach/component-installer",
+            "version": "0.0.13-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RobLoach/component-installer.git",
+                "reference": "0d02d950266f18124da929980588a0858755aa6d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RobLoach/component-installer/zipball/0d02d950266f18124da929980588a0858755aa6d",
+                "reference": "0d02d950266f18124da929980588a0858755aa6d",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "1.0.0",
+                "kriswallsmith/assetic": "1.*",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "composer/composer": "1.*",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "class": "ComponentInstaller\\Installer"
+            },
+            "autoload": {
+                "psr-0": {
+                    "ComponentInstaller": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Loach",
+                    "homepage": "http://robloach.net"
+                }
+            ],
+            "description": "Allows installation of Components via Composer.",
+            "time": "2015-05-05 12:40:13"
+        },
+        {
+            "name": "symfony/process",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "bb5223b0daac862d40dd1d0d8c16ccaa565716dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/bb5223b0daac862d40dd1d0d8c16ccaa565716dc",
+                "reference": "bb5223b0daac862d40dd1d0d8c16ccaa565716dc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Process Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-11-19 20:35:20"
         }
     ],
     "packages-dev": [],
@@ -4610,7 +5026,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/admin_menu": 5,
-        "drupal/autocomplete_widgets": 5,
+        "drupal/autocomplete_widgets": 20,
         "drupal/feeds": 20,
         "drupal/conditional_fields": 20,
         "drupal/media_colorbox": 20,
