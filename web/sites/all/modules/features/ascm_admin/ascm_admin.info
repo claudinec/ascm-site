@@ -35,4 +35,3 @@ features[variable][] = date_format_short
 features[variable][] = site_default_country
 features[variable][] = site_mail
 features[variable][] = site_name
-features[wysiwyg][] = filtered_html

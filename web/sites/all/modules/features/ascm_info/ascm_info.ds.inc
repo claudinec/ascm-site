@@ -54,19 +54,19 @@ function ascm_info_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'comments',
-        1 => 'body',
-        2 => 'field_attachments',
-        3 => 'field_tags',
+        0 => 'body',
+        1 => 'field_attachments',
+        2 => 'field_tags',
+        3 => 'comments',
         4 => 'book_navigation',
         5 => 'links',
       ),
     ),
     'fields' => array(
-      'comments' => 'ds_content',
       'body' => 'ds_content',
       'field_attachments' => 'ds_content',
       'field_tags' => 'ds_content',
+      'comments' => 'ds_content',
       'book_navigation' => 'ds_content',
       'links' => 'ds_content',
     ),
