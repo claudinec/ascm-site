@@ -90,7 +90,7 @@ function ascm_blocks_context_default_contexts() {
   $export['event-blocks'] = $context;
 
   $context = new stdClass();
-  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->disabled = TRUE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'front-blocks';
   $context->description = 'Blocks to display on front page';

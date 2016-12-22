@@ -10,7 +10,7 @@
 function ascm_info_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-book-body'
+  // Exported field_instance: 'node-book-body'.
   $field_instances['node-book-body'] = array(
     'bundle' => 'book',
     'default_value' => NULL,
@@ -74,7 +74,7 @@ function ascm_info_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-book-field_access'
+  // Exported field_instance: 'node-book-field_access'.
   $field_instances['node-book-field_access'] = array(
     'bundle' => 'book',
     'default_value' => array(
@@ -133,7 +133,7 @@ function ascm_info_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-book-field_attachments'
+  // Exported field_instance: 'node-book-field_attachments'.
   $field_instances['node-book-field_attachments'] = array(
     'bundle' => 'book',
     'deleted' => 0,
@@ -236,7 +236,7 @@ function ascm_info_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-book-field_tags'
+  // Exported field_instance: 'node-book-field_tags'.
   $field_instances['node-book-field_tags'] = array(
     'bundle' => 'book',
     'default_value' => NULL,
