@@ -60,6 +60,7 @@ function ascm_info_ds_layout_settings_info() {
         3 => 'comments',
         4 => 'book_navigation',
         5 => 'links',
+        6 => 'field_access',
       ),
     ),
     'fields' => array(
@@ -69,6 +70,7 @@ function ascm_info_ds_layout_settings_info() {
       'comments' => 'ds_content',
       'book_navigation' => 'ds_content',
       'links' => 'ds_content',
+      'field_access' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
