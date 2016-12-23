@@ -26,17 +26,23 @@ function ascm_blocks_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'search-form' => array(
+          'module' => 'search',
+          'delta' => 'form',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
         'boxes-contact_brief' => array(
           'module' => 'boxes',
           'delta' => 'contact_brief',
           'region' => 'sidebar_second',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
         'boxes-social' => array(
           'module' => 'boxes',
           'delta' => 'social',
           'region' => 'sidebar_second',
-          'weight' => '-9',
+          'weight' => '-8',
         ),
       ),
     ),
