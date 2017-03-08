@@ -114,11 +114,12 @@ function ascm_events_views_default_views() {
   $handler->display->display_options['fields']['field_date']['table'] = 'field_data_field_date';
   $handler->display->display_options['fields']['field_date']['field'] = 'field_date';
   $handler->display->display_options['fields']['field_date']['settings'] = array(
-    'format_type' => 'long',
-    'fromto' => 'both',
+    'format_type' => 'short',
+    'fromto' => 'value',
     'multiple_number' => '1',
     'multiple_from' => '',
     'multiple_to' => '',
+    'show_remaining_days' => 0,
     'show_repeat_rule' => 'hide',
   );
   $handler->display->display_options['fields']['field_date']['group_rows'] = FALSE;
@@ -130,10 +131,6 @@ function ascm_events_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = 'Event';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Location */
-  $handler->display->display_options['fields']['field_location']['id'] = 'field_location';
-  $handler->display->display_options['fields']['field_location']['table'] = 'field_data_field_location';
-  $handler->display->display_options['fields']['field_location']['field'] = 'field_location';
   $export['events'] = $view;
 
   return $export;
