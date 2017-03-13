@@ -77,7 +77,18 @@ function ascm_events_strongarm() {
           'weight' => '2',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'disqus' => array(
+          'full' => array(
+            'weight' => '15',
+            'visible' => FALSE,
+          ),
+          'default' => array(
+            'weight' => '1002',
+            'visible' => FALSE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__event'] = $strongarm;

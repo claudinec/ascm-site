@@ -23,6 +23,7 @@ dependencies[] = filefield_paths
 dependencies[] = image
 dependencies[] = link
 dependencies[] = media
+dependencies[] = multiupload_filefield_widget
 dependencies[] = strongarm
 dependencies[] = text
 dependencies[] = views

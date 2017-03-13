@@ -37,11 +37,6 @@ function ascm_events_ds_field_settings_info() {
       'label' => 'hidden',
       'format' => 'default',
     ),
-    'comments' => array(
-      'weight' => '8',
-      'label' => 'hidden',
-      'format' => 'default',
-    ),
   );
   $export['node|event|full'] = $ds_fieldsetting;
 
@@ -113,6 +108,7 @@ function ascm_events_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
   );
   $export['node|event|default'] = $ds_layout;
 
@@ -132,9 +128,8 @@ function ascm_events_ds_layout_settings_info() {
         3 => 'field_date',
         4 => 'field_location',
         5 => 'field_hosted_by',
-        6 => 'field_file_attachments',
-        7 => 'field_event_url',
-        8 => 'comments',
+        6 => 'field_event_url',
+        7 => 'field_file_attachments',
       ),
     ),
     'fields' => array(
@@ -144,9 +139,8 @@ function ascm_events_ds_layout_settings_info() {
       'field_date' => 'ds_content',
       'field_location' => 'ds_content',
       'field_hosted_by' => 'ds_content',
-      'field_file_attachments' => 'ds_content',
       'field_event_url' => 'ds_content',
-      'comments' => 'ds_content',
+      'field_file_attachments' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -157,6 +151,7 @@ function ascm_events_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
   );
   $export['node|event|full'] = $ds_layout;
 
