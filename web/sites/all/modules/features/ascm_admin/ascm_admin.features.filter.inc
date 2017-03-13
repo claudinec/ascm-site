@@ -14,7 +14,7 @@ function ascm_admin_filter_default_formats() {
   $formats['filtered_html'] = array(
     'format' => 'filtered_html',
     'name' => 'Filtered HTML',
-    'cache' => 1,
+    'cache' => 0,
     'status' => 1,
     'weight' => 0,
     'filters' => array(
@@ -51,6 +51,11 @@ function ascm_admin_filter_default_formats() {
       ),
       'filter_htmlcorrector' => array(
         'weight' => -44,
+        'status' => 1,
+        'settings' => array(),
+      ),
+      'filter_tokens' => array(
+        'weight' => 100,
         'status' => 1,
         'settings' => array(),
       ),

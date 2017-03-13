@@ -19,6 +19,7 @@ dependencies[] = media
 dependencies[] = pathauto
 dependencies[] = statistics
 dependencies[] = strongarm
+dependencies[] = token_filter
 dependencies[] = views
 dependencies[] = wysiwyg
 dependencies[] = wysiwyg_fields
