@@ -171,18 +171,12 @@ function ascm_blog_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'media_colorbox',
+        'module' => 'image',
         'settings' => array(
-          'audio_playlist' => 0,
-          'colorbox_caption' => 'title',
-          'colorbox_gallery' => 'post',
-          'colorbox_gallery_custom' => '',
-          'colorbox_view_mode' => 'colorbox',
-          'file_view_mode' => 'media_preview',
-          'fixed_height' => '',
-          'fixed_width' => '',
+          'image_link' => '',
+          'image_style' => 'large',
         ),
-        'type' => 'media_colorbox',
+        'type' => 'image',
         'weight' => 2,
       ),
       'teaser' => array(
@@ -211,44 +205,65 @@ function ascm_blog_field_default_field_instances() {
       'default_image' => 0,
       'file_directory' => 'images',
       'file_extensions' => 'png gif jpg jpeg',
+      'filefield_paths' => array(
+        'active_updating' => 0,
+        'file_name' => array(
+          'options' => array(
+            'pathauto' => 1,
+            'slashes' => 0,
+            'transliterate' => 0,
+          ),
+          'value' => '[file:ffp-name-only-original]-[current-date:short].[file:ffp-extension-original]',
+        ),
+        'file_path' => array(
+          'options' => array(
+            'pathauto' => 0,
+            'slashes' => 0,
+            'transliterate' => 0,
+          ),
+          'value' => 'images',
+        ),
+        'redirect' => FALSE,
+        'retroactive_update' => 0,
+      ),
+      'filefield_paths_enabled' => 1,
       'max_filesize' => '',
       'max_resolution' => '',
       'min_resolution' => '',
       'title_field' => 0,
       'user_register_form' => FALSE,
-      'wysiwyg_fields' => array(
-        'settings' => array(
-          'advanced' => array(
-            'delete' => 1,
-            'hide' => 1,
-          ),
-          'formatters' => array(
-            'file_rendered' => 'file_rendered',
-          ),
-          'icon' => 'd50522754f0bc7cc44d2f5231a467fe8',
-          'label' => 'Image',
-        ),
-        'status' => 0,
-      ),
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'media',
+      'module' => 'image',
       'settings' => array(
-        'allowed_schemes' => array(
-          'private' => 'private',
-          'public' => 'public',
+        'filefield_sources' => array(
+          'filefield_sources' => array(
+            'attach' => 0,
+            'clipboard' => 0,
+            'imce' => 0,
+            'reference' => 0,
+            'remote' => 0,
+            'upload' => 'upload',
+          ),
+          'source_attach' => array(
+            'absolute' => 0,
+            'attach_mode' => 'move',
+            'path' => 'file_attach',
+          ),
+          'source_imce' => array(
+            'imce_mode' => 0,
+          ),
+          'source_reference' => array(
+            'autocomplete' => 0,
+            'search_all_fields' => 0,
+          ),
         ),
-        'allowed_types' => array(
-          0 => 0,
-          'audio' => 0,
-          'default' => 0,
-          'image' => 'image',
-          'video' => 0,
-        ),
+        'imce_filefield_on' => 0,
+        'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'media_generic',
+      'type' => 'image_image',
       'weight' => 3,
     ),
     'workbench_access_field' => 0,

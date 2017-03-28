@@ -77,7 +77,14 @@ function ascm_blog_strongarm() {
           'weight' => '6',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'disqus' => array(
+          'full' => array(
+            'weight' => '1002',
+            'visible' => FALSE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__article'] = $strongarm;

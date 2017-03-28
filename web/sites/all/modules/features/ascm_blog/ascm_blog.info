@@ -9,6 +9,7 @@ dependencies[] = ctools
 dependencies[] = ds
 dependencies[] = features
 dependencies[] = file
+dependencies[] = filefield_paths
 dependencies[] = image
 dependencies[] = media
 dependencies[] = media_colorbox
