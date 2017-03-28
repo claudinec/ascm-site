@@ -107,23 +107,11 @@ function ascm_blocks_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'boxes-postal_address' => array(
-          'module' => 'boxes',
-          'delta' => 'postal_address',
-          'region' => 'content',
-          'weight' => '-10',
-        ),
         'boxes-contact_header' => array(
           'module' => 'boxes',
           'delta' => 'contact_header',
           'region' => 'content',
-          'weight' => '-9',
-        ),
-        'mailchimp_signup-subscribe' => array(
-          'module' => 'mailchimp_signup',
-          'delta' => 'subscribe',
-          'region' => 'footer',
-          'weight' => '-10',
+          'weight' => '-23',
         ),
       ),
     ),
