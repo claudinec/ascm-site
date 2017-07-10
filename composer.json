@@ -89,7 +89,7 @@
     "stinger/ckeditor-lineutils-bundle": "^4.5",
     "stinger/ckeditor-widget-bundle": "^4.5"
   },
-  "minimum-stability": "beta",
+  "minimum-stability": "alpha",
   "prefer-stable": true,
   "conflict": {
     "drupal/core": "8.*"
