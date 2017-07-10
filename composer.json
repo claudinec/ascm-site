@@ -75,7 +75,6 @@
     "drupal/typogrify": "1.x-dev",
     "drupal/xmlsitemap": "^2.3",
     "drupal/taxonomy_access": "^1.0",
-    "drupal/twitter_block": "^2.3",
     "drupal/mailsystem": "^2.0",
     "drupal/mandrill_reports": "^2.3",
     "drupal/webform_mailchimp": "2.x-dev",

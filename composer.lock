@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c71719f61b0fa2d3c91df3152982847d",
+    "content-hash": "13cecfdec1857c1a493d960178107789",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -3288,7 +3288,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/mailchimp-7.x-4.8.zip",
-                "reference": null,
+                "reference": "7.x-4.8",
                 "shasum": "d00a595d3b6f01d7e1a6ce79fed9c9856dddc095"
             },
             "require": {
@@ -4861,65 +4861,6 @@
             "homepage": "https://www.drupal.org/project/token_replace_ajax",
             "support": {
                 "source": "http://cgit.drupalcode.org/token_replace_ajax"
-            }
-        },
-        {
-            "name": "drupal/twitter_block",
-            "version": "2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/twitter_block",
-                "reference": "7.x-2.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/twitter_block-7.x-2.3.zip",
-                "reference": "7.x-2.3",
-                "shasum": "a35a11903f17add5bd2aa7f1a6221d642181dab1"
-            },
-            "require": {
-                "drupal/drupal": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "7.x-2.3",
-                    "datestamp": "1442349539"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Devin Carlson",
-                    "homepage": "https://www.drupal.org/user/290182"
-                },
-                {
-                    "name": "ZenDoodles",
-                    "homepage": "https://www.drupal.org/user/226976"
-                },
-                {
-                    "name": "cweagans",
-                    "homepage": "https://www.drupal.org/user/404732"
-                },
-                {
-                    "name": "naveenvalecha",
-                    "homepage": "https://www.drupal.org/user/2665733"
-                },
-                {
-                    "name": "subhojit777",
-                    "homepage": "https://www.drupal.org/user/1812492"
-                }
-            ],
-            "description": "Provides configurable blocks for a Twitter feed.",
-            "homepage": "https://www.drupal.org/project/twitter_block",
-            "support": {
-                "source": "http://cgit.drupalcode.org/twitter_block"
             }
         },
         {
