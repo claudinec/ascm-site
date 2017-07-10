@@ -90,7 +90,7 @@
     "stinger/ckeditor-widget-bundle": "^4.5"
   },
   "minimum-stability": "beta",
-  "prefer-stable": "true",
+  "prefer-stable": true,
   "conflict": {
     "drupal/core": "8.*"
   },
