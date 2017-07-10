@@ -87,7 +87,8 @@
     "drupal/entity": "^1.8",
     "ckeditor/ckeditor": "^4.6",
     "stinger/ckeditor-lineutils-bundle": "^4.5",
-    "stinger/ckeditor-widget-bundle": "^4.5"
+    "stinger/ckeditor-widget-bundle": "^4.5",
+    "drupal/mailchimp": "~4.8"
   },
   "minimum-stability": "alpha",
   "prefer-stable": true,
