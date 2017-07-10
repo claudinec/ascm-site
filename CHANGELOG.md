@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## Release 2017.07.10
+
+- composer.json update:
+  "minimum-stability": "alpha",
+  "prefer-stable": true
+- Drupal 7.56 security update
+- Contrib modules and themes
+
 ## Release 2016.09.29
 
 - Clean up, fix Composer setup.
