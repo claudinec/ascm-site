@@ -7,10 +7,3 @@ configure = admin/config/development/environment-indicator
 dependencies[] = ctools
 
 files[] = plugins/export_ui/ctools_export_ui_environment_indicator.class.php
-
-; Information added by Drupal.org packaging script on 2015-10-13
-version = "7.x-2.8"
-core = "7.x"
-project = "environment_indicator"
-datestamp = "1444732743"
-
