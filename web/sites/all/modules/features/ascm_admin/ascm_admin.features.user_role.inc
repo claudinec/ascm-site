@@ -16,6 +16,12 @@ function ascm_admin_user_default_roles() {
     'weight' => 2,
   );
 
+  // Exported role: civi.
+  $roles['civi'] = array(
+    'name' => 'civi',
+    'weight' => 4,
+  );
+
   // Exported role: staff.
   $roles['staff'] = array(
     'name' => 'staff',

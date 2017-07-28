@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## NEXT
+
+- Hide secondary (right) sidebar on CiviCRM pages.
+  Resolves #25.
+- Add Civi role and update Civi permissions.
+  Resolves #23.
+
 ## Release 2017.07.10
 
 - composer.json update:
