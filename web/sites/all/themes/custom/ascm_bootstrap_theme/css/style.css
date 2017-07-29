@@ -1,3 +1,10 @@
 /**
  * Place your custom styles here.
  */
+
+/* CiviCRM profile/registration form. */
+
+.crm-profile .label {
+    color: black;
+}
+
