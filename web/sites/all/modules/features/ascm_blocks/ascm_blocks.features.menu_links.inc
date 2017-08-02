@@ -153,17 +153,21 @@ function ascm_blocks_menu_default_menu_links() {
     'weight' => -44,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_update-your-details:node/1943.
-  $menu_links['main-menu_update-your-details:node/1943'] = array(
+  // Exported menu link: main-menu_update-your-details:civicrm/profile/create.
+  $menu_links['main-menu_update-your-details:civicrm/profile/create'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'node/1943',
-    'router_path' => 'node/%',
+    'link_path' => 'civicrm/profile/create',
+    'router_path' => 'civicrm',
     'link_title' => 'Update your details',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'main-menu_update-your-details:node/1943',
+      'identifier' => 'main-menu_update-your-details:civicrm/profile/create',
+      'query' => array(
+        'gid' => 1,
+        'reset' => 1,
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
