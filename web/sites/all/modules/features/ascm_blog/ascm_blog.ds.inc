@@ -61,6 +61,7 @@ function ascm_blog_ds_layout_settings_info() {
         2 => 'field_image',
         3 => 'field_tags',
         4 => 'field_attachments',
+        5 => 'disqus',
       ),
     ),
     'fields' => array(
@@ -69,6 +70,7 @@ function ascm_blog_ds_layout_settings_info() {
       'field_image' => 'ds_content',
       'field_tags' => 'ds_content',
       'field_attachments' => 'ds_content',
+      'disqus' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -114,6 +116,7 @@ function ascm_blog_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
   );
   $export['node|article|teaser'] = $ds_layout;
 
