@@ -37,7 +37,7 @@ function ascm_blog_field_default_field_instances() {
         'settings' => array(
           'trim_length' => 200,
         ),
-        'type' => 'text_trimmed',
+        'type' => 'text_summary_or_trimmed',
         'weight' => 1,
       ),
     ),

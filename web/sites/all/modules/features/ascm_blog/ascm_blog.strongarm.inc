@@ -80,6 +80,10 @@ function ascm_blog_strongarm() {
       'display' => array(
         'disqus' => array(
           'full' => array(
+            'weight' => '5',
+            'visible' => TRUE,
+          ),
+          'teaser' => array(
             'weight' => '1002',
             'visible' => FALSE,
           ),
