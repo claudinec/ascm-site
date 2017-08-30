@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "db42687f6525d92289b163ec85a75abf",
+    "content-hash": "1d8050c903d30ca3faa007e362e30818",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -162,60 +162,6 @@
             "time": "2017-04-24T06:37:16+00:00"
         },
         {
-            "name": "derhasi/composer-preserve-paths",
-            "version": "0.1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/derhasi/composer-preserve-paths.git",
-                "reference": "d557250928235fe23e11c86329bd7cef05397648"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/derhasi/composer-preserve-paths/zipball/d557250928235fe23e11c86329bd7cef05397648",
-                "reference": "d557250928235fe23e11c86329bd7cef05397648",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0"
-            },
-            "require-dev": {
-                "composer/composer": "1.*",
-                "derhasi/tempdirectory": "0.1.*",
-                "escapestudios/symfony2-coding-standard": "2.*",
-                "phpunit/phpunit": "4.*",
-                "squizlabs/php_codesniffer": "2.*"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "derhasi\\Composer\\Plugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "derhasi\\Composer\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Johannes Haseitl",
-                    "email": "johannes@undpaul.de",
-                    "homepage": "http://www.undpaul.de"
-                }
-            ],
-            "description": "Composer plugin for preserving custom paths and supporting nested packages",
-            "homepage": "https://github.com/derhasi/composer-preserve-paths",
-            "keywords": [
-                "composer-plugin",
-                "custom path",
-                "installer",
-                "nested package"
-            ],
-            "time": "2017-02-03T11:32:31+00:00"
-        },
-        {
             "name": "doctrine/cache",
             "version": "v1.6.1",
             "source": {
@@ -284,6 +230,60 @@
                 "caching"
             ],
             "time": "2016-10-29T11:16:17+00:00"
+        },
+        {
+            "name": "drupal-composer/preserve-paths",
+            "version": "0.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal-composer/preserve-paths.git",
+                "reference": "d557250928235fe23e11c86329bd7cef05397648"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drupal-composer/preserve-paths/zipball/d557250928235fe23e11c86329bd7cef05397648",
+                "reference": "d557250928235fe23e11c86329bd7cef05397648",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "require-dev": {
+                "composer/composer": "1.*",
+                "derhasi/tempdirectory": "0.1.*",
+                "escapestudios/symfony2-coding-standard": "2.*",
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "derhasi\\Composer\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "derhasi\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes Haseitl",
+                    "email": "johannes@undpaul.de",
+                    "homepage": "http://www.undpaul.de"
+                }
+            ],
+            "description": "Composer plugin for preserving custom paths and supporting nested packages",
+            "homepage": "https://github.com/derhasi/composer-preserve-paths",
+            "keywords": [
+                "composer-plugin",
+                "custom path",
+                "installer",
+                "nested package"
+            ],
+            "time": "2017-02-03T11:32:31+00:00"
         },
         {
             "name": "drupal/addressfield",
@@ -3298,98 +3298,6 @@
             }
         },
         {
-            "name": "drupal/mailchimp",
-            "version": "7.x-4.7",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/mailchimp",
-                "reference": "7.x-4.8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/mailchimp-7.x-4.8.zip",
-                "reference": "7.x-4.8",
-                "shasum": "d00a595d3b6f01d7e1a6ce79fed9c9856dddc095"
-            },
-            "require": {
-                "drupal/drupal": "~7.0",
-                "thinkshout/mailchimp-api-php": ">=1.0.6"
-            },
-            "require-dev": {
-                "drupal/entity": "*",
-                "drupal/entity_token": "*",
-                "drupal/i18n_string": "*",
-                "drupal/mailchimp_lists": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-4.x": "4.x-dev"
-                },
-                "drupal": {
-                    "version": "7.x-4.8",
-                    "datestamp": "1486260484"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GNU-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Greg Boggs",
-                    "homepage": "https://www.drupal.org/user/153069"
-                },
-                {
-                    "name": "amyvs",
-                    "homepage": "https://www.drupal.org/user/3181721"
-                },
-                {
-                    "name": "caxy4",
-                    "homepage": "https://www.drupal.org/user/2735491"
-                },
-                {
-                    "name": "gcb",
-                    "homepage": "https://www.drupal.org/user/1682976"
-                },
-                {
-                    "name": "levelos",
-                    "homepage": "https://www.drupal.org/user/54135"
-                },
-                {
-                    "name": "mshaver",
-                    "homepage": "https://www.drupal.org/user/39079"
-                },
-                {
-                    "name": "nrackleff",
-                    "homepage": "https://www.drupal.org/user/463332"
-                },
-                {
-                    "name": "ruscoe",
-                    "homepage": "https://www.drupal.org/user/2722087"
-                },
-                {
-                    "name": "seanberto",
-                    "homepage": "https://www.drupal.org/user/54109"
-                },
-                {
-                    "name": "tauno",
-                    "homepage": "https://www.drupal.org/user/105595"
-                }
-            ],
-            "description": "Mailchimp integration for Drupal.",
-            "homepage": "https://www.drupal.org/project/mailchimp",
-            "keywords": [
-                "Mailchimp",
-                "email",
-                "mailchimp",
-                "php"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/mailchimp"
-            }
-        },
-        {
             "name": "drupal/mailsystem",
             "version": "2.34.0",
             "source": {
@@ -4958,7 +4866,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/views_rss"
             },
-            "time": "2014-12-23 18:24:17"
+            "time": "2014-12-23T18:24:17+00:00"
         },
         {
             "name": "drupal/webform",
@@ -5038,71 +4946,6 @@
             "homepage": "https://www.drupal.org/project/webform",
             "support": {
                 "source": "http://cgit.drupalcode.org/webform"
-            }
-        },
-        {
-            "name": "drupal/webform_mailchimp",
-            "version": "2.0.0-beta1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/webform_mailchimp",
-                "reference": "7.x-2.0-beta1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform_mailchimp-7.x-2.0-beta1.zip",
-                "reference": "7.x-2.0-beta1",
-                "shasum": "fd050e734010bcbc1a7afbea8897b98632725453"
-            },
-            "require": {
-                "drupal/drupal": "~7.0",
-                "drupal/mailchimp": "*",
-                "drupal/webform": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "7.x-2.0-beta1",
-                    "datestamp": "1379423163"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Todd Zebert",
-                    "homepage": "https://www.drupal.org/user/762250"
-                },
-                {
-                    "name": "blackdog",
-                    "homepage": "https://www.drupal.org/user/110169"
-                },
-                {
-                    "name": "das-peter",
-                    "homepage": "https://www.drupal.org/user/762870"
-                },
-                {
-                    "name": "grisendo",
-                    "homepage": "https://www.drupal.org/user/848238"
-                },
-                {
-                    "name": "hanoii",
-                    "homepage": "https://www.drupal.org/user/23157"
-                },
-                {
-                    "name": "levelos",
-                    "homepage": "https://www.drupal.org/user/54135"
-                }
-            ],
-            "description": "Creates a Mailchimp Webform component.",
-            "homepage": "https://www.drupal.org/project/webform_mailchimp",
-            "support": {
-                "source": "http://cgit.drupalcode.org/webform_mailchimp"
             }
         },
         {
