@@ -88,8 +88,7 @@ VIC 3052</p>
     'body' => array(
       'value' => '<p><a href="https://www.facebook.com/AustralianStudentChristianMovement"><img alt="Facebook" src="/sites/all/themes/custom/ascm_bootstrap_theme/images/f_logo_32.png" /></a> <a href="https://twitter.com/australianscm"><img alt="Twitter" src="/sites/all/themes/custom/ascm_bootstrap_theme/images/bird_blue_32.png" /></a> <a href="https://instagram.com/australianscm"><img alt="Instagram" src="/sites/all/themes/custom/ascm_bootstrap_theme/images/Instagram_Glyph_Logo_32.png" /> </a></p>
 
-<p><a href="http://eepurl.com/HfGSj">Subscribe to our mailing list</a></p>
-',
+<p><a href="http://ascm.org.au/civicrm/profile/create?gid=2&reset=1">Subscribe to our mailing list</a></p>',
       'format' => 'filtered_html',
     ),
     'additional_classes' => '',
