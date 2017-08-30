@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## NEXT
+## Release 2017.08.30
 
 - Hide secondary (right) sidebar on CiviCRM pages.
   Resolves #25.
