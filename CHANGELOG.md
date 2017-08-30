@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## Release 2017.08.30
+
+- Hide secondary (right) sidebar on CiviCRM pages.
+  Resolves #25.
+- Add Civi role and update Civi permissions.
+  Resolves #23.
+- Uninstall Mailchimp and Webform Mailchimp modules.
+  Resolves #31.
+
 ## Release 2017.07.10
 
 - composer.json update:

@@ -22,5 +22,5 @@ web/sites/default/files
 .vagrant/
 
 # Ignore all settings files
-settings.php
+*.settings.php
 .env
