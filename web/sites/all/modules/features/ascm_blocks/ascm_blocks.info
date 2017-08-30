@@ -12,7 +12,6 @@ dependencies[] = ctools
 dependencies[] = entity
 dependencies[] = features
 dependencies[] = filefield_paths
-dependencies[] = mailchimp_signup
 dependencies[] = menu
 dependencies[] = search
 dependencies[] = strongarm

@@ -249,18 +249,7 @@ function ascm_blocks_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'mailchimp_signup-subscribe' => array(
-          'module' => 'mailchimp_signup',
-          'delta' => 'subscribe',
-          'region' => 'sidebar_first',
-          'weight' => '-10',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 0;
 
   // Translatables
