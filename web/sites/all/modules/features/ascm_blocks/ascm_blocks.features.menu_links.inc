@@ -59,8 +59,25 @@ function ascm_blocks_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 50,
-    'customized' => 0,
+    'weight' => -42,
+    'customized' => 1,
+  );
+  // Link to CiviCRM events page.
+  $menu_links['main-menu_events:events'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'http://ascm.org.au/civicrm/event/ical?reset=1&list=1&html=1',
+    'router_path' => '',
+    'link_title' => 'Events',
+    'options' => array(
+      'identifier' => 'main-menu_events:events',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -47,
+    'customized' => 1,
   );
   // Exported menu link: main-menu_home:<front>.
   $menu_links['main-menu_home:<front>'] = array(
@@ -148,7 +165,7 @@ function ascm_blocks_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 45,
+    'weight' => -43,
     'customized' => 0,
   );
   // Exported menu link: menu-other-organisations_australian-young-christian-workers:http://ycw.org.au/.
