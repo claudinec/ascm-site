@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## Release 2017.11.03
+
+- Change Events menu item to CiviEvents calendar.
+  Remove blocks and context for custom Events.
+  Remove custom Events feature.
+  Resolves #34.
+
 ## Release 2017.08.30
 
 - Hide secondary (right) sidebar on CiviCRM pages.
