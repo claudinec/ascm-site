@@ -203,40 +203,6 @@ function ascm_blocks_context_default_contexts() {
   $export['contact-blocks'] = $context;
 
   $context = new stdClass();
-  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
-  $context->api_version = 3;
-  $context->name = 'event-blocks';
-  $context->description = 'Display event block everywhere except admin or events pages.';
-  $context->tag = 'blocks';
-  $context->conditions = array(
-    'path' => array(
-      'values' => array(
-        '~admin/*' => '~admin/*',
-        '~events' => '~events',
-      ),
-    ),
-  );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'views-events-block_1' => array(
-          'module' => 'views',
-          'delta' => 'events-block_1',
-          'region' => 'sidebar_first',
-          'weight' => '-5',
-        ),
-      ),
-    ),
-  );
-  $context->condition_mode = 0;
-
-  // Translatables
-  // Included for use with string extractors like potx.
-  t('Display event block everywhere except admin or events pages.');
-  t('blocks');
-  $export['event-blocks'] = $context;
-
-  $context = new stdClass();
   $context->disabled = TRUE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'front-blocks';
