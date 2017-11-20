@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## NEXT
+
+- Uninstall unused modules.
+  Resolves #38.
+
 ## Release 2017.11.03
 
 - Change Events menu item to CiviEvents calendar.
