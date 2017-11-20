@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f569d80665b103d2c44ad6e36ee631c6",
+    "content-hash": "4f6d37cdafad21d3674b652f19df476b",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -4718,17 +4718,17 @@
         },
         {
             "name": "drupal/views",
-            "version": "3.16.0",
+            "version": "3.18.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/views",
-                "reference": "7.x-3.16"
+                "reference": "7.x-3.18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views-7.x-3.16.zip",
-                "reference": "7.x-3.16",
-                "shasum": "b939a7aad72b2ecd8fc7351599a361f21b86f76f"
+                "url": "https://ftp.drupal.org/files/projects/views-7.x-3.18.zip",
+                "reference": "7.x-3.18",
+                "shasum": "feac2c8c706f97f66dbbc51d360f3eb270477257"
             },
             "require": {
                 "drupal/ctools": "*",
@@ -4740,8 +4740,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "7.x-3.16",
-                    "datestamp": "1502904749",
+                    "version": "7.x-3.18",
+                    "datestamp": "1503494944",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
