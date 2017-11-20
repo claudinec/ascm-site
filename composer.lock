@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1d8050c903d30ca3faa007e362e30818",
+    "content-hash": "28d0648b5e46f68bf8088f4ecba94467",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -341,55 +341,6 @@
             }
         },
         {
-            "name": "drupal/addressfield_phone",
-            "version": "1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/addressfield_phone",
-                "reference": "7.x-1.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/addressfield_phone-7.x-1.3.zip",
-                "reference": "7.x-1.3",
-                "shasum": "4ce637e072376c542a5ad40eed96e6637b9b1a2e"
-            },
-            "require": {
-                "drupal/addressfield": "*",
-                "drupal/ctools": "*",
-                "drupal/drupal": "~7.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "7.x-1.3",
-                    "datestamp": "1457703222"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "jcisio",
-                    "homepage": "https://www.drupal.org/user/210762"
-                },
-                {
-                    "name": "jessehs",
-                    "homepage": "https://www.drupal.org/user/620440"
-                }
-            ],
-            "description": "Implements a phone field in an addressfield format handler.",
-            "homepage": "https://www.drupal.org/project/addressfield_phone",
-            "support": {
-                "source": "http://cgit.drupalcode.org/addressfield_phone"
-            }
-        },
-        {
             "name": "drupal/addressfield_tokens",
             "version": "1.5.0",
             "source": {
@@ -416,7 +367,11 @@
                 },
                 "drupal": {
                     "version": "7.x-1.5",
-                    "datestamp": "1414609370"
+                    "datestamp": "1502889544",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
@@ -427,6 +382,10 @@
                 {
                     "name": "amarcus",
                     "homepage": "https://www.drupal.org/user/1064036"
+                },
+                {
+                    "name": "lambic",
+                    "homepage": "https://www.drupal.org/user/58843"
                 },
                 {
                     "name": "markie",
@@ -683,7 +642,11 @@
                 },
                 "drupal": {
                     "version": "7.x-3.1",
-                    "datestamp": "1431350581"
+                    "datestamp": "1506541143",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
@@ -691,6 +654,10 @@
                 "GPL-2.0+"
             ],
             "authors": [
+                {
+                    "name": "Alex Andrascu",
+                    "homepage": "https://www.drupal.org/user/429248"
+                },
                 {
                     "name": "dgorton",
                     "homepage": "https://www.drupal.org/user/19044"
@@ -730,7 +697,11 @@
                 },
                 "drupal": {
                     "version": "7.x-3.14",
-                    "datestamp": "1495748391"
+                    "datestamp": "1506357844",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
@@ -2006,7 +1977,11 @@
                 },
                 "drupal": {
                     "version": "7.x-1.4",
-                    "datestamp": "1495557183"
+                    "datestamp": "1495557183",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
@@ -2078,7 +2053,11 @@
                 },
                 "drupal": {
                     "version": "7.x-2.8",
-                    "datestamp": "1444732739"
+                    "datestamp": "1510267684",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
@@ -2265,7 +2244,11 @@
                 },
                 "drupal": {
                     "version": "7.x-2.0-beta3",
-                    "datestamp": "1479993833"
+                    "datestamp": "1506257044",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
@@ -2409,7 +2392,11 @@
                 },
                 "drupal": {
                     "version": "7.x-2.3",
-                    "datestamp": "1499174342"
+                    "datestamp": "1502334546",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
@@ -2599,7 +2586,11 @@
                 },
                 "drupal": {
                     "version": "7.x-2.3",
-                    "datestamp": "1470845419"
+                    "datestamp": "1506373144",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
@@ -3997,57 +3988,6 @@
             }
         },
         {
-            "name": "drupal/phone",
-            "version": "1.0.0-beta1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/phone",
-                "reference": "7.x-1.0-beta1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/phone-7.x-1.0-beta1.zip",
-                "reference": "7.x-1.0-beta1",
-                "shasum": "88c240a11033f94d6ae837b40d187f61d4865ce0"
-            },
-            "require": {
-                "drupal/drupal": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "7.x-1.0-beta1",
-                    "datestamp": "1389732205"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "cweagans",
-                    "homepage": "https://www.drupal.org/user/404732"
-                },
-                {
-                    "name": "rfsbsb",
-                    "homepage": "https://www.drupal.org/user/4382"
-                },
-                {
-                    "name": "thierry_gd",
-                    "homepage": "https://www.drupal.org/user/43798"
-                }
-            ],
-            "description": "The phone module allows administrators to define a field type for phone numbers.",
-            "homepage": "https://www.drupal.org/project/phone",
-            "support": {
-                "source": "http://cgit.drupalcode.org/phone"
-            }
-        },
-        {
             "name": "drupal/revisioning",
             "version": "1.9.0",
             "source": {
@@ -4223,7 +4163,11 @@
                 },
                 "drupal": {
                     "version": "7.x-1.5",
-                    "datestamp": "1498062312"
+                    "datestamp": "1510300385",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
@@ -4670,17 +4614,17 @@
         },
         {
             "name": "drupal/views",
-            "version": "3.16.0",
+            "version": "3.18.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/views",
-                "reference": "7.x-3.16"
+                "reference": "7.x-3.18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views-7.x-3.16.zip",
-                "reference": "7.x-3.16",
-                "shasum": "b939a7aad72b2ecd8fc7351599a361f21b86f76f"
+                "url": "https://ftp.drupal.org/files/projects/views-7.x-3.18.zip",
+                "reference": "7.x-3.18",
+                "shasum": "feac2c8c706f97f66dbbc51d360f3eb270477257"
             },
             "require": {
                 "drupal/ctools": "*",
@@ -4692,8 +4636,12 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "7.x-3.16",
-                    "datestamp": "1491223071"
+                    "version": "7.x-3.18",
+                    "datestamp": "1503494944",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
@@ -4897,7 +4845,11 @@
                 },
                 "drupal": {
                     "version": "7.x-4.15",
-                    "datestamp": "1492107321"
+                    "datestamp": "1507320544",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/7/downloads",
@@ -4946,51 +4898,6 @@
             "homepage": "https://www.drupal.org/project/webform",
             "support": {
                 "source": "http://cgit.drupalcode.org/webform"
-            }
-        },
-        {
-            "name": "drupal/webform_phone",
-            "version": "1.23.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/webform_phone",
-                "reference": "7.x-1.23"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform_phone-7.x-1.23.zip",
-                "reference": "7.x-1.23",
-                "shasum": "410df7eaabc8396e3d10d41bc20dc6e2e67081a9"
-            },
-            "require": {
-                "drupal/drupal": "~7.0",
-                "drupal/phone": "~1.0",
-                "drupal/webform": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "7.x-1.23",
-                    "datestamp": "1441473539"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "RadioActiv",
-                    "homepage": "https://www.drupal.org/user/881922"
-                }
-            ],
-            "description": "Phone Field type for webform.",
-            "homepage": "https://www.drupal.org/project/webform_phone",
-            "support": {
-                "source": "http://cgit.drupalcode.org/webform_phone"
             }
         },
         {
@@ -5407,52 +5314,6 @@
                 "url"
             ],
             "time": "2017-03-20T17:10:46+00:00"
-        },
-        {
-            "name": "mailchimp/mailchimp",
-            "version": "2.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://bitbucket.org/mailchimp/mailchimp-api-php.git",
-                "reference": "7ac99b5ac746d5875c5c350ad7e3b83674c83ec1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/mailchimp/mailchimp-api-php/get/7ac99b5ac746d5875c5c350ad7e3b83674c83ec1.zip",
-                "reference": "7ac99b5ac746d5875c5c350ad7e3b83674c83ec1",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2.0"
-            },
-            "require-dev": {
-                "apigen/apigen": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Mailchimp": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "MailChimp Devs",
-                    "email": "api@mailchimp.com",
-                    "homepage": "http://mailchimp.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "API client library for the MailChimp bulk email as a service platform",
-            "homepage": "https://bitbucket.org/mailchimp/mailchimp-api-php",
-            "keywords": [
-                "api",
-                "email"
-            ],
-            "time": "2014-10-30T20:38:12+00:00"
         },
         {
             "name": "psr/cache",
