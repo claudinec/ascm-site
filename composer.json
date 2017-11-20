@@ -81,7 +81,6 @@
     "stinger/ckeditor-lineutils-bundle": "^4.5",
     "stinger/ckeditor-widget-bundle": "^4.5",
     "guzzlehttp/guzzle": "~6.2",
-    "mailchimp/mailchimp": "~2.0",
     "drupal-composer/preserve-paths": "^0.1.4"
   },
   "minimum-stability": "alpha",
