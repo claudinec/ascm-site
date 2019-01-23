@@ -645,6 +645,7 @@ function ascm_admin_user_default_permissions() {
     'name' => 'translate CiviCRM',
     'roles' => array(
       'administrator' => 'administrator',
+      'civi' => 'civi',
     ),
     'module' => 'civicrm',
   );
@@ -713,8 +714,7 @@ function ascm_admin_user_default_permissions() {
     'name' => 'view event participants',
     'roles' => array(
       'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
+      'civi' => 'civi',
     ),
     'module' => 'civicrm',
   );
