@@ -1,9 +1,13 @@
 # CHANGELOG
 
-## NEXT
+## 2019.01.25
 
 - Uninstall unused modules.
   Resolves #38.
+- Upgrade Drupal core to 7.63.
+  Resolves #43.
+- Require honeypot, logintoboggan, and securelogin modules.
+  Resolves #41 and #42.
 
 ## Release 2017.11.03
 
