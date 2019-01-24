@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87859347390928ee432ed8335caf98bd",
+    "content-hash": "821b93ce8775668a7f37b64e25e1a694",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -278,59 +278,6 @@
             "homepage": "https://www.drupal.org/project/addressfield",
             "support": {
                 "source": "http://cgit.drupalcode.org/addressfield"
-            }
-        },
-        {
-            "name": "drupal/addressfield_phone",
-            "version": "1.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/addressfield_phone",
-                "reference": "7.x-1.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/addressfield_phone-7.x-1.4.zip",
-                "reference": "7.x-1.4",
-                "shasum": "db874e935e8a43683671ac1ab37b4ece602dcc08"
-            },
-            "require": {
-                "drupal/addressfield": "*",
-                "drupal/ctools": "*",
-                "drupal/drupal": "~7.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "7.x-1.4",
-                    "datestamp": "1509114047",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "jcisio",
-                    "homepage": "https://www.drupal.org/user/210762"
-                },
-                {
-                    "name": "jessehs",
-                    "homepage": "https://www.drupal.org/user/620440"
-                }
-            ],
-            "description": "Implements a phone field in an addressfield format handler.",
-            "homepage": "https://www.drupal.org/project/addressfield_phone",
-            "support": {
-                "source": "http://cgit.drupalcode.org/addressfield_phone"
             }
         },
         {
@@ -4219,61 +4166,6 @@
             }
         },
         {
-            "name": "drupal/phone",
-            "version": "1.0.0-beta1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/phone",
-                "reference": "7.x-1.0-beta1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/phone-7.x-1.0-beta1.zip",
-                "reference": "7.x-1.0-beta1",
-                "shasum": "88c240a11033f94d6ae837b40d187f61d4865ce0"
-            },
-            "require": {
-                "drupal/drupal": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "7.x-1.0-beta1",
-                    "datestamp": "1389732205",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "cweagans",
-                    "homepage": "https://www.drupal.org/user/404732"
-                },
-                {
-                    "name": "rfsbsb",
-                    "homepage": "https://www.drupal.org/user/4382"
-                },
-                {
-                    "name": "thierry_gd",
-                    "homepage": "https://www.drupal.org/user/43798"
-                }
-            ],
-            "description": "The phone module allows administrators to define a field type for phone numbers.",
-            "homepage": "https://www.drupal.org/project/phone",
-            "support": {
-                "source": "http://cgit.drupalcode.org/phone"
-            }
-        },
-        {
             "name": "drupal/revisioning",
             "version": "1.9.0",
             "source": {
@@ -4494,6 +4386,53 @@
             "homepage": "https://www.drupal.org/project/search404",
             "support": {
                 "source": "http://cgit.drupalcode.org/search404"
+            }
+        },
+        {
+            "name": "drupal/securelogin",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/securelogin",
+                "reference": "7.x-1.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/securelogin-7.x-1.7.zip",
+                "reference": "7.x-1.7",
+                "shasum": "37876849bb2bd09a6dab1538a883b59440f2553a"
+            },
+            "require": {
+                "drupal/drupal": "~7.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.7",
+                    "datestamp": "1514932985",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mfb",
+                    "homepage": "https://www.drupal.org/user/12302"
+                }
+            ],
+            "description": "Enables user login and other forms to be submitted securely via HTTPS and enforces secure authenticated sessions.",
+            "homepage": "https://www.drupal.org/project/securelogin",
+            "support": {
+                "source": "http://cgit.drupalcode.org/securelogin"
             }
         },
         {
@@ -5031,71 +4970,6 @@
             }
         },
         {
-            "name": "drupal/views_bulk_operations",
-            "version": "3.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/views_bulk_operations",
-                "reference": "7.x-3.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-7.x-3.5.zip",
-                "reference": "7.x-3.5",
-                "shasum": "cfef0de25ec73020fe631b6c94cc0df3dec3a353"
-            },
-            "require": {
-                "drupal/drupal": "~7.0",
-                "drupal/entity": "*",
-                "drupal/views": "^3.12"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
-                "drupal": {
-                    "version": "7.x-3.5",
-                    "datestamp": "1525821480",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Graber",
-                    "homepage": "https://www.drupal.org/user/1599440"
-                },
-                {
-                    "name": "Jon Pugh",
-                    "homepage": "https://www.drupal.org/user/17028"
-                },
-                {
-                    "name": "bojanz",
-                    "homepage": "https://www.drupal.org/user/86106"
-                },
-                {
-                    "name": "infojunkie",
-                    "homepage": "https://www.drupal.org/user/48424"
-                },
-                {
-                    "name": "joelpittet",
-                    "homepage": "https://www.drupal.org/user/160302"
-                }
-            ],
-            "description": "Provides a way of selecting multiple rows and applying operations to them.",
-            "homepage": "https://www.drupal.org/project/views_bulk_operations",
-            "support": {
-                "source": "http://cgit.drupalcode.org/views_bulk_operations"
-            }
-        },
-        {
             "name": "drupal/views_rss",
             "version": "dev-2.x",
             "source": {
@@ -5248,55 +5122,6 @@
             "homepage": "https://www.drupal.org/project/webform",
             "support": {
                 "source": "http://cgit.drupalcode.org/webform"
-            }
-        },
-        {
-            "name": "drupal/webform_phone",
-            "version": "1.23.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/webform_phone",
-                "reference": "7.x-1.23"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform_phone-7.x-1.23.zip",
-                "reference": "7.x-1.23",
-                "shasum": "410df7eaabc8396e3d10d41bc20dc6e2e67081a9"
-            },
-            "require": {
-                "drupal/drupal": "~7.0",
-                "drupal/phone": "~1.0",
-                "drupal/webform": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "7.x-1.23",
-                    "datestamp": "1441473539",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "RadioActiv",
-                    "homepage": "https://www.drupal.org/user/881922"
-                }
-            ],
-            "description": "Phone Field type for webform.",
-            "homepage": "https://www.drupal.org/project/webform_phone",
-            "support": {
-                "source": "http://cgit.drupalcode.org/webform_phone"
             }
         },
         {
