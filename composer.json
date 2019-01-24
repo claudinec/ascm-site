@@ -80,7 +80,8 @@
     "stinger/ckeditor-lineutils-bundle": "^4.5",
     "stinger/ckeditor-widget-bundle": "^4.5",
     "guzzlehttp/guzzle": "~6.2",
-    "drupal-composer/preserve-paths": "^0.1.4"
+    "drupal-composer/preserve-paths": "^0.1.4",
+    "drupal/securelogin": "^1.7"
   },
   "minimum-stability": "alpha",
   "prefer-stable": true,
