@@ -200,6 +200,15 @@ function ascm_admin_user_default_permissions() {
     'module' => 'civicrm',
   );
 
+  // Exported permission: 'administer antispam settings'.
+  $permissions['administer antispam settings'] = array(
+    'name' => 'administer antispam settings',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'antispam',
+  );
+
   // Exported permission: 'administer dedupe rules'.
   $permissions['administer dedupe rules'] = array(
     'name' => 'administer dedupe rules',
@@ -565,6 +574,87 @@ function ascm_admin_user_default_permissions() {
       'civi' => 'civi',
     ),
     'module' => 'civicrm',
+  );
+
+  // Exported permission: 'moderate spam in comments'.
+  $permissions['moderate spam in comments'] = array(
+    'name' => 'moderate spam in comments',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
+    'module' => 'antispam',
+  );
+
+  // Exported permission: 'moderate spam in nodes of type Article'.
+  $permissions['moderate spam in nodes of type Article'] = array(
+    'name' => 'moderate spam in nodes of type Article',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
+    'module' => 'antispam',
+  );
+
+  // Exported permission: 'moderate spam in nodes of type Basic page'.
+  $permissions['moderate spam in nodes of type Basic page'] = array(
+    'name' => 'moderate spam in nodes of type Basic page',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
+    'module' => 'antispam',
+  );
+
+  // Exported permission: 'moderate spam in nodes of type Book page'.
+  $permissions['moderate spam in nodes of type Book page'] = array(
+    'name' => 'moderate spam in nodes of type Book page',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
+    'module' => 'antispam',
+  );
+
+  // Exported permission: 'moderate spam in nodes of type Individual'.
+  $permissions['moderate spam in nodes of type Individual'] = array(
+    'name' => 'moderate spam in nodes of type Individual',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
+    'module' => 'antispam',
+  );
+
+  // Exported permission: 'moderate spam in nodes of type Slide'.
+  $permissions['moderate spam in nodes of type Slide'] = array(
+    'name' => 'moderate spam in nodes of type Slide',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
+    'module' => 'antispam',
+  );
+
+  // Exported permission: 'moderate spam in nodes of type Webform'.
+  $permissions['moderate spam in nodes of type Webform'] = array(
+    'name' => 'moderate spam in nodes of type Webform',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
+    'module' => 'antispam',
+  );
+
+  // Exported permission: 'post with no antispam checking'.
+  $permissions['post with no antispam checking'] = array(
+    'name' => 'post with no antispam checking',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'civi' => 'civi',
+      'staff' => 'staff',
+    ),
+    'module' => 'antispam',
   );
 
   // Exported permission: 'profile create'.
