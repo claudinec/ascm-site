@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2019.02.06
+
+- Install and configure antispam module.
+  Resolves #42.
+
 ## 2019.01.25
 
 - Uninstall unused modules.
