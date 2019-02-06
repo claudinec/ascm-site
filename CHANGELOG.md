@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## NEXT
+
+- Upgrade CiviCRM to 5.9.1.
+  Resolves #45.
+- Upgrade PHP to 7.1 in CPanel.
+
 ## 2019.02.06
 
 - Install and configure antispam module.
