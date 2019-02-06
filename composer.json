@@ -80,7 +80,8 @@
     "guzzlehttp/guzzle": "~6.2",
     "drupal-composer/preserve-paths": "^0.1.4",
     "drupal/securelogin": "^1.7",
-    "drupal/antispam": "^1.6"
+    "drupal/antispam": "^1.6",
+    "drupal/maillog": "^1.0@alpha"
   },
   "minimum-stability": "alpha",
   "prefer-stable": true,
