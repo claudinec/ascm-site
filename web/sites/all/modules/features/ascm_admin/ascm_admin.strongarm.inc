@@ -14,6 +14,147 @@ function ascm_admin_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'antispam_antispambot_action';
+  $strongarm->value = '503';
+  $export['antispam_antispambot_action'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'antispam_antispambot_delay';
+  $strongarm->value = '60';
+  $export['antispam_antispambot_delay'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'antispam_antispambot_rules';
+  $strongarm->value = array(
+    'ip' => 0,
+    'mail' => 0,
+    'body' => 0,
+  );
+  $export['antispam_antispambot_rules'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'antispam_blocks_counter';
+  $strongarm->value = '1';
+  $export['antispam_blocks_counter'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'antispam_chart_width';
+  $strongarm->value = '480';
+  $export['antispam_chart_width'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'antispam_check_nodetypes';
+  $strongarm->value = array(
+    'article' => 'article',
+    'page' => 'page',
+    'book' => 'book',
+    'individual' => 'individual',
+    'slide' => 'slide',
+    'webform' => 'webform',
+  );
+  $export['antispam_check_nodetypes'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'antispam_connection_enabled';
+  $strongarm->value = '1';
+  $export['antispam_connection_enabled'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'antispam_connection_timeout';
+  $strongarm->value = '10';
+  $export['antispam_connection_timeout'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'antispam_counter_date_format';
+  $strongarm->value = 'F j, Y';
+  $export['antispam_counter_date_format'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'antispam_counter_since';
+  $strongarm->value = array(
+    'year' => '2019',
+    'month' => '2',
+    'day' => '6',
+  );
+  $export['antispam_counter_since'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'antispam_email_enabled';
+  $strongarm->value = '1';
+  $export['antispam_email_enabled'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'antispam_node_publish_links';
+  $strongarm->value = '1';
+  $export['antispam_node_publish_links'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'antispam_node_spam_links';
+  $strongarm->value = '1';
+  $export['antispam_node_spam_links'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'antispam_records_per_page';
+  $strongarm->value = '50';
+  $export['antispam_records_per_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'antispam_remove_spam_age';
+  $strongarm->value = '259200';
+  $export['antispam_remove_spam_age'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'antispam_service_provider';
+  $strongarm->value = '0';
+  $export['antispam_service_provider'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'antispam_webform_enabled';
+  $strongarm->value = 0;
+  $export['antispam_webform_enabled'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'antispam_wpapikey';
+  $strongarm->value = '89df62e9b14b';
+  $export['antispam_wpapikey'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'date_default_timezone';
   $strongarm->value = 'Australia/Melbourne';
   $export['date_default_timezone'] = $strongarm;
