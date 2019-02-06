@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "821b93ce8775668a7f37b64e25e1a694",
+    "content-hash": "61ab8c55d80f9f195b09e26c150f55c1",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -478,6 +478,73 @@
             "homepage": "https://www.drupal.org/project/advanced_help",
             "support": {
                 "source": "http://cgit.drupalcode.org/advanced_help"
+            }
+        },
+        {
+            "name": "drupal/antispam",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/antispam",
+                "reference": "7.x-1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/antispam-7.x-1.6.zip",
+                "reference": "7.x-1.6",
+                "shasum": "feb5efadad18f7664fd05bf407e69fee09579c24"
+            },
+            "require": {
+                "drupal/drupal": "~7.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.6",
+                    "datestamp": "1501568943",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "DamienMcKenna",
+                    "homepage": "https://www.drupal.org/user/108450"
+                },
+                {
+                    "name": "Everett Zufelt",
+                    "homepage": "https://www.drupal.org/user/406552"
+                },
+                {
+                    "name": "Jody Lynn",
+                    "homepage": "https://www.drupal.org/user/112500"
+                },
+                {
+                    "name": "cfinke",
+                    "homepage": "https://www.drupal.org/user/300513"
+                },
+                {
+                    "name": "pixture",
+                    "homepage": "https://www.drupal.org/user/270720"
+                },
+                {
+                    "name": "tim.plunkett",
+                    "homepage": "https://www.drupal.org/user/241634"
+                }
+            ],
+            "description": "Use the Akismet anti-spam service to protect your site from spam.",
+            "homepage": "https://www.drupal.org/project/antispam",
+            "support": {
+                "source": "http://cgit.drupalcode.org/antispam"
             }
         },
         {
