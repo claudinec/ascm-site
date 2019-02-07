@@ -142,7 +142,7 @@ function ascm_admin_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'antispam_webform_enabled';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['antispam_webform_enabled'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -200,6 +200,29 @@ function ascm_admin_strongarm() {
   $strongarm->name = 'diff_view_mode_preview_node_webform';
   $strongarm->value = 'full';
   $export['diff_view_mode_preview_node_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_node__webform';
+  $strongarm->value = array(
+    'view_modes' => array(),
+    'extra_fields' => array(
+      'form' => array(
+        'title' => array(
+          'weight' => '-5',
+        ),
+        'path' => array(
+          'weight' => '30',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '30',
+        ),
+      ),
+      'display' => array(),
+    ),
+  );
+  $export['field_bundle_settings_node__webform'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
