@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * ascm_blocks.box.inc
@@ -25,7 +26,7 @@ VIC 3052</p>
 
 <p>ABN: 41 280 113 129</p>
 
-<p><a href="/contact">Email us</a></p>
+<p><a href="/contact-us">Email us</a></p>
 
 <p><a href="https://gitreports.com/issue/claudinec/ascm-site">Website problem?</a></p>
 ',
