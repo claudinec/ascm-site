@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * ascm_blocks.features.menu_links.inc
@@ -44,25 +45,22 @@ function ascm_blocks_menu_default_menu_links() {
     'weight' => -48,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_contact-us:contact.
-  $menu_links['main-menu_contact-us:contact'] = array(
+  // Exported menu link: main-menu_contact-us:node/4848.
+  $menu_links['main-menu_contact-us:node/4848'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'contact',
-    'router_path' => 'contact',
+    'link_path' => 'node/4848',
+    'router_path' => 'node/%',
     'link_title' => 'Contact us',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_contact-us:contact',
+      'identifier' => 'main-menu_contact-us:node/4848',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -42,
-    'customized' => 1,
+    'weight' => 50,
+    'customized' => 0,
   );
   // Exported menu link: main-menu_events:events.
   $menu_links['main-menu_events:events'] = array(
