@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "857782c0821d1b8dd9ce8a75ffc44ecc",
+    "content-hash": "7316e5ef978e636f798041488e26bc31",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -4174,6 +4174,61 @@
             }
         },
         {
+            "name": "drupal/phone",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/phone",
+                "reference": "7.x-1.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/phone-7.x-1.0-beta1.zip",
+                "reference": "7.x-1.0-beta1",
+                "shasum": "88c240a11033f94d6ae837b40d187f61d4865ce0"
+            },
+            "require": {
+                "drupal/drupal": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.0-beta1",
+                    "datestamp": "1389732205",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "cweagans",
+                    "homepage": "https://www.drupal.org/user/404732"
+                },
+                {
+                    "name": "rfsbsb",
+                    "homepage": "https://www.drupal.org/user/4382"
+                },
+                {
+                    "name": "thierry_gd",
+                    "homepage": "https://www.drupal.org/user/43798"
+                }
+            ],
+            "description": "The phone module allows administrators to define a field type for phone numbers.",
+            "homepage": "https://www.drupal.org/project/phone",
+            "support": {
+                "source": "http://cgit.drupalcode.org/phone"
+            }
+        },
+        {
             "name": "drupal/revisioning",
             "version": "1.9.0",
             "source": {
@@ -5195,6 +5250,55 @@
             "homepage": "https://www.drupal.org/project/webform",
             "support": {
                 "source": "http://cgit.drupalcode.org/webform"
+            }
+        },
+        {
+            "name": "drupal/webform_phone",
+            "version": "1.23.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/webform_phone",
+                "reference": "7.x-1.23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_phone-7.x-1.23.zip",
+                "reference": "7.x-1.23",
+                "shasum": "410df7eaabc8396e3d10d41bc20dc6e2e67081a9"
+            },
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/phone": "~1.0",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.23",
+                    "datestamp": "1441473539",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "RadioActiv",
+                    "homepage": "https://www.drupal.org/user/881922"
+                }
+            ],
+            "description": "Phone Field type for webform.",
+            "homepage": "https://www.drupal.org/project/webform_phone",
+            "support": {
+                "source": "http://cgit.drupalcode.org/webform_phone"
             }
         },
         {
@@ -7040,7 +7144,8 @@
     "aliases": [],
     "minimum-stability": "alpha",
     "stability-flags": {
-        "drupal/views_rss": 20
+        "drupal/views_rss": 20,
+        "drupal/phone": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,

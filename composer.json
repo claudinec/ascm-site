@@ -80,7 +80,9 @@
     "drupal-composer/preserve-paths": "^0.1.4",
     "drupal/securelogin": "^1.7",
     "drupal/antispam": "^1.6",
-    "drupal/views_bulk_operations": "^3.5"
+    "drupal/views_bulk_operations": "^3.5",
+    "drupal/webform_phone": "^1.23",
+    "drupal/phone": "^1.0@beta"
   },
   "minimum-stability": "alpha",
   "prefer-stable": true,
