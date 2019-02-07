@@ -33,7 +33,6 @@
     "drupal/entity": "^1.8",
     "drupal/entityreference": "^1.2",
     "drupal/environment_indicator": "^2.8",
-    "drupal/fb": "^3.0",
     "drupal/features": "^2.0",
     "drupal/feeds": "^2.0",
     "drupal/file_entity": "^2.0",
