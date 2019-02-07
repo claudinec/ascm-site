@@ -62,23 +62,6 @@ function ascm_blocks_menu_default_menu_links() {
     'weight' => 50,
     'customized' => 0,
   );
-  // Exported menu link: main-menu_events:events.
-  $menu_links['main-menu_events:events'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'events',
-    'router_path' => 'events',
-    'link_title' => 'Events',
-    'options' => array(
-      'identifier' => 'main-menu_events:events',
-    ),
-    'module' => 'system',
-    'hidden' => 1,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -47,
-    'customized' => 1,
-  );
   // Exported menu link: main-menu_home:<front>.
   $menu_links['main-menu_home:<front>'] = array(
     'menu_name' => 'main-menu',
@@ -151,29 +134,22 @@ function ascm_blocks_menu_default_menu_links() {
     'weight' => -44,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_update-your-details:civicrm/profile/create.
-  $menu_links['main-menu_update-your-details:civicrm/profile/create'] = array(
+  // Exported menu link: main-menu_update-your-details:node/1943.
+  $menu_links['main-menu_update-your-details:node/1943'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'civicrm/profile/create',
-    'router_path' => 'civicrm',
+    'link_path' => 'node/1943',
+    'router_path' => 'node/%',
     'link_title' => 'Update your details',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_update-your-details:civicrm/profile/create',
-      'query' => array(
-        'gid' => 1,
-        'reset' => 1,
-      ),
+      'identifier' => 'main-menu_update-your-details:node/1943',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -43,
-    'customized' => 1,
+    'weight' => 45,
+    'customized' => 0,
   );
   // Exported menu link: menu-other-organisations_australian-young-christian-workers:http://ycw.org.au/.
   $menu_links['menu-other-organisations_australian-young-christian-workers:http://ycw.org.au/'] = array(
@@ -242,7 +218,6 @@ function ascm_blocks_menu_default_menu_links() {
   t('Australian Young Christian Workers');
   t('Blog');
   t('Contact us');
-  t('Events');
   t('Home');
   t('Resources');
   t('Staff handbook');

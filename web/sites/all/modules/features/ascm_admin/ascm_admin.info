@@ -17,7 +17,6 @@ dependencies[] = environment_indicator
 dependencies[] = features
 dependencies[] = feeds_ui
 dependencies[] = filter
-dependencies[] = honeypot
 dependencies[] = logintoboggan
 dependencies[] = markdown
 dependencies[] = media
