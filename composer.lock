@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7f0fc1bb580ae7fb51f94a57f084e88c",
+    "content-hash": "857782c0821d1b8dd9ce8a75ffc44ecc",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -2212,65 +2212,6 @@
             "homepage": "https://www.drupal.org/project/environment_indicator",
             "support": {
                 "source": "http://cgit.drupalcode.org/environment_indicator"
-            }
-        },
-        {
-            "name": "drupal/fb",
-            "version": "3.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/fb",
-                "reference": "7.x-3.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/fb-7.x-3.4.zip",
-                "reference": "7.x-3.4",
-                "shasum": "813b57550ee4644229547b53e90e02e536db086d"
-            },
-            "require": {
-                "drupal/drupal": "~7.0"
-            },
-            "require-dev": {
-                "drupal/devel": "*",
-                "drupal/fb_app": "*",
-                "drupal/fb_form": "*",
-                "drupal/fb_user": "*",
-                "drupal/rules": "*",
-                "drupal/views": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
-                "drupal": {
-                    "version": "7.x-3.4",
-                    "datestamp": "1382817028",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Dave Cohen",
-                    "homepage": "https://www.drupal.org/user/18468"
-                },
-                {
-                    "name": "rteijeiro",
-                    "homepage": "https://www.drupal.org/user/780508"
-                }
-            ],
-            "description": "(fb.module) Initializes facebook's PHP and Javascript client libraries.  Enables FBML Like buttons and other <a href=http://developers.facebook.com/plugins target=_blank>social plugins</a>.  (See <em>modules/fb/README.txt</em>.)",
-            "homepage": "https://www.drupal.org/project/fb",
-            "support": {
-                "source": "http://cgit.drupalcode.org/fb"
             }
         },
         {
