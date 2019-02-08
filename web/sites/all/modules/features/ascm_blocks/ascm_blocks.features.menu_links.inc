@@ -235,6 +235,7 @@ function ascm_blocks_menu_default_menu_links() {
   t('Australian Young Christian Workers');
   t('Blog');
   t('Contact us');
+  t('Events');
   t('Home');
   t('Resources');
   t('Staff handbook');
