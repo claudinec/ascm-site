@@ -65,7 +65,7 @@ function ascm_blocks_menu_default_menu_links() {
   // Link to CiviCRM events page.
   $menu_links['main-menu_events:events'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'http://ascm.org.au/civicrm/event/ical?reset=1&list=1&html=1',
+    'link_path' => 'https://ascm.org.au/civicrm/event/ical?reset=1&list=1&html=1',
     'router_path' => '',
     'link_title' => 'Events',
     'options' => array(
