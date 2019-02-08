@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "857782c0821d1b8dd9ce8a75ffc44ecc",
+    "content-hash": "c0e935dc47d6fe6a198f12fcfe51c2b4",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -3488,6 +3488,66 @@
             }
         },
         {
+            "name": "drupal/maillog",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/maillog",
+                "reference": "7.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/maillog-7.x-1.0-alpha1.zip",
+                "reference": "7.x-1.0-alpha1",
+                "shasum": "5d263ac943e328976217251906e390be98f1caf5"
+            },
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/views": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.0-alpha1",
+                    "datestamp": "1405886928",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "DamienMcKenna",
+                    "homepage": "https://www.drupal.org/user/108450"
+                },
+                {
+                    "name": "miro_dietiker",
+                    "homepage": "https://www.drupal.org/user/227761"
+                },
+                {
+                    "name": "pluess",
+                    "homepage": "https://www.drupal.org/user/84659"
+                }
+            ],
+            "description": "Utility to log all Mails for debugging purposes. It's possible to suppress mail delivery for e.g. dev or staging systems.",
+            "homepage": "https://www.drupal.org/project/maillog",
+            "support": {
+                "source": "http://cgit.drupalcode.org/maillog"
+            }
+        },
+        {
             "name": "drupal/mailsystem",
             "version": "2.35.0",
             "source": {
@@ -4111,6 +4171,57 @@
             "homepage": "https://www.drupal.org/project/oauth",
             "support": {
                 "source": "http://cgit.drupalcode.org/oauth"
+            }
+        },
+        {
+            "name": "drupal/options_element",
+            "version": "1.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/options_element",
+                "reference": "7.x-1.12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/options_element-7.x-1.12.zip",
+                "reference": "7.x-1.12",
+                "shasum": "9bc4848d19b257bcfaa679edadc468c27c493d1d"
+            },
+            "require": {
+                "drupal/drupal": "~7.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.12",
+                    "datestamp": "1397696055",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "quicksketch",
+                    "homepage": "https://www.drupal.org/user/35821"
+                }
+            ],
+            "description": "A custom form element for entering the options in select lists, radios, or checkboxes.",
+            "homepage": "https://www.drupal.org/project/options_element",
+            "support": {
+                "source": "http://cgit.drupalcode.org/options_element"
             }
         },
         {
@@ -4978,71 +5089,6 @@
             }
         },
         {
-            "name": "drupal/views_bulk_operations",
-            "version": "3.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/views_bulk_operations",
-                "reference": "7.x-3.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-7.x-3.5.zip",
-                "reference": "7.x-3.5",
-                "shasum": "cfef0de25ec73020fe631b6c94cc0df3dec3a353"
-            },
-            "require": {
-                "drupal/drupal": "~7.0",
-                "drupal/entity": "*",
-                "drupal/views": "^3.12"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
-                "drupal": {
-                    "version": "7.x-3.5",
-                    "datestamp": "1525821480",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Graber",
-                    "homepage": "https://www.drupal.org/user/1599440"
-                },
-                {
-                    "name": "Jon Pugh",
-                    "homepage": "https://www.drupal.org/user/17028"
-                },
-                {
-                    "name": "bojanz",
-                    "homepage": "https://www.drupal.org/user/86106"
-                },
-                {
-                    "name": "infojunkie",
-                    "homepage": "https://www.drupal.org/user/48424"
-                },
-                {
-                    "name": "joelpittet",
-                    "homepage": "https://www.drupal.org/user/160302"
-                }
-            ],
-            "description": "Provides a way of selecting multiple rows and applying operations to them.",
-            "homepage": "https://www.drupal.org/project/views_bulk_operations",
-            "support": {
-                "source": "http://cgit.drupalcode.org/views_bulk_operations"
-            }
-        },
-        {
             "name": "drupal/views_rss",
             "version": "dev-2.x",
             "source": {
@@ -5195,6 +5241,60 @@
             "homepage": "https://www.drupal.org/project/webform",
             "support": {
                 "source": "http://cgit.drupalcode.org/webform"
+            }
+        },
+        {
+            "name": "drupal/webform_civicrm",
+            "version": "4.26.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/webform_civicrm",
+                "reference": "7.x-4.26"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_civicrm-7.x-4.26.zip",
+                "reference": "7.x-4.26",
+                "shasum": "87d02c6ee848521c0068fde82f5aefda595d342e"
+            },
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/options_element": "*",
+                "drupal/webform": "^4.12"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-4.26",
+                    "datestamp": "1549046880",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "KarinG",
+                    "homepage": "https://www.drupal.org/user/787114"
+                },
+                {
+                    "name": "colemanw",
+                    "homepage": "https://www.drupal.org/user/639856"
+                }
+            ],
+            "description": "A powerful, flexible, user-friendly form builder for CiviCRM.",
+            "homepage": "https://www.drupal.org/project/webform_civicrm",
+            "support": {
+                "source": "http://cgit.drupalcode.org/webform_civicrm",
+                "error": "Invalid dependency: \"civicrm\" is an unknown drupal 7 package name"
             }
         },
         {
@@ -7040,7 +7140,8 @@
     "aliases": [],
     "minimum-stability": "alpha",
     "stability-flags": {
-        "drupal/views_rss": 20
+        "drupal/views_rss": 20,
+        "drupal/maillog": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2019.02.08
+
+- Upgrade CiviCRM to 5.9.1.
+  Resolves #45.
+- Upgrade PHP to 7.1 in CPanel.
+- Add Webform CiviCRM integration.
+  Resolves #46.
+- Restore Civi events link in main menu.
+  Resolves #47.
+
 ## 2019.02.06
 
 - Install and configure antispam module.

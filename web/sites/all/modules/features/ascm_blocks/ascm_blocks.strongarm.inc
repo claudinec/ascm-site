@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * ascm_blocks.strongarm.inc
