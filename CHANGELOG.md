@@ -1,5 +1,7 @@
 # CHANGELOG
 
+## NEXT
+
 ## 2019.02.08
 
 - Upgrade CiviCRM to 5.9.1.

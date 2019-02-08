@@ -81,7 +81,8 @@
     "drupal/securelogin": "^1.7",
     "drupal/antispam": "^1.6",
     "drupal/maillog": "^1.0@alpha",
-    "drupal/webform_civicrm": "^4.26"
+    "drupal/webform_civicrm": "^4.26",
+    "drupal/adminimal_theme": "^1.25"
   },
   "minimum-stability": "alpha",
   "prefer-stable": true,
