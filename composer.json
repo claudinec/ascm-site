@@ -71,7 +71,7 @@
     "drupal/views_rss": "2.x-dev",
     "drupal/webform": "^4.15",
     "drupal/workbench": "^1.2",
-    "drupal/wysiwyg_fields": "^2.0",
+    "drupal/wysiwyg_fields": "^2.0@beta",
     "drupal/xmlsitemap": "^2.3",
     "ckeditor/ckeditor": "^4.6",
     "stinger/ckeditor-lineutils-bundle": "^4.5",
@@ -81,7 +81,9 @@
     "drupal/securelogin": "^1.7",
     "drupal/antispam": "^1.6",
     "drupal/maillog": "^1.0@alpha",
-    "drupal/webform_civicrm": "^4.26"
+    "drupal/webform_civicrm": "^4.26",
+    "drupal/adminimal_theme": "^1.25",
+    "drupal/ckeditor": "^1.18"
   },
   "minimum-stability": "alpha",
   "prefer-stable": true,
