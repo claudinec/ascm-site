@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c83bb796311a8f7240a78980fac6644e",
+    "content-hash": "df83de3c49fc272569b717d743963346",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -7195,6 +7195,7 @@
     "minimum-stability": "alpha",
     "stability-flags": {
         "drupal/views_rss": 20,
+        "drupal/wysiwyg_fields": 10,
         "drupal/maillog": 15
     },
     "prefer-stable": true,

@@ -2,6 +2,9 @@
 
 ## NEXT
 
+- Update Drupal core to 7.64
+- Do not require WYSIWYG module (use CKEditor)
+
 ## 2019.02.08
 
 - Upgrade CiviCRM to 5.9.1.
