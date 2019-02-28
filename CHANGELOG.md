@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2019.02.28
+
+- Update Context module to 3.10
+
 ## 2019.02.25
 
 - Update Drupal core to 7.64
