@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2019.03.22
+
+- Update Drupal core to 7.65
+- Update Views
+
 ## 2019.02.28
 
 - Update Context module to 3.10
