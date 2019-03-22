@@ -83,7 +83,8 @@
     "drupal/maillog": "^1.0@alpha",
     "drupal/webform_civicrm": "^4.26",
     "drupal/adminimal_theme": "^1.25",
-    "drupal/ckeditor": "^1.18"
+    "drupal/ckeditor": "^1.18",
+    "drupal/disable_messages": "^1.2"
   },
   "minimum-stability": "alpha",
   "prefer-stable": true,
