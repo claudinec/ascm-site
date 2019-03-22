@@ -1,9 +1,10 @@
 # CHANGELOG
 
-## 2019.03.22
+## NEXT
 
 - Update Drupal core to 7.65
 - Update Views
+- Require Disable Messages
 
 ## 2019.02.28
 
