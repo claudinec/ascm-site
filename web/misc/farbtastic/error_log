@@ -1,0 +1,29 @@
+[18-Apr-2018 13:17:54 UTC] PHP Notice:  Use of undefined constant urnr - assumed 'urnr' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 4
+[18-Apr-2018 13:17:54 UTC] PHP Notice:  Use of undefined constant ukpd - assumed 'ukpd' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[18-Apr-2018 13:17:54 UTC] PHP Notice:  Use of undefined constant xgeh - assumed 'xgeh' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[02-May-2018 08:46:05 UTC] PHP Notice:  Use of undefined constant urnr - assumed 'urnr' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 4
+[02-May-2018 08:46:05 UTC] PHP Notice:  Use of undefined constant ukpd - assumed 'ukpd' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[02-May-2018 08:46:05 UTC] PHP Notice:  Use of undefined constant xgeh - assumed 'xgeh' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[02-May-2018 08:46:08 UTC] PHP Notice:  Use of undefined constant urnr - assumed 'urnr' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 4
+[02-May-2018 08:46:08 UTC] PHP Notice:  Use of undefined constant ukpd - assumed 'ukpd' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[02-May-2018 08:46:08 UTC] PHP Notice:  Use of undefined constant xgeh - assumed 'xgeh' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[08-May-2018 18:04:10 UTC] PHP Notice:  Use of undefined constant urnr - assumed 'urnr' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 4
+[08-May-2018 18:04:10 UTC] PHP Notice:  Use of undefined constant ukpd - assumed 'ukpd' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[08-May-2018 18:04:10 UTC] PHP Notice:  Use of undefined constant xgeh - assumed 'xgeh' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[16-May-2018 15:28:31 UTC] PHP Notice:  Use of undefined constant urnr - assumed 'urnr' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 4
+[16-May-2018 15:28:31 UTC] PHP Notice:  Use of undefined constant ukpd - assumed 'ukpd' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[16-May-2018 15:28:31 UTC] PHP Notice:  Use of undefined constant xgeh - assumed 'xgeh' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[24-May-2018 09:58:36 UTC] PHP Notice:  Use of undefined constant urnr - assumed 'urnr' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 4
+[24-May-2018 09:58:36 UTC] PHP Notice:  Use of undefined constant ukpd - assumed 'ukpd' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[24-May-2018 09:58:36 UTC] PHP Notice:  Use of undefined constant xgeh - assumed 'xgeh' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[02-Jun-2018 06:39:02 UTC] PHP Notice:  Use of undefined constant urnr - assumed 'urnr' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 4
+[02-Jun-2018 06:39:02 UTC] PHP Notice:  Use of undefined constant ukpd - assumed 'ukpd' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[02-Jun-2018 06:39:02 UTC] PHP Notice:  Use of undefined constant xgeh - assumed 'xgeh' in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[25-Mar-2019 15:29:19 UTC] PHP Warning:  Use of undefined constant urnr - assumed 'urnr' (this will throw an Error in a future version of PHP) in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 4
+[25-Mar-2019 15:29:19 UTC] PHP Warning:  Use of undefined constant ukpd - assumed 'ukpd' (this will throw an Error in a future version of PHP) in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[25-Mar-2019 15:29:19 UTC] PHP Warning:  Use of undefined constant xgeh - assumed 'xgeh' (this will throw an Error in a future version of PHP) in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[25-Mar-2019 15:29:19 UTC] PHP Deprecated:  Function create_function() is deprecated in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[30-Mar-2019 16:10:22 UTC] PHP Warning:  Use of undefined constant urnr - assumed 'urnr' (this will throw an Error in a future version of PHP) in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 4
+[30-Mar-2019 16:10:22 UTC] PHP Warning:  Use of undefined constant ukpd - assumed 'ukpd' (this will throw an Error in a future version of PHP) in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[30-Mar-2019 16:10:22 UTC] PHP Warning:  Use of undefined constant xgeh - assumed 'xgeh' (this will throw an Error in a future version of PHP) in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[30-Mar-2019 16:10:22 UTC] PHP Deprecated:  Function create_function() is deprecated in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
