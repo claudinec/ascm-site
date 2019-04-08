@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## NEXT
+## 2019.04.06
 
 - Update Drupal core to 7.65
 - Update Views
