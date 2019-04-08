@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2019.04.06
+
+- Update Drupal core to 7.65
+- Update Views
+- Require Disable Messages
+
 ## 2019.02.28
 
 - Update Context module to 3.10

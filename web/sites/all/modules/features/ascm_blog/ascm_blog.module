@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ASCM Blog feature.
+ */
+
+include_once 'ascm_blog.features.inc';
