@@ -34,7 +34,6 @@ features[menu_custom][] = menu-other-organisations
 features[menu_links][] = main-menu_about-us:node/1944
 features[menu_links][] = main-menu_blog:blog
 features[menu_links][] = main-menu_contact-us:node/4848
-features[menu_links][] = main-menu_events:events
 features[menu_links][] = main-menu_home:<front>
 features[menu_links][] = main-menu_resources:node/1970
 features[menu_links][] = main-menu_staff-handbook:node/1993

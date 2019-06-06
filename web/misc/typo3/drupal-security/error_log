@@ -1,0 +1,1 @@
+[09-May-2019 07:18:49 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home3/ascmorga/public_html/misc/typo3/drupal-security/PharExtensionInterceptor.php on line 3

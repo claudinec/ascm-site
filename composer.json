@@ -40,7 +40,6 @@
     "drupal/filefield_sources": "^1.10",
     "drupal/google_analytics": "^2.3",
     "drupal/google_analytics_reports": "^3.1",
-    "drupal/honeypot": "^1.22",
     "drupal/icon": "^1.0",
     "drupal/imce": "^1.11",
     "drupal/imce_filefield": "^1.1",
@@ -70,7 +69,6 @@
     "drupal/views": "^3.18",
     "drupal/views_rss": "2.x-dev",
     "drupal/webform": "^4.15",
-    "drupal/workbench": "^1.2",
     "drupal/wysiwyg_fields": "^2.0@beta",
     "drupal/xmlsitemap": "^2.3",
     "ckeditor/ckeditor": "^4.6",
@@ -84,7 +82,8 @@
     "drupal/webform_civicrm": "^4.26",
     "drupal/adminimal_theme": "^1.25",
     "drupal/ckeditor": "^1.18",
-    "drupal/disable_messages": "^1.2"
+    "drupal/disable_messages": "^1.2",
+    "drupal/honeypot": "^1.25"
   },
   "minimum-stability": "alpha",
   "prefer-stable": true,
