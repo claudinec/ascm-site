@@ -59,24 +59,7 @@ function ascm_blocks_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -42,
-    'customized' => 1,
-  );
-  // Link to CiviCRM events page.
-  $menu_links['main-menu_events:events'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'https://ascm.org.au/civicrm/event/ical?reset=1&list=1&html=1',
-    'router_path' => '',
-    'link_title' => 'Events',
-    'options' => array(
-      'identifier' => 'main-menu_events:events',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -47,
+    'weight' => -43,
     'customized' => 1,
   );
   // Exported menu link: main-menu_home:<front>.
@@ -148,7 +131,7 @@ function ascm_blocks_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -44,
+    'weight' => -45,
     'customized' => 1,
   );
   // Exported menu link: main-menu_update-your-details:node/1943.
@@ -165,8 +148,8 @@ function ascm_blocks_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -43,
-    'customized' => 0,
+    'weight' => -44,
+    'customized' => 1,
   );
   // Exported menu link: menu-other-organisations_australian-young-christian-workers:http://ycw.org.au/.
   $menu_links['menu-other-organisations_australian-young-christian-workers:http://ycw.org.au/'] = array(
@@ -235,7 +218,6 @@ function ascm_blocks_menu_default_menu_links() {
   t('Australian Young Christian Workers');
   t('Blog');
   t('Contact us');
-  t('Events');
   t('Home');
   t('Resources');
   t('Staff handbook');
