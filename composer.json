@@ -83,7 +83,8 @@
     "drupal/adminimal_theme": "^1.25",
     "drupal/ckeditor": "^1.18",
     "drupal/disable_messages": "^1.2",
-    "drupal/honeypot": "^1.25"
+    "drupal/honeypot": "^1.25",
+    "drupal/me": "^1.5"
   },
   "minimum-stability": "alpha",
   "prefer-stable": true,

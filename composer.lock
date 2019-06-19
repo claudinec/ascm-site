@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b8cc0895c6264694b41b8490c3ac8da6",
+    "content-hash": "ecf7467eda38fbcbf0cab048db8a5031",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -3772,6 +3772,62 @@
             "homepage": "https://www.drupal.org/project/markdown",
             "support": {
                 "source": "http://cgit.drupalcode.org/markdown"
+            }
+        },
+        {
+            "name": "drupal/me",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/me.git",
+                "reference": "7.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/me-7.x-1.5.zip",
+                "reference": "7.x-1.5",
+                "shasum": "fdb2a1a5cb1e10f4aff2215595d8975a6c78ad8c"
+            },
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.5",
+                    "datestamp": "1560012784",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "ahoeben",
+                    "homepage": "https://www.drupal.org/user/7557"
+                },
+                {
+                    "name": "cdale",
+                    "homepage": "https://www.drupal.org/user/298835"
+                },
+                {
+                    "name": "nohup",
+                    "homepage": "https://www.drupal.org/user/269763"
+                }
+            ],
+            "description": "Provides links to current user's pages using 'me' instead of the numerical user id.",
+            "homepage": "https://www.drupal.org/project/me",
+            "support": {
+                "source": "https://git.drupalcode.org/project/me"
             }
         },
         {
