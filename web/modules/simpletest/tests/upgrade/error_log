@@ -1,0 +1,4 @@
+[20-Jun-2019 14:35:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function db_insert() in /home3/ascmorga/public_html/modules/simpletest/tests/upgrade/drupal-6.upload.database.php:3
+Stack trace:
+#0 {main}
+  thrown in /home3/ascmorga/public_html/modules/simpletest/tests/upgrade/drupal-6.upload.database.php on line 3
