@@ -79,3 +79,11 @@
 [20-Jun-2019 14:36:12 UTC] PHP Warning:  Use of undefined constant ukpd - assumed 'ukpd' (this will throw an Error in a future version of PHP) in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
 [20-Jun-2019 14:36:12 UTC] PHP Warning:  Use of undefined constant xgeh - assumed 'xgeh' (this will throw an Error in a future version of PHP) in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
 [20-Jun-2019 14:36:12 UTC] PHP Deprecated:  Function create_function() is deprecated in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[28-Jun-2019 17:18:53 UTC] PHP Warning:  Use of undefined constant urnr - assumed 'urnr' (this will throw an Error in a future version of PHP) in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 4
+[28-Jun-2019 17:18:53 UTC] PHP Warning:  Use of undefined constant ukpd - assumed 'ukpd' (this will throw an Error in a future version of PHP) in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[28-Jun-2019 17:18:53 UTC] PHP Warning:  Use of undefined constant xgeh - assumed 'xgeh' (this will throw an Error in a future version of PHP) in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[28-Jun-2019 17:18:53 UTC] PHP Deprecated:  Function create_function() is deprecated in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[05-Jul-2019 23:34:42 UTC] PHP Warning:  Use of undefined constant urnr - assumed 'urnr' (this will throw an Error in a future version of PHP) in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 4
+[05-Jul-2019 23:34:42 UTC] PHP Warning:  Use of undefined constant ukpd - assumed 'ukpd' (this will throw an Error in a future version of PHP) in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[05-Jul-2019 23:34:42 UTC] PHP Warning:  Use of undefined constant xgeh - assumed 'xgeh' (this will throw an Error in a future version of PHP) in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6
+[05-Jul-2019 23:34:42 UTC] PHP Deprecated:  Function create_function() is deprecated in /home3/ascmorga/public_html/misc/farbtastic/zsognyud.php on line 6

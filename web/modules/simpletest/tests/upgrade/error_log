@@ -2,3 +2,31 @@
 Stack trace:
 #0 {main}
   thrown in /home3/ascmorga/public_html/modules/simpletest/tests/upgrade/drupal-6.upload.database.php on line 3
+[27-Jun-2019 02:36:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function db_create_table() in /home3/ascmorga/public_html/modules/simpletest/tests/upgrade/drupal-6.forum.database.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/ascmorga/public_html/modules/simpletest/tests/upgrade/drupal-6.forum.database.php on line 7
+[28-Jun-2019 17:18:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function db_create_table() in /home3/ascmorga/public_html/modules/simpletest/tests/upgrade/drupal-6.locale.database.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/ascmorga/public_html/modules/simpletest/tests/upgrade/drupal-6.locale.database.php on line 7
+[28-Jun-2019 17:18:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function db_insert() in /home3/ascmorga/public_html/modules/simpletest/tests/upgrade/drupal-6.upload.database.php:3
+Stack trace:
+#0 {main}
+  thrown in /home3/ascmorga/public_html/modules/simpletest/tests/upgrade/drupal-6.upload.database.php on line 3
+[28-Jun-2019 17:18:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function db_create_table() in /home3/ascmorga/public_html/modules/simpletest/tests/upgrade/drupal-6.forum.database.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/ascmorga/public_html/modules/simpletest/tests/upgrade/drupal-6.forum.database.php on line 7
+[05-Jul-2019 23:34:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function db_create_table() in /home3/ascmorga/public_html/modules/simpletest/tests/upgrade/drupal-6.locale.database.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/ascmorga/public_html/modules/simpletest/tests/upgrade/drupal-6.locale.database.php on line 7
+[05-Jul-2019 23:35:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function db_insert() in /home3/ascmorga/public_html/modules/simpletest/tests/upgrade/drupal-6.upload.database.php:3
+Stack trace:
+#0 {main}
+  thrown in /home3/ascmorga/public_html/modules/simpletest/tests/upgrade/drupal-6.upload.database.php on line 3
+[05-Jul-2019 23:35:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function db_create_table() in /home3/ascmorga/public_html/modules/simpletest/tests/upgrade/drupal-6.forum.database.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/ascmorga/public_html/modules/simpletest/tests/upgrade/drupal-6.forum.database.php on line 7
