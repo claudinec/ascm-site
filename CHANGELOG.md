@@ -1,10 +1,14 @@
 # CHANGELOG
 
+## NEXT
+
 ## 2019.04.06
 
 - Update Drupal core to 7.65
+  Resolves #50
 - Update Views
 - Require Disable Messages
+  Resolves #49
 
 ## 2019.02.28
 
