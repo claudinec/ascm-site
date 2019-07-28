@@ -17,7 +17,6 @@
     "drupal/autocomplete_widgets": "^1.0",
     "drupal/auto_nodetitle": "^1.0",
     "drupal/backup_migrate": "^3.1",
-    "drupal/bootstrap": "^3.14",
     "drupal/boxes": "^1.2",
     "drupal/chart": "^1.1",
     "drupal/colorbox": "^2.13",
@@ -83,7 +82,8 @@
     "drupal/adminimal_theme": "^1.25",
     "drupal/ckeditor": "^1.18",
     "drupal/disable_messages": "^1.2",
-    "drupal/honeypot": "^1.25"
+    "drupal/honeypot": "^1.25",
+    "drupal/bootstrap": "^3.26"
   },
   "minimum-stability": "alpha",
   "prefer-stable": true,
