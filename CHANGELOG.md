@@ -2,6 +2,10 @@
 
 ## NEXT
 
+- Update contact box.
+  Change order of Instagram and Twitter icons.
+  Add link to newsletter archive.
+
 ## 2019.04.06
 
 - Update Drupal core to 7.65
