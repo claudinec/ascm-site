@@ -8,3 +8,9 @@
     color: black;
 }
 
+/* Font Awesome. */
+span.fas,
+span.fab {
+  font-size: larger;
+}
+
