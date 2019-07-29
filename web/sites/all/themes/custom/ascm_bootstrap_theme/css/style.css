@@ -9,8 +9,7 @@
 }
 
 /* Font Awesome. */
-span.fas,
-span.fab {
+svg.svg-inline--fa {
   font-size: larger;
 }
 
