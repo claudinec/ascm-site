@@ -83,7 +83,7 @@ VIC 3052</p>
   $box->api_version = 1;
   $box->delta = 'social';
   $box->plugin_key = 'simple';
-  $box->title = '';
+  $box->title = 'Keep in touch';
   $box->description = 'Social links';
   $box->options = array(
     'body' => array(
