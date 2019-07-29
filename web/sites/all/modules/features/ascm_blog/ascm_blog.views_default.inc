@@ -50,7 +50,7 @@ function ascm_blog_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Filter criterion: Content: Published */
+  /* Filter criterion: Content: Published status */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
@@ -131,6 +131,88 @@ function ascm_blog_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $export['blog'] = $view;
+
+  $view = new view();
+  $view->name = 'newsletter_archive';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'civicrm_mailing';
+  $view->human_name = 'Newsletter Archive';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Newsletter Archive';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['distinct'] = TRUE;
+  $handler->display->display_options['query']['options']['pure_distinct'] = TRUE;
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = 'To subscribe to our newsletters or update your details, visit our main <a href="/newsletter">newsletter</a> page.';
+  $handler->display->display_options['header']['area']['format'] = 'filtered_html';
+  /* Field: CiviCRM Mailings: Subject Line */
+  $handler->display->display_options['fields']['subject']['id'] = 'subject';
+  $handler->display->display_options['fields']['subject']['table'] = 'civicrm_mailing';
+  $handler->display->display_options['fields']['subject']['field'] = 'subject';
+  $handler->display->display_options['fields']['subject']['label'] = '';
+  $handler->display->display_options['fields']['subject']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['subject']['element_wrapper_type'] = 'h2';
+  /* Field: CiviCRM Mailings: Approval Date */
+  $handler->display->display_options['fields']['approval_date']['id'] = 'approval_date';
+  $handler->display->display_options['fields']['approval_date']['table'] = 'civicrm_mailing';
+  $handler->display->display_options['fields']['approval_date']['field'] = 'approval_date';
+  $handler->display->display_options['fields']['approval_date']['label'] = '';
+  $handler->display->display_options['fields']['approval_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['approval_date']['element_wrapper_type'] = 'em';
+  $handler->display->display_options['fields']['approval_date']['date_format'] = 'long';
+  $handler->display->display_options['fields']['approval_date']['second_date_format'] = 'long';
+  /* Field: CiviCRM Mailings: Body - HTML */
+  $handler->display->display_options['fields']['body_html']['id'] = 'body_html';
+  $handler->display->display_options['fields']['body_html']['table'] = 'civicrm_mailing';
+  $handler->display->display_options['fields']['body_html']['field'] = 'body_html';
+  $handler->display->display_options['fields']['body_html']['label'] = '';
+  $handler->display->display_options['fields']['body_html']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body_html']['text_format'] = 'filtered_html';
+  /* Sort criterion: CiviCRM Mailings: Approval Date */
+  $handler->display->display_options['sorts']['approval_date']['id'] = 'approval_date';
+  $handler->display->display_options['sorts']['approval_date']['table'] = 'civicrm_mailing';
+  $handler->display->display_options['sorts']['approval_date']['field'] = 'approval_date';
+  $handler->display->display_options['sorts']['approval_date']['order'] = 'DESC';
+  /* Filter criterion: CiviCRM Mailings: Visibility */
+  $handler->display->display_options['filters']['visibility']['id'] = 'visibility';
+  $handler->display->display_options['filters']['visibility']['table'] = 'civicrm_mailing';
+  $handler->display->display_options['filters']['visibility']['field'] = 'visibility';
+  $handler->display->display_options['filters']['visibility']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['visibility']['value'] = 'Y';
+  /* Filter criterion: CiviCRM Mailings: Archived? */
+  $handler->display->display_options['filters']['is_archived']['id'] = 'is_archived';
+  $handler->display->display_options['filters']['is_archived']['table'] = 'civicrm_mailing';
+  $handler->display->display_options['filters']['is_archived']['field'] = 'is_archived';
+  $handler->display->display_options['filters']['is_archived']['value'] = '0';
+  /* Filter criterion: CiviCRM Mailings: Approval Date */
+  $handler->display->display_options['filters']['approval_date']['id'] = 'approval_date';
+  $handler->display->display_options['filters']['approval_date']['table'] = 'civicrm_mailing';
+  $handler->display->display_options['filters']['approval_date']['field'] = 'approval_date';
+  $handler->display->display_options['filters']['approval_date']['operator'] = '<=';
+  $handler->display->display_options['filters']['approval_date']['value']['value'] = '-1 day';
+  $handler->display->display_options['filters']['approval_date']['value']['type'] = 'offset';
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['path'] = 'newsletter-archive';
+  $export['newsletter_archive'] = $view;
 
   return $export;
 }

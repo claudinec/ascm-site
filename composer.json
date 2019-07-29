@@ -83,7 +83,9 @@
     "drupal/ckeditor": "^1.18",
     "drupal/disable_messages": "^1.2",
     "drupal/honeypot": "^1.25",
-    "drupal/bootstrap": "^3.26"
+    "drupal/me": "^1.5",
+    "drupal/hacked": "^2.0@beta",
+    "drupal/fontawesome": "^3.11"
   },
   "minimum-stability": "alpha",
   "prefer-stable": true,

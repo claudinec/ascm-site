@@ -83,13 +83,13 @@ VIC 3052</p>
   $box->api_version = 1;
   $box->delta = 'social';
   $box->plugin_key = 'simple';
-  $box->title = '';
+  $box->title = 'Keep in touch';
   $box->description = 'Social links';
   $box->options = array(
     'body' => array(
-      'value' => '<p><a href="https://www.facebook.com/AustralianStudentChristianMovement"><img alt="Facebook" src="/sites/all/themes/custom/ascm_bootstrap_theme/images/f_logo_32.png" /></a> <a href="https://twitter.com/australianscm"><img alt="Twitter" src="/sites/all/themes/custom/ascm_bootstrap_theme/images/bird_blue_32.png" /></a> <a href="https://instagram.com/australianscm"><img alt="Instagram" src="/sites/all/themes/custom/ascm_bootstrap_theme/images/Instagram_Glyph_Logo_32.png" /> </a></p>
+      'value' => '<p><a href="/newsletter">Subscribe to our email newsletter</a> or visit our <a href="/newsletter-archive">newsletter archive</a></p>
 
-<p><a href="/newsletter">Subscribe to our email newsletter</a></p>
+<p>Like and follow: <a href="https://www.facebook.com/AustralianStudentChristianMovement"><span class="fab fa-facebook-square"></span></a> <a href="https://instagram.com/australianscm"><span class="fab fa-instagram"></span></a> <a href="https://twitter.com/australianscm"><span class="fab fa-twitter-square"></span></a> <a href="https://www.youtube.com/channel/UComAdAiyJxC3PN1A0gUcWXQ"><span class="fab fa-youtube-square"></span></a></p>
 ',
       'format' => 'filtered_html',
     ),
