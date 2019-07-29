@@ -87,9 +87,9 @@ VIC 3052</p>
   $box->description = 'Social links';
   $box->options = array(
     'body' => array(
-      'value' => '<p><a href="https://www.facebook.com/AustralianStudentChristianMovement"><img alt="Facebook" src="/sites/all/themes/custom/ascm_bootstrap_theme/images/f_logo_32.png" /></a> <a href="https://twitter.com/australianscm"><img alt="Twitter" src="/sites/all/themes/custom/ascm_bootstrap_theme/images/bird_blue_32.png" /></a> <a href="https://instagram.com/australianscm"><img alt="Instagram" src="/sites/all/themes/custom/ascm_bootstrap_theme/images/Instagram_Glyph_Logo_32.png" /> </a></p>
+      'value' => '<p><a href="https://www.facebook.com/AustralianStudentChristianMovement"><img alt="Facebook" src="/sites/all/themes/custom/ascm_bootstrap_theme/images/f_logo_32.png" /></a> <a href="https://instagram.com/australianscm"><img alt="Instagram" src="/sites/all/themes/custom/ascm_bootstrap_theme/images/Instagram_Glyph_Logo_32.png" /> </a> <a href="https://twitter.com/australianscm"><img alt="Twitter" src="/sites/all/themes/custom/ascm_bootstrap_theme/images/bird_blue_32.png" /></a></p>
 
-<p><a href="/newsletter">Subscribe to our email newsletter</a></p>
+<p><a href="/newsletter">Subscribe to our email newsletter</a> or visit our <a href="/newsletter-archive">newsletter archive</a></p>
 ',
       'format' => 'filtered_html',
     ),
