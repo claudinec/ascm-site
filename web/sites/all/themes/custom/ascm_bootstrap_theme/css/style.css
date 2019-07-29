@@ -3,8 +3,12 @@
  */
 
 /* CiviCRM profile/registration form. */
-
 .crm-section .label {
     color: black;
+}
+
+/* Font Awesome. */
+svg.svg-inline--fa {
+  font-size: larger;
 }
 
