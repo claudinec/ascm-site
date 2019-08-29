@@ -24,3 +24,6 @@ web/sites/default/files
 # Ignore all settings files
 *.settings.php
 .env
+
+# Ignore local scripts
+bin/
