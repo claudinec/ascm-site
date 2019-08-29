@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## NEXT
+## 2019.08.29
 
 - Update contact box.
   Change order of Instagram and Twitter icons.
