@@ -85,7 +85,8 @@
     "drupal/honeypot": "^1.25",
     "drupal/me": "^1.5",
     "drupal/hacked": "^2.0@beta",
-    "drupal/fontawesome": "^3.11"
+    "drupal/fontawesome": "^3.11",
+    "drupal/bootstrap": "^3.26"
   },
   "minimum-stability": "alpha",
   "prefer-stable": true,
