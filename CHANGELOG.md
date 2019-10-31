@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2019.10.31
+
+- Security updates: file_entity and fontawesome plugins.
+  
+
 ## 2019.08.29
 
 - Update contact box.
