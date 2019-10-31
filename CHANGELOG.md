@@ -3,7 +3,8 @@
 ## 2019.10.31
 
 - Security updates: file_entity and fontawesome plugins.
-  
+- Replace abandoned googleanalytics module with full google_analytics.
+  Resolves #53.
 
 ## 2019.08.29
 

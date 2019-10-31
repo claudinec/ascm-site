@@ -37,7 +37,7 @@
     "drupal/file_entity": "^2.0",
     "drupal/filefield_paths": "^1.0",
     "drupal/filefield_sources": "^1.10",
-    "drupal/google_analytics": "^2.3",
+    "drupal/google_analytics": "^2.6",
     "drupal/google_analytics_reports": "^3.1",
     "drupal/icon": "^1.0",
     "drupal/imce": "^1.11",
