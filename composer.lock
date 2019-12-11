@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9c0fe0ddc5fb2fa0a7dafbbf34c895c",
+    "content-hash": "c625f6c717636a9e24a2e73c9e59b1da",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -2949,8 +2949,16 @@
             ],
             "authors": [
                 {
+                    "name": "Mohammed J. Razem",
+                    "homepage": "https://www.drupal.org/user/255384"
+                },
+                {
                     "name": "Plazik",
                     "homepage": "https://www.drupal.org/user/982724"
+                },
+                {
+                    "name": "RajabNatshah",
+                    "homepage": "https://www.drupal.org/user/1414312"
                 },
                 {
                     "name": "grendzy",
@@ -2976,7 +2984,7 @@
             "description": "Display statistics from Google Analytics using Views.",
             "homepage": "https://www.drupal.org/project/google_analytics_reports",
             "support": {
-                "source": "http://cgit.drupalcode.org/google_analytics_reports"
+                "source": "https://git.drupalcode.org/project/google_analytics_reports"
             }
         },
         {
@@ -3006,8 +3014,16 @@
             ],
             "authors": [
                 {
+                    "name": "Mohammed J. Razem",
+                    "homepage": "https://www.drupal.org/user/255384"
+                },
+                {
                     "name": "Plazik",
                     "homepage": "https://www.drupal.org/user/982724"
+                },
+                {
+                    "name": "RajabNatshah",
+                    "homepage": "https://www.drupal.org/user/1414312"
                 },
                 {
                     "name": "grendzy",
@@ -3033,7 +3049,7 @@
             "description": "API to access statistics from the <a href=\"https://developers.google.com/analytics/devguides/reporting/core/v3/\">Google Analytics Core Reporting API</a>.",
             "homepage": "https://www.drupal.org/project/google_analytics_reports",
             "support": {
-                "source": "http://cgit.drupalcode.org/google_analytics_reports"
+                "source": "https://git.drupalcode.org/project/google_analytics_reports"
             }
         },
         {
