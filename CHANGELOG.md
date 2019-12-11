@@ -7,6 +7,8 @@
     Resolves #56
   - file_entity
   - link
+  - CiviCRM 5.20
+    Resolves #54
 
 ## 2019.10.31
 
