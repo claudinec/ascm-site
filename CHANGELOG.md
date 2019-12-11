@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2019.12.11
+
+- Security updates
+  - Core 7.68
+    Resolves #56
+  - file_entity
+  - link
+
 ## 2019.10.31
 
 - Security updates: file_entity and fontawesome plugins.
