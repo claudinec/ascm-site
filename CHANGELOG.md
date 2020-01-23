@@ -1,8 +1,8 @@
 # CHANGELOG
 
-## NEXT
+## 2020.01.23
 
-- Upgrade Drupal core to 7.69.
+- Upgrade Drupal to 7.69.
 - Upgrade CiviCRM to 5.21.1
 
 ## 2019.12.11
