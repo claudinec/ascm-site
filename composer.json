@@ -38,7 +38,6 @@
     "drupal/filefield_paths": "^1.0",
     "drupal/filefield_sources": "^1.10",
     "drupal/google_analytics": "^2.6",
-    "drupal/google_analytics_reports": "^3.1",
     "drupal/icon": "^1.0",
     "drupal/imce": "^1.11",
     "drupal/imce_filefield": "^1.1",
@@ -86,7 +85,9 @@
     "drupal/me": "^1.5",
     "drupal/hacked": "^2.0@beta",
     "drupal/fontawesome": "^3.11",
-    "drupal/bootstrap": "^3.26"
+    "drupal/bootstrap": "^3.26",
+    "drupal/google_analytics_reports": "^3.1",
+    "drupal/google_analytics_reports_api": "^3.1"
   },
   "minimum-stability": "alpha",
   "prefer-stable": true,
