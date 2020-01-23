@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## NEXT
+
+- Upgrade Drupal core to 7.69.
+- Upgrade CiviCRM to 5.21.1
+
 ## 2019.12.11
 
 - Security updates
