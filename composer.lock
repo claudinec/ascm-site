@@ -273,6 +273,10 @@
                     "homepage": "https://www.drupal.org/user/86106"
                 },
                 {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
                     "name": "rszrama",
                     "homepage": "https://www.drupal.org/user/49344"
                 }
@@ -280,7 +284,7 @@
             "description": "Manage a flexible address field, implementing the xNAL standard.",
             "homepage": "https://www.drupal.org/project/addressfield",
             "support": {
-                "source": "http://cgit.drupalcode.org/addressfield"
+                "source": "https://git.drupalcode.org/project/addressfield"
             }
         },
         {
@@ -382,24 +386,20 @@
                     "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
+                    "name": "HongPong",
+                    "homepage": "https://www.drupal.org/user/60005"
+                },
+                {
                     "name": "RenatoG",
                     "homepage": "https://www.drupal.org/user/3326031"
                 },
                 {
-                    "name": "fubhy",
-                    "homepage": "https://www.drupal.org/user/761344"
-                },
-                {
-                    "name": "pwolanin",
-                    "homepage": "https://www.drupal.org/user/49851"
-                },
-                {
-                    "name": "smk-ka",
-                    "homepage": "https://www.drupal.org/user/48898"
-                },
-                {
                     "name": "sun",
                     "homepage": "https://www.drupal.org/user/54136"
+                },
+                {
+                    "name": "thalles",
+                    "homepage": "https://www.drupal.org/user/3589086"
                 },
                 {
                     "name": "truls1502",
@@ -409,7 +409,7 @@
             "description": "Provides a dropdown menu to most administrative tasks and other common destinations (to users with the proper permissions).",
             "homepage": "https://www.drupal.org/project/admin_menu",
             "support": {
-                "source": "http://cgit.drupalcode.org/admin_menu"
+                "source": "https://git.drupalcode.org/project/admin_menu"
             }
         },
         {
@@ -490,7 +490,7 @@
                 },
                 "drupal": {
                     "version": "7.x-1.5",
-                    "datestamp": "1540469881",
+                    "datestamp": "1540533861",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -534,7 +534,7 @@
             "description": "Provide extended help and documentation.",
             "homepage": "https://www.drupal.org/project/advanced_help",
             "support": {
-                "source": "http://cgit.drupalcode.org/advanced_help"
+                "source": "https://git.drupalcode.org/project/advanced_help"
             }
         },
         {
@@ -660,7 +660,7 @@
             "description": "Allows hiding of the content title field and automatic title creation.",
             "homepage": "https://www.drupal.org/project/auto_nodetitle",
             "support": {
-                "source": "http://cgit.drupalcode.org/auto_nodetitle"
+                "source": "https://git.drupalcode.org/project/auto_nodetitle"
             }
         },
         {
@@ -711,7 +711,7 @@
             "description": "Provides autocomplete widgets for Text and List fields",
             "homepage": "https://www.drupal.org/project/autocomplete_widgets",
             "support": {
-                "source": "http://cgit.drupalcode.org/autocomplete_widgets"
+                "source": "https://git.drupalcode.org/project/autocomplete_widgets"
             }
         },
         {
@@ -738,7 +738,7 @@
                 },
                 "drupal": {
                     "version": "7.x-3.6",
-                    "datestamp": "1544925484",
+                    "datestamp": "1582921424",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -774,7 +774,7 @@
             "description": "Backup the Drupal database and files or migrate them to another environment.",
             "homepage": "https://www.drupal.org/project/backup_migrate",
             "support": {
-                "source": "http://cgit.drupalcode.org/backup_migrate"
+                "source": "https://git.drupalcode.org/project/backup_migrate"
             }
         },
         {
@@ -927,7 +927,7 @@
             "description": "Provides exports for custom blocks and spaces integration.",
             "homepage": "https://www.drupal.org/project/boxes",
             "support": {
-                "source": "http://cgit.drupalcode.org/boxes"
+                "source": "https://git.drupalcode.org/project/boxes"
             }
         },
         {
@@ -970,16 +970,16 @@
             ],
             "authors": [
                 {
+                    "name": "13rac1",
+                    "homepage": "https://www.drupal.org/user/372772"
+                },
+                {
                     "name": "Pierre.Vriens",
                     "homepage": "https://www.drupal.org/user/1689304"
                 },
                 {
                     "name": "boombatower",
                     "homepage": "https://www.drupal.org/user/214218"
-                },
-                {
-                    "name": "eosrei",
-                    "homepage": "https://www.drupal.org/user/372772"
                 },
                 {
                     "name": "ezra-g",
@@ -993,7 +993,7 @@
             "description": "Google Chart API integration.",
             "homepage": "https://www.drupal.org/project/chart",
             "support": {
-                "source": "http://cgit.drupalcode.org/chart"
+                "source": "https://git.drupalcode.org/project/chart"
             }
         },
         {
@@ -1020,7 +1020,7 @@
                 },
                 "drupal": {
                     "version": "7.x-1.18",
-                    "datestamp": "1498506242",
+                    "datestamp": "1584561413",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1080,7 +1080,7 @@
             "description": "Enables CKEditor (WYSIWYG HTML editor) for use instead of plain text fields.",
             "homepage": "https://www.drupal.org/project/ckeditor",
             "support": {
-                "source": "http://cgit.drupalcode.org/ckeditor"
+                "source": "https://git.drupalcode.org/project/ckeditor"
             }
         },
         {
@@ -1144,7 +1144,7 @@
             "description": "A light-weight, customizable lightbox plugin for jQuery 1.4.3+.",
             "homepage": "https://www.drupal.org/project/colorbox",
             "support": {
-                "source": "http://cgit.drupalcode.org/colorbox"
+                "source": "https://git.drupalcode.org/project/colorbox"
             }
         },
         {
@@ -1188,6 +1188,10 @@
                     "homepage": "https://www.drupal.org/user/3389198"
                 },
                 {
+                    "name": "axel.rutz",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
                     "name": "colan",
                     "homepage": "https://www.drupal.org/user/58704"
                 },
@@ -1203,7 +1207,7 @@
             "description": "Define dependencies between fields based on their states and values.",
             "homepage": "https://www.drupal.org/project/conditional_fields",
             "support": {
-                "source": "http://cgit.drupalcode.org/conditional_fields"
+                "source": "https://git.drupalcode.org/project/conditional_fields"
             }
         },
         {
@@ -1307,7 +1311,7 @@
             "description": "Provide modules with a cache that lasts for a single page request.",
             "homepage": "https://www.drupal.org/project/context",
             "support": {
-                "source": "http://cgit.drupalcode.org/context"
+                "source": "https://git.drupalcode.org/project/context"
             }
         },
         {
@@ -1400,7 +1404,7 @@
             "description": "A library of helpful tools by Merlin of Chaos.",
             "homepage": "https://www.drupal.org/project/ctools",
             "support": {
-                "source": "http://cgit.drupalcode.org/ctools"
+                "source": "https://git.drupalcode.org/project/ctools"
             }
         },
         {
@@ -1497,7 +1501,7 @@
             "description": "Makes date/time fields available.",
             "homepage": "https://www.drupal.org/project/date",
             "support": {
-                "source": "http://cgit.drupalcode.org/date"
+                "source": "https://git.drupalcode.org/project/date"
             }
         },
         {
@@ -1574,7 +1578,7 @@
             "description": "A Date API that can be used by other modules.",
             "homepage": "https://www.drupal.org/project/date",
             "support": {
-                "source": "http://cgit.drupalcode.org/date"
+                "source": "https://git.drupalcode.org/project/date"
             }
         },
         {
@@ -1618,6 +1622,10 @@
                     "homepage": "https://www.drupal.org/user/35733"
                 },
                 {
+                    "name": "jonathan1055",
+                    "homepage": "https://www.drupal.org/user/92645"
+                },
+                {
                     "name": "juampynr",
                     "homepage": "https://www.drupal.org/user/682736"
                 },
@@ -1645,7 +1653,7 @@
             "description": "Various blocks, pages, and functions for developers.",
             "homepage": "https://www.drupal.org/project/devel",
             "support": {
-                "source": "http://cgit.drupalcode.org/devel"
+                "source": "https://git.drupalcode.org/project/devel"
             }
         },
         {
@@ -1709,6 +1717,10 @@
                     "homepage": "https://www.drupal.org/user/227761"
                 },
                 {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
                     "name": "realityloop",
                     "homepage": "https://www.drupal.org/user/139189"
                 },
@@ -1724,7 +1736,7 @@
             "description": "Show differences between content revisions.",
             "homepage": "https://www.drupal.org/project/diff",
             "support": {
-                "source": "http://cgit.drupalcode.org/diff"
+                "source": "https://git.drupalcode.org/project/diff"
             }
         },
         {
@@ -1764,8 +1776,8 @@
             ],
             "authors": [
                 {
-                    "name": "mslabba_zyxware",
-                    "homepage": "https://www.drupal.org/user/3471683"
+                    "name": "binnythomas",
+                    "homepage": "https://www.drupal.org/user/3123091"
                 },
                 {
                     "name": "zyxware",
@@ -1775,7 +1787,7 @@
             "description": "Add options to filter messages shown to the end users",
             "homepage": "https://www.drupal.org/project/disable_messages",
             "support": {
-                "source": "http://cgit.drupalcode.org/disable_messages"
+                "source": "https://git.drupalcode.org/project/disable_messages"
             }
         },
         {
@@ -1845,7 +1857,7 @@
             "description": "Uses the Disqus web service to enhance comments.",
             "homepage": "https://www.drupal.org/project/disqus",
             "support": {
-                "source": "http://cgit.drupalcode.org/disqus"
+                "source": "https://git.drupalcode.org/project/disqus"
             }
         },
         {
@@ -2011,7 +2023,7 @@
             "description": "Extend the display options for every entity type.",
             "homepage": "https://www.drupal.org/project/ds",
             "support": {
-                "source": "http://cgit.drupalcode.org/ds"
+                "source": "https://git.drupalcode.org/project/ds"
             }
         },
         {
@@ -2062,7 +2074,7 @@
             "description": "Defines an email field type.",
             "homepage": "https://www.drupal.org/project/email",
             "support": {
-                "source": "http://cgit.drupalcode.org/email"
+                "source": "https://git.drupalcode.org/project/email"
             }
         },
         {
@@ -2125,7 +2137,7 @@
             "description": "Enables modules to work with any entity type and to provide entities.",
             "homepage": "https://www.drupal.org/project/entity",
             "support": {
-                "source": "http://cgit.drupalcode.org/entity"
+                "source": "https://git.drupalcode.org/project/entity"
             }
         },
         {
@@ -2178,7 +2190,7 @@
             "description": "Provides token replacements for all properties that have no tokens and are known to the entity API.",
             "homepage": "https://www.drupal.org/project/entity",
             "support": {
-                "source": "http://cgit.drupalcode.org/entity"
+                "source": "https://git.drupalcode.org/project/entity"
             }
         },
         {
@@ -2255,7 +2267,7 @@
             "description": "Provides a field that can reference other entities.",
             "homepage": "https://www.drupal.org/project/entityreference",
             "support": {
-                "source": "http://cgit.drupalcode.org/entityreference"
+                "source": "https://git.drupalcode.org/project/entityreference"
             }
         },
         {
@@ -2311,7 +2323,7 @@
             "description": "Adds a color indicator for the different environments.",
             "homepage": "https://www.drupal.org/project/environment_indicator",
             "support": {
-                "source": "http://cgit.drupalcode.org/environment_indicator"
+                "source": "https://git.drupalcode.org/project/environment_indicator"
             }
         },
         {
@@ -2359,6 +2371,10 @@
                     "homepage": "https://www.drupal.org/user/99340"
                 },
                 {
+                    "name": "donquixote",
+                    "homepage": "https://www.drupal.org/user/459338"
+                },
+                {
                     "name": "e2thex",
                     "homepage": "https://www.drupal.org/user/189123"
                 },
@@ -2390,7 +2406,7 @@
             "description": "Provides feature management for Drupal.",
             "homepage": "https://www.drupal.org/project/features",
             "support": {
-                "source": "http://cgit.drupalcode.org/features"
+                "source": "https://git.drupalcode.org/project/features"
             }
         },
         {
@@ -2503,7 +2519,7 @@
             "description": "Aggregates RSS/Atom/RDF feeds, imports CSV files and more.",
             "homepage": "https://www.drupal.org/project/feeds",
             "support": {
-                "source": "http://cgit.drupalcode.org/feeds"
+                "source": "https://git.drupalcode.org/project/feeds"
             }
         },
         {
@@ -2551,7 +2567,7 @@
             "description": "Adds formatted field and field property tokens.",
             "homepage": "https://www.drupal.org/project/field_tokens",
             "support": {
-                "source": "http://cgit.drupalcode.org/field_tokens"
+                "source": "https://git.drupalcode.org/project/field_tokens"
             }
         },
         {
@@ -2723,20 +2739,12 @@
                 {
                     "name": "Deciphered",
                     "homepage": "https://www.drupal.org/user/103796"
-                },
-                {
-                    "name": "dpagini",
-                    "homepage": "https://www.drupal.org/user/1802126"
-                },
-                {
-                    "name": "voleger",
-                    "homepage": "https://www.drupal.org/user/3260314"
                 }
             ],
             "description": "Adds improved Token based file sorting and renaming functionalities.",
             "homepage": "https://www.drupal.org/project/filefield_paths",
             "support": {
-                "source": "http://cgit.drupalcode.org/filefield_paths"
+                "source": "https://git.drupalcode.org/project/filefield_paths"
             }
         },
         {
@@ -2776,6 +2784,10 @@
             ],
             "authors": [
                 {
+                    "name": "gnuget",
+                    "homepage": "https://www.drupal.org/user/992990"
+                },
+                {
                     "name": "profak",
                     "homepage": "https://www.drupal.org/user/782534"
                 },
@@ -2787,7 +2799,7 @@
             "description": "Extends File fields to allow referencing of existing files, remote files, and server files.",
             "homepage": "https://www.drupal.org/project/filefield_sources",
             "support": {
-                "source": "http://cgit.drupalcode.org/filefield_sources"
+                "source": "https://git.drupalcode.org/project/filefield_sources"
             }
         },
         {
@@ -2900,7 +2912,7 @@
             ],
             "homepage": "https://www.drupal.org/project/google_analytics",
             "support": {
-                "source": "http://cgit.drupalcode.org/google_analytics"
+                "source": "https://git.drupalcode.org/project/google_analytics"
             }
         },
         {
@@ -3060,7 +3072,8 @@
                 "shasum": "9b204f748c2398ecea72086d073fcd62a13d91db"
             },
             "require": {
-                "drupal/drupal": "*"
+                "drupal/drupal": "~7.0",
+                "drupal/update_notifications_disable-update": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -3094,7 +3107,7 @@
                     "homepage": "https://www.drupal.org/user/58704"
                 },
                 {
-                    "name": "itcrowd72",
+                    "name": "ivnish",
                     "homepage": "https://www.drupal.org/user/3547706"
                 }
             ],
@@ -3207,7 +3220,7 @@
             "description": "Implements an API for icon providers and an administrative UI for integrating icons through out the site.",
             "homepage": "https://www.drupal.org/project/icon",
             "support": {
-                "source": "http://cgit.drupalcode.org/icon"
+                "source": "https://git.drupalcode.org/project/icon"
             }
         },
         {
@@ -3247,6 +3260,10 @@
             ],
             "authors": [
                 {
+                    "name": "thalles",
+                    "homepage": "https://www.drupal.org/user/3589086"
+                },
+                {
                     "name": "ufku",
                     "homepage": "https://www.drupal.org/user/9910"
                 }
@@ -3254,7 +3271,7 @@
             "description": "An image/file uploader and browser supporting personal directories and user quota.",
             "homepage": "https://www.drupal.org/project/imce",
             "support": {
-                "source": "http://cgit.drupalcode.org/imce"
+                "source": "https://git.drupalcode.org/project/imce"
             }
         },
         {
@@ -3302,7 +3319,7 @@
             "description": "Allows users to select files from IMCE File Browser for file fields.",
             "homepage": "https://www.drupal.org/project/imce_filefield",
             "support": {
-                "source": "http://cgit.drupalcode.org/imce_filefield"
+                "source": "https://git.drupalcode.org/project/imce_filefield"
             }
         },
         {
@@ -3359,7 +3376,7 @@
             "description": "Makes IMCE available as plugin for client-side editors integrated via Wysiwyg API.",
             "homepage": "https://www.drupal.org/project/imce_wysiwyg",
             "support": {
-                "source": "http://cgit.drupalcode.org/imce_wysiwyg"
+                "source": "https://git.drupalcode.org/project/imce_wysiwyg"
             }
         },
         {
@@ -3442,7 +3459,7 @@
             "description": "Scheduler API",
             "homepage": "https://www.drupal.org/project/job_scheduler",
             "support": {
-                "source": "http://cgit.drupalcode.org/job_scheduler"
+                "source": "https://git.drupalcode.org/project/job_scheduler"
             }
         },
         {
@@ -3505,7 +3522,7 @@
             "description": "Allows version-dependent and shared usage of external libraries.",
             "homepage": "https://www.drupal.org/project/libraries",
             "support": {
-                "source": "http://cgit.drupalcode.org/libraries"
+                "source": "https://git.drupalcode.org/project/libraries"
             }
         },
         {
@@ -3643,7 +3660,7 @@
             "description": "Periodically checks for broken links in node types, blocks and fields and reports the results.",
             "homepage": "https://www.drupal.org/project/linkchecker",
             "support": {
-                "source": "http://cgit.drupalcode.org/linkchecker"
+                "source": "https://git.drupalcode.org/project/linkchecker"
             }
         },
         {
@@ -3735,7 +3752,7 @@
             "description": "Improves Drupal's login system.",
             "homepage": "https://www.drupal.org/project/logintoboggan",
             "support": {
-                "source": "http://cgit.drupalcode.org/logintoboggan"
+                "source": "https://git.drupalcode.org/project/logintoboggan"
             }
         },
         {
@@ -3795,7 +3812,7 @@
             "description": "Utility to log all Mails for debugging purposes. It's possible to suppress mail delivery for e.g. dev or staging systems.",
             "homepage": "https://www.drupal.org/project/maillog",
             "support": {
-                "source": "http://cgit.drupalcode.org/maillog"
+                "source": "https://git.drupalcode.org/project/maillog"
             }
         },
         {
@@ -3862,7 +3879,7 @@
             "description": "Provides a user interface for per-module and site-wide mail_system selection.",
             "homepage": "https://www.drupal.org/project/mailsystem",
             "support": {
-                "source": "http://cgit.drupalcode.org/mailsystem"
+                "source": "https://git.drupalcode.org/project/mailsystem"
             }
         },
         {
@@ -3902,26 +3919,22 @@
             ],
             "authors": [
                 {
-                    "name": "barraponto",
-                    "homepage": "https://www.drupal.org/user/511760"
-                },
-                {
                     "name": "frjo",
                     "homepage": "https://www.drupal.org/user/5546"
                 },
                 {
-                    "name": "justin2pin",
-                    "homepage": "https://www.drupal.org/user/278450"
+                    "name": "gisle",
+                    "homepage": "https://www.drupal.org/user/409554"
                 },
                 {
-                    "name": "sreynen",
-                    "homepage": "https://www.drupal.org/user/109890"
+                    "name": "markcarver",
+                    "homepage": "https://www.drupal.org/user/501638"
                 }
             ],
             "description": "Allows content to be submitted using Markdown, a simple plain-text syntax that is transformed into valid XHTML.",
             "homepage": "https://www.drupal.org/project/markdown",
             "support": {
-                "source": "http://cgit.drupalcode.org/markdown"
+                "source": "https://git.drupalcode.org/project/markdown"
             }
         },
         {
@@ -4224,7 +4237,7 @@
             "description": "Provides integration between the Media module (file entities) and the Colorbox module.",
             "homepage": "https://www.drupal.org/project/media_colorbox",
             "support": {
-                "source": "http://cgit.drupalcode.org/media_colorbox"
+                "source": "https://git.drupalcode.org/project/media_colorbox"
             }
         },
         {
@@ -4289,7 +4302,7 @@
             "description": "Send MIME-encoded emails with embedded images and attachments.",
             "homepage": "https://www.drupal.org/project/mimemail",
             "support": {
-                "source": "http://cgit.drupalcode.org/mimemail"
+                "source": "https://git.drupalcode.org/project/mimemail"
             }
         },
         {
@@ -4391,7 +4404,7 @@
             "description": "Creates a widget for filefield to upload multiple files at once using html5.",
             "homepage": "https://www.drupal.org/project/multiupload_filefield_widget",
             "support": {
-                "source": "http://cgit.drupalcode.org/multiupload_filefield_widget"
+                "source": "https://git.drupalcode.org/project/multiupload_filefield_widget"
             }
         },
         {
@@ -4440,7 +4453,7 @@
             ],
             "homepage": "https://www.drupal.org/project/oauth",
             "support": {
-                "source": "http://cgit.drupalcode.org/oauth"
+                "source": "https://git.drupalcode.org/project/oauth"
             }
         },
         {
@@ -4477,7 +4490,7 @@
             "description": "Provides OAuth functionality",
             "homepage": "https://www.drupal.org/project/oauth",
             "support": {
-                "source": "http://cgit.drupalcode.org/oauth"
+                "source": "https://git.drupalcode.org/project/oauth"
             }
         },
         {
@@ -4528,7 +4541,7 @@
             "description": "A custom form element for entering the options in select lists, radios, or checkboxes.",
             "homepage": "https://www.drupal.org/project/options_element",
             "support": {
-                "source": "http://cgit.drupalcode.org/options_element"
+                "source": "https://git.drupalcode.org/project/options_element"
             }
         },
         {
@@ -4588,7 +4601,7 @@
             "description": "Provides a mechanism for modules to automatically generate aliases for the content they manage.",
             "homepage": "https://www.drupal.org/project/pathauto",
             "support": {
-                "source": "http://cgit.drupalcode.org/pathauto"
+                "source": "https://git.drupalcode.org/project/pathauto"
             }
         },
         {
@@ -4634,7 +4647,7 @@
             ],
             "homepage": "https://www.drupal.org/project/revisioning",
             "support": {
-                "source": "http://cgit.drupalcode.org/revisioning"
+                "source": "https://git.drupalcode.org/project/revisioning"
             }
         },
         {
@@ -4694,7 +4707,7 @@
             "description": "React on events and conditionally evaluate actions.",
             "homepage": "https://www.drupal.org/project/rules",
             "support": {
-                "source": "http://cgit.drupalcode.org/rules"
+                "source": "https://git.drupalcode.org/project/rules"
             }
         },
         {
@@ -4756,7 +4769,7 @@
             "description": "This module allows nodes to be published and unpublished on specified dates and time.",
             "homepage": "https://www.drupal.org/project/scheduler",
             "support": {
-                "source": "http://cgit.drupalcode.org/scheduler"
+                "source": "https://git.drupalcode.org/project/scheduler"
             }
         },
         {
@@ -4800,6 +4813,10 @@
                     "homepage": "https://www.drupal.org/user/188049"
                 },
                 {
+                    "name": "binnythomas",
+                    "homepage": "https://www.drupal.org/user/3123091"
+                },
+                {
                     "name": "larssg",
                     "homepage": "https://www.drupal.org/user/655"
                 },
@@ -4811,7 +4828,7 @@
             "description": "Automatically search for the keywords in URLs that result in 404 errors and show results instead of Page-Not-Found. ",
             "homepage": "https://www.drupal.org/project/search404",
             "support": {
-                "source": "http://cgit.drupalcode.org/search404"
+                "source": "https://git.drupalcode.org/project/search404"
             }
         },
         {
@@ -4858,7 +4875,7 @@
             "description": "Enables user login and other forms to be submitted securely via HTTPS and enforces secure authenticated sessions.",
             "homepage": "https://www.drupal.org/project/securelogin",
             "support": {
-                "source": "http://cgit.drupalcode.org/securelogin"
+                "source": "https://git.drupalcode.org/project/securelogin"
             }
         },
         {
@@ -4928,7 +4945,7 @@
             "description": "Allow for site emails to be sent through an SMTP server of your choice.",
             "homepage": "https://www.drupal.org/project/smtp",
             "support": {
-                "source": "http://cgit.drupalcode.org/smtp"
+                "source": "https://git.drupalcode.org/project/smtp"
             }
         },
         {
@@ -4996,7 +5013,7 @@
             "description": "Enforces variable values defined by modules that need settings set to operate properly.",
             "homepage": "https://www.drupal.org/project/strongarm",
             "support": {
-                "source": "http://cgit.drupalcode.org/strongarm"
+                "source": "https://git.drupalcode.org/project/strongarm"
             }
         },
         {
@@ -5059,7 +5076,7 @@
             "description": "Access control for user roles based on taxonomy categories.",
             "homepage": "https://www.drupal.org/project/taxonomy_access",
             "support": {
-                "source": "http://cgit.drupalcode.org/taxonomy_access"
+                "source": "https://git.drupalcode.org/project/taxonomy_access"
             }
         },
         {
@@ -5126,7 +5143,7 @@
             "description": "Provides a user interface for the Token API and some missing core tokens.",
             "homepage": "https://www.drupal.org/project/token",
             "support": {
-                "source": "http://cgit.drupalcode.org/token"
+                "source": "https://git.drupalcode.org/project/token"
             }
         },
         {
@@ -5167,6 +5184,10 @@
             ],
             "authors": [
                 {
+                    "name": "Darvanen",
+                    "homepage": "https://www.drupal.org/user/1068770"
+                },
+                {
                     "name": "Dave Reid",
                     "homepage": "https://www.drupal.org/user/53892"
                 },
@@ -5194,7 +5215,7 @@
             "description": "Allows token values to be used as filters",
             "homepage": "https://www.drupal.org/project/token_filter",
             "support": {
-                "source": "http://cgit.drupalcode.org/token_filter"
+                "source": "https://git.drupalcode.org/project/token_filter"
             }
         },
         {
@@ -5245,7 +5266,7 @@
             "description": "A utility for turning tokens into rendered markup via AJAX",
             "homepage": "https://www.drupal.org/project/token_replace_ajax",
             "support": {
-                "source": "http://cgit.drupalcode.org/token_replace_ajax"
+                "source": "https://git.drupalcode.org/project/token_replace_ajax"
             }
         },
         {
@@ -5304,7 +5325,97 @@
             "description": "Adds typographic refinements.",
             "homepage": "https://www.drupal.org/project/typogrify",
             "support": {
-                "source": "http://cgit.drupalcode.org/typogrify"
+                "source": "https://git.drupalcode.org/project/typogrify"
+            }
+        },
+        {
+            "name": "drupal/update_notifications_disable",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/update_notifications_disable.git",
+                "reference": "7.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/update_notifications_disable-7.x-1.1.zip",
+                "reference": "7.x-1.1",
+                "shasum": "d0459771630b0c784ef7d53dd78d128418d0e82a"
+            },
+            "require": {
+                "drupal/drupal": "~7.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.1",
+                    "datestamp": "1495750385",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "webchick",
+                    "homepage": "https://www.drupal.org/user/24967"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/update_notifications_disable",
+            "support": {
+                "source": "https://git.drupalcode.org/project/update_notifications_disable"
+            }
+        },
+        {
+            "name": "drupal/update_notifications_disable-update",
+            "version": "1.1.0",
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/update_notifications_disable": "self.version"
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.1",
+                    "datestamp": "1495750385",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "webchick",
+                    "homepage": "https://www.drupal.org/user/24967"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/update_notifications_disable",
+            "support": {
+                "source": "https://git.drupalcode.org/project/update_notifications_disable"
             }
         },
         {
@@ -5458,7 +5569,7 @@
             "description": "Provides a views plugin that allows fields to be included in RSS feeds created using the Views module.",
             "homepage": "https://www.drupal.org/project/views_rss",
             "support": {
-                "source": "http://cgit.drupalcode.org/views_rss"
+                "source": "https://git.drupalcode.org/project/views_rss"
             },
             "time": "2014-12-23T18:24:17+00:00"
         },
@@ -5491,7 +5602,7 @@
                 },
                 "drupal": {
                     "version": "7.x-4.21",
-                    "datestamp": "1576094252",
+                    "datestamp": "1581709520",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5628,7 +5739,7 @@
                 },
                 "drupal": {
                     "version": "7.x-2.6",
-                    "datestamp": "1563397062",
+                    "datestamp": "1563520137",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5704,7 +5815,7 @@
             "description": "Drupal Fields as CKEditor plugins.",
             "homepage": "https://www.drupal.org/project/wysiwyg_fields",
             "support": {
-                "source": "http://cgit.drupalcode.org/wysiwyg_fields"
+                "source": "https://git.drupalcode.org/project/wysiwyg_fields"
             }
         },
         {
@@ -5788,7 +5899,7 @@
             "description": "Creates an XML sitemap conforming to the <a href=\"http://sitemaps.org/\">sitemaps.org protocol</a>.",
             "homepage": "https://www.drupal.org/project/xmlsitemap",
             "support": {
-                "source": "http://cgit.drupalcode.org/xmlsitemap"
+                "source": "https://git.drupalcode.org/project/xmlsitemap"
             }
         },
         {
@@ -7046,16 +7157,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v5.0.3",
+            "version": "v5.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "5dc0db5026f2b611cb8910a1f465e95eafd84c2e"
+                "reference": "26fb006a2c7b6cdd23d52157b05f8414ffa417b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/5dc0db5026f2b611cb8910a1f465e95eafd84c2e",
-                "reference": "5dc0db5026f2b611cb8910a1f465e95eafd84c2e",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/26fb006a2c7b6cdd23d52157b05f8414ffa417b6",
+                "reference": "26fb006a2c7b6cdd23d52157b05f8414ffa417b6",
                 "shasum": ""
             },
             "require": {
@@ -7097,7 +7208,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2020-01-04T14:08:26+00:00"
+            "time": "2020-03-30T14:14:32+00:00"
         },
         {
             "name": "symfony/http-kernel",
@@ -7197,16 +7308,16 @@
         },
         {
             "name": "symfony/mime",
-            "version": "v5.0.3",
+            "version": "v5.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mime.git",
-                "reference": "2a3c7fee1f1a0961fa9cf360d5da553d05095e59"
+                "reference": "481b7d6da88922fb1e0d86a943987722b08f3955"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mime/zipball/2a3c7fee1f1a0961fa9cf360d5da553d05095e59",
-                "reference": "2a3c7fee1f1a0961fa9cf360d5da553d05095e59",
+                "url": "https://api.github.com/repos/symfony/mime/zipball/481b7d6da88922fb1e0d86a943987722b08f3955",
+                "reference": "481b7d6da88922fb1e0d86a943987722b08f3955",
                 "shasum": ""
             },
             "require": {
@@ -7255,7 +7366,7 @@
                 "mime",
                 "mime-type"
             ],
-            "time": "2020-01-04T14:08:26+00:00"
+            "time": "2020-03-27T16:56:45+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -7317,22 +7428,22 @@
         },
         {
             "name": "symfony/polyfill-intl-idn",
-            "version": "v1.13.1",
+            "version": "v1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-idn.git",
-                "reference": "6f9c239e61e1b0c9229a28ff89a812dc449c3d46"
+                "reference": "47bd6aa45beb1cd7c6a16b7d1810133b728bdfcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/6f9c239e61e1b0c9229a28ff89a812dc449c3d46",
-                "reference": "6f9c239e61e1b0c9229a28ff89a812dc449c3d46",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/47bd6aa45beb1cd7c6a16b7d1810133b728bdfcf",
+                "reference": "47bd6aa45beb1cd7c6a16b7d1810133b728bdfcf",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "symfony/polyfill-mbstring": "^1.3",
-                "symfony/polyfill-php72": "^1.9"
+                "symfony/polyfill-php72": "^1.10"
             },
             "suggest": {
                 "ext-intl": "For best performance"
@@ -7340,7 +7451,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.13-dev"
+                    "dev-master": "1.15-dev"
                 }
             },
             "autoload": {
@@ -7375,20 +7486,20 @@
                 "portable",
                 "shim"
             ],
-            "time": "2019-11-27T13:56:44+00:00"
+            "time": "2020-03-09T19:04:49+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.13.1",
+            "version": "v1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "7b4aab9743c30be783b73de055d24a39cf4b954f"
+                "reference": "81ffd3a9c6d707be22e3012b827de1c9775fc5ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7b4aab9743c30be783b73de055d24a39cf4b954f",
-                "reference": "7b4aab9743c30be783b73de055d24a39cf4b954f",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/81ffd3a9c6d707be22e3012b827de1c9775fc5ac",
+                "reference": "81ffd3a9c6d707be22e3012b827de1c9775fc5ac",
                 "shasum": ""
             },
             "require": {
@@ -7400,7 +7511,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.13-dev"
+                    "dev-master": "1.15-dev"
                 }
             },
             "autoload": {
@@ -7434,20 +7545,20 @@
                 "portable",
                 "shim"
             ],
-            "time": "2019-11-27T14:18:11+00:00"
+            "time": "2020-03-09T19:04:49+00:00"
         },
         {
             "name": "symfony/polyfill-php72",
-            "version": "v1.13.1",
+            "version": "v1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php72.git",
-                "reference": "66fea50f6cb37a35eea048d75a7d99a45b586038"
+                "reference": "37b0976c78b94856543260ce09b460a7bc852747"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/66fea50f6cb37a35eea048d75a7d99a45b586038",
-                "reference": "66fea50f6cb37a35eea048d75a7d99a45b586038",
+                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/37b0976c78b94856543260ce09b460a7bc852747",
+                "reference": "37b0976c78b94856543260ce09b460a7bc852747",
                 "shasum": ""
             },
             "require": {
@@ -7456,7 +7567,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.13-dev"
+                    "dev-master": "1.15-dev"
                 }
             },
             "autoload": {
@@ -7489,7 +7600,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2019-11-27T13:56:44+00:00"
+            "time": "2020-02-27T09:26:54+00:00"
         },
         {
             "name": "symfony/polyfill-php73",
