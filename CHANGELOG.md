@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## NEXT
+
+- Upgrade Drupal to 7.70
+
 ## 2020.01.23
 
 - Upgrade Drupal to 7.69.
