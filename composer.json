@@ -87,7 +87,8 @@
     "drupal/fontawesome": "^3.11",
     "drupal/bootstrap": "^3.26",
     "drupal/google_analytics_reports": "^3.1",
-    "drupal/google_analytics_reports_api": "^3.1"
+    "drupal/google_analytics_reports_api": "^3.1",
+    "drupal/backup_migrate_prune": "^2.1"
   },
   "minimum-stability": "alpha",
   "prefer-stable": true,

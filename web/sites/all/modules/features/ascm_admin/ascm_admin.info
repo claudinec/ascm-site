@@ -9,6 +9,7 @@ dependencies[] = antispam
 dependencies[] = ascm_blog
 dependencies[] = ascm_info
 dependencies[] = backup_migrate
+dependencies[] = backup_migrate_prune
 dependencies[] = civicrm
 dependencies[] = ckeditor
 dependencies[] = ctools
