@@ -96,7 +96,7 @@ function ascm_blocks_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 1,
-    'weight' => -46,
+    'weight' => -40,
     'customized' => 1,
   );
   // Exported menu link: main-menu_staff-handbook:node/1993.
