@@ -173,6 +173,16 @@
                 "zend",
                 "zikula"
             ],
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-04-07T06:57:05+00:00"
         },
         {
@@ -278,6 +288,10 @@
                     "homepage": "https://www.drupal.org/user/86106"
                 },
                 {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
                     "name": "rszrama",
                     "homepage": "https://www.drupal.org/user/49344"
                 }
@@ -285,7 +299,7 @@
             "description": "Manage a flexible address field, implementing the xNAL standard.",
             "homepage": "https://www.drupal.org/project/addressfield",
             "support": {
-                "source": "http://cgit.drupalcode.org/addressfield"
+                "source": "https://git.drupalcode.org/project/addressfield"
             }
         },
         {
@@ -365,9 +379,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-3.0-rc6",
                     "datestamp": "1543859280",
@@ -387,24 +398,20 @@
                     "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
+                    "name": "HongPong",
+                    "homepage": "https://www.drupal.org/user/60005"
+                },
+                {
                     "name": "RenatoG",
                     "homepage": "https://www.drupal.org/user/3326031"
                 },
                 {
-                    "name": "fubhy",
-                    "homepage": "https://www.drupal.org/user/761344"
-                },
-                {
-                    "name": "pwolanin",
-                    "homepage": "https://www.drupal.org/user/49851"
-                },
-                {
-                    "name": "smk-ka",
-                    "homepage": "https://www.drupal.org/user/48898"
-                },
-                {
                     "name": "sun",
                     "homepage": "https://www.drupal.org/user/54136"
+                },
+                {
+                    "name": "thalles",
+                    "homepage": "https://www.drupal.org/user/3589086"
                 },
                 {
                     "name": "truls1502",
@@ -414,7 +421,7 @@
             "description": "Provides a dropdown menu to most administrative tasks and other common destinations (to users with the proper permissions).",
             "homepage": "https://www.drupal.org/project/admin_menu",
             "support": {
-                "source": "http://cgit.drupalcode.org/admin_menu"
+                "source": "https://git.drupalcode.org/project/admin_menu"
             }
         },
         {
@@ -436,9 +443,6 @@
             },
             "type": "drupal-theme",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.26",
                     "datestamp": "1558584484",
@@ -662,7 +666,7 @@
             "description": "Allows hiding of the content title field and automatic title creation.",
             "homepage": "https://www.drupal.org/project/auto_nodetitle",
             "support": {
-                "source": "http://cgit.drupalcode.org/auto_nodetitle"
+                "source": "https://git.drupalcode.org/project/auto_nodetitle"
             }
         },
         {
@@ -713,7 +717,7 @@
             "description": "Provides autocomplete widgets for Text and List fields",
             "homepage": "https://www.drupal.org/project/autocomplete_widgets",
             "support": {
-                "source": "http://cgit.drupalcode.org/autocomplete_widgets"
+                "source": "https://git.drupalcode.org/project/autocomplete_widgets"
             }
         },
         {
@@ -846,9 +850,6 @@
             },
             "type": "drupal-theme",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-3.26",
                     "datestamp": "1561051685",
@@ -977,7 +978,7 @@
             "description": "Provides exports for custom blocks and spaces integration.",
             "homepage": "https://www.drupal.org/project/boxes",
             "support": {
-                "source": "http://cgit.drupalcode.org/boxes"
+                "source": "https://git.drupalcode.org/project/boxes"
             }
         },
         {
@@ -1020,16 +1021,16 @@
             ],
             "authors": [
                 {
+                    "name": "13rac1",
+                    "homepage": "https://www.drupal.org/user/372772"
+                },
+                {
                     "name": "Pierre.Vriens",
                     "homepage": "https://www.drupal.org/user/1689304"
                 },
                 {
                     "name": "boombatower",
                     "homepage": "https://www.drupal.org/user/214218"
-                },
-                {
-                    "name": "eosrei",
-                    "homepage": "https://www.drupal.org/user/372772"
                 },
                 {
                     "name": "ezra-g",
@@ -1043,7 +1044,7 @@
             "description": "Google Chart API integration.",
             "homepage": "https://www.drupal.org/project/chart",
             "support": {
-                "source": "http://cgit.drupalcode.org/chart"
+                "source": "https://git.drupalcode.org/project/chart"
             }
         },
         {
@@ -1202,9 +1203,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-3.0-alpha2",
                     "datestamp": "1443545939",
@@ -1228,18 +1226,30 @@
                     "homepage": "https://www.drupal.org/user/58704"
                 },
                 {
+                    "name": "ergonlogic",
+                    "homepage": "https://www.drupal.org/user/368613"
+                },
+                {
+                    "name": "geek-merlin",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
                     "name": "itsekhmistro",
                     "homepage": "https://www.drupal.org/user/928152"
                 },
                 {
                     "name": "peterpoe",
                     "homepage": "https://www.drupal.org/user/55674"
+                },
+                {
+                    "name": "thalles",
+                    "homepage": "https://www.drupal.org/user/3589086"
                 }
             ],
             "description": "Define dependencies between fields based on their states and values.",
             "homepage": "https://www.drupal.org/project/conditional_fields",
             "support": {
-                "source": "http://cgit.drupalcode.org/conditional_fields"
+                "source": "https://git.drupalcode.org/project/conditional_fields"
             }
         },
         {
@@ -1262,9 +1272,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-3.10",
                     "datestamp": "1551291108",
@@ -1279,6 +1286,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "Neslee Canil Pinto",
+                    "homepage": "https://www.drupal.org/user/3580850"
+                },
                 {
                     "name": "NormySan",
                     "homepage": "https://www.drupal.org/user/112352"
@@ -1343,7 +1354,7 @@
             "description": "Provide modules with a cache that lasts for a single page request.",
             "homepage": "https://www.drupal.org/project/context",
             "support": {
-                "source": "http://cgit.drupalcode.org/context"
+                "source": "https://git.drupalcode.org/project/context"
             }
         },
         {
@@ -1371,9 +1382,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.15",
                     "datestamp": "1549603684",
@@ -1436,7 +1444,7 @@
             "description": "A library of helpful tools by Merlin of Chaos.",
             "homepage": "https://www.drupal.org/project/ctools",
             "support": {
-                "source": "http://cgit.drupalcode.org/ctools"
+                "source": "https://git.drupalcode.org/project/ctools"
             }
         },
         {
@@ -1468,9 +1476,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-2.10",
                     "datestamp": "1491562115",
@@ -1533,7 +1538,7 @@
             "description": "Makes date/time fields available.",
             "homepage": "https://www.drupal.org/project/date",
             "support": {
-                "source": "http://cgit.drupalcode.org/date"
+                "source": "https://git.drupalcode.org/project/date"
             }
         },
         {
@@ -1545,9 +1550,6 @@
             },
             "type": "metapackage",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-2.10",
                     "datestamp": "1491562115",
@@ -1610,7 +1612,7 @@
             "description": "A Date API that can be used by other modules.",
             "homepage": "https://www.drupal.org/project/date",
             "support": {
-                "source": "http://cgit.drupalcode.org/date"
+                "source": "https://git.drupalcode.org/project/date"
             }
         },
         {
@@ -1632,9 +1634,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.7",
                     "datestamp": "1550852888",
@@ -1650,38 +1649,18 @@
             ],
             "authors": [
                 {
-                    "name": "catch",
-                    "homepage": "https://www.drupal.org/user/35733"
-                },
-                {
-                    "name": "juampynr",
-                    "homepage": "https://www.drupal.org/user/682736"
-                },
-                {
-                    "name": "lussoluca",
-                    "homepage": "https://www.drupal.org/user/138068"
+                    "name": "drupalspoons",
+                    "homepage": "https://www.drupal.org/user/3647684"
                 },
                 {
                     "name": "moshe weitzman",
                     "homepage": "https://www.drupal.org/user/23"
-                },
-                {
-                    "name": "pcambra",
-                    "homepage": "https://www.drupal.org/user/122101"
-                },
-                {
-                    "name": "salvis",
-                    "homepage": "https://www.drupal.org/user/82964"
-                },
-                {
-                    "name": "willzyx",
-                    "homepage": "https://www.drupal.org/user/1043862"
                 }
             ],
             "description": "Various blocks, pages, and functions for developers.",
             "homepage": "https://www.drupal.org/project/devel",
             "support": {
-                "source": "http://cgit.drupalcode.org/devel"
+                "source": "https://git.drupalcode.org/project/devel"
             }
         },
         {
@@ -1703,9 +1682,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-3.4",
                     "datestamp": "1541401381",
@@ -1745,6 +1721,10 @@
                     "homepage": "https://www.drupal.org/user/227761"
                 },
                 {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
                     "name": "realityloop",
                     "homepage": "https://www.drupal.org/user/139189"
                 },
@@ -1760,7 +1740,7 @@
             "description": "Show differences between content revisions.",
             "homepage": "https://www.drupal.org/project/diff",
             "support": {
-                "source": "http://cgit.drupalcode.org/diff"
+                "source": "https://git.drupalcode.org/project/diff"
             }
         },
         {
@@ -1782,9 +1762,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.2",
                     "datestamp": "1528972423",
@@ -1800,8 +1777,20 @@
             ],
             "authors": [
                 {
-                    "name": "mslabba_zyxware",
-                    "homepage": "https://www.drupal.org/user/3471683"
+                    "name": "anoopjohn",
+                    "homepage": "https://www.drupal.org/user/188049"
+                },
+                {
+                    "name": "binnythomas",
+                    "homepage": "https://www.drupal.org/user/3123091"
+                },
+                {
+                    "name": "varunity",
+                    "homepage": "https://www.drupal.org/user/273530"
+                },
+                {
+                    "name": "vimaljoseph",
+                    "homepage": "https://www.drupal.org/user/817380"
                 },
                 {
                     "name": "zyxware",
@@ -1811,7 +1800,7 @@
             "description": "Add options to filter messages shown to the end users",
             "homepage": "https://www.drupal.org/project/disable_messages",
             "support": {
-                "source": "http://cgit.drupalcode.org/disable_messages"
+                "source": "https://git.drupalcode.org/project/disable_messages"
             }
         },
         {
@@ -1836,9 +1825,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.12",
                     "datestamp": "1434655380",
@@ -1870,6 +1856,10 @@
                     "homepage": "https://www.drupal.org/user/99340"
                 },
                 {
+                    "name": "jason.blanda",
+                    "homepage": "https://www.drupal.org/user/1969424"
+                },
+                {
                     "name": "marcingy",
                     "homepage": "https://www.drupal.org/user/77320"
                 },
@@ -1881,7 +1871,7 @@
             "description": "Uses the Disqus web service to enhance comments.",
             "homepage": "https://www.drupal.org/project/disqus",
             "support": {
-                "source": "http://cgit.drupalcode.org/disqus"
+                "source": "https://git.drupalcode.org/project/disqus"
             }
         },
         {
@@ -2007,9 +1997,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-2.16",
                     "datestamp": "1530614320",
@@ -2044,7 +2031,7 @@
             "description": "Extend the display options for every entity type.",
             "homepage": "https://www.drupal.org/project/ds",
             "support": {
-                "source": "http://cgit.drupalcode.org/ds"
+                "source": "https://git.drupalcode.org/project/ds"
             }
         },
         {
@@ -2095,7 +2082,7 @@
             "description": "Defines an email field type.",
             "homepage": "https://www.drupal.org/project/email",
             "support": {
-                "source": "http://cgit.drupalcode.org/email"
+                "source": "https://git.drupalcode.org/project/email"
             }
         },
         {
@@ -2117,9 +2104,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.9",
                     "datestamp": "1518642010",
@@ -2153,12 +2137,16 @@
                 {
                     "name": "fago",
                     "homepage": "https://www.drupal.org/user/16747"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
                 }
             ],
             "description": "Enables modules to work with any entity type and to provide entities.",
             "homepage": "https://www.drupal.org/project/entity",
             "support": {
-                "source": "http://cgit.drupalcode.org/entity"
+                "source": "https://git.drupalcode.org/project/entity"
             }
         },
         {
@@ -2170,9 +2158,6 @@
             },
             "type": "metapackage",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.9",
                     "datestamp": "1518642010",
@@ -2206,12 +2191,16 @@
                 {
                     "name": "fago",
                     "homepage": "https://www.drupal.org/user/16747"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
                 }
             ],
             "description": "Provides token replacements for all properties that have no tokens and are known to the entity API.",
             "homepage": "https://www.drupal.org/project/entity",
             "support": {
-                "source": "http://cgit.drupalcode.org/entity"
+                "source": "https://git.drupalcode.org/project/entity"
             }
         },
         {
@@ -2239,9 +2228,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.5",
                     "datestamp": "1502906584",
@@ -2288,7 +2274,7 @@
             "description": "Provides a field that can reference other entities.",
             "homepage": "https://www.drupal.org/project/entityreference",
             "support": {
-                "source": "http://cgit.drupalcode.org/entityreference"
+                "source": "https://git.drupalcode.org/project/entityreference"
             }
         },
         {
@@ -2315,9 +2301,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-2.9",
                     "datestamp": "1510267684",
@@ -2339,12 +2322,16 @@
                 {
                     "name": "mrfelton",
                     "homepage": "https://www.drupal.org/user/305669"
+                },
+                {
+                    "name": "pratik_kamble",
+                    "homepage": "https://www.drupal.org/user/3204909"
                 }
             ],
             "description": "Adds a color indicator for the different environments.",
             "homepage": "https://www.drupal.org/project/environment_indicator",
             "support": {
-                "source": "http://cgit.drupalcode.org/environment_indicator"
+                "source": "https://git.drupalcode.org/project/environment_indicator"
             }
         },
         {
@@ -2370,9 +2357,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-2.11",
                     "datestamp": "1541189192",
@@ -2392,12 +2376,20 @@
                     "homepage": "https://www.drupal.org/user/99340"
                 },
                 {
+                    "name": "donquixote",
+                    "homepage": "https://www.drupal.org/user/459338"
+                },
+                {
                     "name": "e2thex",
                     "homepage": "https://www.drupal.org/user/189123"
                 },
                 {
                     "name": "febbraro",
                     "homepage": "https://www.drupal.org/user/43670"
+                },
+                {
+                    "name": "flocondetoile",
+                    "homepage": "https://www.drupal.org/user/2006064"
                 },
                 {
                     "name": "jmiccolis",
@@ -2423,7 +2415,7 @@
             "description": "Provides feature management for Drupal.",
             "homepage": "https://www.drupal.org/project/features",
             "support": {
-                "source": "http://cgit.drupalcode.org/features"
+                "source": "https://git.drupalcode.org/project/features"
             }
         },
         {
@@ -2459,9 +2451,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-2.0-beta4",
                     "datestamp": "1506437520",
@@ -2513,6 +2502,10 @@
                     "homepage": "https://www.drupal.org/user/31731"
                 },
                 {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
                     "name": "kking",
                     "homepage": "https://www.drupal.org/user/24399"
                 },
@@ -2536,7 +2529,7 @@
             "description": "Aggregates RSS/Atom/RDF feeds, imports CSV files and more.",
             "homepage": "https://www.drupal.org/project/feeds",
             "support": {
-                "source": "http://cgit.drupalcode.org/feeds"
+                "source": "https://git.drupalcode.org/project/feeds"
             }
         },
         {
@@ -2559,9 +2552,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.4",
                     "datestamp": "1438769939",
@@ -2584,7 +2574,7 @@
             "description": "Adds formatted field and field property tokens.",
             "homepage": "https://www.drupal.org/project/field_tokens",
             "support": {
-                "source": "http://cgit.drupalcode.org/field_tokens"
+                "source": "https://git.drupalcode.org/project/field_tokens"
             }
         },
         {
@@ -2733,9 +2723,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.1",
                     "datestamp": "1534351087",
@@ -2755,10 +2742,6 @@
                     "homepage": "https://www.drupal.org/user/103796"
                 },
                 {
-                    "name": "dpagini",
-                    "homepage": "https://www.drupal.org/user/1802126"
-                },
-                {
                     "name": "voleger",
                     "homepage": "https://www.drupal.org/user/3260314"
                 }
@@ -2766,7 +2749,7 @@
             "description": "Adds improved Token based file sorting and renaming functionalities.",
             "homepage": "https://www.drupal.org/project/filefield_paths",
             "support": {
-                "source": "http://cgit.drupalcode.org/filefield_paths"
+                "source": "https://git.drupalcode.org/project/filefield_paths"
             }
         },
         {
@@ -2788,9 +2771,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.11",
                     "datestamp": "1518028513",
@@ -2806,6 +2786,10 @@
             ],
             "authors": [
                 {
+                    "name": "gnuget",
+                    "homepage": "https://www.drupal.org/user/992990"
+                },
+                {
                     "name": "profak",
                     "homepage": "https://www.drupal.org/user/782534"
                 },
@@ -2817,7 +2801,7 @@
             "description": "Extends File fields to allow referencing of existing files, remote files, and server files.",
             "homepage": "https://www.drupal.org/project/filefield_sources",
             "support": {
-                "source": "http://cgit.drupalcode.org/filefield_sources"
+                "source": "https://git.drupalcode.org/project/filefield_sources"
             }
         },
         {
@@ -2840,9 +2824,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-3.12",
                     "datestamp": "1571156587",
@@ -2902,9 +2883,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-2.6",
                     "datestamp": "1548968580",
@@ -2920,17 +2898,33 @@
             ],
             "authors": [
                 {
+                    "name": "andyrigby",
+                    "homepage": "https://www.drupal.org/user/2679687"
+                },
+                {
                     "name": "budda",
                     "homepage": "https://www.drupal.org/user/13164"
                 },
                 {
-                    "name": "hass",
-                    "homepage": "https://www.drupal.org/user/85918"
+                    "name": "ixismark",
+                    "homepage": "https://www.drupal.org/user/3632333"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "pfaocle",
+                    "homepage": "https://www.drupal.org/user/9740"
+                },
+                {
+                    "name": "roberto.rivera.ixis",
+                    "homepage": "https://www.drupal.org/user/3632325"
                 }
             ],
             "homepage": "https://www.drupal.org/project/google_analytics",
             "support": {
-                "source": "http://cgit.drupalcode.org/google_analytics"
+                "source": "https://git.drupalcode.org/project/google_analytics"
             }
         },
         {
@@ -2954,9 +2948,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-3.1",
                     "datestamp": "1468146539",
@@ -3019,9 +3010,6 @@
             },
             "type": "metapackage",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-3.1",
                     "datestamp": "1468146539",
@@ -3090,13 +3078,11 @@
                 "shasum": "9b204f748c2398ecea72086d073fcd62a13d91db"
             },
             "require": {
-                "drupal/drupal": "*"
+                "drupal/drupal": "~7.0",
+                "drupal/update_notifications_disable-update": "*"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-2.0-beta8",
                     "datestamp": "1549435380",
@@ -3124,7 +3110,7 @@
                     "homepage": "https://www.drupal.org/user/58704"
                 },
                 {
-                    "name": "itcrowd72",
+                    "name": "ivnish",
                     "homepage": "https://www.drupal.org/user/3547706"
                 }
             ],
@@ -3153,9 +3139,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.26",
                     "datestamp": "1576274586",
@@ -3208,9 +3191,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.0",
                     "datestamp": "1490035383",
@@ -3237,7 +3217,7 @@
             "description": "Implements an API for icon providers and an administrative UI for integrating icons through out the site.",
             "homepage": "https://www.drupal.org/project/icon",
             "support": {
-                "source": "http://cgit.drupalcode.org/icon"
+                "source": "https://git.drupalcode.org/project/icon"
             }
         },
         {
@@ -3259,9 +3239,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.11",
                     "datestamp": "1495890784",
@@ -3277,6 +3254,10 @@
             ],
             "authors": [
                 {
+                    "name": "thalles",
+                    "homepage": "https://www.drupal.org/user/3589086"
+                },
+                {
                     "name": "ufku",
                     "homepage": "https://www.drupal.org/user/9910"
                 }
@@ -3284,7 +3265,7 @@
             "description": "An image/file uploader and browser supporting personal directories and user quota.",
             "homepage": "https://www.drupal.org/project/imce",
             "support": {
-                "source": "http://cgit.drupalcode.org/imce"
+                "source": "https://git.drupalcode.org/project/imce"
             }
         },
         {
@@ -3332,7 +3313,7 @@
             "description": "Allows users to select files from IMCE File Browser for file fields.",
             "homepage": "https://www.drupal.org/project/imce_filefield",
             "support": {
-                "source": "http://cgit.drupalcode.org/imce_filefield"
+                "source": "https://git.drupalcode.org/project/imce_filefield"
             }
         },
         {
@@ -3389,7 +3370,7 @@
             "description": "Makes IMCE available as plugin for client-side editors integrated via Wysiwyg API.",
             "homepage": "https://www.drupal.org/project/imce_wysiwyg",
             "support": {
-                "source": "http://cgit.drupalcode.org/imce_wysiwyg"
+                "source": "https://git.drupalcode.org/project/imce_wysiwyg"
             }
         },
         {
@@ -3411,9 +3392,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-2.0",
                     "datestamp": "1518514084",
@@ -3472,7 +3450,7 @@
             "description": "Scheduler API",
             "homepage": "https://www.drupal.org/project/job_scheduler",
             "support": {
-                "source": "http://cgit.drupalcode.org/job_scheduler"
+                "source": "https://git.drupalcode.org/project/job_scheduler"
             }
         },
         {
@@ -3494,12 +3472,9 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-2.5",
-                    "datestamp": "1538770681",
+                    "datestamp": "1569052574",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3535,7 +3510,7 @@
             "description": "Allows version-dependent and shared usage of external libraries.",
             "homepage": "https://www.drupal.org/project/libraries",
             "support": {
-                "source": "http://cgit.drupalcode.org/libraries"
+                "source": "https://git.drupalcode.org/project/libraries"
             }
         },
         {
@@ -3557,9 +3532,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.7",
                     "datestamp": "1573731186",
@@ -3648,9 +3620,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.4",
                     "datestamp": "1534714680",
@@ -3666,6 +3635,10 @@
             ],
             "authors": [
                 {
+                    "name": "C_Logemann",
+                    "homepage": "https://www.drupal.org/user/218368"
+                },
+                {
                     "name": "hass",
                     "homepage": "https://www.drupal.org/user/85918"
                 }
@@ -3673,7 +3646,7 @@
             "description": "Periodically checks for broken links in node types, blocks and fields and reports the results.",
             "homepage": "https://www.drupal.org/project/linkchecker",
             "support": {
-                "source": "http://cgit.drupalcode.org/linkchecker"
+                "source": "https://git.drupalcode.org/project/linkchecker"
             }
         },
         {
@@ -3700,9 +3673,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.5",
                     "datestamp": "1430505479",
@@ -3765,7 +3735,7 @@
             "description": "Improves Drupal's login system.",
             "homepage": "https://www.drupal.org/project/logintoboggan",
             "support": {
-                "source": "http://cgit.drupalcode.org/logintoboggan"
+                "source": "https://git.drupalcode.org/project/logintoboggan"
             }
         },
         {
@@ -3844,9 +3814,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-2.35",
                     "datestamp": "1531385925",
@@ -3889,7 +3856,7 @@
             "description": "Provides a user interface for per-module and site-wide mail_system selection.",
             "homepage": "https://www.drupal.org/project/mailsystem",
             "support": {
-                "source": "http://cgit.drupalcode.org/mailsystem"
+                "source": "https://git.drupalcode.org/project/mailsystem"
             }
         },
         {
@@ -3911,9 +3878,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.5",
                     "datestamp": "1478247839",
@@ -3929,26 +3893,22 @@
             ],
             "authors": [
                 {
-                    "name": "barraponto",
-                    "homepage": "https://www.drupal.org/user/511760"
-                },
-                {
                     "name": "frjo",
                     "homepage": "https://www.drupal.org/user/5546"
                 },
                 {
-                    "name": "justin2pin",
-                    "homepage": "https://www.drupal.org/user/278450"
+                    "name": "gisle",
+                    "homepage": "https://www.drupal.org/user/409554"
                 },
                 {
-                    "name": "sreynen",
-                    "homepage": "https://www.drupal.org/user/109890"
+                    "name": "markcarver",
+                    "homepage": "https://www.drupal.org/user/501638"
                 }
             ],
             "description": "Allows content to be submitted using Markdown, a simple plain-text syntax that is transformed into valid XHTML.",
             "homepage": "https://www.drupal.org/project/markdown",
             "support": {
-                "source": "http://cgit.drupalcode.org/markdown"
+                "source": "https://git.drupalcode.org/project/markdown"
             }
         },
         {
@@ -4030,9 +3990,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.9",
                     "datestamp": "1565972584",
@@ -4122,9 +4079,6 @@
             },
             "type": "metapackage",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.9",
                     "datestamp": "1565972584",
@@ -4251,7 +4205,7 @@
             "description": "Provides integration between the Media module (file entities) and the Colorbox module.",
             "homepage": "https://www.drupal.org/project/media_colorbox",
             "support": {
-                "source": "http://cgit.drupalcode.org/media_colorbox"
+                "source": "https://git.drupalcode.org/project/media_colorbox"
             }
         },
         {
@@ -4279,9 +4233,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.1",
                     "datestamp": "1539816914",
@@ -4316,7 +4267,7 @@
             "description": "Send MIME-encoded emails with embedded images and attachments.",
             "homepage": "https://www.drupal.org/project/mimemail",
             "support": {
-                "source": "http://cgit.drupalcode.org/mimemail"
+                "source": "https://git.drupalcode.org/project/mimemail"
             }
         },
         {
@@ -4338,9 +4289,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-2.2",
                     "datestamp": "1553708435",
@@ -4356,16 +4304,12 @@
             ],
             "authors": [
                 {
+                    "name": "andrey.troeglazov",
+                    "homepage": "https://www.drupal.org/user/3145389"
+                },
+                {
                     "name": "greenSkin",
                     "homepage": "https://www.drupal.org/user/173855"
-                },
-                {
-                    "name": "realityloop",
-                    "homepage": "https://www.drupal.org/user/139189"
-                },
-                {
-                    "name": "shumushin",
-                    "homepage": "https://www.drupal.org/user/22093"
                 }
             ],
             "description": "Filter the modules list.",
@@ -4418,7 +4362,7 @@
             "description": "Creates a widget for filefield to upload multiple files at once using html5.",
             "homepage": "https://www.drupal.org/project/multiupload_filefield_widget",
             "support": {
-                "source": "http://cgit.drupalcode.org/multiupload_filefield_widget"
+                "source": "https://git.drupalcode.org/project/multiupload_filefield_widget"
             }
         },
         {
@@ -4443,9 +4387,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-3.4",
                     "datestamp": "1486359786",
@@ -4467,7 +4408,7 @@
             ],
             "homepage": "https://www.drupal.org/project/oauth",
             "support": {
-                "source": "http://cgit.drupalcode.org/oauth"
+                "source": "https://git.drupalcode.org/project/oauth"
             }
         },
         {
@@ -4479,9 +4420,6 @@
             },
             "type": "metapackage",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-3.4",
                     "datestamp": "1486359786",
@@ -4504,7 +4442,7 @@
             "description": "Provides OAuth functionality",
             "homepage": "https://www.drupal.org/project/oauth",
             "support": {
-                "source": "http://cgit.drupalcode.org/oauth"
+                "source": "https://git.drupalcode.org/project/oauth"
             }
         },
         {
@@ -4555,7 +4493,7 @@
             "description": "A custom form element for entering the options in select lists, radios, or checkboxes.",
             "homepage": "https://www.drupal.org/project/options_element",
             "support": {
-                "source": "http://cgit.drupalcode.org/options_element"
+                "source": "https://git.drupalcode.org/project/options_element"
             }
         },
         {
@@ -4578,9 +4516,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.3",
                     "datestamp": "1444232639",
@@ -4615,7 +4550,7 @@
             "description": "Provides a mechanism for modules to automatically generate aliases for the content they manage.",
             "homepage": "https://www.drupal.org/project/pathauto",
             "support": {
-                "source": "http://cgit.drupalcode.org/pathauto"
+                "source": "https://git.drupalcode.org/project/pathauto"
             }
         },
         {
@@ -4637,9 +4572,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.9",
                     "datestamp": "1403741628",
@@ -4661,7 +4593,7 @@
             ],
             "homepage": "https://www.drupal.org/project/revisioning",
             "support": {
-                "source": "http://cgit.drupalcode.org/revisioning"
+                "source": "https://git.drupalcode.org/project/revisioning"
             }
         },
         {
@@ -4688,9 +4620,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-2.12",
                     "datestamp": "1548305581",
@@ -4721,7 +4650,7 @@
             "description": "React on events and conditionally evaluate actions.",
             "homepage": "https://www.drupal.org/project/rules",
             "support": {
-                "source": "http://cgit.drupalcode.org/rules"
+                "source": "https://git.drupalcode.org/project/rules"
             }
         },
         {
@@ -4746,9 +4675,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.5",
                     "datestamp": "1469372939",
@@ -4783,7 +4709,7 @@
             "description": "This module allows nodes to be published and unpublished on specified dates and time.",
             "homepage": "https://www.drupal.org/project/scheduler",
             "support": {
-                "source": "http://cgit.drupalcode.org/scheduler"
+                "source": "https://git.drupalcode.org/project/scheduler"
             }
         },
         {
@@ -4805,9 +4731,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.6",
                     "datestamp": "1510300385",
@@ -4827,8 +4750,20 @@
                     "homepage": "https://www.drupal.org/user/188049"
                 },
                 {
+                    "name": "binnythomas",
+                    "homepage": "https://www.drupal.org/user/3123091"
+                },
+                {
                     "name": "larssg",
                     "homepage": "https://www.drupal.org/user/655"
+                },
+                {
+                    "name": "varunity",
+                    "homepage": "https://www.drupal.org/user/273530"
+                },
+                {
+                    "name": "vimaljoseph",
+                    "homepage": "https://www.drupal.org/user/817380"
                 },
                 {
                     "name": "zyxware",
@@ -4838,7 +4773,7 @@
             "description": "Automatically search for the keywords in URLs that result in 404 errors and show results instead of Page-Not-Found. ",
             "homepage": "https://www.drupal.org/project/search404",
             "support": {
-                "source": "http://cgit.drupalcode.org/search404"
+                "source": "https://git.drupalcode.org/project/search404"
             }
         },
         {
@@ -4860,9 +4795,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.7",
                     "datestamp": "1514932985",
@@ -4885,7 +4817,7 @@
             "description": "Enables user login and other forms to be submitted securely via HTTPS and enforces secure authenticated sessions.",
             "homepage": "https://www.drupal.org/project/securelogin",
             "support": {
-                "source": "http://cgit.drupalcode.org/securelogin"
+                "source": "https://git.drupalcode.org/project/securelogin"
             }
         },
         {
@@ -4910,9 +4842,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.7",
                     "datestamp": "1498667346",
@@ -4944,6 +4873,10 @@
                     "homepage": "https://www.drupal.org/user/4649"
                 },
                 {
+                    "name": "sadashiv",
+                    "homepage": "https://www.drupal.org/user/1773304"
+                },
+                {
                     "name": "wundo",
                     "homepage": "https://www.drupal.org/user/25523"
                 },
@@ -4955,7 +4888,7 @@
             "description": "Allow for site emails to be sent through an SMTP server of your choice.",
             "homepage": "https://www.drupal.org/project/smtp",
             "support": {
-                "source": "http://cgit.drupalcode.org/smtp"
+                "source": "https://git.drupalcode.org/project/smtp"
             }
         },
         {
@@ -5023,7 +4956,7 @@
             "description": "Enforces variable values defined by modules that need settings set to operate properly.",
             "homepage": "https://www.drupal.org/project/strongarm",
             "support": {
-                "source": "http://cgit.drupalcode.org/strongarm"
+                "source": "https://git.drupalcode.org/project/strongarm"
             }
         },
         {
@@ -5086,7 +5019,7 @@
             "description": "Access control for user roles based on taxonomy categories.",
             "homepage": "https://www.drupal.org/project/taxonomy_access",
             "support": {
-                "source": "http://cgit.drupalcode.org/taxonomy_access"
+                "source": "https://git.drupalcode.org/project/taxonomy_access"
             }
         },
         {
@@ -5108,9 +5041,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.7",
                     "datestamp": "1485316084",
@@ -5153,7 +5083,7 @@
             "description": "Provides a user interface for the Token API and some missing core tokens.",
             "homepage": "https://www.drupal.org/project/token",
             "support": {
-                "source": "http://cgit.drupalcode.org/token"
+                "source": "https://git.drupalcode.org/project/token"
             }
         },
         {
@@ -5176,9 +5106,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.1",
                     "datestamp": "1325700944",
@@ -5193,6 +5120,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "Darvanen",
+                    "homepage": "https://www.drupal.org/user/1068770"
+                },
                 {
                     "name": "Dave Reid",
                     "homepage": "https://www.drupal.org/user/53892"
@@ -5221,7 +5152,7 @@
             "description": "Allows token values to be used as filters",
             "homepage": "https://www.drupal.org/project/token_filter",
             "support": {
-                "source": "http://cgit.drupalcode.org/token_filter"
+                "source": "https://git.drupalcode.org/project/token_filter"
             }
         },
         {
@@ -5243,9 +5174,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.2",
                     "datestamp": "1438759439",
@@ -5272,7 +5200,7 @@
             "description": "A utility for turning tokens into rendered markup via AJAX",
             "homepage": "https://www.drupal.org/project/token_replace_ajax",
             "support": {
-                "source": "http://cgit.drupalcode.org/token_replace_ajax"
+                "source": "https://git.drupalcode.org/project/token_replace_ajax"
             }
         },
         {
@@ -5294,15 +5222,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-1.0-rc10",
                     "datestamp": "1429046881",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5311,6 +5236,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "benjifisher",
+                    "homepage": "https://www.drupal.org/user/683300"
+                },
                 {
                     "name": "jpamental",
                     "homepage": "https://www.drupal.org/user/174960"
@@ -5331,7 +5260,91 @@
             "description": "Adds typographic refinements.",
             "homepage": "https://www.drupal.org/project/typogrify",
             "support": {
-                "source": "http://cgit.drupalcode.org/typogrify"
+                "source": "https://git.drupalcode.org/project/typogrify"
+            }
+        },
+        {
+            "name": "drupal/update_notifications_disable",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/update_notifications_disable.git",
+                "reference": "7.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/update_notifications_disable-7.x-1.1.zip",
+                "reference": "7.x-1.1",
+                "shasum": "d0459771630b0c784ef7d53dd78d128418d0e82a"
+            },
+            "require": {
+                "drupal/drupal": "~7.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "7.x-1.1",
+                    "datestamp": "1495750385",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "webchick",
+                    "homepage": "https://www.drupal.org/user/24967"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/update_notifications_disable",
+            "support": {
+                "source": "https://git.drupalcode.org/project/update_notifications_disable"
+            }
+        },
+        {
+            "name": "drupal/update_notifications_disable-update",
+            "version": "1.1.0",
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/update_notifications_disable": "self.version"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "7.x-1.1",
+                    "datestamp": "1495750385",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "webchick",
+                    "homepage": "https://www.drupal.org/user/24967"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/update_notifications_disable",
+            "support": {
+                "source": "https://git.drupalcode.org/project/update_notifications_disable"
             }
         },
         {
@@ -5354,9 +5367,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-3.24",
                     "datestamp": "1583615729",
@@ -5474,6 +5484,10 @@
                     "homepage": "https://www.drupal.org/user/53995"
                 },
                 {
+                    "name": "idebr",
+                    "homepage": "https://www.drupal.org/user/1879760"
+                },
+                {
                     "name": "maciej.zgadzaj",
                     "homepage": "https://www.drupal.org/user/271491"
                 },
@@ -5485,7 +5499,7 @@
             "description": "Provides a views plugin that allows fields to be included in RSS feeds created using the Views module.",
             "homepage": "https://www.drupal.org/project/views_rss",
             "support": {
-                "source": "http://cgit.drupalcode.org/views_rss"
+                "source": "https://git.drupalcode.org/project/views_rss"
             },
             "time": "2014-12-23T18:24:17+00:00"
         },
@@ -5595,9 +5609,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-4.x": "4.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-4.28",
                     "datestamp": "1565729887",
@@ -5652,7 +5663,7 @@
                 },
                 "drupal": {
                     "version": "7.x-2.6",
-                    "datestamp": "1563397062",
+                    "datestamp": "1563520137",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5728,7 +5739,7 @@
             "description": "Drupal Fields as CKEditor plugins.",
             "homepage": "https://www.drupal.org/project/wysiwyg_fields",
             "support": {
-                "source": "http://cgit.drupalcode.org/wysiwyg_fields"
+                "source": "https://git.drupalcode.org/project/wysiwyg_fields"
             }
         },
         {
@@ -5755,9 +5766,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "7.x-2.6",
                     "datestamp": "1539120480",
@@ -5812,7 +5820,7 @@
             "description": "Creates an XML sitemap conforming to the <a href=\"http://sitemaps.org/\">sitemaps.org protocol</a>.",
             "homepage": "https://www.drupal.org/project/xmlsitemap",
             "support": {
-                "source": "http://cgit.drupalcode.org/xmlsitemap"
+                "source": "https://git.drupalcode.org/project/xmlsitemap"
             }
         },
         {
@@ -6460,6 +6468,20 @@
                 "caching",
                 "psr6"
             ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-06-09T14:15:34+00:00"
         },
         {
@@ -6517,6 +6539,20 @@
                 "interfaces",
                 "interoperability",
                 "standards"
+            ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-05-20T17:43:50+00:00"
         },
@@ -6584,6 +6620,20 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-05-23T13:08:13+00:00"
         },
         {
@@ -6659,20 +6709,34 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-06-12T08:11:32+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "v2.1.2",
+            "version": "v2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "dd99cb3a0aff6cadd2a8d7d7ed72c2161e218337"
+                "reference": "5e20b83385a77593259c9f8beb2c43cd03b2ac14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/dd99cb3a0aff6cadd2a8d7d7ed72c2161e218337",
-                "reference": "dd99cb3a0aff6cadd2a8d7d7ed72c2161e218337",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/5e20b83385a77593259c9f8beb2c43cd03b2ac14",
+                "reference": "5e20b83385a77593259c9f8beb2c43cd03b2ac14",
                 "shasum": ""
             },
             "require": {
@@ -6682,6 +6746,10 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "2.1-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -6705,20 +6773,34 @@
             ],
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
-            "time": "2020-05-27T08:34:37+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-06-06T08:49:21+00:00"
         },
         {
             "name": "symfony/error-handler",
-            "version": "v5.1.2",
+            "version": "v5.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/error-handler.git",
-                "reference": "7d0b927b9d3dc41d7d46cda38cbfcd20cdcbb896"
+                "reference": "525636d4b84e06c6ca72d96b6856b5b169416e6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/error-handler/zipball/7d0b927b9d3dc41d7d46cda38cbfcd20cdcbb896",
-                "reference": "7d0b927b9d3dc41d7d46cda38cbfcd20cdcbb896",
+                "url": "https://api.github.com/repos/symfony/error-handler/zipball/525636d4b84e06c6ca72d96b6856b5b169416e6a",
+                "reference": "525636d4b84e06c6ca72d96b6856b5b169416e6a",
                 "shasum": ""
             },
             "require": {
@@ -6762,20 +6844,34 @@
             ],
             "description": "Symfony ErrorHandler Component",
             "homepage": "https://symfony.com",
-            "time": "2020-05-30T20:35:19+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-08-17T10:01:29+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v5.1.2",
+            "version": "v5.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "cc0d059e2e997e79ca34125a52f3e33de4424ac7"
+                "reference": "94871fc0a69c3c5da57764187724cdce0755899c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/cc0d059e2e997e79ca34125a52f3e33de4424ac7",
-                "reference": "cc0d059e2e997e79ca34125a52f3e33de4424ac7",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/94871fc0a69c3c5da57764187724cdce0755899c",
+                "reference": "94871fc0a69c3c5da57764187724cdce0755899c",
                 "shasum": ""
             },
             "require": {
@@ -6834,20 +6930,34 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2020-05-20T17:43:50+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-08-13T14:19:42+00:00"
         },
         {
             "name": "symfony/event-dispatcher-contracts",
-            "version": "v2.1.2",
+            "version": "v2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher-contracts.git",
-                "reference": "405952c4e90941a17e52ef7489a2bd94870bb290"
+                "reference": "f6f613d74cfc5a623fc36294d3451eb7fa5a042b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/405952c4e90941a17e52ef7489a2bd94870bb290",
-                "reference": "405952c4e90941a17e52ef7489a2bd94870bb290",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/f6f613d74cfc5a623fc36294d3451eb7fa5a042b",
+                "reference": "f6f613d74cfc5a623fc36294d3451eb7fa5a042b",
                 "shasum": ""
             },
             "require": {
@@ -6861,6 +6971,10 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "2.1-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -6892,7 +7006,21 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2020-05-20T17:43:50+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-06T13:23:11+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -6942,6 +7070,20 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-05-30T20:35:19+00:00"
         },
         {
@@ -6991,6 +7133,20 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-05-20T17:43:50+00:00"
         },
         {
@@ -7124,20 +7280,34 @@
             ],
             "description": "Symfony FrameworkBundle",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-06-12T08:11:32+00:00"
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v5.1.2",
+            "version": "v5.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "f93055171b847915225bd5b0a5792888419d8d75"
+                "reference": "41a4647f12870e9d41d9a7d72ff0614a27208558"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/f93055171b847915225bd5b0a5792888419d8d75",
-                "reference": "f93055171b847915225bd5b0a5792888419d8d75",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/41a4647f12870e9d41d9a7d72ff0614a27208558",
+                "reference": "41a4647f12870e9d41d9a7d72ff0614a27208558",
                 "shasum": ""
             },
             "require": {
@@ -7185,20 +7355,34 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2020-06-15T06:52:54+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-08-17T07:48:54+00:00"
         },
         {
             "name": "symfony/http-kernel",
-            "version": "v5.1.2",
+            "version": "v5.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "a18c27ace1ef344ffcb129a5b089bad7643b387a"
+                "reference": "3e32676e6cb5d2081c91a56783471ff8a7f7110b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/a18c27ace1ef344ffcb129a5b089bad7643b387a",
-                "reference": "a18c27ace1ef344ffcb129a5b089bad7643b387a",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/3e32676e6cb5d2081c91a56783471ff8a7f7110b",
+                "reference": "3e32676e6cb5d2081c91a56783471ff8a7f7110b",
                 "shasum": ""
             },
             "require": {
@@ -7284,20 +7468,34 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2020-06-15T13:51:38+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-09-02T08:15:18+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.17.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "e94c8b1bbe2bc77507a1056cdb06451c75b427f9"
+                "reference": "1c302646f6efc070cd46856e600e5e0684d6b454"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/e94c8b1bbe2bc77507a1056cdb06451c75b427f9",
-                "reference": "e94c8b1bbe2bc77507a1056cdb06451c75b427f9",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/1c302646f6efc070cd46856e600e5e0684d6b454",
+                "reference": "1c302646f6efc070cd46856e600e5e0684d6b454",
                 "shasum": ""
             },
             "require": {
@@ -7309,7 +7507,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-master": "1.18-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
                 }
             },
             "autoload": {
@@ -7342,7 +7544,21 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2020-05-12T16:14:59+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-14T12:35:20+00:00"
         },
         {
             "name": "symfony/polyfill-intl-idn",
@@ -7404,20 +7620,34 @@
                 "portable",
                 "shim"
             ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-05-12T16:47:27+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.17.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "fa79b11539418b02fc5e1897267673ba2c19419c"
+                "reference": "a6977d63bf9a0ad4c65cd352709e230876f9904a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/fa79b11539418b02fc5e1897267673ba2c19419c",
-                "reference": "fa79b11539418b02fc5e1897267673ba2c19419c",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/a6977d63bf9a0ad4c65cd352709e230876f9904a",
+                "reference": "a6977d63bf9a0ad4c65cd352709e230876f9904a",
                 "shasum": ""
             },
             "require": {
@@ -7429,7 +7659,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-master": "1.18-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
                 }
             },
             "autoload": {
@@ -7463,7 +7697,21 @@
                 "portable",
                 "shim"
             ],
-            "time": "2020-05-12T16:47:27+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-14T12:35:20+00:00"
         },
         {
             "name": "symfony/polyfill-php72",
@@ -7518,20 +7766,34 @@
                 "portable",
                 "shim"
             ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-05-12T16:47:27+00:00"
         },
         {
             "name": "symfony/polyfill-php73",
-            "version": "v1.17.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php73.git",
-                "reference": "a760d8964ff79ab9bf057613a5808284ec852ccc"
+                "reference": "fffa1a52a023e782cdcc221d781fe1ec8f87fcca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/a760d8964ff79ab9bf057613a5808284ec852ccc",
-                "reference": "a760d8964ff79ab9bf057613a5808284ec852ccc",
+                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/fffa1a52a023e782cdcc221d781fe1ec8f87fcca",
+                "reference": "fffa1a52a023e782cdcc221d781fe1ec8f87fcca",
                 "shasum": ""
             },
             "require": {
@@ -7540,7 +7802,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-master": "1.18-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
                 }
             },
             "autoload": {
@@ -7576,20 +7842,34 @@
                 "portable",
                 "shim"
             ],
-            "time": "2020-05-12T16:47:27+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-14T12:35:20+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.17.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "5e30b2799bc1ad68f7feb62b60a73743589438dd"
+                "reference": "d87d5766cbf48d72388a9f6b85f280c8ad51f981"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/5e30b2799bc1ad68f7feb62b60a73743589438dd",
-                "reference": "5e30b2799bc1ad68f7feb62b60a73743589438dd",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/d87d5766cbf48d72388a9f6b85f280c8ad51f981",
+                "reference": "d87d5766cbf48d72388a9f6b85f280c8ad51f981",
                 "shasum": ""
             },
             "require": {
@@ -7598,7 +7878,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-master": "1.18-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
                 }
             },
             "autoload": {
@@ -7638,7 +7922,21 @@
                 "portable",
                 "shim"
             ],
-            "time": "2020-05-12T16:47:27+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-14T12:35:20+00:00"
         },
         {
             "name": "symfony/routing",
@@ -7716,6 +8014,20 @@
                 "uri",
                 "url"
             ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-06-10T11:49:58+00:00"
         },
         {
@@ -7774,20 +8086,34 @@
                 "interoperability",
                 "standards"
             ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-05-20T17:43:50+00:00"
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v5.1.2",
+            "version": "v5.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "46a942903059b0b05e601f00eb64179e05578c0f"
+                "reference": "b43a3905262bcf97b2510f0621f859ca4f5287be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/46a942903059b0b05e601f00eb64179e05578c0f",
-                "reference": "46a942903059b0b05e601f00eb64179e05578c0f",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/b43a3905262bcf97b2510f0621f859ca4f5287be",
+                "reference": "b43a3905262bcf97b2510f0621f859ca4f5287be",
                 "shasum": ""
             },
             "require": {
@@ -7850,7 +8176,21 @@
                 "debug",
                 "dump"
             ],
-            "time": "2020-05-30T20:35:19+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-08-17T07:42:30+00:00"
         },
         {
             "name": "symfony/var-exporter",
@@ -7911,6 +8251,20 @@
                 "instantiate",
                 "serialize"
             ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-06-07T15:42:22+00:00"
         }
     ],
@@ -7967,6 +8321,16 @@
                 "option",
                 "php",
                 "type"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpoption/phpoption",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-06-07T10:40:07+00:00"
         },
@@ -8031,6 +8395,16 @@
                 "env",
                 "environment"
             ],
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/vlucas/phpdotenv",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-06-02T14:08:54+00:00"
         }
     ],
@@ -8045,5 +8419,6 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
