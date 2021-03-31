@@ -115,7 +115,9 @@
     },
     "preserve-paths": [
       "web/sites/all/modules/contrib",
+      "web/sites/all/modules/features",
       "web/sites/all/themes/contrib",
+      "web/sites/all/themes/custom",
       "web/sites/all/libraries",
       "web/sites/all/drush",
       "web/sites/default/settings.php",
