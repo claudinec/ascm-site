@@ -5,23 +5,23 @@
   {
     "type": "vcs",
     "url": "git@github.com:australianscm/ascm_admin.git"
-  }
+  },
   {
     "type": "vcs",
     "url": "git@github.com:australianscm/ascm_blocks.git"
-  }
+  },
   {
     "type": "vcs",
     "url": "git@github.com:australianscm/ascm_blog.git"
-  }
+  },
   {
     "type": "vcs",
     "url": "git@github.com:australianscm/ascm_info.git"
-  }
+  },
   {
     "type": "vcs",
     "url": "git@github.com:australianscm/ascm_bootstrap_theme.git"
-  }
+  },
   {
     "type": "composer",
     "url": "https://packages.drupal.org/7"
