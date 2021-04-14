@@ -27,3 +27,6 @@ web/sites/default/files
 
 # Ignore local scripts
 bin/
+
+# Ignore private directory
+private/
