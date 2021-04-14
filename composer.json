@@ -1,13 +1,38 @@
 {
-  "name": "drupal-composer/drupal-project",
-  "description": "Composer template for Drupal projects",
+  "name": "australianscm/ascm-site",
+  "description": "Australian Student Christian Movement website using Composer template for Drupal projects",
   "repositories": [
+  {
+    "type": "vcs",
+    "url": "git@github.com:australianscm/ascm_admin.git"
+  },
+  {
+    "type": "vcs",
+    "url": "git@github.com:australianscm/ascm_blocks.git"
+  },
+  {
+    "type": "vcs",
+    "url": "git@github.com:australianscm/ascm_blog.git"
+  },
+  {
+    "type": "vcs",
+    "url": "git@github.com:australianscm/ascm_info.git"
+  },
+  {
+    "type": "vcs",
+    "url": "git@github.com:australianscm/ascm_bootstrap_theme.git"
+  },
   {
     "type": "composer",
     "url": "https://packages.drupal.org/7"
   }
 ],
   "require": {
+    "australianscm/ascm_admin": "dev-main",
+    "australianscm/ascm_blocks": "dev-main",
+    "australianscm/ascm_blog": "dev-main",
+    "australianscm/ascm_info": "dev-main",
+    "australianscm/ascm_bootstrap_theme": "dev-main",
     "composer/installers": "^1.0",
     "drupal/drupal": "7.*",
     "drupal/addressfield": "^1.2",
@@ -108,14 +133,18 @@
     "installer-paths": {
       "web/": ["type:drupal-core"],
       "web/sites/all/modules/contrib/{$name}/": ["type:drupal-module"],
+      "web/sites/all/modules/features/{$name}/": ["type:drupal-module"],
       "web/sites/all/themes/contrib/{$name}/": ["type:drupal-theme"],
+      "web/sites/all/themes/custom/{$name}/": ["type:drupal-theme"],
       "web/sites/all/libraries/{$name}/": ["type:drupal-library"],
       "web/sites/all/drush/{$name}/": ["type:drupal-drush"],
       "web/profiles/{$name}/": ["type:drupal-profile"]
     },
     "preserve-paths": [
       "web/sites/all/modules/contrib",
+      "web/sites/all/modules/features",
       "web/sites/all/themes/contrib",
+      "web/sites/all/themes/custom",
       "web/sites/all/libraries",
       "web/sites/all/drush",
       "web/sites/default/settings.php",
