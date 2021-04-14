@@ -21,16 +21,23 @@ function ascm_admin_exportables_backup_migrate_profiles() {
   $item->timestamp_format = 'Y-m-d\\TH-i-s';
   $item->filters = array(
     'compression' => 'gzip',
-    'notify_success_enable' => 1,
-    'notify_success_email' => 'tech@ascm.org.au',
-    'notify_failure_enable' => 1,
-    'notify_failure_email' => 'tech@ascm.org.au',
-    'utils_site_offline' => 0,
-    'utils_site_offline_message' => 'Australian Student Christian Movement is currently under maintenance. We should be back shortly. Thank you for your patience.',
-    'utils_description' => '',
-    'use_cli' => 0,
     'ignore_errors' => 0,
+    'notify_failure_email' => 'tech@ascm.org.au',
+    'notify_failure_enable' => 1,
+    'notify_success_email' => 'tech@ascm.org.au',
+    'notify_success_enable' => 1,
     'sources' => array(
+      'archive' => array(
+        'exclude_filepaths' => 'public://backup_migrate
+public://styles
+public://css
+public://js
+public://ctools
+public://less
+private://backup_migrate
+sites/default/settings.php
+/tmp',
+      ),
       'civicrm' => array(
         'exclude_tables' => array(),
         'nodata_tables' => array(),
@@ -70,18 +77,11 @@ js
 ctools
 less',
       ),
-      'archive' => array(
-        'exclude_filepaths' => 'public://backup_migrate
-public://styles
-public://css
-public://js
-public://ctools
-public://less
-private://backup_migrate
-sites/default/settings.php
-/tmp',
-      ),
     ),
+    'use_cli' => 0,
+    'utils_description' => '',
+    'utils_site_offline' => 0,
+    'utils_site_offline_message' => 'Australian Student Christian Movement is currently under maintenance. We should be back shortly. Thank you for your patience.',
   );
   $export['civicrm_profile'] = $item;
 
@@ -95,16 +95,23 @@ sites/default/settings.php
   $item->timestamp_format = 'Y-m-d\\TH-i-s';
   $item->filters = array(
     'compression' => 'gzip',
-    'notify_success_enable' => 1,
-    'notify_success_email' => 'tech@ascm.org.au',
-    'notify_failure_enable' => 1,
-    'notify_failure_email' => 'tech@ascm.org.au',
-    'utils_site_offline' => 0,
-    'utils_site_offline_message' => 'This website is currently under maintenance. We should be back shortly. Thank you for your patience.',
-    'utils_description' => '',
-    'use_cli' => 0,
     'ignore_errors' => 0,
+    'notify_failure_email' => 'tech@ascm.org.au',
+    'notify_failure_enable' => 1,
+    'notify_success_email' => 'tech@ascm.org.au',
+    'notify_success_enable' => 1,
     'sources' => array(
+      'archive' => array(
+        'exclude_filepaths' => 'public://backup_migrate
+public://styles
+public://css
+public://js
+public://ctools
+public://less
+private://backup_migrate
+sites/default/settings.php
+/tmp',
+      ),
       'db' => array(
         'exclude_tables' => array(),
         'nodata_tables' => array(
@@ -139,18 +146,11 @@ js
 ctools
 less',
       ),
-      'archive' => array(
-        'exclude_filepaths' => 'public://backup_migrate
-public://styles
-public://css
-public://js
-public://ctools
-public://less
-private://backup_migrate
-sites/default/settings.php
-/tmp',
-      ),
     ),
+    'use_cli' => 0,
+    'utils_description' => '',
+    'utils_site_offline' => 0,
+    'utils_site_offline_message' => 'This website is currently under maintenance. We should be back shortly. Thank you for your patience.',
   );
   $export['default'] = $item;
 

@@ -206,7 +206,7 @@ function ascm_blog_views_default_views() {
   $handler->display->display_options['filters']['approval_date']['table'] = 'civicrm_mailing';
   $handler->display->display_options['filters']['approval_date']['field'] = 'approval_date';
   $handler->display->display_options['filters']['approval_date']['operator'] = '<=';
-  $handler->display->display_options['filters']['approval_date']['value']['value'] = '-1 day';
+  $handler->display->display_options['filters']['approval_date']['value']['value'] = '+1 day';
   $handler->display->display_options['filters']['approval_date']['value']['type'] = 'offset';
 
   /* Display: Page */

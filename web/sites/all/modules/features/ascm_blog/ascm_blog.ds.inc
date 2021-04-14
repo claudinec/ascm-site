@@ -19,6 +19,19 @@ function ascm_blog_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'body' => 'ds_content',
+      'field_attachments' => 'ds_content',
+      'field_image' => 'ds_content',
+      'field_tags' => 'ds_content',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => FALSE,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
       'ds_content' => array(
         0 => 'field_image',
@@ -27,22 +40,9 @@ function ascm_blog_ds_layout_settings_info() {
         3 => 'field_attachments',
       ),
     ),
-    'fields' => array(
-      'field_image' => 'ds_content',
-      'body' => 'ds_content',
-      'field_tags' => 'ds_content',
-      'field_attachments' => 'ds_content',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'ds_content' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => FALSE,
   );
   $export['node|article|default'] = $ds_layout;
 
@@ -54,6 +54,20 @@ function ascm_blog_ds_layout_settings_info() {
   $ds_layout->view_mode = 'full';
   $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'body' => 'ds_content',
+      'disqus' => 'ds_content',
+      'field_attachments' => 'ds_content',
+      'field_image' => 'ds_content',
+      'field_tags' => 'ds_content',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => FALSE,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
       'ds_content' => array(
         0 => 'body',
@@ -63,23 +77,9 @@ function ascm_blog_ds_layout_settings_info() {
         4 => 'disqus',
       ),
     ),
-    'fields' => array(
-      'body' => 'ds_content',
-      'field_image' => 'ds_content',
-      'field_tags' => 'ds_content',
-      'field_attachments' => 'ds_content',
-      'disqus' => 'ds_content',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'ds_content' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => FALSE,
   );
   $export['node|article|full'] = $ds_layout;
 
@@ -91,6 +91,19 @@ function ascm_blog_ds_layout_settings_info() {
   $ds_layout->view_mode = 'teaser';
   $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'body' => 'ds_content',
+      'field_image' => 'ds_content',
+      'field_tags' => 'ds_content',
+      'title' => 'ds_content',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => FALSE,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
       'ds_content' => array(
         0 => 'title',
@@ -99,22 +112,9 @@ function ascm_blog_ds_layout_settings_info() {
         3 => 'field_tags',
       ),
     ),
-    'fields' => array(
-      'title' => 'ds_content',
-      'body' => 'ds_content',
-      'field_image' => 'ds_content',
-      'field_tags' => 'ds_content',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'ds_content' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => FALSE,
   );
   $export['node|article|teaser'] = $ds_layout;
 

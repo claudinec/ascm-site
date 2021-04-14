@@ -27,23 +27,23 @@ function ascm_blocks_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'search-form' => array(
-          'module' => 'search',
-          'delta' => 'form',
-          'region' => 'sidebar_second',
-          'weight' => '-10',
-        ),
         'boxes-contact_brief' => array(
-          'module' => 'boxes',
           'delta' => 'contact_brief',
+          'module' => 'boxes',
           'region' => 'sidebar_second',
           'weight' => '-9',
         ),
         'boxes-social' => array(
-          'module' => 'boxes',
           'delta' => 'social',
+          'module' => 'boxes',
           'region' => 'sidebar_second',
           'weight' => '-8',
+        ),
+        'search-form' => array(
+          'delta' => 'form',
+          'module' => 'search',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
         ),
       ),
     ),
@@ -64,11 +64,11 @@ function ascm_blocks_context_default_contexts() {
   $context->tag = 'blocks';
   $context->conditions = array(
     'node' => array(
-      'values' => array(
-        'book' => 'book',
-      ),
       'options' => array(
         'node_form' => '0',
+      ),
+      'values' => array(
+        'book' => 'book',
       ),
     ),
   );
@@ -76,8 +76,8 @@ function ascm_blocks_context_default_contexts() {
     'block' => array(
       'blocks' => array(
         'book-navigation' => array(
-          'module' => 'book',
           'delta' => 'navigation',
+          'module' => 'book',
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
@@ -109,55 +109,55 @@ function ascm_blocks_context_default_contexts() {
     'region' => array(
       'ascm_bootstrap_theme' => array(
         'disable' => array(
-          'sidebar_second' => 'sidebar_second',
-          'navigation' => 0,
-          'header' => 0,
-          'highlighted' => 0,
-          'help' => 0,
           'content' => 0,
-          'sidebar_first' => 0,
-          'footer' => 0,
-          'page_top' => 0,
-          'page_bottom' => 0,
+          'dashboard_inactive' => 0,
           'dashboard_main' => 0,
           'dashboard_sidebar' => 0,
-          'dashboard_inactive' => 0,
+          'footer' => 0,
+          'header' => 0,
+          'help' => 0,
+          'highlighted' => 0,
+          'navigation' => 0,
+          'page_bottom' => 0,
+          'page_top' => 0,
+          'sidebar_first' => 0,
+          'sidebar_second' => 'sidebar_second',
         ),
       ),
       'bartik' => array(
         'disable' => array(
+          'content' => 0,
+          'dashboard_inactive' => 0,
+          'dashboard_main' => 0,
+          'dashboard_sidebar' => 0,
+          'featured' => 0,
+          'footer' => 0,
+          'footer_firstcolumn' => 0,
+          'footer_fourthcolumn' => 0,
+          'footer_secondcolumn' => 0,
+          'footer_thirdcolumn' => 0,
           'header' => 0,
           'help' => 0,
-          'page_top' => 0,
-          'page_bottom' => 0,
           'highlighted' => 0,
-          'featured' => 0,
-          'content' => 0,
+          'page_bottom' => 0,
+          'page_top' => 0,
           'sidebar_first' => 0,
           'sidebar_second' => 0,
           'triptych_first' => 0,
-          'triptych_middle' => 0,
           'triptych_last' => 0,
-          'footer_firstcolumn' => 0,
-          'footer_secondcolumn' => 0,
-          'footer_thirdcolumn' => 0,
-          'footer_fourthcolumn' => 0,
-          'footer' => 0,
-          'dashboard_main' => 0,
-          'dashboard_sidebar' => 0,
-          'dashboard_inactive' => 0,
+          'triptych_middle' => 0,
         ),
       ),
       'seven' => array(
         'disable' => array(
           'content' => 0,
-          'help' => 0,
-          'page_top' => 0,
-          'page_bottom' => 0,
-          'sidebar_first' => 0,
+          'dashboard_inactive' => 0,
           'dashboard_main' => 0,
           'dashboard_sidebar' => 0,
-          'dashboard_inactive' => 0,
+          'help' => 0,
+          'page_bottom' => 0,
+          'page_top' => 0,
+          'sidebar_first' => 0,
         ),
       ),
     ),
@@ -187,8 +187,8 @@ function ascm_blocks_context_default_contexts() {
     'block' => array(
       'blocks' => array(
         'boxes-contact_header' => array(
-          'module' => 'boxes',
           'delta' => 'contact_header',
+          'module' => 'boxes',
           'region' => 'content',
           'weight' => '-23',
         ),
