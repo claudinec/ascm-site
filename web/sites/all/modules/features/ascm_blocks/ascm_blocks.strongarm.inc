@@ -23,8 +23,8 @@ function ascm_blocks_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'fontawesome_external';
   $strongarm->value = array(
-    'use_cdn' => 1,
     'external_location' => 'https://kit.fontawesome.com/4e45ff27a6.js',
+    'use_cdn' => 1,
   );
   $export['fontawesome_external'] = $strongarm;
 
@@ -40,10 +40,10 @@ function ascm_blocks_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'fontawesome_partial';
   $strongarm->value = array(
-    'use_solid_file' => 1,
-    'use_regular_file' => 1,
-    'use_light_file' => 1,
     'use_brands_file' => 1,
+    'use_light_file' => 1,
+    'use_regular_file' => 1,
+    'use_solid_file' => 1,
   );
   $export['fontawesome_partial'] = $strongarm;
 
@@ -52,8 +52,8 @@ function ascm_blocks_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'fontawesome_shim';
   $strongarm->value = array(
-    'use_shim' => 0,
     'external_location' => '',
+    'use_shim' => 0,
   );
   $export['fontawesome_shim'] = $strongarm;
 
@@ -62,8 +62,8 @@ function ascm_blocks_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'xmlsitemap_settings_menu_link_main-menu';
   $strongarm->value = array(
-    'status' => '1',
     'priority' => '0.5',
+    'status' => '1',
   );
   $export['xmlsitemap_settings_menu_link_main-menu'] = $strongarm;
 

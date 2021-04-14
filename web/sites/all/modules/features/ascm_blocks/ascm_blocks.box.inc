@@ -19,7 +19,9 @@ function ascm_blocks_default_box() {
   $box->title = 'Contact us';
   $box->description = 'Contact - brief info';
   $box->options = array(
+    'additional_classes' => '',
     'body' => array(
+      'format' => 'filtered_html',
       'value' => '<p>PO Box 4386<br />
 MELBOURNE UNIVERSITY<br />
 VIC 3052</p>
@@ -30,9 +32,7 @@ VIC 3052</p>
 
 <p><a href="https://gitreports.com/issue/claudinec/ascm-site">Website problem?</a></p>
 ',
-      'format' => 'filtered_html',
     ),
-    'additional_classes' => '',
   );
   $export['contact_brief'] = $box;
 
@@ -44,7 +44,9 @@ VIC 3052</p>
   $box->title = '';
   $box->description = 'Contact form header';
   $box->options = array(
+    'additional_classes' => '',
     'body' => array(
+      'format' => 'filtered_html',
       'value' => '<p><strong>Our postal address</strong></p>
 
 <p>PO Box 4386<br />
@@ -57,9 +59,7 @@ VIC 3052</p>
 
 <p>If you\'ve found a problem with this website, please <a href="https://gitreports.com/issue/claudinec/ascm-site">submit a report</a>.</p>
 ',
-      'format' => 'filtered_html',
     ),
-    'additional_classes' => '',
   );
   $export['contact_header'] = $box;
 
@@ -72,8 +72,8 @@ VIC 3052</p>
   $box->description = 'Postal address';
   $box->options = array(
     'body' => array(
-      'value' => '<p>PO Box 4386<br><span style="line-height: 1.4;">MELBOURNE UNIVERSITY<br>VIC 3052</span></p>',
       'format' => 'filtered_html',
+      'value' => '<p>PO Box 4386<br><span style="line-height: 1.4;">MELBOURNE UNIVERSITY<br>VIC 3052</span></p>',
     ),
   );
   $export['postal_address'] = $box;
@@ -86,14 +86,14 @@ VIC 3052</p>
   $box->title = 'Keep in touch';
   $box->description = 'Social links';
   $box->options = array(
+    'additional_classes' => '',
     'body' => array(
+      'format' => 'filtered_html',
       'value' => '<p><a href="/newsletter">Subscribe to our email newsletter</a> or visit our <a href="/newsletter-archive">newsletter archive</a></p>
 
-<p>Like and follow: <a href="https://www.facebook.com/AustralianStudentChristianMovement"><span class="fab fa-facebook-square"></span></a> <a href="https://instagram.com/australianscm"><span class="fab fa-instagram"></span></a> <a href="https://twitter.com/australianscm"><span class="fab fa-twitter-square"></span></a> <a href="https://www.youtube.com/channel/UComAdAiyJxC3PN1A0gUcWXQ"><span class="fab fa-youtube-square"></span></a></p>
+<p>Like and follow: <a href="https://fb.me/AustralianSCM"><span class="fab fa-facebook-square"></span></a> <a href="https://instagram.com/australianscm"><span class="fab fa-instagram"></span></a> <a href="https://twitter.com/australianscm"><span class="fab fa-twitter-square"></span></a> <a href="https://www.youtube.com/channel/UComAdAiyJxC3PN1A0gUcWXQ"><span class="fab fa-youtube-square"></span></a></p>
 ',
-      'format' => 'filtered_html',
     ),
-    'additional_classes' => '',
   );
   $export['social'] = $box;
 

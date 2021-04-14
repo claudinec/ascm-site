@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * ascm_info.ds.inc
@@ -19,12 +20,16 @@ function ascm_info_ds_layout_settings_info() {
   $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
     'classes' => array(),
-    'wrappers' => array(
-      'ds_content' => 'div',
+    'fields' => array(
+      'body' => 'ds_content',
+      'field_attachments' => 'ds_content',
+      'field_tags' => 'ds_content',
+      'links' => 'ds_content',
+      'title' => 'ds_content',
     ),
-    'layout_wrapper' => 'div',
     'layout_attributes' => '',
     'layout_attributes_merge' => 1,
+    'layout_wrapper' => 'div',
     'regions' => array(
       'ds_content' => array(
         0 => 'title',
@@ -34,12 +39,8 @@ function ascm_info_ds_layout_settings_info() {
         4 => 'links',
       ),
     ),
-    'fields' => array(
-      'title' => 'ds_content',
-      'body' => 'ds_content',
-      'field_attachments' => 'ds_content',
-      'field_tags' => 'ds_content',
-      'links' => 'ds_content',
+    'wrappers' => array(
+      'ds_content' => 'div',
     ),
   );
   $export['node|book|default'] = $ds_layout;
@@ -52,6 +53,22 @@ function ascm_info_ds_layout_settings_info() {
   $ds_layout->view_mode = 'full';
   $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'body' => 'ds_content',
+      'book_navigation' => 'ds_content',
+      'comments' => 'ds_content',
+      'field_access' => 'ds_content',
+      'field_attachments' => 'ds_content',
+      'field_tags' => 'ds_content',
+      'links' => 'ds_content',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => FALSE,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
       'ds_content' => array(
         0 => 'body',
@@ -63,25 +80,9 @@ function ascm_info_ds_layout_settings_info() {
         6 => 'field_access',
       ),
     ),
-    'fields' => array(
-      'body' => 'ds_content',
-      'field_attachments' => 'ds_content',
-      'field_tags' => 'ds_content',
-      'comments' => 'ds_content',
-      'book_navigation' => 'ds_content',
-      'links' => 'ds_content',
-      'field_access' => 'ds_content',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'ds_content' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => FALSE,
   );
   $export['node|book|full'] = $ds_layout;
 

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * ascm_info.strongarm.inc
@@ -36,12 +37,35 @@ function ascm_info_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__book';
   $strongarm->value = array(
+    'extra_fields' => array(
+      'display' => array(),
+      'form' => array(
+        'path' => array(
+          'weight' => '30',
+        ),
+        'title' => array(
+          'weight' => '-5',
+        ),
+        'workbench_access' => array(
+          'weight' => '0',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '30',
+        ),
+      ),
+    ),
     'view_modes' => array(
-      'teaser' => array(
-        'custom_settings' => TRUE,
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
       ),
       'full' => array(
         'custom_settings' => TRUE,
+      ),
+      'print' => array(
+        'custom_settings' => FALSE,
+      ),
+      'revision' => array(
+        'custom_settings' => FALSE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,
@@ -52,35 +76,12 @@ function ascm_info_strongarm() {
       'search_result' => array(
         'custom_settings' => FALSE,
       ),
-      'print' => array(
-        'custom_settings' => FALSE,
-      ),
-      'diff_standard' => array(
-        'custom_settings' => FALSE,
+      'teaser' => array(
+        'custom_settings' => TRUE,
       ),
       'token' => array(
         'custom_settings' => FALSE,
       ),
-      'revision' => array(
-        'custom_settings' => FALSE,
-      ),
-    ),
-    'extra_fields' => array(
-      'form' => array(
-        'title' => array(
-          'weight' => '-5',
-        ),
-        'path' => array(
-          'weight' => '30',
-        ),
-        'workbench_access' => array(
-          'weight' => '0',
-        ),
-        'xmlsitemap' => array(
-          'weight' => '30',
-        ),
-      ),
-      'display' => array(),
     ),
   );
   $export['field_bundle_settings_node__book'] = $strongarm;
@@ -137,8 +138,8 @@ function ascm_info_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'xmlsitemap_settings_node_book';
   $strongarm->value = array(
-    'status' => '1',
     'priority' => '0.5',
+    'status' => '1',
   );
   $export['xmlsitemap_settings_node_book'] = $strongarm;
 

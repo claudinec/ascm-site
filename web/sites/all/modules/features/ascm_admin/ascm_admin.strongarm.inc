@@ -30,9 +30,9 @@ function ascm_admin_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'antispam_antispambot_rules';
   $strongarm->value = array(
+    'body' => 0,
     'ip' => 0,
     'mail' => 0,
-    'body' => 0,
   );
   $export['antispam_antispambot_rules'] = $strongarm;
 
@@ -56,9 +56,9 @@ function ascm_admin_strongarm() {
   $strongarm->name = 'antispam_check_nodetypes';
   $strongarm->value = array(
     'article' => 'article',
-    'page' => 'page',
     'book' => 'book',
     'individual' => 'individual',
+    'page' => 'page',
     'slide' => 'slide',
     'webform' => 'webform',
   );
@@ -90,9 +90,9 @@ function ascm_admin_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'antispam_counter_since';
   $strongarm->value = array(
-    'year' => '2019',
-    'month' => '2',
     'day' => '6',
+    'month' => '2',
+    'year' => '2019',
   );
   $export['antispam_counter_since'] = $strongarm;
 
@@ -206,21 +206,21 @@ function ascm_admin_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__webform';
   $strongarm->value = array(
-    'view_modes' => array(),
     'extra_fields' => array(
+      'display' => array(),
       'form' => array(
-        'title' => array(
-          'weight' => '-5',
-        ),
         'path' => array(
           'weight' => '30',
+        ),
+        'title' => array(
+          'weight' => '-5',
         ),
         'xmlsitemap' => array(
           'weight' => '30',
         ),
       ),
-      'display' => array(),
     ),
+    'view_modes' => array(),
   );
   $export['field_bundle_settings_node__webform'] = $strongarm;
 
@@ -297,8 +297,8 @@ function ascm_admin_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'xmlsitemap_settings_node_webform';
   $strongarm->value = array(
-    'status' => '0',
     'priority' => '0.5',
+    'status' => '0',
   );
   $export['xmlsitemap_settings_node_webform'] = $strongarm;
 

@@ -37,12 +37,47 @@ function ascm_blog_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__article';
   $strongarm->value = array(
+    'extra_fields' => array(
+      'display' => array(
+        'disqus' => array(
+          'default' => array(
+            'visible' => FALSE,
+            'weight' => '1002',
+          ),
+          'full' => array(
+            'visible' => TRUE,
+            'weight' => '5',
+          ),
+          'teaser' => array(
+            'visible' => FALSE,
+            'weight' => '1002',
+          ),
+        ),
+      ),
+      'form' => array(
+        'path' => array(
+          'weight' => '5',
+        ),
+        'title' => array(
+          'weight' => '0',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '6',
+        ),
+      ),
+    ),
     'view_modes' => array(
-      'teaser' => array(
-        'custom_settings' => TRUE,
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
       ),
       'full' => array(
         'custom_settings' => TRUE,
+      ),
+      'print' => array(
+        'custom_settings' => FALSE,
+      ),
+      'revision' => array(
+        'custom_settings' => FALSE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,
@@ -53,46 +88,11 @@ function ascm_blog_strongarm() {
       'search_result' => array(
         'custom_settings' => FALSE,
       ),
-      'print' => array(
-        'custom_settings' => FALSE,
-      ),
-      'diff_standard' => array(
-        'custom_settings' => FALSE,
+      'teaser' => array(
+        'custom_settings' => TRUE,
       ),
       'token' => array(
         'custom_settings' => FALSE,
-      ),
-      'revision' => array(
-        'custom_settings' => FALSE,
-      ),
-    ),
-    'extra_fields' => array(
-      'form' => array(
-        'title' => array(
-          'weight' => '0',
-        ),
-        'path' => array(
-          'weight' => '5',
-        ),
-        'xmlsitemap' => array(
-          'weight' => '6',
-        ),
-      ),
-      'display' => array(
-        'disqus' => array(
-          'full' => array(
-            'weight' => '5',
-            'visible' => TRUE,
-          ),
-          'teaser' => array(
-            'weight' => '1002',
-            'visible' => FALSE,
-          ),
-          'default' => array(
-            'weight' => '1002',
-            'visible' => FALSE,
-          ),
-        ),
       ),
     ),
   );
@@ -235,8 +235,8 @@ function ascm_blog_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'xmlsitemap_settings_node_article';
   $strongarm->value = array(
-    'status' => '0',
     'priority' => '0.5',
+    'status' => '0',
   );
   $export['xmlsitemap_settings_node_article'] = $strongarm;
 
