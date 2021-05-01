@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:AustralianSCM/ascm_admin.git",
-                "reference": "e808aba1651248e304c140e11613e9587daed8f1"
+                "reference": "ac68266b31b20fd069650101a42a5a18289d0551"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AustralianSCM/ascm_admin/zipball/e808aba1651248e304c140e11613e9587daed8f1",
-                "reference": "e808aba1651248e304c140e11613e9587daed8f1",
+                "url": "https://api.github.com/repos/AustralianSCM/ascm_admin/zipball/ac68266b31b20fd069650101a42a5a18289d0551",
+                "reference": "ac68266b31b20fd069650101a42a5a18289d0551",
                 "shasum": ""
             },
             "type": "drupal-",
@@ -25,7 +25,7 @@
                 "source": "https://github.com/AustralianSCM/ascm_admin/tree/main",
                 "issues": "https://github.com/AustralianSCM/ascm_admin/issues"
             },
-            "time": "2021-04-13T03:46:06+00:00"
+            "time": "2021-04-15T03:18:22+00:00"
         },
         {
             "name": "australianscm/ascm_blocks",
